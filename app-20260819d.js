@@ -2,7 +2,7 @@
 
 const DATA_DATE = "2026-08-19";
 const BASELINE_DATE = "2026-05-21";
-const CACHE_VERSION = "20260819f";
+const CACHE_VERSION = "20260819h";
 const state = { games: [], visible: [] };
 
 const elements = {
