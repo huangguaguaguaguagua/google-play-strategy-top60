@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Google Play 美国区策略游戏畅销榜 TOP60：排名、玩法、素材、公司归属与90天榜位对比。" />
+    <meta name="description" content="Google Play 美国区策略游戏畅销榜 TOP60：排名、玩法、素材、公司归属与产品趋势。" />
     <meta name="color-scheme" content="light" />
     <title>Google Play 美国区策略游戏畅销榜 TOP60</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles-20260819d.css" />
-    <script defer src="app-20260819d.js"></script>
+    <link rel="stylesheet" href="styles-20260819d.css?v=20260819e" />
+    <script defer src="app-20260819d.js?v=20260819e"></script>
   </head>
   <body>
     <header class="topbar">
@@ -26,7 +26,7 @@
         <div class="hero-copy">
           <p class="eyebrow">GOOGLE PLAY · STRATEGY · TOP GROSSING</p>
           <h1>美国区策略游戏<br />畅销榜 TOP60</h1>
-          <p class="hero-description">按真实90天榜位快照划分：90天前已在榜为常规在榜；90天内首次进入TOP60为新上榜；90天前已在榜且提升超过5位为飙升。趋势列先显示摘要，悬停或聚焦后分段查看完整研判。</p>
+          <p class="hero-description">近三个月首次进入TOP60标记为新上榜；已在榜且期间提升超过5位标记为飙升，其余统一按常规样式展示。趋势列先显示上线后发展、榜位走向与关键转折摘要，悬停或聚焦后查看分段分析。</p>
           <div class="date-pill"><span>榜单日期</span><strong data-date>2026-08-19</strong><i>北京时间</i></div>
         </div>
         <div class="leader-card" aria-live="polite">
@@ -41,7 +41,7 @@
 
       <section class="stats" aria-label="榜单概览">
         <article><span>收录游戏</span><strong id="stat-total">60</strong><small>TOP GROSSING</small></article>
-        <article><span>常规在榜（已核验）</span><strong id="stat-normal">—</strong><small>90D BASELINE</small></article>
+        <article><span>常规在榜</span><strong id="stat-normal">—</strong><small>REGULAR</small></article>
         <article><span>近三个月新上榜</span><strong id="stat-new">—</strong><small class="green">NEW ENTRY</small></article>
         <article><span>近三个月飙升</span><strong id="stat-surge">—</strong><small class="orange">UP &gt; 5</small></article>
       </section>
@@ -53,19 +53,17 @@
             <span><i class="legend-dot new"></i>近三个月新上榜</span>
             <span><i class="legend-dot surge"></i>近三个月飙升</span>
             <span><i class="legend-dot normal"></i>常规在榜</span>
-            <span><i class="legend-dot pending"></i>90天基准待核验</span>
           </div>
         </div>
 
         <div class="baseline-notice">
-          <span><strong>对比基准：</strong><span data-baseline-date>2026-05-21</span> → <span data-date>2026-08-19</span>。公开历史源目前只可核验基准日前10名；其余缺少真实历史名次的游戏不再用上架时间、下载量或当前排名代理判断。</span>
-          <span class="pending-copy">待核验 <b id="pending-count">—</b> 款</span>
+          <span><strong>状态窗口：</strong><span data-baseline-date>2026-05-21</span> → <span data-date>2026-08-19</span>。页面仅用单独颜色突出“近三个月新上榜”和“近三个月飙升”，其余游戏统一采用常规展示。</span>
         </div>
 
         <div class="toolbar">
           <label class="search-field"><span>搜索</span><input id="search" type="search" placeholder="游戏、公司、关键词或素材方向" /></label>
           <label><span>游戏类型</span><select id="genre"><option value="all">全部类型</option></select></label>
-          <label><span>榜单状态</span><select id="status"><option value="all">全部状态</option><option value="normal">常规在榜</option><option value="new">近三个月新上榜</option><option value="surge">近三个月飙升</option><option value="pending">90天基准待核验</option></select></label>
+          <label><span>榜单状态</span><select id="status"><option value="all">全部状态</option><option value="normal">常规在榜</option><option value="new">近三个月新上榜</option><option value="surge">近三个月飙升</option></select></label>
           <label><span>排序</span><select id="sort"><option value="rank">按畅销排名</option><option value="release">按上架时间</option><option value="installs">按近30日新增</option></select></label>
           <div class="toolbar-actions"><button class="button ghost" id="reset" type="button">重置</button><button class="button primary" id="export" type="button">导出当前结果</button></div>
         </div>
@@ -73,7 +71,7 @@
 
         <div class="table-frame">
           <table>
-            <thead><tr><th>排名</th><th>游戏</th><th>类型 / 关键词</th><th>商店图</th><th>最终公司归属</th><th>上架 / 90天前</th><th>趋势摘要（悬停看全文）</th><th>商店</th></tr></thead>
+            <thead><tr><th>排名</th><th>游戏</th><th>类型 / 关键词</th><th>商店图</th><th>最终公司归属</th><th>上架时间</th><th>趋势摘要（悬停看全文）</th><th>商店</th></tr></thead>
             <tbody id="ranking-body"><tr><td colspan="8" class="empty-state">正在加载榜单数据…</td></tr></tbody>
           </table>
         </div>
@@ -83,8 +81,8 @@
         <div><p class="eyebrow">METHODOLOGY</p><h2>数据口径</h2></div>
         <div class="method-grid">
           <article><span>01</span><strong>当日榜单</strong><p>Google Play 美国区 Strategy 畅销榜，按北京时间对应的当日公开榜单收录TOP60。</p></article>
-          <article><span>02</span><strong>90天状态</strong><p>基准日不在TOP60＝新上榜；已在榜且提升超过5位＝飙升；已在榜且提升不超过5位＝常规在榜。</p></article>
-          <article><span>03</span><strong>缺失处理</strong><p>缺少真实历史名次时显示“基准待核验”，不再以发行时间、下载量或当前榜位替代90天排名。</p></article>
+          <article><span>02</span><strong>近三个月状态</strong><p>窗口起点不在TOP60＝新上榜；已在榜且提升超过5位＝飙升；两类均以单独行色突出。</p></article>
+          <article><span>03</span><strong>常规展示</strong><p>除已确认的新上榜和飙升外，其余游戏统一采用常规样式；历史快照补齐后由每日任务自动重算分类。</p></article>
         </div>
       </section>
 
