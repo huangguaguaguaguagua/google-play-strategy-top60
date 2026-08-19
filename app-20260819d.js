@@ -2,7 +2,7 @@
 
 const DATA_DATE = "2026-08-19";
 const BASELINE_DATE = "2026-05-21";
-const CACHE_VERSION = "20260819k";
+const CACHE_VERSION = "20260819l";
 const state = { games: [], visible: [] };
 
 const elements = {
@@ -237,13 +237,8 @@ function tooltipHtml(game) {
     ["主力素材", sections.creative],
     ["后续观察", sections.watch],
   ];
-  const lifecycleItem = game.trend.lifecycleAudit
-    ? '<section class="trend-tooltip__source trend-tooltip__lifecycle"><strong>生命周期核验</strong><p>' +
-      escapeHtml(lifecycleAuditText(game.trend.lifecycleAudit)) + "</p></section>"
-    : "";
   return '<div class="trend-tooltip__head"><span>#' + game.rank + "</span><strong>" + escapeHtml(game.gameName) + "</strong></div>" +
-    items.map(([label, text]) => '<section><strong>' + label + '</strong><p>' + escapeHtml(text) + "</p></section>").join("") +
-    lifecycleItem;
+    items.map(([label, text]) => '<section><strong>' + label + '</strong><p>' + escapeHtml(text) + "</p></section>").join("");
 }
 
 function placeTooltip(clientX, clientY, anchor) {
