@@ -13,6 +13,62 @@
   line-height: 1.65;
 }
 .baseline-notice strong { color: #253b68; }
+.store-switch {
+  width: fit-content;
+  margin: 0 0 30px;
+  padding: 5px;
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 5px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 15px;
+  background: rgba(4,9,20,.46);
+  box-shadow: inset 0 1px rgba(255,255,255,.04);
+}
+.store-tab {
+  min-height: 56px;
+  padding: 9px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  background: transparent;
+  color: #96a6bd;
+  cursor: pointer;
+  text-align: left;
+  transition: background .18s ease, border-color .18s ease, color .18s ease, transform .18s ease;
+}
+.store-tab:hover { color: #fff; background: rgba(255,255,255,.07); }
+.store-tab:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; }
+.store-tab.is-active {
+  border-color: rgba(185,242,39,.36);
+  background: rgba(185,242,39,.13);
+  color: #fff;
+  box-shadow: 0 7px 24px rgba(0,0,0,.18);
+}
+.store-tab__icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(255,255,255,.1);
+  font-size: 12px;
+  font-weight: 900;
+}
+.store-tab__icon.google { color: var(--lime); }
+.store-tab__icon.apple { color: #dbeafe; font-size: 17px; }
+.store-tab strong { display: block; font-size: 12px; }
+.store-tab small { display: block; margin-top: 2px; color: #73849f; font-size: 8px; font-weight: 800; letter-spacing: .12em; }
+.store-tab.is-active small { color: #b8c6da; }
+[data-store="ios"] .brand-mark { background: #dbeafe; }
+[data-store="ios"] .hero {
+  background:
+    radial-gradient(circle at 76% 20%, rgba(96,165,250,.34), transparent 33%),
+    linear-gradient(130deg, #0b1120 0%, #17233d 62%, #0a1020 100%);
+}
 .date-cell { white-space: nowrap; }
 .note-cell { width: 360px; max-width: 360px; padding-block: 9px; }
 .note-summary {
@@ -66,6 +122,8 @@
 .status-normal .rank-cell small { color: #667085; }
 
 @media (max-width: 720px) {
+  .store-switch { width: 100%; grid-template-columns: 1fr 1fr; margin-bottom: 24px; }
+  .store-tab { min-width: 0; padding-inline: 10px; }
   .baseline-notice { align-items: flex-start; flex-direction: column; gap: 6px; }
   .method-grid article.source-policy { grid-column: auto; }
 }

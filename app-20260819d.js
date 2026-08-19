@@ -1,9 +1,56 @@
 "use strict";
 
-const DATA_DATE = "2026-08-19";
-const BASELINE_DATE = "2026-05-21";
-const CACHE_VERSION = "20260819l";
-const state = { games: [], visible: [] };
+const CACHE_VERSION = "20260819m";
+const STORE_CONFIGS = {
+  googlePlay: {
+    key: "googlePlay",
+    queryValue: "google-play",
+    mark: "GP",
+    storeName: "Google Play",
+    platform: "Android",
+    date: "2026-08-19",
+    baselineDate: "2026-05-21",
+    eyebrow: "GOOGLE PLAY · ANDROID · STRATEGY · TOP GROSSING",
+    title: "Google Play 美国区策略游戏畅销榜 TOP60",
+    headerMeta: "每日跟踪 · 美国区 · Android",
+    footer: "Google Play US Strategy · TOP60 · Updated 2026-08-19",
+    method: "Google Play 美国区 Strategy 畅销榜，按北京时间对应的当日公开榜单收录TOP60。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-05-21 → 2026-08-19。页面仅用单独颜色突出“近三个月新上榜”和“近三个月飙升”，其余游戏统一采用常规展示。",
+    games: "data/games-20260819d.json",
+    enrichment: "data/enrichment-20260819d.json",
+    trends: "data/trends-20260819d.json",
+    assetManifest: "assets/manifest.json",
+    linkHeader: "Google Play 链接",
+    csvSlug: "google-play-us-strategy-top60",
+    hasInstallEstimate: true,
+  },
+  ios: {
+    key: "ios",
+    queryValue: "ios",
+    mark: "AS",
+    storeName: "App Store",
+    platform: "iPhone · iOS",
+    date: "2026-08-19",
+    baselineDate: "2026-05-21",
+    eyebrow: "APPLE APP STORE · iPHONE · STRATEGY · TOP GROSSING",
+    title: "App Store 美国区策略游戏畅销榜 TOP60",
+    headerMeta: "每日跟踪 · 美国区 · iPhone",
+    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-08-19",
+    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-05-21 → 2026-08-19。iOS独立历史从本期开始建档；因缺少2026-05-21同口径快照，本期全部按常规样式展示，不误判“新上榜”或“飙升”。积累到完整90天后自动分类。",
+    games: "data/ios-games-20260819.json",
+    enrichment: "data/ios-enrichment-20260819.json",
+    trends: "data/ios-trends-20260819.json",
+    assetManifest: "assets/ios-manifest.json",
+    linkHeader: "App Store 链接",
+    csvSlug: "apple-app-store-us-iphone-strategy-top60",
+    hasInstallEstimate: false,
+  },
+};
+
+const requestedStore = new URLSearchParams(window.location.search).get("store");
+const initialStore = requestedStore === "ios" ? "ios" : "googlePlay";
+const state = { store: initialStore, games: [], visible: [], datasets: {}, loadToken: 0 };
 
 const elements = {
   search: document.querySelector("#search"),
@@ -20,6 +67,10 @@ const elements = {
   modalTitle: document.querySelector("#modal-title"),
   modalKeywords: document.querySelector("#modal-keywords"),
 };
+
+function config() {
+  return STORE_CONFIGS[state.store];
+}
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -44,17 +95,29 @@ function padRank(rank) {
 }
 
 function parseInstalls(value = "0") {
-  const number = Number.parseFloat(value.replaceAll(",", "")) || 0;
+  const number = Number.parseFloat(String(value).replaceAll(",", "")) || 0;
   if (/M/i.test(value)) return number * 1_000_000;
   if (/K/i.test(value)) return number * 1_000;
   return number;
 }
 
 function statusLabel(game) {
-  const comparison = game.comparison90d;
+  const comparison = game.comparison90d || {};
   if (comparison.status === "new") return "近3月新";
   if (comparison.status === "surge") return "近3月 ↑" + comparison.delta;
   return "常规";
+}
+
+function sourceAuditText(audit) {
+  const labels = (audit.sources || []).map((source) => source.label).join("、");
+  return "状态：" + audit.status + "；可信度：" + audit.confidence + "；" +
+    audit.basis + " 纠偏说明：" + audit.changeReason + " 来源：" + labels + "。";
+}
+
+function lifecycleAuditText(audit) {
+  const labels = (audit.sources || []).map((source) => source.label).join("、");
+  return "可信度：" + audit.confidence + "；" + audit.scope + " " +
+    audit.evidenceNote + " 来源：" + labels + "。";
 }
 
 function fullTrendText(trend) {
@@ -71,18 +134,6 @@ function fullTrendText(trend) {
   return items.join(" ");
 }
 
-function sourceAuditText(audit) {
-  const labels = (audit.sources || []).map((source) => source.label).join("、");
-  return "状态：" + audit.status + "；可信度：" + audit.confidence + "；" +
-    audit.basis + " 纠偏说明：" + audit.changeReason + " 来源：" + labels + "。";
-}
-
-function lifecycleAuditText(audit) {
-  const labels = (audit.sources || []).map((source) => source.label).join("、");
-  return "可信度：" + audit.confidence + "；" + audit.scope + " " +
-    audit.evidenceNote + " 来源：" + labels + "。";
-}
-
 function trendSummaryHtml(summary) {
   const text = String(summary ?? "");
   const turningMarker = "；关键转折：";
@@ -92,12 +143,11 @@ function trendSummaryHtml(summary) {
   if (turningIndex < 0 || creativeIndex < turningIndex) {
     return "<span>" + escapeHtml(text) + "</span>";
   }
-  const sections = [
+  return [
     text.slice(0, turningIndex + 1),
     text.slice(turningIndex + 1, creativeIndex + 1),
     text.slice(creativeIndex + 1),
-  ];
-  return sections.map((section) => "<span>" + escapeHtml(section) + "</span>").join("");
+  ].map((section) => "<span>" + escapeHtml(section) + "</span>").join("");
 }
 
 function mergeData(rawGames, enrichment, assets, trends) {
@@ -126,17 +176,60 @@ function mergeData(rawGames, enrichment, assets, trends) {
   });
 }
 
-async function loadAssets() {
-  const manifestResponse = await fetch("assets/manifest.json?v=" + CACHE_VERSION);
-  if (!manifestResponse.ok) throw new Error("图片清单加载失败：" + manifestResponse.status);
-  const manifest = await manifestResponse.json();
-  const bundles = await Promise.all(manifest.files.map((name) =>
-    fetch("assets/" + name + "?v=" + CACHE_VERSION).then((response) => {
-      if (!response.ok) throw new Error("图片资源加载失败：" + response.status);
-      return response.json();
-    })
-  ));
+async function fetchJson(path, label) {
+  const response = await fetch(path + "?v=" + CACHE_VERSION);
+  if (!response.ok) throw new Error(label + "加载失败：" + response.status);
+  return response.json();
+}
+
+async function loadAssets(storeConfig) {
+  const manifest = await fetchJson(storeConfig.assetManifest, "图片清单");
+  const basePath = storeConfig.assetManifest.slice(0, storeConfig.assetManifest.lastIndexOf("/") + 1);
+  const bundles = await Promise.all(manifest.files.map((name) => fetchJson(basePath + name, "图片资源")));
   return Object.assign({}, ...bundles);
+}
+
+async function loadStoreData(storeKey) {
+  if (state.datasets[storeKey]) return state.datasets[storeKey];
+  const storeConfig = STORE_CONFIGS[storeKey];
+  const promise = Promise.all([
+    fetchJson(storeConfig.games, "榜单数据"),
+    fetchJson(storeConfig.enrichment, "溯源数据"),
+    loadAssets(storeConfig),
+    fetchJson(storeConfig.trends, "趋势数据"),
+  ]).then(([rawGames, enrichment, assets, trends]) => mergeData(rawGames, enrichment, assets, trends));
+  state.datasets[storeKey] = promise;
+  try {
+    return await promise;
+  } catch (error) {
+    delete state.datasets[storeKey];
+    throw error;
+  }
+}
+
+function refreshStoreChrome() {
+  const storeConfig = config();
+  document.documentElement.dataset.store = state.store;
+  document.title = storeConfig.title;
+  document.querySelector('meta[name="description"]').content = storeConfig.title + "：排名、玩法、素材、公司归属与产品趋势。";
+  document.querySelector("#brand-mark").textContent = storeConfig.mark;
+  document.querySelector("#header-meta-text").textContent = storeConfig.headerMeta;
+  document.querySelector("#store-eyebrow").textContent = storeConfig.eyebrow;
+  document.querySelector("#hero-title").innerHTML = escapeHtml(storeConfig.storeName) + " 美国区策略游戏<br />畅销榜 TOP60";
+  document.querySelectorAll("[data-date]").forEach((element) => { element.textContent = storeConfig.date; });
+  document.querySelectorAll("[data-baseline-date]").forEach((element) => { element.textContent = storeConfig.baselineDate; });
+  document.querySelector("#baseline-copy").innerHTML = storeConfig.baselineCopy;
+  document.querySelector("#method-current").textContent = storeConfig.method;
+  document.querySelector("#footer-store").textContent = storeConfig.footer;
+  document.querySelectorAll(".store-tab").forEach((button) => {
+    const selected = button.dataset.store === state.store;
+    button.classList.toggle("is-active", selected);
+    button.setAttribute("aria-selected", String(selected));
+  });
+  const installOption = elements.sort.querySelector('option[value="installs"]');
+  installOption.disabled = !storeConfig.hasInstallEstimate;
+  installOption.textContent = storeConfig.hasInstallEstimate ? "按近30日新增" : "近30日新增（iOS无公开口径）";
+  if (!storeConfig.hasInstallEstimate && elements.sort.value === "installs") elements.sort.value = "rank";
 }
 
 function renderLeader() {
@@ -160,10 +253,8 @@ function renderStats() {
 function renderGenres() {
   const genres = [...new Set(state.games.map((game) => game.genre.split("/")[0].trim()))]
     .sort((a, b) => a.localeCompare(b, "zh-CN"));
-  elements.genre.insertAdjacentHTML(
-    "beforeend",
-    genres.map((genre) => '<option value="' + escapeHtml(genre) + '">' + escapeHtml(genre) + "</option>").join(""),
-  );
+  elements.genre.innerHTML = '<option value="all">全部类型</option>' +
+    genres.map((genre) => '<option value="' + escapeHtml(genre) + '">' + escapeHtml(genre) + "</option>").join("");
 }
 
 function getVisibleGames() {
@@ -192,6 +283,7 @@ function getVisibleGames() {
 }
 
 function rowHtml(game) {
+  const storeConfig = config();
   const confidenceClass = game.company.confidence.includes("疑似") ? " suspected" : "";
   const secondary = game.recentInstalls30d ? "近30日新增 " + game.recentInstalls30d : game.developer;
   const displayStatus = game.status === "pending" ? "normal" : game.status;
@@ -200,22 +292,19 @@ function rowHtml(game) {
     '<td><div class="game-cell"><img src="' + escapeHtml(game.icon) + '" alt="' + escapeHtml(game.gameName) +
       ' icon" loading="lazy" /><div><strong>' + escapeHtml(game.gameName) + "</strong><small>" +
       escapeHtml(secondary) + "</small></div></div></td>" +
-    '<td class="taxonomy-cell"><strong>' + escapeHtml(game.genre) + "</strong><p>" +
-      escapeHtml(game.keywords) + "</p></td>" +
-    '<td><button class="shot-button" type="button" data-rank="' + game.rank +
-      '" aria-label="放大查看 ' + escapeHtml(game.gameName) + ' 商店图"><img src="' +
-      escapeHtml(game.storeImage) + '" alt="' + escapeHtml(game.gameName) +
-      ' Google Play 商店图" loading="lazy" /><span>查看</span></button></td>' +
-    '<td class="company-cell"><strong>' + escapeHtml(game.company.en) + "</strong><p>" +
-      escapeHtml(game.company.cn) + '</p><div><span class="confidence' + confidenceClass + '">' +
-      escapeHtml(game.company.confidence) + '</span><a href="' + escapeHtml(safeUrl(game.company.source)) +
-      '" target="_blank" rel="noreferrer" title="' + escapeHtml(game.company.basis) +
-      '">归属依据 ↗</a></div></td>' +
+    '<td class="taxonomy-cell"><strong>' + escapeHtml(game.genre) + "</strong><p>" + escapeHtml(game.keywords) + "</p></td>" +
+    '<td><button class="shot-button" type="button" data-rank="' + game.rank + '" aria-label="放大查看 ' +
+      escapeHtml(game.gameName) + ' 商店图"><img src="' + escapeHtml(game.storeImage) + '" alt="' +
+      escapeHtml(game.gameName) + " " + escapeHtml(storeConfig.storeName) + ' 商店图" loading="lazy" /><span>查看</span></button></td>' +
+    '<td class="company-cell"><strong>' + escapeHtml(game.company.en) + "</strong><p>" + escapeHtml(game.company.cn) +
+      '</p><div><span class="confidence' + confidenceClass + '">' + escapeHtml(game.company.confidence) +
+      '</span><a href="' + escapeHtml(safeUrl(game.company.source)) + '" target="_blank" rel="noreferrer" title="' +
+      escapeHtml(game.company.basis) + '">归属依据 ↗</a></div></td>' +
     '<td class="date-cell">' + escapeHtml(game.releaseDateIso) + '</td>' +
     '<td class="note-cell"><button class="note-summary" type="button" data-rank="' + game.rank +
       '" aria-describedby="trend-tooltip">' + trendSummaryHtml(game.trend.summary) + "</button></td>" +
     '<td><a class="store-link" href="' + escapeHtml(safeUrl(game.storeUrl)) +
-      '" target="_blank" rel="noreferrer">打开<br />Google Play <span>↗</span></a></td>' +
+      '" target="_blank" rel="noreferrer">打开<br />' + escapeHtml(storeConfig.storeName) + " <span>↗</span></a></td>" +
   "</tr>";
 }
 
@@ -270,7 +359,7 @@ function openModal(rank) {
   if (!game) return;
   hideTooltip();
   elements.modalImage.src = game.storeImage;
-  elements.modalImage.alt = game.gameName + " Google Play 商店图大图";
+  elements.modalImage.alt = game.gameName + " " + config().storeName + " 商店图大图";
   elements.modalRank.textContent = "#" + game.rank;
   elements.modalTitle.textContent = game.gameName;
   elements.modalKeywords.textContent = game.keywords;
@@ -290,8 +379,10 @@ function csvEscape(value) {
 }
 
 function exportCsv() {
-  const header = ["排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", "Google Play 链接", "趋势摘要", "趋势全文"];
+  const storeConfig = config();
+  const header = ["商店", "排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", storeConfig.linkHeader, "趋势摘要", "趋势全文"];
   const rows = state.visible.map((game) => [
+    storeConfig.storeName,
     game.rank,
     statusLabel(game),
     game.gameName,
@@ -308,22 +399,62 @@ function exportCsv() {
   const url = URL.createObjectURL(new Blob(["\ufeff", content], { type: "text/csv;charset=utf-8" }));
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = "google-play-us-strategy-top60-" + DATA_DATE + ".csv";
+  anchor.download = storeConfig.csvSlug + "-" + storeConfig.date + ".csv";
   anchor.click();
   URL.revokeObjectURL(url);
+}
+
+function resetFilters(render = true) {
+  elements.search.value = "";
+  elements.genre.value = "all";
+  elements.status.value = "all";
+  elements.sort.value = "rank";
+  if (render) renderTable();
+}
+
+async function switchStore(storeKey, updateUrl = true) {
+  if (!STORE_CONFIGS[storeKey]) return;
+  const token = ++state.loadToken;
+  state.store = storeKey;
+  hideTooltip();
+  if (!elements.modal.hidden) closeModal();
+  refreshStoreChrome();
+  resetFilters(false);
+  elements.body.innerHTML = '<tr><td colspan="8" class="empty-state">正在加载 ' + escapeHtml(config().storeName) + " 榜单数据…</td></tr>";
+  elements.resultCount.textContent = "0";
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    if (storeKey === "ios") url.searchParams.set("store", "ios");
+    else url.searchParams.delete("store");
+    window.history.replaceState({ store: storeKey }, "", url);
+  }
+  try {
+    const games = await loadStoreData(storeKey);
+    if (token !== state.loadToken || storeKey !== state.store) return;
+    state.games = games;
+    renderGenres();
+    renderLeader();
+    renderStats();
+    renderTable();
+    window.__APP_READY__ = true;
+    window.__ACTIVE_STORE__ = storeKey;
+  } catch (error) {
+    console.error(error);
+    if (token !== state.loadToken) return;
+    elements.body.innerHTML = '<tr><td colspan="8" class="empty-state">数据加载失败，请稍后刷新页面。<br /><small>' +
+      escapeHtml(error.message) + "</small></td></tr>";
+    window.__APP_READY__ = false;
+  }
 }
 
 function bindEvents() {
   [elements.search, elements.genre, elements.status, elements.sort].forEach((control) => {
     control.addEventListener(control === elements.search ? "input" : "change", renderTable);
   });
-  document.querySelector("#reset").addEventListener("click", () => {
-    elements.search.value = "";
-    elements.genre.value = "all";
-    elements.status.value = "all";
-    elements.sort.value = "rank";
-    renderTable();
+  document.querySelectorAll(".store-tab").forEach((button) => {
+    button.addEventListener("click", () => switchStore(button.dataset.store));
   });
+  document.querySelector("#reset").addEventListener("click", () => resetFilters());
   document.querySelector("#export").addEventListener("click", exportCsv);
   elements.body.addEventListener("click", (event) => {
     const shot = event.target.closest(".shot-button");
@@ -354,6 +485,10 @@ function bindEvents() {
   });
   window.addEventListener("scroll", hideTooltip, true);
   window.addEventListener("resize", hideTooltip);
+  window.addEventListener("popstate", () => {
+    const value = new URLSearchParams(window.location.search).get("store");
+    switchStore(value === "ios" ? "ios" : "googlePlay", false);
+  });
   window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       hideTooltip();
@@ -362,38 +497,9 @@ function bindEvents() {
   });
 }
 
-async function init() {
-  document.querySelectorAll("[data-date]").forEach((element) => { element.textContent = DATA_DATE; });
-  document.querySelectorAll("[data-baseline-date]").forEach((element) => { element.textContent = BASELINE_DATE; });
+function init() {
   bindEvents();
-  try {
-    const [rawGames, enrichment, assets, trends] = await Promise.all([
-      fetch("data/games-20260819d.json?v=" + CACHE_VERSION).then((response) => {
-        if (!response.ok) throw new Error("榜单数据加载失败：" + response.status);
-        return response.json();
-      }),
-      fetch("data/enrichment-20260819d.json?v=" + CACHE_VERSION).then((response) => {
-        if (!response.ok) throw new Error("溯源数据加载失败：" + response.status);
-        return response.json();
-      }),
-      loadAssets(),
-      fetch("data/trends-20260819d.json?v=" + CACHE_VERSION).then((response) => {
-        if (!response.ok) throw new Error("趋势数据加载失败：" + response.status);
-        return response.json();
-      }),
-    ]);
-    state.games = mergeData(rawGames, enrichment, assets, trends);
-    renderGenres();
-    renderLeader();
-    renderStats();
-    renderTable();
-    window.__APP_READY__ = true;
-  } catch (error) {
-    console.error(error);
-    elements.body.innerHTML = '<tr><td colspan="8" class="empty-state">数据加载失败，请稍后刷新页面。<br /><small>' +
-      escapeHtml(error.message) + "</small></td></tr>";
-    window.__APP_READY__ = false;
-  }
+  switchStore(initialStore, false);
 }
 
 init();

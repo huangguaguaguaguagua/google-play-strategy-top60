@@ -3,30 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Google Play 美国区策略游戏畅销榜 TOP60：排名、玩法、素材、公司归属与产品趋势。" />
+    <meta name="description" content="美国区策略游戏畅销榜 TOP60：可切换 Google Play 与 Apple App Store，查看排名、玩法、素材、公司归属与产品趋势。" />
     <meta name="color-scheme" content="light" />
-    <title>Google Play 美国区策略游戏畅销榜 TOP60</title>
+    <title>美国区策略游戏畅销榜 TOP60｜Google Play / App Store</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles-20260819d.css?v=20260819l" />
-    <script defer src="app-20260819d.js?v=20260819l"></script>
+    <link rel="stylesheet" href="styles-20260819d.css?v=20260819m" />
+    <script defer src="app-20260819d.js?v=20260819m"></script>
   </head>
   <body>
     <header class="topbar">
       <div class="topbar-inner">
         <a class="brand" href="#top" aria-label="返回顶部">
-          <span class="brand-mark">GP</span>
+          <span class="brand-mark" id="brand-mark">GP</span>
           <span><strong>Strategy Pulse</strong><small>US MARKET TRACKER</small></span>
         </a>
-        <div class="header-meta"><span class="live-dot" aria-hidden="true"></span>每日跟踪 · 美国区</div>
+        <div class="header-meta"><span class="live-dot" aria-hidden="true"></span><span id="header-meta-text">每日跟踪 · 美国区 · Android</span></div>
       </div>
     </header>
 
     <main class="page-shell" id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">GOOGLE PLAY · STRATEGY · TOP GROSSING</p>
-          <h1>美国区策略游戏<br />畅销榜 TOP60</h1>
-          <p class="hero-description">近三个月首次进入TOP60标记为新上榜；已在榜且期间提升超过5位标记为飙升，其余统一按常规样式展示。趋势列先显示上线后发展、榜位走向与关键转折摘要，悬停或聚焦后查看分段分析。</p>
+          <nav class="store-switch" role="tablist" aria-label="切换应用商店榜单">
+            <button class="store-tab is-active" type="button" role="tab" aria-selected="true" data-store="googlePlay">
+              <span class="store-tab__icon google">▶</span><span><strong>Google Play</strong><small>ANDROID</small></span>
+            </button>
+            <button class="store-tab" type="button" role="tab" aria-selected="false" data-store="ios">
+              <span class="store-tab__icon apple">●</span><span><strong>App Store</strong><small>iPHONE · iOS</small></span>
+            </button>
+          </nav>
+          <p class="eyebrow" id="store-eyebrow">GOOGLE PLAY · STRATEGY · TOP GROSSING</p>
+          <h1 id="hero-title">美国区策略游戏<br />畅销榜 TOP60</h1>
+          <p class="hero-description" id="hero-description">近三个月首次进入TOP60标记为新上榜；已在榜且期间提升超过5位标记为飙升，其余统一按常规样式展示。趋势列先显示上线后发展、榜位走向与关键转折摘要，悬停或聚焦后查看分段分析。</p>
           <div class="date-pill"><span>榜单日期</span><strong data-date>2026-08-19</strong><i>北京时间</i></div>
         </div>
         <div class="leader-card" aria-live="polite">
@@ -57,7 +65,7 @@
         </div>
 
         <div class="baseline-notice">
-          <span><strong>状态窗口：</strong><span data-baseline-date>2026-05-21</span> → <span data-date>2026-08-19</span>。页面仅用单独颜色突出“近三个月新上榜”和“近三个月飙升”，其余游戏统一采用常规展示。</span>
+          <span id="baseline-copy"><strong>状态窗口：</strong><span data-baseline-date>2026-05-21</span> → <span data-date>2026-08-19</span>。页面仅用单独颜色突出“近三个月新上榜”和“近三个月飙升”，其余游戏统一采用常规展示。</span>
         </div>
 
         <div class="toolbar">
@@ -80,14 +88,14 @@
       <section class="methodology">
         <div><p class="eyebrow">METHODOLOGY</p><h2>数据口径</h2></div>
         <div class="method-grid">
-          <article><span>01</span><strong>当日榜单</strong><p>Google Play 美国区 Strategy 畅销榜，按北京时间对应的当日公开榜单收录TOP60。</p></article>
+          <article><span>01</span><strong>当日榜单</strong><p id="method-current">Google Play 美国区 Strategy 畅销榜，按北京时间对应的当日公开榜单收录TOP60。</p></article>
           <article><span>02</span><strong>近三个月状态</strong><p>窗口起点不在TOP60＝新上榜；已在榜且提升超过5位＝飙升；两类均以单独行色突出。</p></article>
           <article><span>03</span><strong>常规展示</strong><p>除已确认的新上榜和飙升外，其余游戏统一采用常规样式；历史快照补齐后由每日任务自动重算分类。</p></article>
-          <article class="source-policy"><span>04</span><strong>玩法、素材与生命周期审计</strong><p>核心玩法、获量素材和生命周期转折分开记录。趋势从测试/上架期起追踪产品改动、素材迁移、IP/版本节点和榜位阶段；没有可核验证据时降低可信度，并明确写“未发现重大转折”，不再用通用增长模板补齐。</p><a href="data/source-methodology-20260819i.json?v=20260819l" target="_blank" rel="noreferrer">查看机器可读来源规则 ↗</a></article>
+          <article class="source-policy"><span>04</span><strong>玩法、素材与生命周期审计</strong><p>核心玩法、获量素材和生命周期转折分开记录。趋势从测试/上架期起追踪产品改动、素材迁移、IP/版本节点和榜位阶段；没有可核验证据时降低可信度，并明确写“未发现重大转折”，不再用通用增长模板补齐。</p><a href="data/source-methodology-20260819i.json?v=20260819m" target="_blank" rel="noreferrer">查看机器可读来源规则 ↗</a></article>
         </div>
       </section>
 
-      <footer><strong>STRATEGY PULSE</strong><span>Google Play US Strategy · TOP60 · Updated <span data-date>2026-08-19</span></span></footer>
+      <footer><strong>STRATEGY PULSE</strong><span id="footer-store">Google Play US Strategy · TOP60 · Updated <span data-date>2026-08-19</span></span></footer>
     </main>
 
     <div class="trend-tooltip" id="trend-tooltip" role="tooltip" hidden></div>

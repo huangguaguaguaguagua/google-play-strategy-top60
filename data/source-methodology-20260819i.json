@@ -1,12 +1,12 @@
 {
-  "version": "2026-08-19.2",
-  "market": "Google Play US / Games / Strategy / Top Grossing",
+  "version": "2026-08-19.3",
+  "market": "Google Play US + Apple App Store US iPhone / Games / Strategy / Top Grossing",
   "scope": "TOP60玩法关键词、主力素材与上架后生命周期转折",
   "sourceTiers": [
     {
       "tier": 1,
       "name": "商品页一级源",
-      "sources": ["Google Play美国区商品页描述", "当前商店截图/视频", "版本说明"],
+      "sources": ["Google Play美国区商品页描述", "Apple官方iTunes RSS与Lookup feed", "Apple App Store美国区商品页", "当前商店截图/视频", "版本说明"],
       "usage": "确认产品内实际存在的核心玩法、题材和当前商店展示。"
     },
     {
@@ -35,6 +35,8 @@
     "相关节点只能写成合理归纳，不把版本、广告和榜位的同期变化直接断言为唯一因果。",
     "单张商店图不能代表完整投放策略；仅有商店图时，素材结论可信度标为中。",
     "类比其他产品时使用“类”或“疑似参考”表述，不把社区指控写成已证实事实。",
+    "Google Play与Apple App Store分开保存每日快照；只用同商店、同地区、同品类、同设备口径的90天前榜单做状态分类。",
+    "iOS缺少精确90天前快照时按常规样式展示，不用上架日期反推新上榜；积累满90天后再自动计算新上榜与提升超过5位。",
     "每日更新保留每款游戏的来源URL、核验日期、可信度和纠偏原因。"
   ]
 }
