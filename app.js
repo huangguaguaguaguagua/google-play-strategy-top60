@@ -1,6 +1,6 @@
 "use strict";
 
-const DATA_DATE = "2026-08-18";
+const DATA_DATE = "2026-08-19";
 const state = { games: [], visible: [] };
 
 const elements = {
