@@ -2,7 +2,7 @@
 
 const DATA_DATE = "2026-08-19";
 const BASELINE_DATE = "2026-05-21";
-const CACHE_VERSION = "20260819e";
+const CACHE_VERSION = "20260819f";
 const state = { games: [], visible: [] };
 
 const elements = {
@@ -66,6 +66,23 @@ function fullTrendText(trend) {
     "主力素材：" + sections.creative,
     "后续观察：" + sections.watch,
   ].join(" ");
+}
+
+function trendSummaryHtml(summary) {
+  const text = String(summary ?? "");
+  const turningMarker = "；关键转折：";
+  const creativeMarker = "；主力素材：";
+  const turningIndex = text.indexOf(turningMarker);
+  const creativeIndex = text.indexOf(creativeMarker);
+  if (turningIndex < 0 || creativeIndex < turningIndex) {
+    return "<span>" + escapeHtml(text) + "</span>";
+  }
+  const sections = [
+    text.slice(0, turningIndex + 1),
+    text.slice(turningIndex + 1, creativeIndex + 1),
+    text.slice(creativeIndex + 1),
+  ];
+  return sections.map((section) => "<span>" + escapeHtml(section) + "</span>").join("");
 }
 
 function mergeData(rawGames, enrichment, assets, trends) {
@@ -181,7 +198,7 @@ function rowHtml(game) {
       '">归属依据 ↗</a></div></td>' +
     '<td class="date-cell">' + escapeHtml(game.releaseDateIso) + '</td>' +
     '<td class="note-cell"><button class="note-summary" type="button" data-rank="' + game.rank +
-      '" aria-describedby="trend-tooltip">' + escapeHtml(game.trend.summary) + "</button></td>" +
+      '" aria-describedby="trend-tooltip">' + trendSummaryHtml(game.trend.summary) + "</button></td>" +
     '<td><a class="store-link" href="' + escapeHtml(safeUrl(game.storeUrl)) +
       '" target="_blank" rel="noreferrer">打开<br />Google Play <span>↗</span></a></td>' +
   "</tr>";
