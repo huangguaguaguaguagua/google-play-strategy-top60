@@ -1,0 +1,65 @@
+.baseline-notice {
+  margin: 0 0 14px;
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border: 1px solid #dce4f2;
+  border-radius: 12px;
+  background: #f7f9fd;
+  color: #475467;
+  font-size: 11px;
+  line-height: 1.65;
+}
+.baseline-notice strong { color: #253b68; }
+.baseline-notice .pending-copy { flex: 0 0 auto; color: #6941c6; font-weight: 750; }
+.date-cell small { display: block; margin-top: 6px; color: #98a2b3; font-size: 9px; }
+.note-cell { width: 360px; max-width: 360px; padding-block: 9px; }
+.note-summary {
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  border: 0;
+  background: transparent;
+  color: #344054;
+  cursor: help;
+  font: inherit;
+  line-height: 1.55;
+  text-align: left;
+}
+.note-summary:hover { color: #153f9f; }
+.note-summary:focus-visible { border-radius: 5px; outline: 2px solid #2563eb; outline-offset: 3px; }
+.trend-tooltip {
+  width: min(470px, calc(100vw - 28px));
+  max-height: min(660px, calc(100vh - 28px));
+  overflow: auto;
+  position: fixed;
+  z-index: 90;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  background: rgba(11,17,32,.97);
+  color: #f8fafc;
+  box-shadow: 0 22px 70px rgba(4,9,20,.35);
+  pointer-events: none;
+  backdrop-filter: blur(14px);
+}
+.trend-tooltip__head { display: flex; gap: 9px; align-items: center; margin-bottom: 12px; }
+.trend-tooltip__head span { color: var(--lime); font-size: 11px; font-weight: 850; }
+.trend-tooltip__head strong { font-size: 14px; }
+.trend-tooltip section { padding: 11px 0; border-top: 1px solid rgba(255,255,255,.09); }
+.trend-tooltip section > strong { display: block; color: #a9c4ff; font-size: 10px; letter-spacing: .08em; }
+.trend-tooltip section p { margin: 6px 0 0; color: #d7dfec; font-size: 12px; line-height: 1.7; }
+.status-normal .rank-cell small { color: #667085; }
+.status-pending .rank-cell small { color: #6941c6; }
+.status-pending td:first-child { box-shadow: inset 2px 0 #c7b9ef; }
+.legend-dot.pending { background: #8b5cf6; }
+
+@media (max-width: 720px) {
+  .baseline-notice { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .baseline-notice .pending-copy { flex: auto; }
+}
