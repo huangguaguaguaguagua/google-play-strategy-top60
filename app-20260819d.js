@@ -2,7 +2,7 @@
 
 const DATA_DATE = "2026-08-19";
 const BASELINE_DATE = "2026-05-21";
-const CACHE_VERSION = "20260819i";
+const CACHE_VERSION = "20260819j";
 const state = { games: [], visible: [] };
 
 const elements = {
@@ -67,6 +67,7 @@ function fullTrendText(trend) {
     "后续观察：" + sections.watch,
   ];
   if (trend.sourceAudit) items.push("素材核验：" + sourceAuditText(trend.sourceAudit));
+  if (trend.lifecycleAudit) items.push("生命周期核验：" + lifecycleAuditText(trend.lifecycleAudit));
   return items.join(" ");
 }
 
@@ -74,6 +75,12 @@ function sourceAuditText(audit) {
   const labels = (audit.sources || []).map((source) => source.label).join("、");
   return "状态：" + audit.status + "；可信度：" + audit.confidence + "；" +
     audit.basis + " 纠偏说明：" + audit.changeReason + " 来源：" + labels + "。";
+}
+
+function lifecycleAuditText(audit) {
+  const labels = (audit.sources || []).map((source) => source.label).join("、");
+  return "可信度：" + audit.confidence + "；" + audit.scope + " " +
+    audit.evidenceNote + " 来源：" + labels + "。";
 }
 
 function trendSummaryHtml(summary) {
@@ -234,8 +241,13 @@ function tooltipHtml(game) {
     ? '<section class="trend-tooltip__source"><strong>素材核验</strong><p>' +
       escapeHtml(sourceAuditText(game.trend.sourceAudit)) + "</p></section>"
     : "";
+  const lifecycleItem = game.trend.lifecycleAudit
+    ? '<section class="trend-tooltip__source trend-tooltip__lifecycle"><strong>生命周期核验</strong><p>' +
+      escapeHtml(lifecycleAuditText(game.trend.lifecycleAudit)) + "</p></section>"
+    : "";
   return '<div class="trend-tooltip__head"><span>#' + game.rank + "</span><strong>" + escapeHtml(game.gameName) + "</strong></div>" +
-    items.map(([label, text]) => '<section><strong>' + label + '</strong><p>' + escapeHtml(text) + "</p></section>").join("") + sourceItem;
+    items.map(([label, text]) => '<section><strong>' + label + '</strong><p>' + escapeHtml(text) + "</p></section>").join("") +
+    sourceItem + lifecycleItem;
 }
 
 function placeTooltip(clientX, clientY, anchor) {
