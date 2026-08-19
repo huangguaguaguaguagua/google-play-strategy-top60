@@ -1,6 +1,7 @@
 "use strict";
 
 const DATA_DATE = "2026-08-19";
+const CACHE_VERSION = "20260819b";
 const state = { games: [], visible: [] };
 
 const elements = {
@@ -77,11 +78,11 @@ function mergeData(rawGames, enrichment, assets) {
 }
 
 async function loadAssets() {
-  const manifestResponse = await fetch("assets/manifest.json");
+  const manifestResponse = await fetch("assets/manifest.json?v=" + CACHE_VERSION);
   if (!manifestResponse.ok) throw new Error("图片清单加载失败：" + manifestResponse.status);
   const manifest = await manifestResponse.json();
   const bundles = await Promise.all(manifest.files.map((name) =>
-    fetch("assets/" + name).then((response) => {
+    fetch("assets/" + name + "?v=" + CACHE_VERSION).then((response) => {
       if (!response.ok) throw new Error("图片资源加载失败：" + response.status);
       return response.json();
     })
@@ -135,7 +136,7 @@ function getVisibleGames() {
 }
 
 function rowHtml(game) {
-  const statusLabel = game.status === "new" ? "NEW" : game.status === "surge" ? "↑ HOT" : "";
+  const statusLabel = game.status === "new" ? "3M NEW" : game.status === "surge" ? "↑ 3M HOT" : "";
   const confidenceClass = game.company.confidence.includes("疑似") ? " suspected" : "";
   const secondary = game.recentInstalls30d ? "近30日新增 " + game.recentInstalls30d : game.developer;
   return '<tr class="status-' + game.status + '">' +
@@ -238,11 +239,11 @@ async function init() {
   bindEvents();
   try {
     const [rawGames, enrichment, assets] = await Promise.all([
-      fetch("data/games.json").then((response) => {
+      fetch("data/games.json?v=" + CACHE_VERSION).then((response) => {
         if (!response.ok) throw new Error("榜单数据加载失败：" + response.status);
         return response.json();
       }),
-      fetch("data/enrichment.json").then((response) => {
+      fetch("data/enrichment.json?v=" + CACHE_VERSION).then((response) => {
         if (!response.ok) throw new Error("溯源数据加载失败：" + response.status);
         return response.json();
       }),
