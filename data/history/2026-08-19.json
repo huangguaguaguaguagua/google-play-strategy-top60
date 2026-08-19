@@ -1,0 +1,308 @@
+{
+  "date": "2026-08-19",
+  "timezone": "Asia/Shanghai",
+  "source": "https://www.appbrain.com/stats/google-play-rankings/top_grossing/strategy/us",
+  "sourceLastUpdated": "2026-08-19",
+  "rankings": [
+    {
+      "rank": 1,
+      "packageName": "com.run.tower.defense",
+      "gameName": "Kingshot"
+    },
+    {
+      "rank": 2,
+      "packageName": "com.gof.global",
+      "gameName": "Whiteout Survival"
+    },
+    {
+      "rank": 3,
+      "packageName": "com.fun.lastwar.gp",
+      "gameName": "Last War:Survival Game"
+    },
+    {
+      "rank": 4,
+      "packageName": "com.readygo.barrel.gp",
+      "gameName": "Last Z: Survival Shooter"
+    },
+    {
+      "rank": 5,
+      "packageName": "com.topgamesinc.evony",
+      "gameName": "Evony: The King's Return"
+    },
+    {
+      "rank": 6,
+      "packageName": "com.totalbattle",
+      "gameName": "Total Battle: War Strategy"
+    },
+    {
+      "rank": 7,
+      "packageName": "com.phs.global",
+      "gameName": "Last Asylum: Plague"
+    },
+    {
+      "rank": 8,
+      "packageName": "com.supercell.clashofclans",
+      "gameName": "Clash of Clans"
+    },
+    {
+      "rank": 9,
+      "packageName": "com.readygo.dark.gp",
+      "gameName": "Dark War Survival"
+    },
+    {
+      "rank": 10,
+      "packageName": "com.global.ztmslg",
+      "gameName": "Puzzles & Survival"
+    },
+    {
+      "rank": 11,
+      "packageName": "com.global.pnck",
+      "gameName": "Puzzles & Chaos: Frozen Castle"
+    },
+    {
+      "rank": 12,
+      "packageName": "com.lilithgame.roc.gp",
+      "gameName": "Rise of Kingdoms: Lost Crusade"
+    },
+    {
+      "rank": 13,
+      "packageName": "com.funfizz.palmon.gp",
+      "gameName": "Palmon: Survival"
+    },
+    {
+      "rank": 14,
+      "packageName": "com.wb.goog.hotd.socialstrategy",
+      "gameName": "Game of Thrones: Dragonfire"
+    },
+    {
+      "rank": 15,
+      "packageName": "com.riotgames.league.wildrift",
+      "gameName": "League of Legends: Wild Rift"
+    },
+    {
+      "rank": 16,
+      "packageName": "com.gtarcade.ioe.global",
+      "gameName": "Infinity Kingdom"
+    },
+    {
+      "rank": 17,
+      "packageName": "com.supercell.clashroyale",
+      "gameName": "Clash Royale"
+    },
+    {
+      "rank": 18,
+      "packageName": "com.im30.ROE.gp",
+      "gameName": "Rise of Castles: Ice and Fire"
+    },
+    {
+      "rank": 19,
+      "packageName": "com.camelgames.aoz",
+      "gameName": "Age of Origins"
+    },
+    {
+      "rank": 20,
+      "packageName": "com.slg.policewar",
+      "gameName": "Police Chief"
+    },
+    {
+      "rank": 21,
+      "packageName": "com.snowprintstudios.tacticus",
+      "gameName": "Warhammer 40,000: Tacticus ™"
+    },
+    {
+      "rank": 22,
+      "packageName": "com.a3.topgirl.gplay",
+      "gameName": "Top Girl"
+    },
+    {
+      "rank": 23,
+      "packageName": "com.justgame.jails",
+      "gameName": "Lands of Jail"
+    },
+    {
+      "rank": 24,
+      "packageName": "com.yottagames.gameofmafia",
+      "gameName": "The Grand Mafia"
+    },
+    {
+      "rank": 25,
+      "packageName": "com.igg.android.lordsmobile",
+      "gameName": "Lords Mobile x Transformers"
+    },
+    {
+      "rank": 26,
+      "packageName": "com.funplus.ts.global",
+      "gameName": "Tiles Survive!"
+    },
+    {
+      "rank": 27,
+      "packageName": "com.camelgames.superking",
+      "gameName": "War and Order"
+    },
+    {
+      "rank": 28,
+      "packageName": "com.mrtgd2us.google",
+      "gameName": "Duck Survival"
+    },
+    {
+      "rank": 29,
+      "packageName": "com.games.foundation",
+      "gameName": "Foundation: Galactic Frontier"
+    },
+    {
+      "rank": 30,
+      "packageName": "com.scopely.startrek",
+      "gameName": "Star Trek Fleet Command"
+    },
+    {
+      "rank": 31,
+      "packageName": "com.topwar.gp",
+      "gameName": "Top War: Battle Game"
+    },
+    {
+      "rank": 32,
+      "packageName": "com.sivona.stormshot.e",
+      "gameName": "Stormshot: Isle of Adventure"
+    },
+    {
+      "rank": 33,
+      "packageName": "com.kingsgroup.sos",
+      "gameName": "State of Survival: Zombie War"
+    },
+    {
+      "rank": 34,
+      "packageName": "com.hariwn.legendofcivilizations",
+      "gameName": "Forge Master"
+    },
+    {
+      "rank": 35,
+      "packageName": "com.igg.android.doomsdaylastsurvivors",
+      "gameName": "Doomsday: Odysseus Returns"
+    },
+    {
+      "rank": 36,
+      "packageName": "com.spark.sp.gp",
+      "gameName": "Narco Empire"
+    },
+    {
+      "rank": 37,
+      "packageName": "com.diandian.gog",
+      "gameName": "Guns of Glory: Lost Island"
+    },
+    {
+      "rank": 38,
+      "packageName": "com.funplus.kingofavalon",
+      "gameName": "Frost & Flame: King of Avalon"
+    },
+    {
+      "rank": 39,
+      "packageName": "com.fiveminlab.overgeared.hero.backpack.merge",
+      "gameName": "Overgeared Hero: Merge RPG"
+    },
+    {
+      "rank": 40,
+      "packageName": "com.greenmushroom.boomblitz.gp",
+      "gameName": "Top Heroes: Kingdom Saga"
+    },
+    {
+      "rank": 41,
+      "packageName": "com.farlightgames.warline.gp.global",
+      "gameName": "Warline: Sniper Strike"
+    },
+    {
+      "rank": 42,
+      "packageName": "com.more.dayzsurvival.gp",
+      "gameName": "Last Shelter: Survival"
+    },
+    {
+      "rank": 43,
+      "packageName": "com.farlightgames.samo.gp",
+      "gameName": "Call of Dragons"
+    },
+    {
+      "rank": 44,
+      "packageName": "com.ratinghope.gplay",
+      "gameName": "Titan Rush"
+    },
+    {
+      "rank": 45,
+      "packageName": "com.yottagames.mafiawar",
+      "gameName": "Mafia City"
+    },
+    {
+      "rank": 46,
+      "packageName": "com.YoStarEN.Arknights",
+      "gameName": "Arknights"
+    },
+    {
+      "rank": 47,
+      "packageName": "com.project.idle.cd",
+      "gameName": "Top Force"
+    },
+    {
+      "rank": 48,
+      "packageName": "com.bw.ud.googleplay",
+      "gameName": "Sea War: Uboat Raid"
+    },
+    {
+      "rank": 49,
+      "packageName": "com.cyberjoy.galaxydefense",
+      "gameName": "Galaxy Defense: Fortress TD"
+    },
+    {
+      "rank": 50,
+      "packageName": "com.plarium.vikings",
+      "gameName": "Vikings: War of Clans PvP"
+    },
+    {
+      "rank": 51,
+      "packageName": "com.wb.goog.got.conquest",
+      "gameName": "Game of Thrones: Conquest ™"
+    },
+    {
+      "rank": 52,
+      "packageName": "com.proximabeta.aoemobile",
+      "gameName": "Age of Empires Mobile"
+    },
+    {
+      "rank": 53,
+      "packageName": "com.s01.global",
+      "gameName": "Lordrush"
+    },
+    {
+      "rank": 54,
+      "packageName": "com.tap4fun.odin.kingdomguard",
+      "gameName": "Kingdom Guard: Tower Defense"
+    },
+    {
+      "rank": 55,
+      "packageName": "com.tap4fun.ape.gplay",
+      "gameName": "Age of Apes"
+    },
+    {
+      "rank": 56,
+      "packageName": "com.nvsgames.snap",
+      "gameName": "MARVEL SNAP: Hero Strategy CCG"
+    },
+    {
+      "rank": 57,
+      "packageName": "com.seaofconquest.global",
+      "gameName": "Sea of Conquest: Pirate War"
+    },
+    {
+      "rank": 58,
+      "packageName": "com.more.lastfortress.gp",
+      "gameName": "Last Fortress: Underground"
+    },
+    {
+      "rank": 59,
+      "packageName": "com.wireless.defenseland",
+      "gameName": "Raid Rush: Tower Defense TD"
+    },
+    {
+      "rank": 60,
+      "packageName": "com.tap4fun.kissofwar.googleplay",
+      "gameName": "Kiss of War: Dead Blood"
+    }
+  ]
+}
