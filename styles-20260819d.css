@@ -18,10 +18,8 @@
 .note-summary {
   width: 100%;
   padding: 0;
-  display: -webkit-box;
+  display: block;
   overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   border: 0;
   background: transparent;
   color: #344054;
@@ -29,6 +27,12 @@
   font: inherit;
   line-height: 1.55;
   text-align: left;
+}
+.note-summary > span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .note-summary:hover { color: #153f9f; }
 .note-summary:focus-visible { border-radius: 5px; outline: 2px solid #2563eb; outline-offset: 3px; }
