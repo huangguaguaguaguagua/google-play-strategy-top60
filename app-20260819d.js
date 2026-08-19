@@ -2,7 +2,7 @@
 
 const DATA_DATE = "2026-08-19";
 const BASELINE_DATE = "2026-05-21";
-const CACHE_VERSION = "20260819h";
+const CACHE_VERSION = "20260819i";
 const state = { games: [], visible: [] };
 
 const elements = {
@@ -59,13 +59,21 @@ function statusLabel(game) {
 
 function fullTrendText(trend) {
   const sections = trend.sections;
-  return [
+  const items = [
     "上线后发展：" + sections.development,
     "榜位走向：" + sections.rankPath,
     "关键转折：" + sections.turningPoints,
     "主力素材：" + sections.creative,
     "后续观察：" + sections.watch,
-  ].join(" ");
+  ];
+  if (trend.sourceAudit) items.push("素材核验：" + sourceAuditText(trend.sourceAudit));
+  return items.join(" ");
+}
+
+function sourceAuditText(audit) {
+  const labels = (audit.sources || []).map((source) => source.label).join("、");
+  return "状态：" + audit.status + "；可信度：" + audit.confidence + "；" +
+    audit.basis + " 纠偏说明：" + audit.changeReason + " 来源：" + labels + "。";
 }
 
 function trendSummaryHtml(summary) {
@@ -222,8 +230,12 @@ function tooltipHtml(game) {
     ["主力素材", sections.creative],
     ["后续观察", sections.watch],
   ];
+  const sourceItem = game.trend.sourceAudit
+    ? '<section class="trend-tooltip__source"><strong>素材核验</strong><p>' +
+      escapeHtml(sourceAuditText(game.trend.sourceAudit)) + "</p></section>"
+    : "";
   return '<div class="trend-tooltip__head"><span>#' + game.rank + "</span><strong>" + escapeHtml(game.gameName) + "</strong></div>" +
-    items.map(([label, text]) => '<section><strong>' + label + '</strong><p>' + escapeHtml(text) + "</p></section>").join("");
+    items.map(([label, text]) => '<section><strong>' + label + '</strong><p>' + escapeHtml(text) + "</p></section>").join("") + sourceItem;
 }
 
 function placeTooltip(clientX, clientY, anchor) {
