@@ -7,7 +7,7 @@
     <meta name="color-scheme" content="light" />
     <title>Google Play 美国区策略游戏畅销榜 TOP60</title>
     <link rel="stylesheet" href="styles.css" />
-    <script defer src="app.js"></script>
+    <script defer src="app.js?v=20260819b"></script>
   </head>
   <body>
     <header class="topbar">
@@ -25,7 +25,7 @@
         <div class="hero-copy">
           <p class="eyebrow">GOOGLE PLAY · STRATEGY · TOP GROSSING</p>
           <h1>美国区策略游戏<br />畅销榜 TOP60</h1>
-          <p class="hero-description">追踪排名、玩法类型、买量关键词、素材方向与最终公司归属。新上榜和近三月飙升产品独立标色，适合发行与市场团队日常扫榜。</p>
+          <p class="hero-description">追踪排名、玩法类型、买量关键词、素材方向与最终公司归属。近三个月新上榜和近三个月快速飙升产品独立标色，适合发行与市场团队日常扫榜。</p>
           <div class="date-pill"><span>更新日期</span><strong data-date>2026-08-19</strong><i>北京时间</i></div>
         </div>
         <div class="leader-card" aria-live="polite">
@@ -40,17 +40,17 @@
 
       <section class="stats" aria-label="榜单概览">
         <article><span>收录游戏</span><strong id="stat-total">60</strong><small>TOP GROSSING</small></article>
-        <article><span>重点观察</span><strong id="stat-flagged">—</strong><small>近三月变化</small></article>
-        <article><span>新上榜</span><strong id="stat-new">—</strong><small class="green">NEW ENTRY</small></article>
-        <article><span>快速飙升</span><strong id="stat-surge">—</strong><small class="orange">SURGING</small></article>
+        <article><span>重点观察</span><strong id="stat-flagged">—</strong><small>近三个月变化</small></article>
+        <article><span>近三个月新上榜</span><strong id="stat-new">—</strong><small class="green">NEW ENTRY</small></article>
+        <article><span>近三个月快速飙升</span><strong id="stat-surge">—</strong><small class="orange">SURGING</small></article>
       </section>
 
       <section class="tracker" aria-labelledby="tracker-heading">
         <div class="section-heading">
           <div><p class="eyebrow">LIVE RANKING TABLE</p><h2 id="tracker-heading">榜单明细</h2></div>
           <div class="legend" aria-label="行颜色图例">
-            <span><i class="legend-dot new"></i>新上榜</span>
-            <span><i class="legend-dot surge"></i>近三月飙升</span>
+            <span><i class="legend-dot new"></i>近三个月新上榜</span>
+            <span><i class="legend-dot surge"></i>近三个月快速飙升</span>
             <span><i class="legend-dot normal"></i>常规在榜</span>
           </div>
         </div>
@@ -58,7 +58,7 @@
         <div class="toolbar">
           <label class="search-field"><span>搜索</span><input id="search" type="search" placeholder="游戏、公司、关键词或素材方向" /></label>
           <label><span>游戏类型</span><select id="genre"><option value="all">全部类型</option></select></label>
-          <label><span>榜单状态</span><select id="status"><option value="all">全部状态</option><option value="new">新上榜</option><option value="surge">近三月飙升</option><option value="normal">常规在榜</option></select></label>
+          <label><span>榜单状态</span><select id="status"><option value="all">全部状态</option><option value="new">近三个月新上榜</option><option value="surge">近三个月快速飙升</option><option value="normal">常规在榜</option></select></label>
           <label><span>排序</span><select id="sort"><option value="rank">按畅销排名</option><option value="release">按上架时间</option><option value="installs">按近30日新增</option></select></label>
           <div class="toolbar-actions"><button class="button ghost" id="reset" type="button">重置</button><button class="button primary" id="export" type="button">导出当前结果</button></div>
         </div>
@@ -77,7 +77,7 @@
         <div class="method-grid">
           <article><span>01</span><strong>榜单范围</strong><p>Google Play 美国区 Strategy 类目畅销榜，按当日排名收录 TOP60。</p></article>
           <article><span>02</span><strong>公司溯源</strong><p>店铺名称 → 法律主体/发行品牌 → 最终集团；无法确认时明确标注“疑似”。</p></article>
-          <article><span>03</span><strong>变化标记</strong><p>结合上架时间、近期新增与排名变化，识别近三月新上榜或快速飙升产品。</p></article>
+          <article><span>03</span><strong>变化标记</strong><p>结合上架时间、近期新增与排名变化，识别近三个月内的新上榜或快速飙升产品。</p></article>
         </div>
       </section>
 
