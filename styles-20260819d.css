@@ -56,8 +56,15 @@
 .trend-tooltip section { padding: 11px 0; border-top: 1px solid rgba(255,255,255,.09); }
 .trend-tooltip section > strong { display: block; color: #a9c4ff; font-size: 10px; letter-spacing: .08em; }
 .trend-tooltip section p { margin: 6px 0 0; color: #d7dfec; font-size: 12px; line-height: 1.7; }
+.trend-tooltip section.trend-tooltip__source { margin-top: 4px; padding: 12px; border: 1px solid rgba(169,196,255,.18); border-radius: 10px; background: rgba(169,196,255,.06); }
+.trend-tooltip section.trend-tooltip__source > strong { color: var(--lime); }
+.trend-tooltip section.trend-tooltip__source p { color: #b8c5d8; font-size: 10px; line-height: 1.65; }
+.method-grid article.source-policy { grid-column: 1 / -1; }
+.method-grid article.source-policy a { color: var(--lime); font-size: 11px; font-weight: 750; text-decoration: none; }
+.method-grid article.source-policy a:hover { text-decoration: underline; }
 .status-normal .rank-cell small { color: #667085; }
 
 @media (max-width: 720px) {
   .baseline-notice { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .method-grid article.source-policy { grid-column: auto; }
 }
