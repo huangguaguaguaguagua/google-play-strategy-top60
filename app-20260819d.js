@@ -2,7 +2,7 @@
 
 const DATA_DATE = "2026-08-19";
 const BASELINE_DATE = "2026-05-21";
-const CACHE_VERSION = "20260819d";
+const CACHE_VERSION = "20260819e";
 const state = { games: [], visible: [] };
 
 const elements = {
@@ -52,17 +52,17 @@ function parseInstalls(value = "0") {
 
 function statusLabel(game) {
   const comparison = game.comparison90d;
-  if (comparison.status === "new") return "90D NEW";
-  if (comparison.status === "surge") return "90D ↑" + comparison.delta;
-  if (comparison.status === "normal") return "常规";
-  return "待核验";
+  if (comparison.status === "new") return "近3月新";
+  if (comparison.status === "surge") return "近3月 ↑" + comparison.delta;
+  return "常规";
 }
 
 function fullTrendText(trend) {
   const sections = trend.sections;
   return [
-    "阶段轨迹：" + sections.trajectory,
-    "90天对比：" + sections.comparison,
+    "上线后发展：" + sections.development,
+    "榜位走向：" + sections.rankPath,
+    "关键转折：" + sections.turningPoints,
     "主力素材：" + sections.creative,
     "后续观察：" + sections.watch,
   ].join(" ");
@@ -81,7 +81,7 @@ function mergeData(rawGames, enrichment, assets, trends) {
     const assetPrefix = padRank(game.assetRank ?? game.rank);
     const trend = trends[key] ?? {
       summary: game.note || "趋势资料待补充。",
-      sections: { trajectory: "待补充。", comparison: "待补充。", creative: "待补充。", watch: "待补充。" },
+      sections: { development: "待补充。", rankPath: "待补充。", turningPoints: "待补充。", creative: "待补充。", watch: "待补充。" },
     };
     return {
       ...game,
@@ -119,10 +119,9 @@ function renderLeader() {
 function renderStats() {
   const count = (status) => state.games.filter((game) => game.status === status).length;
   document.querySelector("#stat-total").textContent = state.games.length;
-  document.querySelector("#stat-normal").textContent = count("normal");
+  document.querySelector("#stat-normal").textContent = count("normal") + count("pending");
   document.querySelector("#stat-new").textContent = count("new");
   document.querySelector("#stat-surge").textContent = count("surge");
-  document.querySelector("#pending-count").textContent = count("pending");
   elements.totalCount.textContent = state.games.length;
 }
 
@@ -149,7 +148,9 @@ function getVisibleGames() {
     ].join(" ").toLowerCase();
     return (!query || haystack.includes(query))
       && (elements.genre.value === "all" || game.genre.startsWith(elements.genre.value))
-      && (elements.status.value === "all" || game.status === elements.status.value);
+      && (elements.status.value === "all"
+        || (elements.status.value === "normal" && ["normal", "pending"].includes(game.status))
+        || game.status === elements.status.value);
   });
   return filtered.sort((a, b) => {
     if (elements.sort.value === "release") return b.releaseDateIso.localeCompare(a.releaseDateIso);
@@ -161,8 +162,8 @@ function getVisibleGames() {
 function rowHtml(game) {
   const confidenceClass = game.company.confidence.includes("疑似") ? " suspected" : "";
   const secondary = game.recentInstalls30d ? "近30日新增 " + game.recentInstalls30d : game.developer;
-  const baseline = game.comparison90d.baselineRank ? "#" + game.comparison90d.baselineRank : "—";
-  return '<tr class="status-' + game.status + '">' +
+  const displayStatus = game.status === "pending" ? "normal" : game.status;
+  return '<tr class="status-' + displayStatus + '">' +
     '<td class="rank-cell"><span>' + padRank(game.rank) + '</span><small>' + escapeHtml(statusLabel(game)) + "</small></td>" +
     '<td><div class="game-cell"><img src="' + escapeHtml(game.icon) + '" alt="' + escapeHtml(game.gameName) +
       ' icon" loading="lazy" /><div><strong>' + escapeHtml(game.gameName) + "</strong><small>" +
@@ -178,7 +179,7 @@ function rowHtml(game) {
       escapeHtml(game.company.confidence) + '</span><a href="' + escapeHtml(safeUrl(game.company.source)) +
       '" target="_blank" rel="noreferrer" title="' + escapeHtml(game.company.basis) +
       '">归属依据 ↗</a></div></td>' +
-    '<td class="date-cell">' + escapeHtml(game.releaseDateIso) + '<small>90天前 ' + escapeHtml(baseline) + "</small></td>" +
+    '<td class="date-cell">' + escapeHtml(game.releaseDateIso) + '</td>' +
     '<td class="note-cell"><button class="note-summary" type="button" data-rank="' + game.rank +
       '" aria-describedby="trend-tooltip">' + escapeHtml(game.trend.summary) + "</button></td>" +
     '<td><a class="store-link" href="' + escapeHtml(safeUrl(game.storeUrl)) +
@@ -198,8 +199,9 @@ function renderTable() {
 function tooltipHtml(game) {
   const sections = game.trend.sections;
   const items = [
-    ["阶段轨迹", sections.trajectory],
-    ["90天榜位对比", sections.comparison],
+    ["上线后发展", sections.development],
+    ["榜位走向", sections.rankPath],
+    ["关键转折", sections.turningPoints],
     ["主力素材", sections.creative],
     ["后续观察", sections.watch],
   ];
@@ -256,10 +258,9 @@ function csvEscape(value) {
 }
 
 function exportCsv() {
-  const header = ["排名", "90天前排名", "90天状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", "Google Play 链接", "趋势摘要", "趋势全文"];
+  const header = ["排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", "Google Play 链接", "趋势摘要", "趋势全文"];
   const rows = state.visible.map((game) => [
     game.rank,
-    game.comparison90d.baselineRank || "",
     statusLabel(game),
     game.gameName,
     game.genre,
