@@ -13,8 +13,7 @@
   line-height: 1.65;
 }
 .baseline-notice strong { color: #253b68; }
-.baseline-notice .pending-copy { flex: 0 0 auto; color: #6941c6; font-weight: 750; }
-.date-cell small { display: block; margin-top: 6px; color: #98a2b3; font-size: 9px; }
+.date-cell { white-space: nowrap; }
 .note-cell { width: 360px; max-width: 360px; padding-block: 9px; }
 .note-summary {
   width: 100%;
@@ -55,11 +54,7 @@
 .trend-tooltip section > strong { display: block; color: #a9c4ff; font-size: 10px; letter-spacing: .08em; }
 .trend-tooltip section p { margin: 6px 0 0; color: #d7dfec; font-size: 12px; line-height: 1.7; }
 .status-normal .rank-cell small { color: #667085; }
-.status-pending .rank-cell small { color: #6941c6; }
-.status-pending td:first-child { box-shadow: inset 2px 0 #c7b9ef; }
-.legend-dot.pending { background: #8b5cf6; }
 
 @media (max-width: 720px) {
   .baseline-notice { align-items: flex-start; flex-direction: column; gap: 6px; }
-  .baseline-notice .pending-copy { flex: auto; }
 }
