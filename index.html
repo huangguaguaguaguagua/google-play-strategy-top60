@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Google Play 美国区策略游戏畅销榜 TOP60：排名、玩法、素材、公司归属与趋势跟踪。" />
+    <meta name="color-scheme" content="light" />
+    <title>Google Play 美国区策略游戏畅销榜 TOP60</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="返回顶部">
+          <span class="brand-mark">GP</span>
+          <span><strong>Strategy Pulse</strong><small>US MARKET TRACKER</small></span>
+        </a>
+        <div class="header-meta"><span class="live-dot" aria-hidden="true"></span>每日跟踪 · 美国区</div>
+      </div>
+    </header>
+
+    <main class="page-shell" id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">GOOGLE PLAY · STRATEGY · TOP GROSSING</p>
+          <h1>美国区策略游戏<br />畅销榜 TOP60</h1>
+          <p class="hero-description">追踪排名、玩法类型、买量关键词、素材方向与最终公司归属。新上榜和近三月飙升产品独立标色，适合发行与市场团队日常扫榜。</p>
+          <div class="date-pill"><span>榜单日期</span><strong data-date>2026-08-18</strong><i>LA time</i></div>
+        </div>
+        <div class="leader-card" aria-live="polite">
+          <div class="leader-label"><span>#1</span> CURRENT LEADER</div>
+          <div class="leader-game" id="leader-game"></div>
+          <div class="leader-keywords" id="leader-keywords">正在加载…</div>
+          <div class="rank-bars" aria-hidden="true">
+            <span style="height:42%"></span><span style="height:68%"></span><span style="height:54%"></span><span class="active" style="height:92%"></span><span style="height:74%"></span><span style="height:61%"></span><span style="height:78%"></span><span style="height:52%"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="榜单概览">
+        <article><span>收录游戏</span><strong id="stat-total">60</strong><small>TOP GROSSING</small></article>
+        <article><span>重点观察</span><strong id="stat-flagged">—</strong><small>近三月变化</small></article>
+        <article><span>新上榜</span><strong id="stat-new">—</strong><small class="green">NEW ENTRY</small></article>
+        <article><span>快速飙升</span><strong id="stat-surge">—</strong><small class="orange">SURGING</small></article>
+      </section>
+
+      <section class="tracker" aria-labelledby="tracker-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">LIVE RANKING TABLE</p><h2 id="tracker-heading">榜单明细</h2></div>
+          <div class="legend" aria-label="行颜色图例">
+            <span><i class="legend-dot new"></i>新上榜</span>
+            <span><i class="legend-dot surge"></i>近三月飙升</span>
+            <span><i class="legend-dot normal"></i>常规在榜</span>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-field"><span>搜索</span><input id="search" type="search" placeholder="游戏、公司、关键词或素材方向" /></label>
+          <label><span>游戏类型</span><select id="genre"><option value="all">全部类型</option></select></label>
+          <label><span>榜单状态</span><select id="status"><option value="all">全部状态</option><option value="new">新上榜</option><option value="surge">近三月飙升</option><option value="normal">常规在榜</option></select></label>
+          <label><span>排序</span><select id="sort"><option value="rank">按畅销排名</option><option value="release">按上架时间</option><option value="installs">按近30日新增</option></select></label>
+          <div class="toolbar-actions"><button class="button ghost" id="reset" type="button">重置</button><button class="button primary" id="export" type="button">导出当前结果</button></div>
+        </div>
+        <div class="result-line"><span>显示 <strong id="result-count">0</strong> / <span id="total-count">60</span> 款</span><span>点击商店图可查看大图</span></div>
+
+        <div class="table-frame">
+          <table>
+            <thead><tr><th>排名</th><th>游戏</th><th>类型 / 关键词</th><th>商店图</th><th>最终公司归属</th><th>上架时间</th><th>趋势与主力素材</th><th>商店</th></tr></thead>
+            <tbody id="ranking-body"><tr><td colspan="8" class="empty-state">正在加载榜单数据…</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="methodology">
+        <div><p class="eyebrow">METHODOLOGY</p><h2>数据口径</h2></div>
+        <div class="method-grid">
+          <article><span>01</span><strong>榜单范围</strong><p>Google Play 美国区 Strategy 类目畅销榜，按当日排名收录 TOP60。</p></article>
+          <article><span>02</span><strong>公司溯源</strong><p>店铺名称 → 法律主体/发行品牌 → 最终集团；无法确认时明确标注“疑似”。</p></article>
+          <article><span>03</span><strong>变化标记</strong><p>结合上架时间、近期新增与排名变化，识别近三月新上榜或快速飙升产品。</p></article>
+        </div>
+      </section>
+
+      <footer><strong>STRATEGY PULSE</strong><span>Google Play US Strategy · TOP60 · Updated <span data-date>2026-08-18</span></span></footer>
+    </main>
+
+    <div class="modal" id="image-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-card">
+        <button class="modal-close" id="modal-close" type="button" aria-label="关闭大图">×</button>
+        <img id="modal-image" alt="" />
+        <div><span id="modal-rank"></span><strong id="modal-title"></strong><p id="modal-keywords"></p></div>
+      </div>
+    </div>
+  </body>
+</html>
