@@ -1,0 +1,311 @@
+{
+  "store": "ios",
+  "market": "US",
+  "device": "iPhone",
+  "category": "Games > Strategy > Top Grossing",
+  "date": "2026-08-19",
+  "sourceUpdated": "2026-08-19T04:16:38-07:00",
+  "source": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
+  "games": [
+    {
+      "rank": 1,
+      "appId": "1094591345",
+      "gameName": "Pokémon GO"
+    },
+    {
+      "rank": 2,
+      "appId": "6443575749",
+      "gameName": "Whiteout Survival"
+    },
+    {
+      "rank": 3,
+      "appId": "6739554056",
+      "gameName": "Kingshot"
+    },
+    {
+      "rank": 4,
+      "appId": "6448786147",
+      "gameName": "Last War:Survival"
+    },
+    {
+      "rank": 5,
+      "appId": "6503272652",
+      "gameName": "Last Z: Survival Shooter"
+    },
+    {
+      "rank": 6,
+      "appId": "529479190",
+      "gameName": "Clash of Clans"
+    },
+    {
+      "rank": 7,
+      "appId": "6670441558",
+      "gameName": "Dark War:Survival"
+    },
+    {
+      "rank": 8,
+      "appId": "1274132545",
+      "gameName": "Total Battle: War Strategy"
+    },
+    {
+      "rank": 9,
+      "appId": "1098157959",
+      "gameName": "Evony"
+    },
+    {
+      "rank": 10,
+      "appId": "1642607669",
+      "gameName": "Game of Thrones: Dragonfire"
+    },
+    {
+      "rank": 11,
+      "appId": "1496227521",
+      "gameName": "Magic: The Gathering Arena"
+    },
+    {
+      "rank": 12,
+      "appId": "1330123889",
+      "gameName": "PUBG MOBILE"
+    },
+    {
+      "rank": 13,
+      "appId": "1376515087",
+      "gameName": "Age of Origins:Tower Defense"
+    },
+    {
+      "rank": 14,
+      "appId": "1053012308",
+      "gameName": "Clash Royale"
+    },
+    {
+      "rank": 15,
+      "appId": "6756989323",
+      "gameName": "Last Asylum: Plague"
+    },
+    {
+      "rank": 16,
+      "appId": "6744812012",
+      "gameName": "X-Clash: Survival Challenge"
+    },
+    {
+      "rank": 17,
+      "appId": "1517980891",
+      "gameName": "Puzzles & Survival"
+    },
+    {
+      "rank": 18,
+      "appId": "329218549",
+      "gameName": "Chess.com - Play and Learn"
+    },
+    {
+      "rank": 19,
+      "appId": "6762268182",
+      "gameName": "Z Route: Redemption"
+    },
+    {
+      "rank": 20,
+      "appId": "1487451427",
+      "gameName": "Infinity Kingdom"
+    },
+    {
+      "rank": 21,
+      "appId": "6746328263",
+      "gameName": "Castle Busters"
+    },
+    {
+      "rank": 22,
+      "appId": "1354260888",
+      "gameName": "Rise of Kingdoms"
+    },
+    {
+      "rank": 23,
+      "appId": "921022358",
+      "gameName": "Star Wars™: Galaxy of Heroes"
+    },
+    {
+      "rank": 24,
+      "appId": "6446389130",
+      "gameName": "Puzzles & Chaos: Frozen Castle"
+    },
+    {
+      "rank": 25,
+      "appId": "6738109752",
+      "gameName": "Tiles Survive!"
+    },
+    {
+      "rank": 26,
+      "appId": "6746636289",
+      "gameName": "Forge Master – Idle RPG"
+    },
+    {
+      "rank": 27,
+      "appId": "6738469826",
+      "gameName": "Lands of Jail"
+    },
+    {
+      "rank": 28,
+      "appId": "6447612873",
+      "gameName": "Sea War: Uboat Raid"
+    },
+    {
+      "rank": 29,
+      "appId": "1662335371",
+      "gameName": "Raid Rush: Tower Defense TD"
+    },
+    {
+      "rank": 30,
+      "appId": "6737595599",
+      "gameName": "Foundation: Galactic Frontier"
+    },
+    {
+      "rank": 31,
+      "appId": "1071744151",
+      "gameName": "War and Order"
+    },
+    {
+      "rank": 32,
+      "appId": "6741568655",
+      "gameName": "Mobile Legends: Bang Bang.US"
+    },
+    {
+      "rank": 33,
+      "appId": "1035712810",
+      "gameName": "Game of Thrones: Conquest ™"
+    },
+    {
+      "rank": 34,
+      "appId": "6755173751",
+      "gameName": "Evo Defense"
+    },
+    {
+      "rank": 35,
+      "appId": "6757350661",
+      "gameName": "Police Chief"
+    },
+    {
+      "rank": 36,
+      "appId": "1562817072",
+      "gameName": "Mob Control"
+    },
+    {
+      "rank": 37,
+      "appId": "1480616990",
+      "gameName": "League of Legends: Wild Rift"
+    },
+    {
+      "rank": 38,
+      "appId": "6759788962",
+      "gameName": "Lordrush"
+    },
+    {
+      "rank": 39,
+      "appId": "1479198816",
+      "gameName": "Top War: Battle Game"
+    },
+    {
+      "rank": 40,
+      "appId": "6757908157",
+      "gameName": "JoJo's Bizarre Adventure: GS"
+    },
+    {
+      "rank": 41,
+      "appId": "1371565796",
+      "gameName": "RAID: Shadow Legends"
+    },
+    {
+      "rank": 42,
+      "appId": "6476261995",
+      "gameName": "Age of Empires Mobile"
+    },
+    {
+      "rank": 43,
+      "appId": "1592081003",
+      "gameName": "MARVEL SNAP - Hero Card Game"
+    },
+    {
+      "rank": 44,
+      "appId": "1554247785",
+      "gameName": "Yu-Gi-Oh! Master Duel"
+    },
+    {
+      "rank": 45,
+      "appId": "1599937506",
+      "gameName": "Warhammer 40,000: Tacticus ™"
+    },
+    {
+      "rank": 46,
+      "appId": "850057092",
+      "gameName": "The Battle Cats"
+    },
+    {
+      "rank": 47,
+      "appId": "1181774280",
+      "gameName": "Fire Emblem Heroes"
+    },
+    {
+      "rank": 48,
+      "appId": "852912420",
+      "gameName": "Summoners War X Frieren"
+    },
+    {
+      "rank": 49,
+      "appId": "1510997559",
+      "gameName": "Supremacy: World War 3"
+    },
+    {
+      "rank": 50,
+      "appId": "1071976327",
+      "gameName": "Lords Mobile x Transformers"
+    },
+    {
+      "rank": 51,
+      "appId": "6450953550",
+      "gameName": "Top Heroes: Kingdom Saga"
+    },
+    {
+      "rank": 52,
+      "appId": "1575590830",
+      "gameName": "The Tower - Idle Tower Defense"
+    },
+    {
+      "rank": 53,
+      "appId": "1241932094",
+      "gameName": "Last Day on Earth: Survival"
+    },
+    {
+      "rank": 54,
+      "appId": "6740189002",
+      "gameName": "Galaxy Defense: Fortress TD"
+    },
+    {
+      "rank": 55,
+      "appId": "6767834940",
+      "gameName": "Top Lords"
+    },
+    {
+      "rank": 56,
+      "appId": "6761893238",
+      "gameName": "Top Force: Commander"
+    },
+    {
+      "rank": 57,
+      "appId": "1342290011",
+      "gameName": "Last Shelter: Survival"
+    },
+    {
+      "rank": 58,
+      "appId": "1529067679",
+      "gameName": "Warpath: Ace Shooter"
+    },
+    {
+      "rank": 59,
+      "appId": "1465860096",
+      "gameName": "Kiss of War"
+    },
+    {
+      "rank": 60,
+      "appId": "6743368869",
+      "gameName": "Draft Showdown"
+    }
+  ]
+}
