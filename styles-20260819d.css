@@ -70,6 +70,12 @@
     linear-gradient(130deg, #0b1120 0%, #17233d 62%, #0a1020 100%);
 }
 .date-cell { white-space: nowrap; }
+.game-cell small.cross-rank {
+  margin-top: 2px;
+  color: #2563eb;
+  font-weight: 750;
+}
+[data-store="ios"] .game-cell small.cross-rank { color: #3b82f6; }
 .note-cell { width: 360px; max-width: 360px; padding-block: 9px; }
 .note-summary {
   width: 100%;
