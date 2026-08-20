@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20260820a";
+const CACHE_VERSION = "20260820b";
 const STORE_CONFIGS = {
   googlePlay: {
     key: "googlePlay",
@@ -19,6 +19,8 @@ const STORE_CONFIGS = {
     games: "data/games-20260820.json",
     enrichment: "data/enrichment-20260820.json",
     trends: "data/trends-20260820.json",
+    counterpartGames: "data/ios-games-20260820.json",
+    counterpartRankLabel: "iOS",
     assetManifest: "assets/manifest.json",
     linkHeader: "Google Play 链接",
     csvSlug: "google-play-us-strategy-top60",
@@ -41,6 +43,8 @@ const STORE_CONFIGS = {
     games: "data/ios-games-20260820.json",
     enrichment: "data/ios-enrichment-20260820.json",
     trends: "data/ios-trends-20260820.json",
+    counterpartGames: "data/games-20260820.json",
+    counterpartRankLabel: "Google",
     assetManifest: "assets/ios-manifest.json",
     linkHeader: "App Store 链接",
     csvSlug: "apple-app-store-us-iphone-strategy-top60",
@@ -101,6 +105,27 @@ function parseInstalls(value = "0") {
   return number;
 }
 
+function productKey(name) {
+  const normalized = String(name ?? "")
+    .normalize("NFKD")
+    .toLowerCase()
+    .replaceAll("™", "")
+    .replaceAll("®", "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+  const aliases = {
+    "last war survival game": "last war survival",
+    "evony the king s return": "evony",
+    "rise of kingdoms lost crusade": "rise of kingdoms",
+    "age of origins tower defense": "age of origins",
+    "forge master idle rpg": "forge master",
+    "marvel snap hero strategy ccg": "marvel snap",
+    "marvel snap hero card game": "marvel snap",
+    "top force commander": "top force",
+  };
+  return aliases[normalized] || normalized;
+}
+
 function statusLabel(game) {
   const comparison = game.comparison90d || {};
   if (comparison.status === "new") return "近3月新";
@@ -150,7 +175,8 @@ function trendSummaryHtml(summary) {
   ].map((section) => "<span>" + escapeHtml(section) + "</span>").join("");
 }
 
-function mergeData(rawGames, enrichment, assets, trends) {
+function mergeData(rawGames, enrichment, assets, trends, counterpartGames, counterpartRankLabel) {
+  const counterpartByProduct = new Map(counterpartGames.map((game) => [productKey(game.gameName), game]));
   return rawGames.map((game) => {
     const key = String(game.rank);
     const company = enrichment.productCompaniesByRank?.[key] ?? {
@@ -165,10 +191,13 @@ function mergeData(rawGames, enrichment, assets, trends) {
       summary: game.note || "趋势资料待补充。",
       sections: { development: "待补充。", rankPath: "待补充。", turningPoints: "待补充。", creative: "待补充。", watch: "待补充。" },
     };
+    const counterpart = counterpartByProduct.get(productKey(game.gameName));
     return {
       ...game,
       company,
       trend,
+      counterpartRank: counterpart?.rank ?? null,
+      counterpartRankLabel,
       status: game.comparison90d?.status || "pending",
       icon: game.iconData || assets[assetPrefix + "_icon"],
       storeImage: game.storeImageData || assets[assetPrefix + "_store"],
@@ -197,7 +226,9 @@ async function loadStoreData(storeKey) {
     fetchJson(storeConfig.enrichment, "溯源数据"),
     loadAssets(storeConfig),
     fetchJson(storeConfig.trends, "趋势数据"),
-  ]).then(([rawGames, enrichment, assets, trends]) => mergeData(rawGames, enrichment, assets, trends));
+    fetchJson(storeConfig.counterpartGames, "跨商店排名数据"),
+  ]).then(([rawGames, enrichment, assets, trends, counterpartGames]) =>
+    mergeData(rawGames, enrichment, assets, trends, counterpartGames, storeConfig.counterpartRankLabel));
   state.datasets[storeKey] = promise;
   try {
     return await promise;
@@ -286,12 +317,15 @@ function rowHtml(game) {
   const storeConfig = config();
   const confidenceClass = game.company.confidence.includes("疑似") ? " suspected" : "";
   const secondary = game.recentInstalls30d ? "近30日新增 " + game.recentInstalls30d : game.developer;
+  const counterpartRank = game.counterpartRank === null
+    ? "（无" + game.counterpartRankLabel + "排名）"
+    : "（" + game.counterpartRankLabel + "排名 #" + game.counterpartRank + "）";
   const displayStatus = game.status === "pending" ? "normal" : game.status;
   return '<tr class="status-' + displayStatus + '">' +
     '<td class="rank-cell"><span>' + padRank(game.rank) + '</span><small>' + escapeHtml(statusLabel(game)) + "</small></td>" +
     '<td><div class="game-cell"><img src="' + escapeHtml(game.icon) + '" alt="' + escapeHtml(game.gameName) +
       ' icon" loading="lazy" /><div><strong>' + escapeHtml(game.gameName) + "</strong><small>" +
-      escapeHtml(secondary) + "</small></div></div></td>" +
+      escapeHtml(secondary) + '</small><small class="cross-rank">' + escapeHtml(counterpartRank) + "</small></div></div></td>" +
     '<td class="taxonomy-cell"><strong>' + escapeHtml(game.genre) + "</strong><p>" + escapeHtml(game.keywords) + "</p></td>" +
     '<td><button class="shot-button" type="button" data-rank="' + game.rank + '" aria-label="放大查看 ' +
       escapeHtml(game.gameName) + ' 商店图"><img src="' + escapeHtml(game.storeImage) + '" alt="' +
@@ -380,10 +414,11 @@ function csvEscape(value) {
 
 function exportCsv() {
   const storeConfig = config();
-  const header = ["商店", "排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", storeConfig.linkHeader, "趋势摘要", "趋势全文"];
+  const header = ["商店", "排名", storeConfig.counterpartRankLabel + "排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", storeConfig.linkHeader, "趋势摘要", "趋势全文"];
   const rows = state.visible.map((game) => [
     storeConfig.storeName,
     game.rank,
+    game.counterpartRank ?? "无排名",
     statusLabel(game),
     game.gameName,
     game.genre,
