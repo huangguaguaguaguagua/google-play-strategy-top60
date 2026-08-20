@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20260819m";
+const CACHE_VERSION = "20260820a";
 const STORE_CONFIGS = {
   googlePlay: {
     key: "googlePlay",
@@ -14,11 +14,11 @@ const STORE_CONFIGS = {
     title: "Google Play 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · Android",
     footer: "Google Play US Strategy · TOP60 · Updated 2026-08-19",
-    method: "Google Play 美国区 Strategy 畅销榜，按北京时间对应的当日公开榜单收录TOP60。",
+    method: "Google Play 美国区 Strategy 畅销榜，收录公开源完整TOP60；源头当前仍标注 Last updated: August 19, 2026，因此保留真实榜单日期。",
     baselineCopy: "<strong>状态窗口：</strong>2026-05-21 → 2026-08-19。页面仅用单独颜色突出“近三个月新上榜”和“近三个月飙升”，其余游戏统一采用常规展示。",
-    games: "data/games-20260819d.json",
-    enrichment: "data/enrichment-20260819d.json",
-    trends: "data/trends-20260819d.json",
+    games: "data/games-20260820.json",
+    enrichment: "data/enrichment-20260820.json",
+    trends: "data/trends-20260820.json",
     assetManifest: "assets/manifest.json",
     linkHeader: "Google Play 链接",
     csvSlug: "google-play-us-strategy-top60",
@@ -30,17 +30,17 @@ const STORE_CONFIGS = {
     mark: "AS",
     storeName: "App Store",
     platform: "iPhone · iOS",
-    date: "2026-08-19",
-    baselineDate: "2026-05-21",
+    date: "2026-08-20",
+    baselineDate: "2026-05-22",
     eyebrow: "APPLE APP STORE · iPHONE · STRATEGY · TOP GROSSING",
     title: "App Store 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · iPhone",
-    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-08-19",
+    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-08-20",
     method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-05-21 → 2026-08-19。iOS独立历史从本期开始建档；因缺少2026-05-21同口径快照，本期全部按常规样式展示，不误判“新上榜”或“飙升”。积累到完整90天后自动分类。",
-    games: "data/ios-games-20260819.json",
-    enrichment: "data/ios-enrichment-20260819.json",
-    trends: "data/ios-trends-20260819.json",
+    baselineCopy: "<strong>状态窗口：</strong>2026-05-22 → 2026-08-20。iOS独立历史从2026-08-19开始建档；因缺少2026-05-22同口径快照，本期全部按常规样式展示，不误判“新上榜”或“飙升”。积累到完整90天后自动分类。",
+    games: "data/ios-games-20260820.json",
+    enrichment: "data/ios-enrichment-20260820.json",
+    trends: "data/ios-trends-20260820.json",
     assetManifest: "assets/ios-manifest.json",
     linkHeader: "App Store 链接",
     csvSlug: "apple-app-store-us-iphone-strategy-top60",
