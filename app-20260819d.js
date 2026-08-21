@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20260820b";
+const CACHE_VERSION = "20260821a";
 const STORE_CONFIGS = {
   googlePlay: {
     key: "googlePlay",
@@ -8,18 +8,18 @@ const STORE_CONFIGS = {
     mark: "GP",
     storeName: "Google Play",
     platform: "Android",
-    date: "2026-08-19",
-    baselineDate: "2026-05-21",
+    date: "2026-08-20",
+    baselineDate: "2026-05-22",
     eyebrow: "GOOGLE PLAY · ANDROID · STRATEGY · TOP GROSSING",
     title: "Google Play 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · Android",
-    footer: "Google Play US Strategy · TOP60 · Updated 2026-08-19",
-    method: "Google Play 美国区 Strategy 畅销榜，收录公开源完整TOP60；源头当前仍标注 Last updated: August 19, 2026，因此保留真实榜单日期。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-05-21 → 2026-08-19。页面仅用单独颜色突出“近三个月新上榜”和“近三个月飙升”，其余游戏统一采用常规展示。",
-    games: "data/games-20260820.json",
-    enrichment: "data/enrichment-20260820.json",
-    trends: "data/trends-20260820.json",
-    counterpartGames: "data/ios-games-20260820.json",
+    footer: "Google Play US Strategy · TOP60 · Updated 2026-08-20",
+    method: "Google Play 美国区 Strategy 畅销榜，收录公开源完整TOP60；源头 Last updated: August 20, 2026，页面保留真实榜单日期。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-05-22 → 2026-08-20。缺少2026-05-22同口径完整TOP60快照，本期统一按常规在榜展示，不误判“新上榜”或“飙升”。",
+    games: "data/games-20260821.json",
+    enrichment: "data/enrichment-20260821.json",
+    trends: "data/trends-20260821.json",
+    counterpartGames: "data/ios-games-20260821.json",
     counterpartRankLabel: "iOS",
     assetManifest: "assets/manifest.json",
     linkHeader: "Google Play 链接",
@@ -32,18 +32,18 @@ const STORE_CONFIGS = {
     mark: "AS",
     storeName: "App Store",
     platform: "iPhone · iOS",
-    date: "2026-08-20",
-    baselineDate: "2026-05-22",
+    date: "2026-08-21",
+    baselineDate: "2026-05-23",
     eyebrow: "APPLE APP STORE · iPHONE · STRATEGY · TOP GROSSING",
     title: "App Store 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · iPhone",
-    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-08-20",
+    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-08-21",
     method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-05-22 → 2026-08-20。iOS独立历史从2026-08-19开始建档；因缺少2026-05-22同口径快照，本期全部按常规样式展示，不误判“新上榜”或“飙升”。积累到完整90天后自动分类。",
-    games: "data/ios-games-20260820.json",
-    enrichment: "data/ios-enrichment-20260820.json",
-    trends: "data/ios-trends-20260820.json",
-    counterpartGames: "data/games-20260820.json",
+    baselineCopy: "<strong>状态窗口：</strong>2026-05-23 → 2026-08-21。iOS独立历史从2026-08-19开始建档；因缺少2026-05-23同口径快照，本期全部按常规样式展示，不误判“新上榜”或“飙升”。积累到完整90天后自动分类。",
+    games: "data/ios-games-20260821.json",
+    enrichment: "data/ios-enrichment-20260821.json",
+    trends: "data/ios-trends-20260821.json",
+    counterpartGames: "data/games-20260821.json",
     counterpartRankLabel: "Google",
     assetManifest: "assets/ios-manifest.json",
     linkHeader: "App Store 链接",
@@ -154,8 +154,6 @@ function fullTrendText(trend) {
     "主力素材：" + sections.creative,
     "后续观察：" + sections.watch,
   ];
-  if (trend.sourceAudit) items.push("素材核验：" + sourceAuditText(trend.sourceAudit));
-  if (trend.lifecycleAudit) items.push("生命周期核验：" + lifecycleAuditText(trend.lifecycleAudit));
   return items.join(" ");
 }
 
@@ -414,7 +412,7 @@ function csvEscape(value) {
 
 function exportCsv() {
   const storeConfig = config();
-  const header = ["商店", "排名", storeConfig.counterpartRankLabel + "排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", storeConfig.linkHeader, "趋势摘要", "趋势全文"];
+  const header = ["商店", "排名", storeConfig.counterpartRankLabel + "排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", storeConfig.linkHeader, "趋势摘要", "趋势全文", "素材核验", "生命周期核验"];
   const rows = state.visible.map((game) => [
     storeConfig.storeName,
     game.rank,
@@ -429,6 +427,8 @@ function exportCsv() {
     game.storeUrl,
     game.trend.summary,
     fullTrendText(game.trend),
+    game.trend.sourceAudit ? sourceAuditText(game.trend.sourceAudit) : "",
+    game.trend.lifecycleAudit ? lifecycleAuditText(game.trend.lifecycleAudit) : "",
   ]);
   const content = [header, ...rows].map((row) => row.map(csvEscape).join(",")).join("\n");
   const url = URL.createObjectURL(new Blob(["\ufeff", content], { type: "text/csv;charset=utf-8" }));

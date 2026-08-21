@@ -1,0 +1,435 @@
+{
+  "comparisonPolicy": {
+    "store": "Apple App Store",
+    "market": "US",
+    "device": "iPhone",
+    "genre": "Games > Strategy",
+    "baselineDate": "2026-05-21",
+    "currentDate": "2026-08-19",
+    "new": "90天前不在同口径TOP60、当前在TOP60。",
+    "surge": "90天前已在同口径TOP60，当前名次提升超过5位。",
+    "pending": "没有精确的90天前快照时按常规样式展示，不推断新上榜或飙升。"
+  },
+  "productCompaniesByRank": {
+    "1": {
+      "en": "Scopely / Niantic (original developer)",
+      "cn": "Scopely（现运营；Savvy Games Group/PIF旗下）/ Niantic（原开发）",
+      "confidence": "已确认",
+      "basis": "2025年Scopely收购Niantic游戏业务，当前Apple店铺主体已变更为Scopely Explore。",
+      "source": "https://www.scopely.com/en/news/scopely-to-acquire-niantics-games-business"
+    },
+    "2": {
+      "en": "OMNILOJO PTE. LTD. / RiverGame (suspected)",
+      "cn": "疑似北京江娱互动（OMNILOJO 新加坡发行主体/马甲）",
+      "confidence": "疑似",
+      "basis": "Google Play 已确认法律主体为 OMNILOJO PTE. LTD.；多项行业产品分析将 Last Z 归为 RiverGame/江娱互动，但缺少双方官方归属公告，故保留疑似。",
+      "source": "https://www.gamigion.com/300k-a-day-rivergames-last-z-survival-shooter/"
+    },
+    "3": {
+      "en": "Century Games / DianDian Interactive",
+      "cn": "点点互动（Century Games；世纪华通旗下）",
+      "confidence": "已确认",
+      "basis": "Whiteout Survival 为 Century Games 核心产品；点点互动为世纪华通旗下。",
+      "source": "https://www.centurygames.com/"
+    },
+    "4": {
+      "en": "Century Games / DianDian Interactive",
+      "cn": "点点互动（Century Games；世纪华通旗下）",
+      "confidence": "已确认",
+      "basis": "按产品及母公司关系归属，不沿用单一店铺法人。",
+      "source": "https://www.sjhuatong.com/Business/InternetGame.aspx"
+    },
+    "5": {
+      "en": "FirstFun / FUNFLY PTE. LTD.",
+      "cn": "元趣娱乐（FirstFun；Funfly 海外发行主体）",
+      "confidence": "已确认",
+      "basis": "FirstFun 官网披露官方主体为 Funfly Pte. Ltd.，产品归属 FirstFun。",
+      "source": "https://www.firstfun.com/"
+    },
+    "6": {
+      "en": "SCOREWARRIOR LIMITED",
+      "cn": "Scorewarrior（中文暂译：战绩勇士；塞浦路斯法律主体）",
+      "confidence": "主体已确认；未发现更高母公司",
+      "basis": "官网及服务条款均确认开发、发行及运营主体为 SCOREWARRIOR LIMITED；本轮未发现可核验的更高母公司或马甲关系。",
+      "source": "https://totalbattle.com/en/policies/terms_of_service/"
+    },
+    "7": {
+      "en": "Supercell",
+      "cn": "Supercell（中文常译：超级细胞；腾讯控股）",
+      "confidence": "已确认",
+      "basis": "Clash of Clans 为 Supercell 自研运营产品。",
+      "source": "https://supercell.com/en/games/clashofclans/"
+    },
+    "8": {
+      "en": "Top Games Inc. / Qingdao Zhenyou",
+      "cn": "Top Games（主体）/ 青岛震游科技（参与研发）",
+      "confidence": "已确认",
+      "basis": "Top Games 官方确认开发 Evony；中国行业资料显示青岛震游为集团成员并参与研发。",
+      "source": "https://www.baijing.cn/article/39183"
+    },
+    "9": {
+      "en": "RiverGame / Beijing RiverGame Technology",
+      "cn": "北京江娱互动（Omnilojo 马甲发行）",
+      "confidence": "已确认",
+      "basis": "按用户提供的明确行业归属修正；行业产品分析亦直接将 Dark War 归为 RiverGame。",
+      "source": "https://www.gamigion.com/dark-war-survival-by-rivergame-scaled-to-300k-a-day/"
+    },
+    "10": {
+      "en": "Warner Bros. Games Boston / Warner Bros. Discovery",
+      "cn": "华纳兄弟游戏波士顿工作室（华纳兄弟探索集团旗下）",
+      "confidence": "已确认",
+      "basis": "华纳官方资料确认由 Warner Bros. Games Boston 开发；工作室隶属 Warner Bros. Games，并统一追溯至 Warner Bros. Discovery。",
+      "source": "https://careers.wbd.com/global/en/warner-bros-games-boston"
+    },
+    "11": {
+      "en": "Wizards of the Coast / Hasbro",
+      "cn": "威世智（Wizards of the Coast；孩之宝旗下）",
+      "confidence": "已确认",
+      "basis": "产品由威世智开发运营，最终归属孩之宝集团。",
+      "source": "https://company.wizards.com/en"
+    },
+    "12": {
+      "en": "Tencent Games / LIGHTSPEED STUDIOS / KRAFTON",
+      "cn": "腾讯游戏（光子工作室群研发；KRAFTON《PUBG》授权）",
+      "confidence": "已确认",
+      "basis": "不只沿用Tencent Mobile店铺名，按研发与IP授权关系统一。",
+      "source": "https://www.pubgmobile.com/"
+    },
+    "13": {
+      "en": "Camel Games / Beijing Kemu Software",
+      "cn": "北京壳木软件（Camel Games；神州泰岳旗下）",
+      "confidence": "已确认",
+      "basis": "Camel Games 官网与公司资料均将 Age of Origins 列为壳木产品。",
+      "source": "https://www.camelgame.cn/"
+    },
+    "14": {
+      "en": "Supercell",
+      "cn": "Supercell（中文常译：超级细胞；腾讯控股）",
+      "confidence": "已确认",
+      "basis": "Clash Royale 为 Supercell 自研运营产品。",
+      "source": "https://supercell.com/en/games/clashroyale/"
+    },
+    "15": {
+      "en": "Bingchuan Network / 9z Games(HK) (suspected)",
+      "cn": "疑似深圳冰川网络（9z Games(HK)海外发行品牌）",
+      "confidence": "疑似",
+      "basis": "9z Games开发者账号与公开发行数据库归入Bingchuan Network体系，缺少集团官方披露，保留疑似。",
+      "source": "https://appmagic.rocks/publisher/bingchuan-network/2_1605575568"
+    },
+    "16": {
+      "en": "37 Interactive Entertainment / 37GAMES",
+      "cn": "三七互娱（37GAMES 海外发行品牌）",
+      "confidence": "已确认",
+      "basis": "37GAMES GLOBAL 为三七互娱海外发行体系。",
+      "source": "https://zhaopin.37.com/37wannet/brand.html"
+    },
+    "17": {
+      "en": "Chess.com, LLC",
+      "cn": "Chess.com（国际象棋平台）",
+      "confidence": "已确认",
+      "basis": "店铺主体、产品品牌和运营网站一致。",
+      "source": "https://www.chess.com/about"
+    },
+    "18": {
+      "en": "37 Interactive Entertainment / 37GAMES",
+      "cn": "三七互娱（37GAMES 海外发行品牌）",
+      "confidence": "已确认",
+      "basis": "Puzzles & Survival 属于三七互娱/37GAMES 产品体系。",
+      "source": "https://www.37games.com/about.html"
+    },
+    "19": {
+      "en": "37 Interactive Entertainment / 37GAMES",
+      "cn": "三七互娱（37GAMES；BUILDING-BLOCKS海外发行主体）",
+      "confidence": "已确认",
+      "basis": "与Puzzles & Survival等同店铺产品统一溯源至三七互娱。",
+      "source": "https://zhaopin.37.com/37wannet/brand.html"
+    },
+    "20": {
+      "en": "Voodoo",
+      "cn": "Voodoo（法国移动游戏公司）",
+      "confidence": "已确认",
+      "basis": "店铺主体与Voodoo官方产品品牌一致。",
+      "source": "https://www.voodoo.io/"
+    },
+    "21": {
+      "en": "Electronic Arts / Capital Games",
+      "cn": "艺电（EA；Capital Games研发）",
+      "confidence": "已确认",
+      "basis": "产品由EA发行、Capital Games工作室长期研发运营。",
+      "source": "https://www.ea.com/games/starwars/galaxy-of-heroes"
+    },
+    "22": {
+      "en": "Lilith Games",
+      "cn": "上海莉莉丝网络（Lilith Games）",
+      "confidence": "已确认",
+      "basis": "Rise of Kingdoms 为莉莉丝核心产品。",
+      "source": "https://www.lilith.com/en"
+    },
+    "23": {
+      "en": "37 Interactive Entertainment / 37GAMES",
+      "cn": "三七互娱（37GAMES 海外发行品牌）",
+      "confidence": "已确认",
+      "basis": "Puzzles & Chaos 属于三七互娱/37GAMES 产品体系。",
+      "source": "https://www.37games.com/about.html"
+    },
+    "24": {
+      "en": "Lessmore GmbH / Miniclip / Tencent",
+      "cn": "Lessmore（Miniclip 旗下；最终归属腾讯集团）",
+      "confidence": "已确认",
+      "basis": "Forge Master 开发主体为 Lessmore GmbH；Lessmore 已于 2024 年底被 Miniclip 收购，Miniclip 为腾讯旗下游戏公司。",
+      "source": "https://investgame.net/news/digest/weekly-digest-10/"
+    },
+    "25": {
+      "en": "FunPlus",
+      "cn": "趣加游戏（FunPlus）",
+      "confidence": "已确认",
+      "basis": "FunPlus 官方产品页收录 Tiles Survive。",
+      "source": "https://funplus.com/games/tiles-survive/"
+    },
+    "26": {
+      "en": "EWORLD / IYA Games",
+      "cn": "益世界（IYA Games；新加坡发行主体）",
+      "confidence": "已确认",
+      "basis": "多家中国出海行业媒体将 Lands of Jail 明确归为益世界产品。",
+      "source": "https://www.baijing.cn/article/52847"
+    },
+    "27": {
+      "en": "FunPlus",
+      "cn": "趣加游戏（FunPlus）",
+      "confidence": "已确认",
+      "basis": "Foundation: Galactic Frontier 为 FunPlus 官方产品。",
+      "source": "https://funplus.com/"
+    },
+    "28": {
+      "en": "Tap4fun / Chengdu Nibiru Technology",
+      "cn": "成都尼毕鲁科技（Tap4fun）",
+      "confidence": "已确认",
+      "basis": "Sea War 的不同海外店铺主体统一回 Tap4fun/成都尼毕鲁。",
+      "source": "https://www.tap4fun.com/"
+    },
+    "29": {
+      "en": "Warner Bros. Games Boston / Warner Bros. Discovery",
+      "cn": "华纳兄弟游戏波士顿工作室（华纳兄弟探索集团旗下）",
+      "confidence": "已确认",
+      "basis": "WB Games 官方资料明确 Game of Thrones: Conquest 由波士顿工作室开发；工作室隶属 Warner Bros. Games，并统一追溯至 Warner Bros. Discovery。",
+      "source": "https://careers.wbd.com/global/en/warner-bros-games-boston"
+    },
+    "30": {
+      "en": "YOOZOO Games",
+      "cn": "游族网络（YOOZOO）",
+      "confidence": "已确认",
+      "basis": "新加坡商店主体统一到游族网络产品体系。",
+      "source": "https://www.yoozoo.com/about"
+    },
+    "31": {
+      "en": "Voodoo",
+      "cn": "Voodoo（法国移动游戏公司）",
+      "confidence": "已确认",
+      "basis": "产品与店铺主体均为Voodoo。",
+      "source": "https://www.voodoo.io/"
+    },
+    "32": {
+      "en": "Tencent / TiMi Studio Group / Level Infinite",
+      "cn": "腾讯集团（天美工作室群研发/Level Infinite 全球发行）",
+      "confidence": "已确认",
+      "basis": "Level Infinite 官方页明确列出开发商 TiMi Studio Group、发行商 Level Infinite；两者均为腾讯游戏体系。",
+      "source": "https://www.levelinfinite.com/game/age-of-empires-mobile/"
+    },
+    "33": {
+      "en": "Century Games / DianDian Interactive",
+      "cn": "点点互动（Century Games；世纪华通旗下）",
+      "confidence": "已确认",
+      "basis": "Lordrush 产品版权及开发者网站指向 Century Games。",
+      "source": "https://www.centurygames.com/"
+    },
+    "34": {
+      "en": "Panteon Yazilim Oyun Egitim Teknolojileri ve Hizmetleri A.S.",
+      "cn": "Panteon（中文音译：潘特恩；土耳其法律主体）",
+      "confidence": "主体已确认；未发现控股母公司",
+      "basis": "Panteon 官网确认 Raid Rush 为自研产品并披露完整法律主体；Teknasyon 官方将 Panteon 表述为独立工作室战略合作伙伴，因此不误写为母子公司。",
+      "source": "https://www.panteon.games/"
+    },
+    "35": {
+      "en": "KONAMI",
+      "cn": "科乐美（KONAMI）",
+      "confidence": "已确认",
+      "basis": "产品、IP与店铺主体均归科乐美。",
+      "source": "https://www.konami.com/games/us/en/products/masterduel/"
+    },
+    "36": {
+      "en": "VoyagerOne PTE. LTD. / Phantix Games / Yotta Games (suspected product attribution)",
+      "cn": "疑似上海友塔网络（VoyagerOne 法律主体/Phantix 海外品牌）",
+      "confidence": "疑似",
+      "basis": "Police Chief 店铺主体为 VoyagerOne；Phantix 条款确认服务由 VoyagerOne PTE. LTD. 提供，公开公司资料将 VoyagerOne/Phantix 归入 Yotta Games/上海友塔体系；因 Police Chief 尚未出现在友塔官方产品页，保留疑似。",
+      "source": "https://app.w3g.jp/publisher/phantix-games"
+    },
+    "37": {
+      "en": "Riot Games",
+      "cn": "拳头游戏（Riot Games；腾讯旗下）",
+      "confidence": "已确认",
+      "basis": "Wild Rift 由 Riot Games 开发运营。",
+      "source": "https://www.riotgames.com/en/who-we-are"
+    },
+    "38": {
+      "en": "Plarium / MTG",
+      "cn": "Plarium（中文常译：普拉里姆；MTG 旗下）",
+      "confidence": "已确认",
+      "basis": "Vikings 为 Plarium 产品，MTG 已完成对 Plarium 的收购。",
+      "source": "https://www.mtg.com/press-releases/mtg-acquires-plarium-developer-of-global-1-mobile-rpg-raid-shadow-legends-and-strengthens-mobile-gaming-position/"
+    },
+    "39": {
+      "en": "Blue Planet Joy Limited",
+      "cn": "Blue Planet Joy（中文暂译：蓝色星球欢乐；香港主体）",
+      "confidence": "已确认",
+      "basis": "官网与商店主体一致，未发现可核验的不同母公司。",
+      "source": "https://blueplanetjoy.com/"
+    },
+    "40": {
+      "en": "MOONTON Games / Skystone Games",
+      "cn": "沐瞳科技（MOONTON；Skystone Games美国发行主体）",
+      "confidence": "已确认",
+      "basis": "美国独立版本使用Skystone店铺主体，核心产品与研发仍为MOONTON。",
+      "source": "https://en.moonton.com/games/index.html"
+    },
+    "41": {
+      "en": "Camel Games / Beijing Kemu Software",
+      "cn": "北京壳木软件（Camel Games；神州泰岳旗下）",
+      "confidence": "已确认",
+      "basis": "War and Order 为壳木官方产品。",
+      "source": "https://www.camelgames.com/game/war_and_order"
+    },
+    "42": {
+      "en": "HongKong GameTree Limited / GameTree Entertainment",
+      "cn": "香港GameTree（游戏树；独立发行主体）",
+      "confidence": "已确认",
+      "basis": "官方站版权信息列明HongKong GameTree Limited，Apple店铺品牌为GameTree Entertainment；未发现可确认的更上层集团归属。",
+      "source": "https://dt.game-tree.com/"
+    },
+    "43": {
+      "en": "CYBERJOY LIMITED (store brand: CyberJoy Games)",
+      "cn": "CYBERJOY LIMITED（中文暂译：赛博欢乐；香港法律主体）",
+      "confidence": "主体已确认；母公司未披露",
+      "basis": "Google Play 与 App Store 均确认法律主体为 CYBERJOY LIMITED、店铺品牌为 CyberJoy Games；本轮未发现可核验的更高母公司或其他马甲。",
+      "source": "https://play.google.com/store/apps/details?id=com.cyberjoy.galaxydefense&hl=en_US"
+    },
+    "44": {
+      "en": "Stillfront Group / Bytro Labs",
+      "cn": "Stillfront Group（旗下Bytro Labs/Supremacy工作室）",
+      "confidence": "已确认",
+      "basis": "店铺主体Stillfront Supremacy对应集团旗下大战略产品线。",
+      "source": "https://www.stillfront.com/en/our-studios/"
+    },
+    "45": {
+      "en": "Hoolai Games / HOOLAI GAME LIMITED",
+      "cn": "北京互爱互动（胡莱游戏；HOOLAI海外发行主体）",
+      "confidence": "关联确认",
+      "basis": "HOOLAI品牌统一按胡莱游戏/互爱互动体系展示。",
+      "source": "https://www.hoolai.com/"
+    },
+    "46": {
+      "en": "Snap Brain Games / WeDoBest (suspected)",
+      "cn": "疑似WeDoBest中国团队（Snap Brain Games海外发行账号）",
+      "confidence": "疑似",
+      "basis": "Apple店铺主体为Snap Brain Games；公开应用情报将同名产品开发者标为中国WeDoBest，尚缺法律主体或官网交叉确认。",
+      "source": "https://appmagic.rocks/google-play/cell-survivor/defense.roguelike.cell.shoot.survivor/?hl=en"
+    },
+    "47": {
+      "en": "Shanghai MOONTON Technology / Skystone Games (US publishing partner) / Savvy Games Group (acquisition agreed)",
+      "cn": "上海沐瞳科技（研发/实际产品体系）/ Skystone Games（美国发行伙伴）/ Savvy Games Group（已协议收购；沙特PIF旗下）",
+      "confidence": "已确认",
+      "basis": "Skystone美国区隐私政策明确其代表上海沐瞳运营本产品；2026年公开交易信息显示字节跳动已同Savvy Games Group达成出售沐瞳的协议，未把协议收购写成已完成交割。",
+      "source": "https://us.skystone.games/wor-pp"
+    },
+    "48": {
+      "en": "RiverGame / Beijing RiverGame Technology",
+      "cn": "北京江娱互动（RiverGame）",
+      "confidence": "已确认",
+      "basis": "Top War 为 RiverGame/江娱互动代表产品。",
+      "source": "https://www.rivergame.net/zh/about.html"
+    },
+    "49": {
+      "en": "Second Dinner / Skystone Games",
+      "cn": "Second Dinner（中文常译：第二晚餐；研发/主运营）/ Skystone Games（美国发行支持）",
+      "confidence": "已确认",
+      "basis": "Second Dinner 负责研发并将多数运营收回内部，Skystone 提供美国发行支持。",
+      "source": "https://mobilegamer.biz/second-dinner-enlists-skystone-games-to-help-self-publish-marvel-snap/"
+    },
+    "50": {
+      "en": "PONOS Corporation",
+      "cn": "PONOS（日本波诺斯）",
+      "confidence": "已确认",
+      "basis": "产品与店铺主体均为PONOS。",
+      "source": "https://www.ponos.jp/en/"
+    },
+    "51": {
+      "en": "IM30 / Beijing Longchuang Yuetong",
+      "cn": "北京龙创悦动（IM30）",
+      "confidence": "已确认",
+      "basis": "Last Shelter 为 IM30 官方产品。",
+      "source": "https://www.im30.net/en/"
+    },
+    "52": {
+      "en": "Kefir",
+      "cn": "Kefir（中文常译：开菲尔工作室）",
+      "confidence": "已确认",
+      "basis": "产品和开发品牌一致，未发现不同发行马甲。",
+      "source": "https://kefirgames.com/"
+    },
+    "53": {
+      "en": "Nintendo / Intelligent Systems",
+      "cn": "任天堂（发行）/ Intelligent Systems（研发）",
+      "confidence": "已确认",
+      "basis": "按发行与系列研发关系展示，不只保留Apple店铺中的Nintendo名称。",
+      "source": "https://fire-emblem-heroes.com/en/"
+    },
+    "54": {
+      "en": "IGG",
+      "cn": "IGG 集团（中国主体：福州天盟数码）",
+      "confidence": "已确认",
+      "basis": "Lords Mobile 为 IGG 核心自研运营产品。",
+      "source": "https://investor.igg.com/about.php?lang=3"
+    },
+    "55": {
+      "en": "RiverGame / Beijing RiverGame Technology",
+      "cn": "北京江娱互动（RiverGame）",
+      "confidence": "已确认",
+      "basis": "Top Heroes 为 RiverGame/江娱互动产品。",
+      "source": "https://www.rivergame.net/zh/about.html"
+    },
+    "56": {
+      "en": "RiverGame / GAME SPARK PTE. LTD.",
+      "cn": "北京江娱互动（GAME SPARK新加坡主体；原名RiverGame Pte. Ltd.）",
+      "confidence": "关联确认",
+      "basis": "新加坡公司登记记录显示GAME SPARK曾用名RiverGame Pte. Ltd.，因此统一溯源至江娱互动。",
+      "source": "https://www.sgpbusiness.com/company/Game-Spark-Pte-Ltd"
+    },
+    "57": {
+      "en": "Com2uS Corporation",
+      "cn": "Com2uS（韩国游戏公司）",
+      "confidence": "已确认",
+      "basis": "产品和店铺主体均为Com2uS。",
+      "source": "https://www.withhive.com/"
+    },
+    "58": {
+      "en": "Century Games / DianDian Interactive",
+      "cn": "点点互动（Century Games；世纪华通旗下）",
+      "confidence": "已确认",
+      "basis": "Top Force 当前产品及版权均指向 Century Games。",
+      "source": "https://www.centurygames.com/"
+    },
+    "59": {
+      "en": "Electronic Arts / TrackTwenty",
+      "cn": "艺电（EA；TrackTwenty赫尔辛基工作室研发）",
+      "confidence": "已确认",
+      "basis": "EA官方工作室页面确认TrackTwenty为SimCity BuildIt研发团队。",
+      "source": "https://www.ea.com/ea-studios/tracktwenty"
+    },
+    "60": {
+      "en": "Voodoo",
+      "cn": "Voodoo（法国移动游戏公司）",
+      "confidence": "已确认",
+      "basis": "产品和店铺主体均为Voodoo。",
+      "source": "https://www.voodoo.io/"
+    }
+  }
+}
