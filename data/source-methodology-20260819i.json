@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-24.1",
+  "version": "2026-08-24.2",
   "market": "Google Play US + Apple App Store US iPhone / Games / Strategy / Top Grossing",
   "scope": "TOP60玩法关键词、主力素材与上架后生命周期转折",
   "sourceTiers": [
@@ -37,8 +37,9 @@
     "类比其他产品时使用“类”或“疑似参考”表述，不把社区指控写成已证实事实。",
     "Google Play排名直接请求PlayStoreUi的vyAe2榜单载荷，参数固定为US / GAME_STRATEGY / topgrossing / TOP60；Google未公开Last updated标签，因此保存北京时间capturedAt。",
     "AppBrain只作为Google榜单交叉检查源，不得覆盖Google直连排名、抓取日期或锚点；直连失败时保留上一份有效快照并报告失败。",
-    "Google Play与Apple App Store分开保存每日快照；只用同商店、同地区、同品类、同设备口径的90天前榜单做状态分类。",
-    "iOS缺少精确90天前快照时按常规样式展示，不用上架日期反推新上榜；积累满90天后再自动计算新上榜与提升超过5位。",
+    "新上榜按上架日期补判：产品在当前榜单日期前90天内上架且当前进入TOP60，即标记为近三个月新上榜；以上架日期为依据并保存classificationBasis与evidence。",
+    "Google Play与Apple App Store分开保存每日快照；上架早于90天窗口的产品，只用同商店、同地区、同品类、同设备口径的90天前榜单判断是否提升超过5位。",
+    "缺少精确90天排名快照时，较老产品按常规样式展示且不判断飙升；历史补齐后再自动计算。",
     "每日更新保留每款游戏的来源URL、核验日期、可信度和纠偏原因。"
   ]
 }

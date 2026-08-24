@@ -3,6 +3,7 @@
 import json
 import re
 from copy import deepcopy
+from datetime import datetime
 
 from lxml import html
 
@@ -43,6 +44,7 @@ def play_metadata(package):
     url = f"https://play.google.com/store/apps/details?id={package}&hl=en_US&gl=US"
     page = fetch(url)
     document = html.fromstring(page)
+    raw_text = page.decode("utf-8")
     text = " ".join(document.text_content().split())
     image = (document.xpath('//meta[@property="og:image"]/@content') or [""])[0]
     description = (document.xpath('//meta[@property="og:description"]/@content') or [""])[0]
@@ -50,13 +52,18 @@ def play_metadata(package):
     downloads = [" ".join(x.text_content().split()) for x in document.xpath('//*[contains(@class,"ClM7O")]')]
     downloads = next((x for x in downloads if "+" in x), "")
     updated = re.search(r"Updated on\s*([A-Z][a-z]{2} \d{1,2}, 2026)", text)
-    candidates = re.findall(r"https://play-lh\.googleusercontent\.com/[^\" ]+=w1052-h592", page.decode("utf-8"))
+    released = re.search(
+        r'\["([A-Z][a-z]{2} \d{1,2}, 20\d{2})",\[\d{9,},\d+\]\],null,null,\["[\d,]+\+"',
+        raw_text,
+    )
+    candidates = re.findall(r"https://play-lh\.googleusercontent\.com/[^\" ]+=w1052-h592", raw_text)
     screenshot = next((x for x in candidates if x.split("=")[0] != image.split("=")[0]), image)
     return {
         "url": url, "icon": image, "screenshot": screenshot,
         "description": description, "developer": developer,
         "downloads": downloads.replace("+", " +"),
         "updated": updated.group(1) if updated else "",
+        "released": datetime.strptime(released.group(1), "%b %d, %Y").date().isoformat() if released else "",
     }
 
 
@@ -70,7 +77,7 @@ def google_entrant(row, metadata, asset_rank, ios_records_by_name):
     if prior:
         prior_game, prior_company, prior_trend = prior
         genre, keywords = prior_game["genre"], prior_game["keywords"]
-        release = prior_game.get("releaseDateIso") or prior_game.get("releaseDate") or ""
+        release = metadata.get("released") or prior_game.get("releaseDateIso") or prior_game.get("releaseDate") or ""
         company, analysis = deepcopy(prior_company), deepcopy(prior_trend)
     elif package == "com.global.antgame":
         genre = "SLG / 4X / 模拟经营"
@@ -127,7 +134,7 @@ def google_entrant(row, metadata, asset_rank, ios_records_by_name):
         "releaseDate": release, "updatedDate": metadata["updated"],
         "genre": genre, "keywords": keywords, "note": "", "releaseDateIso": release,
         "assetRank": asset_rank,
-        "comparison90d": comparison(None, row["rank"], GOOGLE_DATE, GOOGLE_BASELINE, True),
+        "comparison90d": comparison(None, row["rank"], GOOGLE_DATE, GOOGLE_BASELINE, True, release),
     }
     return game, company, refresh_audit_dates(analysis)
 
@@ -153,7 +160,7 @@ def build_google(rows, source_url):
             game.update(
                 rank=rank, gameName=row["gameName"], developer=row["developer"],
                 dailyChange=delta_label(old_rank, rank),
-                comparison90d=comparison(None, rank, GOOGLE_DATE, GOOGLE_BASELINE, True),
+                comparison90d=comparison(None, rank, GOOGLE_DATE, GOOGLE_BASELINE, True, game.get("releaseDateIso")),
             )
             company = deepcopy(old_enrichment["productCompaniesByRank"][str(old_rank)])
             analysis = deepcopy(old_trends[str(old_rank)])
@@ -210,7 +217,7 @@ def watcher_record(row, metadata, asset_rank):
         "releaseDateIso": (metadata.get("releaseDate") or "")[:10],
         "updatedDate": (metadata.get("currentVersionReleaseDate") or "")[:10],
         "note": "", "assetRank": asset_rank, "store": "ios",
-        "comparison90d": comparison(None, row["rank"], IOS_DATE, IOS_BASELINE, True),
+        "comparison90d": comparison(None, row["rank"], IOS_DATE, IOS_BASELINE, True, (metadata.get("releaseDate") or "")[:10]),
     }
     company = {
         "en": "Shanghai MOONTON Technology / Skystone Games (US publishing partner) / Savvy Games Group (acquisition agreed)",
@@ -259,7 +266,7 @@ def build_ios(rows, source_url, source_updated):
                 game["description"] = current.get("description", game.get("description", ""))
                 game["shortDescription"] = game["description"].replace("\n", " ")[:220]
                 analysis = refresh_audit_dates(deepcopy(analysis))
-                analysis["sections"]["rankPath"] = "本次重返iOS美国策略畅销榜第56名，仍处首轮商业化验证的榜尾区间；由于缺少2026-05-23同口径基准，本次回榜不标为近三个月新上榜。"
+                analysis["sections"]["rankPath"] = "2026年5月31日上架后进入iOS美国策略畅销榜第56名，按上架日期口径属于近三个月新上榜；当前仍处首轮商业化验证的榜尾区间。"
                 analysis["sections"]["turningPoints"] = "首发获量由滑动扩军和救回领民承担，随后用封地、税收、领主与狮鹫养成承接长期循环；8月20日版本新增开服第4天解锁的Trade Wagon科技树，是当前可确认的系统扩展节点。"
         else:
             game, company, analysis, icon, screenshot = watcher_record(row, metadata[app_id], 64)
@@ -268,7 +275,7 @@ def build_ios(rows, source_url, source_updated):
         game.update(
             rank=rank, gameName=row["gameName"], developer=row["developer"],
             dailyChange=delta_label(old_rank.get(app_id), rank),
-            comparison90d=comparison(None, rank, IOS_DATE, IOS_BASELINE, True),
+            comparison90d=comparison(None, rank, IOS_DATE, IOS_BASELINE, True, game.get("releaseDateIso")),
         )
         companies[str(rank)] = deepcopy(company)
         trends[str(rank)] = deepcopy(analysis)
