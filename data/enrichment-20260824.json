@@ -387,39 +387,39 @@
       "source": "https://www.lilith.com/en"
     },
     "17": {
-      "en": "EWORLD / IYA Games",
-      "cn": "益世界（IYA Games；新加坡发行主体）",
-      "confidence": "已确认",
-      "basis": "多家中国出海行业媒体将 Lands of Jail 明确归为益世界产品。",
-      "source": "https://www.baijing.cn/article/52847"
-    },
-    "18": {
-      "en": "VoyagerOne PTE. LTD. / Phantix Games / Yotta Games (suspected product attribution)",
-      "cn": "疑似上海友塔网络（VoyagerOne 法律主体/Phantix 海外品牌）",
-      "confidence": "疑似",
-      "basis": "Police Chief 店铺主体为 VoyagerOne；Phantix 条款确认服务由 VoyagerOne PTE. LTD. 提供，公开公司资料将 VoyagerOne/Phantix 归入 Yotta Games/上海友塔体系；因 Police Chief 尚未出现在友塔官方产品页，保留疑似。",
-      "source": "https://app.w3g.jp/publisher/phantix-games"
-    },
-    "19": {
       "en": "Supercell",
       "cn": "Supercell（中文常译：超级细胞；腾讯控股）",
       "confidence": "已确认",
       "basis": "Clash Royale 为 Supercell 自研运营产品。",
       "source": "https://supercell.com/en/games/clashroyale/"
     },
-    "20": {
-      "en": "FunPlus",
-      "cn": "趣加游戏（FunPlus）",
+    "18": {
+      "en": "EWORLD / IYA Games",
+      "cn": "益世界（IYA Games；新加坡发行主体）",
       "confidence": "已确认",
-      "basis": "FunPlus 官方产品页收录 Tiles Survive。",
-      "source": "https://funplus.com/games/tiles-survive/"
+      "basis": "多家中国出海行业媒体将 Lands of Jail 明确归为益世界产品。",
+      "source": "https://www.baijing.cn/article/52847"
     },
-    "21": {
+    "19": {
+      "en": "VoyagerOne PTE. LTD. / Phantix Games / Yotta Games (suspected product attribution)",
+      "cn": "疑似上海友塔网络（VoyagerOne 法律主体/Phantix 海外品牌）",
+      "confidence": "疑似",
+      "basis": "Police Chief 店铺主体为 VoyagerOne；Phantix 条款确认服务由 VoyagerOne PTE. LTD. 提供，公开公司资料将 VoyagerOne/Phantix 归入 Yotta Games/上海友塔体系；因 Police Chief 尚未出现在友塔官方产品页，保留疑似。",
+      "source": "https://app.w3g.jp/publisher/phantix-games"
+    },
+    "20": {
       "en": "Camel Games / Beijing Kemu Software",
       "cn": "北京壳木软件（Camel Games；神州泰岳旗下）",
       "confidence": "已确认",
       "basis": "Camel Games 官网与公司资料均将 Age of Origins 列为壳木产品。",
       "source": "https://www.camelgame.cn/"
+    },
+    "21": {
+      "en": "Scopely / DIGIT Game Studios / Savvy Games Group (PIF)",
+      "cn": "Scopely（Savvy Games Group/沙特公共投资基金 PIF 旗下）/ DIGIT Game Studios（研发）",
+      "confidence": "已确认",
+      "basis": "Star Trek Fleet Command 由 Scopely 运营、DIGIT Game Studios 研发；Scopely 已被 PIF 全资拥有的 Savvy Games Group 收购。",
+      "source": "https://www.pif.gov.sa/en/news-and-insights/newswire/2023/savvy-games-group-completes-acquisition-of-scopely-for-fourty-nine-billion/"
     },
     "22": {
       "en": "IGG",
@@ -429,11 +429,11 @@
       "source": "https://investor.igg.com/about.php?lang=3"
     },
     "23": {
-      "en": "YOOZOO Games",
-      "cn": "游族网络（YOOZOO）",
+      "en": "FunPlus",
+      "cn": "趣加游戏（FunPlus）",
       "confidence": "已确认",
-      "basis": "新加坡商店主体统一到游族网络产品体系。",
-      "source": "https://www.yoozoo.com/about"
+      "basis": "FunPlus 官方产品页收录 Tiles Survive。",
+      "source": "https://funplus.com/games/tiles-survive/"
     },
     "24": {
       "en": "HAPPY FACTORY PTE. LTD. / A3 GAMES PTE. LTD. / Tap4fun (suspected)",
@@ -443,39 +443,39 @@
       "source": "https://www.a3games.com/privacy_policy/"
     },
     "25": {
-      "en": "Scopely / DIGIT Game Studios / Savvy Games Group (PIF)",
-      "cn": "Scopely（Savvy Games Group/沙特公共投资基金 PIF 旗下）/ DIGIT Game Studios（研发）",
-      "confidence": "已确认",
-      "basis": "Star Trek Fleet Command 由 Scopely 运营、DIGIT Game Studios 研发；Scopely 已被 PIF 全资拥有的 Savvy Games Group 收购。",
-      "source": "https://www.pif.gov.sa/en/news-and-insights/newswire/2023/savvy-games-group-completes-acquisition-of-scopely-for-fourty-nine-billion/"
-    },
-    "26": {
       "en": "RiverGame / Beijing RiverGame Technology",
       "cn": "北京江娱互动（RiverGame）",
       "confidence": "已确认",
       "basis": "Top War 为 RiverGame/江娱互动代表产品。",
       "source": "https://www.rivergame.net/zh/about.html"
     },
+    "26": {
+      "en": "YOOZOO Games",
+      "cn": "游族网络（YOOZOO）",
+      "confidence": "已确认",
+      "basis": "新加坡商店主体统一到游族网络产品体系。",
+      "source": "https://www.yoozoo.com/about"
+    },
     "27": {
+      "en": "SparkHaven HK Limited (brand: SparkHaven)",
+      "cn": "SparkHaven HK Limited（中文暂译：星火港；香港法律主体）",
+      "confidence": "主体已确认；母公司未披露",
+      "basis": "Google Play 与隐私政策均指向 SparkHaven HK Limited；按产品名、条款和公开公司资料复核，暂未发现可核验的更高母公司或中国马甲。",
+      "source": "https://www.sparkhavengames.com/privacy/"
+    },
+    "28": {
       "en": "Yotta Games / Phantix",
       "cn": "上海友塔网络（Yotta Games；Phantix 海外品牌）",
       "confidence": "已确认",
       "basis": "The Grand Mafia 官方站使用 yottagames.com，友塔公开资料亦列为自研黑帮 SLG。",
       "source": "https://tgm.yottagames.com/"
     },
-    "28": {
+    "29": {
       "en": "FunPlus",
       "cn": "趣加游戏（FunPlus）",
       "confidence": "已确认",
       "basis": "Foundation: Galactic Frontier 为 FunPlus 官方产品。",
       "source": "https://funplus.com/"
-    },
-    "29": {
-      "en": "SparkHaven HK Limited (brand: SparkHaven)",
-      "cn": "SparkHaven HK Limited（中文暂译：星火港；香港法律主体）",
-      "confidence": "主体已确认；母公司未披露",
-      "basis": "Google Play 与隐私政策均指向 SparkHaven HK Limited；按产品名、条款和公开公司资料复核，暂未发现可核验的更高母公司或中国马甲。",
-      "source": "https://www.sparkhavengames.com/privacy/"
     },
     "30": {
       "en": "Camel Games / Beijing Kemu Software",
@@ -485,32 +485,32 @@
       "source": "https://www.camelgames.com/game/war_and_order"
     },
     "31": {
-      "en": "Snowprint Studios / MTG",
-      "cn": "Snowprint Studios（中文暂译：雪印工作室；MTG 控股）",
+      "en": "RiverGame / Beijing RiverGame Technology",
+      "cn": "北京江娱互动（RiverGame）",
       "confidence": "已确认",
-      "basis": "Snowprint 为 Tacticus 研发方，MTG 已取得多数股权。",
-      "source": "https://snowprintstudios.com/1632-2/"
+      "basis": "Top Heroes 为 RiverGame/江娱互动产品。",
+      "source": "https://www.rivergame.net/zh/about.html"
     },
     "32": {
-      "en": "FunPlus / KingsGroup",
-      "cn": "趣加游戏（FunPlus；KingsGroup 研发体系）",
-      "confidence": "已确认",
-      "basis": "King of Avalon 为 FunPlus/KingsGroup 产品。",
-      "source": "https://funplus.com/"
-    },
-    "33": {
       "en": "4399 / Joy Nice Games / JOY MOBILE NETWORK PTE. LTD.",
       "cn": "四三九九网络股份有限公司（4399；Joy Nice Games 海外发行品牌）",
       "confidence": "已确认",
       "basis": "Joy Nice Games 隐私政策披露法律主体为 JOY MOBILE NETWORK PTE. LTD.；公开行业资料明确将 Joy Nice Games 列为 4399 旗下海外游戏发行品牌，集团归属统一溯源至 4399。",
       "source": "https://news.qq.com/rain/a/20241010A09WT300"
     },
-    "34": {
-      "en": "RiverGame / Beijing RiverGame Technology",
-      "cn": "北京江娱互动（RiverGame）",
+    "33": {
+      "en": "FunPlus / KingsGroup",
+      "cn": "趣加游戏（FunPlus；KingsGroup 研发体系）",
       "confidence": "已确认",
-      "basis": "Top Heroes 为 RiverGame/江娱互动产品。",
-      "source": "https://www.rivergame.net/zh/about.html"
+      "basis": "King of Avalon 为 FunPlus/KingsGroup 产品。",
+      "source": "https://funplus.com/"
+    },
+    "34": {
+      "en": "Snowprint Studios / MTG",
+      "cn": "Snowprint Studios（中文暂译：雪印工作室；MTG 控股）",
+      "confidence": "已确认",
+      "basis": "Snowprint 为 Tacticus 研发方，MTG 已取得多数股权。",
+      "source": "https://snowprintstudios.com/1632-2/"
     },
     "35": {
       "en": "5minlab / KRAFTON",
@@ -527,11 +527,11 @@
       "source": "https://funplus.com/"
     },
     "37": {
-      "en": "Lessmore GmbH / Miniclip / Tencent",
-      "cn": "Lessmore（Miniclip 旗下；最终归属腾讯集团）",
+      "en": "Century Games / DianDian Interactive",
+      "cn": "点点互动（Century Games；世纪华通旗下）",
       "confidence": "已确认",
-      "basis": "Forge Master 开发主体为 Lessmore GmbH；Lessmore 已于 2024 年底被 Miniclip 收购，Miniclip 为腾讯旗下游戏公司。",
-      "source": "https://investgame.net/news/digest/weekly-digest-10/"
+      "basis": "Top Force 当前产品及版权均指向 Century Games。",
+      "source": "https://www.centurygames.com/"
     },
     "38": {
       "en": "FunPlus / KingsGroup",
@@ -541,11 +541,11 @@
       "source": "https://funplus.com/"
     },
     "39": {
-      "en": "Riot Games",
-      "cn": "拳头游戏（Riot Games；腾讯旗下）",
+      "en": "Lessmore GmbH / Miniclip / Tencent",
+      "cn": "Lessmore（Miniclip 旗下；最终归属腾讯集团）",
       "confidence": "已确认",
-      "basis": "Wild Rift 由 Riot Games 开发运营。",
-      "source": "https://www.riotgames.com/en/who-we-are"
+      "basis": "Forge Master 开发主体为 Lessmore GmbH；Lessmore 已于 2024 年底被 Miniclip 收购，Miniclip 为腾讯旗下游戏公司。",
+      "source": "https://investgame.net/news/digest/weekly-digest-10/"
     },
     "40": {
       "en": "IM30 / Beijing Longchuang Yuetong",
@@ -558,57 +558,57 @@
       "en": "Century Games / DianDian Interactive",
       "cn": "点点互动（Century Games；世纪华通旗下）",
       "confidence": "已确认",
-      "basis": "Top Force 当前产品及版权均指向 Century Games。",
+      "basis": "Lordrush 产品版权及开发者网站指向 Century Games。",
       "source": "https://www.centurygames.com/"
     },
     "42": {
-      "en": "IGG",
-      "cn": "IGG 集团（中国主体：福州天盟数码）",
-      "confidence": "已确认",
-      "basis": "Doomsday 为 IGG 产品体系。",
-      "source": "https://investor.igg.com/about.php?lang=3"
-    },
-    "43": {
       "en": "Lilith Games / Farlight Games / Powerfantasy HK Limited",
       "cn": "上海莉莉丝网络（Farlight 海外发行品牌；Powerfantasy 香港主体）",
       "confidence": "已确认",
       "basis": "Google Play 包名和主体指向 Powerfantasy；Farlight 官方商店直接收录 Warline，公开发行信息确认 Farlight 为莉莉丝旗下品牌，故集团归属统一至莉莉丝。",
       "source": "https://store.farlightgames.com/powerfantasy/warline"
     },
-    "44": {
-      "en": "Century Games / DianDian Interactive",
-      "cn": "点点互动（Century Games；世纪华通旗下）",
+    "43": {
+      "en": "IGG",
+      "cn": "IGG 集团（中国主体：福州天盟数码）",
       "confidence": "已确认",
-      "basis": "Lordrush 产品版权及开发者网站指向 Century Games。",
-      "source": "https://www.centurygames.com/"
+      "basis": "Doomsday 为 IGG 产品体系。",
+      "source": "https://investor.igg.com/about.php?lang=3"
+    },
+    "44": {
+      "en": "Riot Games",
+      "cn": "拳头游戏（Riot Games；腾讯旗下）",
+      "confidence": "已确认",
+      "basis": "Wild Rift 由 Riot Games 开发运营。",
+      "source": "https://www.riotgames.com/en/who-we-are"
     },
     "45": {
-      "en": "FunPlus / KingsGroup",
-      "cn": "趣加游戏（FunPlus；KingsGroup 研发体系）",
-      "confidence": "已确认",
-      "basis": "Stormshot 为 FunPlus 官方产品。",
-      "source": "https://funplus.com/"
-    },
-    "46": {
-      "en": "Warner Bros. Games Boston / Warner Bros. Discovery",
-      "cn": "华纳兄弟游戏波士顿工作室（华纳兄弟探索集团旗下）",
-      "confidence": "已确认",
-      "basis": "WB Games 官方资料明确 Game of Thrones: Conquest 由波士顿工作室开发；工作室隶属 Warner Bros. Games，并统一追溯至 Warner Bros. Discovery。",
-      "source": "https://careers.wbd.com/global/en/warner-bros-games-boston"
-    },
-    "47": {
       "en": "ENJOY GAME LIMITED (store brand: RATING GAME)",
       "cn": "ENJOY GAME LIMITED（中文暂译：乐享游戏；RATING GAME 店铺品牌）",
       "confidence": "主体已确认；母公司未披露",
       "basis": "Google Play 的“关于开发者”确认法律主体为 ENJOY GAME LIMITED，RATING GAME 仅为店铺显示名；本轮未发现可核验的更高母公司。",
       "source": "https://play.google.com/store/apps/details?id=com.ratinghope.gplay&hl=en_US"
     },
-    "48": {
-      "en": "Tap4fun / Chengdu Nibiru Technology",
-      "cn": "成都尼毕鲁科技（Tap4fun）",
+    "46": {
+      "en": "FunPlus / KingsGroup",
+      "cn": "趣加游戏（FunPlus；KingsGroup 研发体系）",
       "confidence": "已确认",
-      "basis": "Sea War 的不同海外店铺主体统一回 Tap4fun/成都尼毕鲁。",
-      "source": "https://www.tap4fun.com/"
+      "basis": "Stormshot 为 FunPlus 官方产品。",
+      "source": "https://funplus.com/"
+    },
+    "47": {
+      "en": "Warner Bros. Games Boston / Warner Bros. Discovery",
+      "cn": "华纳兄弟游戏波士顿工作室（华纳兄弟探索集团旗下）",
+      "confidence": "已确认",
+      "basis": "WB Games 官方资料明确 Game of Thrones: Conquest 由波士顿工作室开发；工作室隶属 Warner Bros. Games，并统一追溯至 Warner Bros. Discovery。",
+      "source": "https://careers.wbd.com/global/en/warner-bros-games-boston"
+    },
+    "48": {
+      "en": "Tencent / TiMi Studio Group / Level Infinite",
+      "cn": "腾讯集团（天美工作室群研发/Level Infinite 全球发行）",
+      "confidence": "已确认",
+      "basis": "Level Infinite 官方页明确列出开发商 TiMi Studio Group、发行商 Level Infinite；两者均为腾讯游戏体系。",
+      "source": "https://www.levelinfinite.com/game/age-of-empires-mobile/"
     },
     "49": {
       "en": "Lilith Games / Farlight Games",
@@ -618,32 +618,32 @@
       "source": "https://www.farlightgames.com/games"
     },
     "50": {
+      "en": "Tap4fun / Chengdu Nibiru Technology",
+      "cn": "成都尼毕鲁科技（Tap4fun）",
+      "confidence": "已确认",
+      "basis": "Sea War 的不同海外店铺主体统一回 Tap4fun/成都尼毕鲁。",
+      "source": "https://www.tap4fun.com/"
+    },
+    "51": {
       "en": "Yotta Games / Phantix",
       "cn": "上海友塔网络（Yotta Games；Phantix 海外品牌）",
       "confidence": "已确认",
       "basis": "Mafia City 官方站使用 yottagames.com，中国行业资料明确归为友塔自研产品。",
       "source": "https://mafia.yottagames.com/"
     },
-    "51": {
+    "52": {
+      "en": "Lilith Games",
+      "cn": "上海莉莉丝网络（Lilith Games）",
+      "confidence": "已确认",
+      "basis": "产品、店铺主体和官方产品页均归莉莉丝。",
+      "source": "https://www.lilith.com/"
+    },
+    "53": {
       "en": "CYBERJOY LIMITED (store brand: CyberJoy Games)",
       "cn": "CYBERJOY LIMITED（中文暂译：赛博欢乐；香港法律主体）",
       "confidence": "主体已确认；母公司未披露",
       "basis": "Google Play 与 App Store 均确认法律主体为 CYBERJOY LIMITED、店铺品牌为 CyberJoy Games；本轮未发现可核验的更高母公司或其他马甲。",
       "source": "https://play.google.com/store/apps/details?id=com.cyberjoy.galaxydefense&hl=en_US"
-    },
-    "52": {
-      "en": "Tencent / TiMi Studio Group / Level Infinite",
-      "cn": "腾讯集团（天美工作室群研发/Level Infinite 全球发行）",
-      "confidence": "已确认",
-      "basis": "Level Infinite 官方页明确列出开发商 TiMi Studio Group、发行商 Level Infinite；两者均为腾讯游戏体系。",
-      "source": "https://www.levelinfinite.com/game/age-of-empires-mobile/"
-    },
-    "53": {
-      "en": "Tap4fun / Chengdu Nibiru Technology",
-      "cn": "成都尼毕鲁科技（Tap4fun）",
-      "confidence": "已确认",
-      "basis": "Kingdom Guard 为 Tap4fun 产品。",
-      "source": "https://www.tap4fun.com/"
     },
     "54": {
       "en": "Second Dinner / Skystone Games",
@@ -653,25 +653,25 @@
       "source": "https://mobilegamer.biz/second-dinner-enlists-skystone-games-to-help-self-publish-marvel-snap/"
     },
     "55": {
-      "en": "Lilith Games",
-      "cn": "上海莉莉丝网络（Lilith Games）",
+      "en": "Tap4fun / Chengdu Nibiru Technology",
+      "cn": "成都尼毕鲁科技（Tap4fun）",
       "confidence": "已确认",
-      "basis": "产品、店铺主体和官方产品页均归莉莉丝。",
-      "source": "https://www.lilith.com/"
+      "basis": "Kingdom Guard 为 Tap4fun 产品。",
+      "source": "https://www.tap4fun.com/"
     },
     "56": {
-      "en": "37GAMES / Sanqi Interactive Entertainment",
-      "cn": "37GAMES（三七互娱海外发行品牌）/ 三七互娱",
-      "confidence": "已确认",
-      "basis": "Google Play店铺主体为37GAMES；37GAMES官方产品页收录Ant Legion，统一溯源至三七互娱产品体系。",
-      "source": "https://www.37games.com/antslgofficial/index.html"
-    },
-    "57": {
       "en": "Panteon Yazilim Oyun Egitim Teknolojileri ve Hizmetleri A.S.",
       "cn": "Panteon（中文音译：潘特恩；土耳其法律主体）",
       "confidence": "主体已确认；未发现控股母公司",
       "basis": "Panteon 官网确认 Raid Rush 为自研产品并披露完整法律主体；Teknasyon 官方将 Panteon 表述为独立工作室战略合作伙伴，因此不误写为母子公司。",
       "source": "https://www.panteon.games/"
+    },
+    "57": {
+      "en": "37GAMES / Sanqi Interactive Entertainment",
+      "cn": "37GAMES（三七互娱海外发行品牌）/ 三七互娱",
+      "confidence": "已确认",
+      "basis": "Google Play店铺主体为37GAMES；37GAMES官方产品页收录Ant Legion，统一溯源至三七互娱产品体系。",
+      "source": "https://www.37games.com/antslgofficial/index.html"
     },
     "58": {
       "en": "Tap4fun / Chengdu Nibiru Technology",
@@ -681,18 +681,18 @@
       "source": "https://www.tap4fun.com/"
     },
     "59": {
-      "en": "Voodoo",
-      "cn": "Voodoo（法国移动游戏公司）",
-      "confidence": "已确认",
-      "basis": "产品和店铺主体均为Voodoo。",
-      "source": "https://www.voodoo.io/"
-    },
-    "60": {
       "en": "Tap4fun / Chengdu Nibiru Technology",
       "cn": "成都尼毕鲁科技（Tap4fun）",
       "confidence": "已确认",
       "basis": "Age of Apes 为 Tap4fun 产品。",
       "source": "https://www.tap4fun.com/"
+    },
+    "60": {
+      "en": "Voodoo",
+      "cn": "Voodoo（法国移动游戏公司）",
+      "confidence": "已确认",
+      "basis": "产品和店铺主体均为Voodoo。",
+      "source": "https://www.voodoo.io/"
     }
   },
   "comparisonPolicy": {

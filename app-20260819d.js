@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20260824a";
+const CACHE_VERSION = "20260824b";
 const STORE_CONFIGS = {
   googlePlay: {
     key: "googlePlay",
@@ -8,14 +8,14 @@ const STORE_CONFIGS = {
     mark: "GP",
     storeName: "Google Play",
     platform: "Android",
-    date: "2026-08-23",
-    baselineDate: "2026-05-25",
+    date: "2026-08-24",
+    baselineDate: "2026-05-26",
     eyebrow: "GOOGLE PLAY · ANDROID · STRATEGY · TOP GROSSING",
     title: "Google Play 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · Android",
-    footer: "Google Play US Strategy · TOP60 · Updated 2026-08-23",
-    method: "Google Play 美国区 Strategy 畅销榜，收录公开源完整TOP60；源头 Last updated: August 23, 2026，页面保留真实榜单日期。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-05-25 → 2026-08-23。缺少2026-05-25同口径完整TOP60快照，本期统一按常规在榜展示，不误判“新上榜”或“飙升”。",
+    footer: "Google Play US Strategy · TOP60 · Direct capture 2026-08-24",
+    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-08-24 10:41:12（北京时间），AppBrain仅用于交叉检查。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-05-26 → 2026-08-24。缺少2026-05-26同口径完整TOP60快照，本期统一按常规在榜展示，不误判“新上榜”或“飙升”。",
     games: "data/games-20260824.json",
     enrichment: "data/enrichment-20260824.json",
     trends: "data/trends-20260824.json",

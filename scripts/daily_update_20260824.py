@@ -4,10 +4,11 @@ from copy import deepcopy
 
 from daily_update_20260820 import comparison, data_uri, delta_label, load, lookup, parse_google, parse_ios, save, trend
 from daily_update_20260821 import play_metadata, refresh_audit_dates
+from google_play_direct import fetch_top_grossing_strategy
 
 CAPTURE = "2026-08-24"
-GOOGLE_DATE = "2026-08-23"
-GOOGLE_BASELINE = "2026-05-25"
+GOOGLE_DATE = "2026-08-24"
+GOOGLE_BASELINE = "2026-05-26"
 IOS_DATE = "2026-08-24"
 IOS_BASELINE = "2026-05-26"
 
@@ -28,7 +29,7 @@ def clean_analysis(analysis):
     return analysis
 
 
-def build_google(rows, source_url):
+def build_google(rows, source_info):
     current = records("data/games-20260821.json", "data/enrichment-20260821.json", "data/trends-20260821.json", "packageName")
     older = records("data/games-20260820.json", "data/enrichment-20260820.json", "data/trends-20260820.json", "packageName")
     ios_old = records("data/ios-games-20260819.json", "data/ios-enrichment-20260819.json", "data/ios-trends-20260819.json", "appId")
@@ -71,7 +72,11 @@ def build_google(rows, source_url):
     save("assets/manifest.json", manifest)
     save("data/history/google-play/2026-08-24.json", {
         "store": "google-play", "country": "US", "category": "Games > Strategy > Top Grossing",
-        "date": CAPTURE, "dataDate": GOOGLE_DATE, "sourceLastUpdated": "August 23, 2026", "sourceUrl": source_url,
+        "date": CAPTURE, "dataDate": GOOGLE_DATE, "sourceCapturedAt": source_info["capturedAt"],
+        "sourceUrl": source_info["sourceUrl"], "sourceEndpoint": source_info["sourceEndpoint"],
+        "sourceMethod": source_info["sourceMethod"],
+        "freshnessNote": "Google Play不公开该榜单的Last updated标签；以北京时间直连抓取时间记录新鲜度。",
+        "crossCheckUrl": "https://www.appbrain.com/stats/google-play-rankings/top_grossing/strategy/us",
         "rankings": [{"rank": g["rank"], "packageName": g["packageName"], "gameName": g["gameName"], "sourceUrl": g["storeUrl"]} for g in games],
     })
     return games
@@ -166,8 +171,8 @@ def build_ios(rows, source_url, source_updated):
 
 
 def main():
-    gu, gr = parse_google(); iu, updated, ir = parse_ios()
-    google = build_google(gr, gu); ios = build_ios(ir, iu, updated)
+    google_source = fetch_top_grossing_strategy(); iu, updated, ir = parse_ios()
+    google = build_google(google_source["rows"], google_source); ios = build_ios(ir, iu, updated)
     print("Google", [(g["rank"], g["gameName"]) for g in google if g["rank"] in (1,25,60)])
     print("iOS", updated, [(g["rank"], g["gameName"]) for g in ios if g["rank"] in (1,25,60)])
 
