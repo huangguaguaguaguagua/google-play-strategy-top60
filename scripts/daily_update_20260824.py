@@ -57,7 +57,7 @@ def build_google(rows, source_info):
         game.update(rank=rank, gameName=row["gameName"], developer=row.get("developer", ""),
                     storeUrl=f"https://play.google.com/store/apps/details?id={package}&hl=en_US&gl=US",
                     dailyChange=delta_label(old_rank.get(package), rank),
-                    comparison90d=comparison(None, rank, GOOGLE_DATE, GOOGLE_BASELINE, True))
+                    comparison90d=comparison(None, rank, GOOGLE_DATE, GOOGLE_BASELINE, True, game.get("releaseDateIso")))
         companies[str(rank)] = company
         trends[str(rank)] = clean_analysis(analysis)
         games.append(game)
@@ -105,7 +105,7 @@ def overmortal(row, meta, asset_rank):
     analysis = trend(
         "趋势：2023年以文字修仙、境界突破和离线成长切入，长期由伙伴/灵兽收集、跨服竞争与周期主题活动维持；关键转折：当前Devil Unbound限时活动把常规修炼叙事转成魔道主题回流节点；主力素材：凡人到仙人的境界跃迁、水墨角色、战力暴涨、道侣灵兽与离线资源。",
         "2023年上线后用‘凡人逆袭成仙’的低门槛文本叙事、自动修炼与境界突破承接放置用户，再逐步叠加伙伴、灵兽、宗门、跨服竞争和双修关系，把单线数值成长扩展为角色收集与社交竞争。",
-        "本次进入iOS美国策略畅销榜第49名，属于成熟产品在限时活动期间的榜尾回归；缺少2026-05-26同口径基准，因此不标近三个月新上榜。",
+        "2023年8月上架，早于本期90天窗口；本次进入iOS美国策略畅销榜第49名。因缺少2026-05-26同口径TOP60快照，暂不判断近三个月飙升。",
         "未发现核心循环发生重大重构。可确认的当前节点是8月21日至27日Devil Unbound限时活动，以魔道主题签到、任务与限定奖励刺激回流；素材仍围绕境界和战力跃迁，而非转向新的玩法入口。",
         "水墨/国风仙侠立绘、凡人到仙人的身份跃迁、境界连续突破、战力数字跳升、伙伴与道侣关系、灵兽进化、离线收益及魔道限时角色。",
         "观察限时活动结束后能否继续留在TOP60，以及偏东方文字修仙题材在美国区的稳定核心用户规模。",
@@ -151,10 +151,13 @@ def build_ios(rows, source_url, source_updated):
             raise RuntimeError(f"Unexpected iOS entrant: {row}")
         game.update(rank=rank, gameName=name, developer=row["developer"],
                     storeUrl=f"https://apps.apple.com/us/app/id{app_id}", dailyChange=delta_label(old_rank.get(app_id), rank),
-                    comparison90d=comparison(None, rank, IOS_DATE, IOS_BASELINE, True))
+                    comparison90d=comparison(None, rank, IOS_DATE, IOS_BASELINE, True, game.get("releaseDateIso")))
         analysis = clean_analysis(analysis)
         if app_id not in current:
-            analysis["sections"]["rankPath"] = f"本次进入iOS美国策略畅销榜第{rank}名；由于缺少{IOS_BASELINE}同口径TOP60快照，只记录本次日榜进入，不标为近三个月新上榜。"
+            if game["comparison90d"]["status"] == "new":
+                analysis["sections"]["rankPath"] = f"产品在近90天内上架并进入iOS美国策略畅销榜第{rank}名，按上架日期口径标为近三个月新上榜。"
+            else:
+                analysis["sections"]["rankPath"] = f"本次进入iOS美国策略畅销榜第{rank}名；产品上架时间早于90天窗口，因缺少{IOS_BASELINE}同口径TOP60快照，暂不判断飙升。"
         companies[str(rank)] = company; trends[str(rank)] = analysis; games.append(game)
     enrichment = deepcopy(load("data/ios-enrichment-20260821.json")); enrichment["productCompaniesByRank"] = companies
     save("data/ios-games-20260824.json", games); save("data/ios-enrichment-20260824.json", enrichment); save("data/ios-trends-20260824.json", trends)

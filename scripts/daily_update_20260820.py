@@ -40,7 +40,31 @@ def delta_label(old_rank, new_rank):
     return "=" if d == 0 else (f"+{d}" if d > 0 else str(d))
 
 
-def comparison(old_comp, current_rank, current_date, baseline_date, pending=False):
+def comparison(old_comp, current_rank, current_date, baseline_date, pending=False, release_date=None):
+    """Classify a chart row using release date first, then the 90-day rank baseline.
+
+    A product released inside the 90-day window and currently in TOP60 is a
+    ``new`` entry. Older products still need the exact same-store baseline to
+    determine whether they surged by more than five positions.
+    """
+    try:
+        released = datetime.fromisoformat(str(release_date)[:10]).date()
+        current = datetime.fromisoformat(current_date).date()
+        baseline = datetime.fromisoformat(baseline_date).date()
+    except (TypeError, ValueError):
+        released = current = baseline = None
+    if released and baseline <= released <= current:
+        return {
+            "baselineDate": baseline_date,
+            "baselineRank": None,
+            "currentDate": current_date,
+            "currentRank": current_rank,
+            "delta": None,
+            "status": "new",
+            "classificationBasis": "releaseDate",
+            "releaseDate": released.isoformat(),
+            "evidence": f"产品于{released.isoformat()}上架，位于{baseline_date}至{current_date}的90天窗口内，且当前进入TOP60。",
+        }
     if pending or not old_comp:
         return {
             "baselineDate": baseline_date,
@@ -49,7 +73,7 @@ def comparison(old_comp, current_rank, current_date, baseline_date, pending=Fals
             "currentRank": current_rank,
             "delta": None,
             "status": "pending",
-            "evidence": f"未取得{baseline_date}同商店、同地区、同设备/品类的完整TOP60快照，因此不误判新上榜或飙升。",
+            "evidence": f"上架日期早于{baseline_date}；未取得该日同商店、同地区、同设备/品类的完整TOP60快照，因此暂不判断飙升。",
         }
     if old_comp.get("status") == "new":
         return {
@@ -63,7 +87,7 @@ def comparison(old_comp, current_rank, current_date, baseline_date, pending=Fals
         }
     base = old_comp.get("baselineRank")
     if base is None:
-        return comparison(None, current_rank, current_date, baseline_date, True)
+        return comparison(None, current_rank, current_date, baseline_date, True, release_date)
     d = base - current_rank
     status = "surge" if d > 5 else "normal"
     return {
@@ -165,13 +189,13 @@ def main():
             x["assetRank"] = x.get("assetRank") or old_rank
             companies_g[str(rank)] = deepcopy(old_ge["productCompaniesByRank"][str(old_rank)])
             trends_g[str(rank)] = deepcopy(old_gt[str(old_rank)])
-            x["comparison90d"] = comparison(x.get("comparison90d"), rank, GOOGLE_DATA_DATE, "2026-05-21")
+            x["comparison90d"] = comparison(x.get("comparison90d"), rank, GOOGLE_DATA_DATE, "2026-05-21", release_date=x.get("releaseDateIso"))
         elif pkg == "com.aniplex.resu":
             x = deepcopy(resident_base)
             x["assetRank"] = 58
             x["genre"] = "SLG / 生存 / 基地建设"
             x["keywords"] = "Resident Evil；丧尸；生存恐怖；庇护所；英雄；联盟"
-            x["comparison90d"] = comparison(None, rank, GOOGLE_DATA_DATE, "2026-05-21", True)
+            x["comparison90d"] = comparison(None, rank, GOOGLE_DATA_DATE, "2026-05-21", True, x.get("releaseDateIso"))
             companies_g[str(rank)] = {
                 "en": "Aniplex / JOYCITY / Capcom",
                 "cn": "Aniplex（索尼音乐娱乐日本旗下；发行）/ JOYCITY（研发）/ 卡普空（Resident Evil IP）",
@@ -183,7 +207,7 @@ def main():
             trends_g[str(rank)] = trend(
                 "趋势：2025年以《生化危机》角色、生存恐怖与废弃宅邸探索吸引IP用户，随后把入口承接到基地扩建和联盟SLG；关键转折：全球上线后从解谜/恐怖氛围展示转向幸存者编队、防线与庇护所经营；主力素材：经典角色、丧尸压迫、宅邸探索、基地防线和联盟协作。",
                 "2025年公布并于同年11月全球上线，首发借《生化危机》角色、丧尸危机和废弃宅邸的生存恐怖认知降低理解门槛；实际长期循环则由幸存者收集、设施扩建、资源调度与联盟实时战略承接。",
-                "本次回到Google Play美国策略畅销榜第60名，处于榜尾观察位；缺少精确90天同口径快照，因此只记录当日进入TOP60，不把它标成近三个月新上榜。",
+                "2025年11月上架，早于本期90天窗口；本次回到Google Play美国策略畅销榜第60名，处于榜尾观察位。因缺少精确90天同口径快照，暂不判断近三个月飙升。",
                 "首发传播重点是IP角色、密闭空间压力和探索/解谜，正式运营后商店表达更突出基地防线、幸存者队伍与联盟协作，意味着获量钩子与中后期付费循环已分层。",
                 "里昂等经典角色、丧尸追逐与压迫镜头、废弃宅邸、据点扩建、英雄编队、防线战斗和联盟地图。",
                 "观察榜尾回归是否由版本/IP活动形成短峰，以及基地SLG循环能否把IP导入用户稳定留在TOP60。",
@@ -247,7 +271,7 @@ def main():
                 trends_i[str(rank)] = trend(
                     "趋势：2014年以触屏城市建设和生产链起量，成熟期通过市长竞赛、俱乐部战争与设计挑战转成长线活动型经营；关键转折：从单机扩城逐步加入联盟竞赛和赛季通行证；主力素材：城市天际线、灾害治理、地标布局、生产瓶颈和设计挑战。",
                     "2014年上线时以触屏城市规划、工厂生产与服务覆盖承接SimCity品牌用户；随后加入市长俱乐部、市长竞赛、俱乐部战争、赛季与设计挑战，把单人扩城扩展为周期竞赛和主题收藏。",
-                    "本次进入iOS美国策略畅销榜第49名，属于成熟长线产品的阶段性回榜；没有精确90天基准，不能归为近三个月新上榜。",
+                    "2014年12月上架，早于本期90天窗口；本次进入iOS美国策略畅销榜第49名，属于成熟长线产品的阶段性回榜。因缺少精确90天基准，暂不判断近三个月飙升。",
                     "早期重点是道路、住宅、消防和污染等经典城市问题；中期俱乐部/竞赛引入排名和协作；设计挑战与赛季通行证又把展示重点转向主题城市、限时地标及外观收藏。",
                     "空地到天际线的前后对比、交通/火灾/污染危机、地标拼图、生产链卡点、市长竞赛和俱乐部战争。",
                     "观察本轮榜位能否跨过活动结算期，以及设计赛季对老用户付费和回流的持续性。", store,
@@ -271,14 +295,14 @@ def main():
                 trends_i[str(rank)] = trend(
                     "趋势：2026年以异世界恋爱喜剧和轻量放置卡牌切入，角色收集与夸张剧情承担首发获量；关键转折：近期BUFF 101联动强化限定角色和事件传播；主力素材：动画角色、龙与勇者反差、恋爱桥段、抽卡阵容和放置奖励。",
                     "2026年上线后以勇者与龙的身份反转、恋爱喜剧对白和二次元角色收集作为入口，战斗与养成则采用较轻的放置卡牌结构，降低追剧情用户的操作负担。",
-                    "本次进入iOS美国策略畅销榜第60名，仍是新品/活动驱动的榜尾验证位；缺少90天同口径基准，因此不标近三个月新上榜。",
+                    "2026年1月上架，早于本期90天窗口；本次进入iOS美国策略畅销榜第60名，仍是活动驱动的榜尾验证位。因缺少90天同口径基准，暂不判断近三个月飙升。",
                     "目前可确认的节点是BUFF 101合作内容进入商店标题与传播主位，获量重点由基础世界观进一步转向限定角色/事件；除此之外尚未发现可确认的重大系统转折。",
                     "动画立绘、勇者与龙的反差关系、恋爱喜剧对白、限定角色、十连抽/阵容展示、离线收益和联动视觉。",
                     "观察联动结束后的榜位留存，以及轻量卡牌循环能否承接由剧情与角色素材带来的新增用户。", store,
                     [{"label":"Dragon Traveler官方站", "url":"https://dt.game-tree.com/", "type":"primary"}],
                 )
         x.update(rank=rank, gameName=row["gameName"], developer=row["developer"], dailyChange=delta_label(old_i_rank.get(app_id), rank))
-        x["comparison90d"] = comparison(None, rank, TODAY, "2026-05-22", True)
+        x["comparison90d"] = comparison(None, rank, TODAY, "2026-05-22", True, x.get("releaseDateIso"))
         games_i.append(x)
     ie = deepcopy(old_ie); ie["productCompaniesByRank"] = companies_i
     save("data/ios-games-20260820.json", games_i)
