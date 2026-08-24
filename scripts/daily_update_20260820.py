@@ -7,8 +7,9 @@ from datetime import datetime
 from pathlib import Path
 from urllib.request import Request, urlopen
 
-from lxml import html
 from PIL import Image
+
+from google_play_direct import fetch_top_grossing_strategy
 
 ROOT = Path(__file__).resolve().parents[1]
 TODAY = "2026-08-20"
@@ -77,27 +78,8 @@ def comparison(old_comp, current_rank, current_date, baseline_date, pending=Fals
 
 
 def parse_google():
-    url = "https://www.appbrain.com/stats/google-play-rankings/top_grossing/strategy/us"
-    doc = html.fromstring(fetch(url))
-    rows = []
-    for tr in doc.xpath("//table//tbody/tr"):
-        rank_text = "".join(tr.xpath(".//*[contains(@class,'ranking-rank')]//text()"))
-        try:
-            rank = int(rank_text.strip().lstrip("#"))
-        except ValueError:
-            continue
-        links = tr.xpath(".//a[contains(@href,'/app/')]/@href")
-        if not links:
-            continue
-        href = links[0]
-        package = href.rstrip("/").split("/")[-1]
-        name = " ".join(x.strip() for x in tr.xpath(".//a[contains(@href,'/app/')][1]//text()") if x.strip())
-        cells = [" ".join(x.strip() for x in td.xpath(".//text()") if x.strip()) for td in tr.xpath("./td")]
-        developer = cells[2] if len(cells) > 2 else ""
-        rows.append({"rank": rank, "packageName": package, "gameName": name, "developer": developer})
-    rows = sorted({r["rank"]: r for r in rows}.values(), key=lambda x: x["rank"])[:60]
-    assert len(rows) == 60 and [r["rank"] for r in rows] == list(range(1, 61)), len(rows)
-    return url, rows
+    result = fetch_top_grossing_strategy(limit=60)
+    return result["sourceUrl"], result["rows"]
 
 
 def parse_ios():
