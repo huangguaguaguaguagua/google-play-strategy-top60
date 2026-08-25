@@ -1,0 +1,384 @@
+{
+  "store": "google-play",
+  "country": "US",
+  "category": "Games > Strategy > Top Grossing",
+  "date": "2026-08-25",
+  "dataDate": "2026-08-25",
+  "sourceCapturedAt": "2026-08-25T09:41:37+08:00",
+  "sourceUrl": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
+  "sourceEndpoint": "https://play.google.com/_/PlayStoreUi/data/batchexecute?rpcids=vyAe2&source-path=%2Fstore%2Fapps%2Fcategory%2FGAME_STRATEGY&hl=en_US&gl=US&rt=c",
+  "sourceMethod": "Google Play PlayStoreUi / vyAe2 / topgrossing / GAME_STRATEGY / US",
+  "freshnessNote": "Google Play不公开该榜单的Last updated标签；以北京时间直连抓取时间记录新鲜度。",
+  "crossCheck": {
+    "sourceRole": "audit-only",
+    "sourceUrl": "https://www.appbrain.com/stats/google-play-rankings/top_grossing/strategy/us",
+    "sourceLastUpdated": "August 24, 2026",
+    "rowCount": 60,
+    "overlapCount": 59,
+    "sameRankCount": 21,
+    "maxAbsRankDifference": 7,
+    "note": "仅用于交叉检查，不覆盖Google Play直连排名、日期或产品字段。"
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "packageName": "com.run.tower.defense",
+      "gameName": "Kingshot",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.run.tower.defense&hl=en_US&gl=US"
+    },
+    {
+      "rank": 2,
+      "packageName": "com.gof.global",
+      "gameName": "Whiteout Survival",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.gof.global&hl=en_US&gl=US"
+    },
+    {
+      "rank": 3,
+      "packageName": "com.fun.lastwar.gp",
+      "gameName": "Last War:Survival Game",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.fun.lastwar.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 4,
+      "packageName": "com.readygo.barrel.gp",
+      "gameName": "Last Z: Survival Shooter",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.readygo.barrel.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 5,
+      "packageName": "com.totalbattle",
+      "gameName": "Total Battle: War Strategy",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.totalbattle&hl=en_US&gl=US"
+    },
+    {
+      "rank": 6,
+      "packageName": "com.topgamesinc.evony",
+      "gameName": "Evony: The King's Return",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.topgamesinc.evony&hl=en_US&gl=US"
+    },
+    {
+      "rank": 7,
+      "packageName": "com.phs.global",
+      "gameName": "Last Asylum: Plague",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.phs.global&hl=en_US&gl=US"
+    },
+    {
+      "rank": 8,
+      "packageName": "com.readygo.dark.gp",
+      "gameName": "Dark War Survival",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.readygo.dark.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 9,
+      "packageName": "com.global.ztmslg",
+      "gameName": "Puzzles & Survival",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.global.ztmslg&hl=en_US&gl=US"
+    },
+    {
+      "rank": 10,
+      "packageName": "com.global.pnck",
+      "gameName": "Puzzles & Chaos: Frozen Castle",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.global.pnck&hl=en_US&gl=US"
+    },
+    {
+      "rank": 11,
+      "packageName": "com.supercell.clashofclans",
+      "gameName": "Clash of Clans",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en_US&gl=US"
+    },
+    {
+      "rank": 12,
+      "packageName": "com.zroute.global",
+      "gameName": "Z Route: Redemption",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.zroute.global&hl=en_US&gl=US"
+    },
+    {
+      "rank": 13,
+      "packageName": "com.im30.ROE.gp",
+      "gameName": "Rise of Castles: Ice and Fire",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.im30.ROE.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 14,
+      "packageName": "com.funfizz.palmon.gp",
+      "gameName": "Palmon: Survival",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.funfizz.palmon.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 15,
+      "packageName": "com.wb.goog.hotd.socialstrategy",
+      "gameName": "Game of Thrones: Dragonfire",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.wb.goog.hotd.socialstrategy&hl=en_US&gl=US"
+    },
+    {
+      "rank": 16,
+      "packageName": "com.lilithgame.roc.gp",
+      "gameName": "Rise of Kingdoms: Lost Crusade",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 17,
+      "packageName": "com.supercell.clashroyale",
+      "gameName": "Clash Royale",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en_US&gl=US"
+    },
+    {
+      "rank": 18,
+      "packageName": "com.justgame.jails",
+      "gameName": "Lands of Jail",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.justgame.jails&hl=en_US&gl=US"
+    },
+    {
+      "rank": 19,
+      "packageName": "com.slg.policewar",
+      "gameName": "Police Chief",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.slg.policewar&hl=en_US&gl=US"
+    },
+    {
+      "rank": 20,
+      "packageName": "com.camelgames.aoz",
+      "gameName": "Age of Origins",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.camelgames.aoz&hl=en_US&gl=US"
+    },
+    {
+      "rank": 21,
+      "packageName": "com.funplus.ts.global",
+      "gameName": "Tiles Survive!",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.funplus.ts.global&hl=en_US&gl=US"
+    },
+    {
+      "rank": 22,
+      "packageName": "com.scopely.startrek",
+      "gameName": "Star Trek Fleet Command",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.scopely.startrek&hl=en_US&gl=US"
+    },
+    {
+      "rank": 23,
+      "packageName": "com.igg.android.lordsmobile",
+      "gameName": "Lords Mobile x Transformers",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.igg.android.lordsmobile&hl=en_US&gl=US"
+    },
+    {
+      "rank": 24,
+      "packageName": "com.a3.topgirl.gplay",
+      "gameName": "Top Girl",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.a3.topgirl.gplay&hl=en_US&gl=US"
+    },
+    {
+      "rank": 25,
+      "packageName": "com.topwar.gp",
+      "gameName": "Top War: Battle Game",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.topwar.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 26,
+      "packageName": "com.spark.sp.gp",
+      "gameName": "Narco Empire",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.spark.sp.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 27,
+      "packageName": "com.yottagames.gameofmafia",
+      "gameName": "The Grand Mafia",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.yottagames.gameofmafia&hl=en_US&gl=US"
+    },
+    {
+      "rank": 28,
+      "packageName": "com.games.foundation",
+      "gameName": "Foundation: Galactic Frontier",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.games.foundation&hl=en_US&gl=US"
+    },
+    {
+      "rank": 29,
+      "packageName": "com.gtarcade.ioe.global",
+      "gameName": "Infinity Kingdom",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.gtarcade.ioe.global&hl=en_US&gl=US"
+    },
+    {
+      "rank": 30,
+      "packageName": "com.camelgames.superking",
+      "gameName": "War and Order",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.camelgames.superking&hl=en_US&gl=US"
+    },
+    {
+      "rank": 31,
+      "packageName": "com.greenmushroom.boomblitz.gp",
+      "gameName": "Top Heroes: Kingdom Saga",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.greenmushroom.boomblitz.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 32,
+      "packageName": "com.fiveminlab.overgeared.hero.backpack.merge",
+      "gameName": "Overgeared Hero: Merge RPG",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.fiveminlab.overgeared.hero.backpack.merge&hl=en_US&gl=US"
+    },
+    {
+      "rank": 33,
+      "packageName": "com.funplus.kingofavalon",
+      "gameName": "Frost & Flame: King of Avalon",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.funplus.kingofavalon&hl=en_US&gl=US"
+    },
+    {
+      "rank": 34,
+      "packageName": "com.mrtgd2us.google",
+      "gameName": "Duck Survival",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.mrtgd2us.google&hl=en_US&gl=US"
+    },
+    {
+      "rank": 35,
+      "packageName": "com.diandian.gog",
+      "gameName": "Guns of Glory: Lost Island",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.diandian.gog&hl=en_US&gl=US"
+    },
+    {
+      "rank": 36,
+      "packageName": "com.kingsgroup.sos",
+      "gameName": "State of Survival: Zombie War",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.kingsgroup.sos&hl=en_US&gl=US"
+    },
+    {
+      "rank": 37,
+      "packageName": "com.project.idle.cd",
+      "gameName": "Top Force",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.project.idle.cd&hl=en_US&gl=US"
+    },
+    {
+      "rank": 38,
+      "packageName": "com.snowprintstudios.tacticus",
+      "gameName": "Warhammer 40,000: Tacticus ™",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.snowprintstudios.tacticus&hl=en_US&gl=US"
+    },
+    {
+      "rank": 39,
+      "packageName": "com.s01.global",
+      "gameName": "Lordrush",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.s01.global&hl=en_US&gl=US"
+    },
+    {
+      "rank": 40,
+      "packageName": "com.more.dayzsurvival.gp",
+      "gameName": "Last Shelter: Survival",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.more.dayzsurvival.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 41,
+      "packageName": "com.farlightgames.warline.gp.global",
+      "gameName": "Warline: Sniper Strike",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.farlightgames.warline.gp.global&hl=en_US&gl=US"
+    },
+    {
+      "rank": 42,
+      "packageName": "com.hariwn.legendofcivilizations",
+      "gameName": "Forge Master",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.hariwn.legendofcivilizations&hl=en_US&gl=US"
+    },
+    {
+      "rank": 43,
+      "packageName": "com.igg.android.doomsdaylastsurvivors",
+      "gameName": "Doomsday: Odysseus Returns",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.igg.android.doomsdaylastsurvivors&hl=en_US&gl=US"
+    },
+    {
+      "rank": 44,
+      "packageName": "com.ratinghope.gplay",
+      "gameName": "Titan Rush",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.ratinghope.gplay&hl=en_US&gl=US"
+    },
+    {
+      "rank": 45,
+      "packageName": "com.riotgames.league.wildrift",
+      "gameName": "League of Legends: Wild Rift",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.riotgames.league.wildrift&hl=en_US&gl=US"
+    },
+    {
+      "rank": 46,
+      "packageName": "com.wb.goog.got.conquest",
+      "gameName": "Game of Thrones: Conquest ™",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.wb.goog.got.conquest&hl=en_US&gl=US"
+    },
+    {
+      "rank": 47,
+      "packageName": "com.nvsgames.snap",
+      "gameName": "MARVEL SNAP: Hero Strategy CCG",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.nvsgames.snap&hl=en_US&gl=US"
+    },
+    {
+      "rank": 48,
+      "packageName": "com.wondergames.warpath.gp",
+      "gameName": "Warpath: Ace Shooter",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.wondergames.warpath.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 49,
+      "packageName": "com.sivona.stormshot.e",
+      "gameName": "Stormshot: Isle of Adventure",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.sivona.stormshot.e&hl=en_US&gl=US"
+    },
+    {
+      "rank": 50,
+      "packageName": "com.proximabeta.aoemobile",
+      "gameName": "Age of Empires Mobile",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.proximabeta.aoemobile&hl=en_US&gl=US"
+    },
+    {
+      "rank": 51,
+      "packageName": "com.farlightgames.samo.gp",
+      "gameName": "Call of Dragons",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.farlightgames.samo.gp&hl=en_US&gl=US"
+    },
+    {
+      "rank": 52,
+      "packageName": "com.cyberjoy.galaxydefense",
+      "gameName": "Galaxy Defense: Fortress TD",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.cyberjoy.galaxydefense&hl=en_US&gl=US"
+    },
+    {
+      "rank": 53,
+      "packageName": "com.bw.ud.googleplay",
+      "gameName": "Sea War: Uboat Raid",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.bw.ud.googleplay&hl=en_US&gl=US"
+    },
+    {
+      "rank": 54,
+      "packageName": "com.yottagames.mafiawar",
+      "gameName": "Mafia City",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.yottagames.mafiawar&hl=en_US&gl=US"
+    },
+    {
+      "rank": 55,
+      "packageName": "com.wireless.defenseland",
+      "gameName": "Raid Rush: Tower Defense TD",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.wireless.defenseland&hl=en_US&gl=US"
+    },
+    {
+      "rank": 56,
+      "packageName": "com.tap4fun.ape.gplay",
+      "gameName": "Age of Apes",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.tap4fun.ape.gplay&hl=en_US&gl=US"
+    },
+    {
+      "rank": 57,
+      "packageName": "com.global.antgame",
+      "gameName": "Ant Legion: For The Swarm",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.global.antgame&hl=en_US&gl=US"
+    },
+    {
+      "rank": 58,
+      "packageName": "com.tap4fun.odin.kingdomguard",
+      "gameName": "Kingdom Guard: Tower Defense",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.tap4fun.odin.kingdomguard&hl=en_US&gl=US"
+    },
+    {
+      "rank": 59,
+      "packageName": "com.seaofconquest.global",
+      "gameName": "Sea of Conquest: Pirate War",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.seaofconquest.global&hl=en_US&gl=US"
+    },
+    {
+      "rank": 60,
+      "packageName": "com.QuestLab.DraftWar",
+      "gameName": "Draft Showdown",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.QuestLab.DraftWar&hl=en_US&gl=US"
+    }
+  ]
+}
