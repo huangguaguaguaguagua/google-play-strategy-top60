@@ -7,8 +7,8 @@
     <meta name="color-scheme" content="light" />
     <title>美国区策略游戏畅销榜 TOP60｜Google Play / App Store</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles-20260819d.css?v=20260826a" />
-    <script defer src="app-20260819d.js?v=20260826a"></script>
+    <link rel="stylesheet" href="styles-20260819d.css?v=20260826b" />
+    <script defer src="app-20260819d.js?v=20260826b"></script>
   </head>
   <body>
     <header class="topbar">
@@ -54,6 +54,46 @@
         <article><span>近三个月飙升</span><strong id="stat-surge">—</strong><small class="orange">UP &gt; 5</small></article>
       </section>
 
+      <section class="market-brief" id="market-brief" aria-labelledby="market-brief-heading">
+        <div class="market-brief__heading">
+          <div>
+            <p class="eyebrow">DAILY CROSS-STORE BRIEF</p>
+            <h2 id="market-brief-heading">当日双端市场动态</h2>
+            <p class="market-brief__lead" id="market-brief-lead">正在汇总 Google Play 与 App Store 当日变化…</p>
+          </div>
+          <div class="market-brief__actions">
+            <span class="market-brief__date" id="market-brief-date">—</span>
+            <a class="button primary" id="market-brief-download" href="#" download>下载今日日报</a>
+            <a class="button ghost" id="market-brief-json" href="#" download>下载结构化数据</a>
+          </div>
+        </div>
+
+        <div class="market-platforms" id="market-platforms" aria-live="polite">
+          <article class="market-platform-card"><span>GOOGLE PLAY</span><p>正在加载…</p></article>
+          <article class="market-platform-card"><span>APP STORE</span><p>正在加载…</p></article>
+        </div>
+
+        <div class="market-brief__lower">
+          <article class="market-insights">
+            <div class="market-panel-title"><span>MARKET READ</span><h3>双端综合判断</h3></div>
+            <div id="market-insights"><p class="market-loading">正在加载…</p></div>
+          </article>
+          <article class="market-watch">
+            <div class="market-panel-title"><span>NEXT WATCH</span><h3>后续关注点</h3></div>
+            <div id="market-watchpoints"><p class="market-loading">正在加载…</p></div>
+          </article>
+        </div>
+
+        <div class="report-archive">
+          <div class="report-archive__copy">
+            <span>DAILY REPORT ARCHIVE</span>
+            <strong>历史日报下载</strong>
+            <p>自2026年8月26日起按真实榜单日期归档，保留当日排名变化、跨端判断、90天状态与后续关注点。</p>
+          </div>
+          <div class="report-list" id="report-list"><span class="market-loading">正在加载报告归档…</span></div>
+        </div>
+      </section>
+
       <section class="tracker" aria-labelledby="tracker-heading">
         <div class="section-heading">
           <div><p class="eyebrow">LIVE RANKING TABLE</p><h2 id="tracker-heading">榜单明细</h2></div>
@@ -91,7 +131,7 @@
           <article><span>01</span><strong>当日榜单</strong><p id="method-current">Google Play 美国区 Strategy 畅销榜，按北京时间对应的当日公开榜单收录TOP60。</p></article>
           <article><span>02</span><strong>近三个月状态</strong><p>近90天内上架且当前进入TOP60＝新上榜；上架更早、基准日已在榜且提升超过5位＝飙升；两类均以单独行色突出。</p></article>
           <article><span>03</span><strong>常规展示</strong><p>上架早于窗口且尚缺精确90天排名基准的产品按常规样式展示；历史快照补齐后再自动判断是否飙升。</p></article>
-          <article class="source-policy"><span>04</span><strong>玩法、素材与生命周期审计</strong><p>核心玩法、获量素材和生命周期转折分开记录。趋势从测试/上架期起追踪产品改动、素材迁移、IP/版本节点和榜位阶段；没有可核验证据时降低可信度，并明确写“未发现重大转折”，不再用通用增长模板补齐。</p><a href="data/source-methodology-20260819i.json?v=20260826a" target="_blank" rel="noreferrer">查看机器可读来源规则 ↗</a></article>
+          <article class="source-policy"><span>04</span><strong>玩法、素材与生命周期审计</strong><p>核心玩法、获量素材和生命周期转折分开记录。趋势从测试/上架期起追踪产品改动、素材迁移、IP/版本节点和榜位阶段；没有可核验证据时降低可信度，并明确写“未发现重大转折”，不再用通用增长模板补齐。</p><a href="data/source-methodology-20260819i.json?v=20260826b" target="_blank" rel="noreferrer">查看机器可读来源规则 ↗</a></article>
         </div>
       </section>
 

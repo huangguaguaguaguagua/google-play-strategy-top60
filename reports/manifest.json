@@ -1,0 +1,13 @@
+{
+  "updated": "2026-08-26",
+  "timezone": "Asia/Shanghai",
+  "reports": [
+    {
+      "date": "2026-08-26",
+      "title": "iOS事件型波动放大，Google榜尾继续换防",
+      "summary": "Google榜面偏稳，iOS中腰部发生明显事件型重排；Dragonfire保持双端#15。",
+      "markdown": "reports/2026-08-26.md",
+      "json": "data/market-brief-20260826.json"
+    }
+  ]
+}

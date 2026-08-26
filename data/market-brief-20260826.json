@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-26",
+  "timezone": "Asia/Shanghai",
+  "title": "iOS事件型波动放大，Google榜尾继续换防",
+  "summary": "Google Play今日结构偏稳，仅榜尾发生一进一出；App Store中腰部出现更明显的事件型重排。两端共同的新近产品中，《Game of Thrones: Dragonfire》均居#15，是当前跨端承接最完整的新产品。",
+  "platforms": {
+    "googlePlay": {
+      "label": "Google Play · Android",
+      "sourceTime": "北京时间 2026-08-26 09:52:02 直连抓取",
+      "anchors": "#1 Kingshot · #25 Narco Empire · #60 Resident Evil Survival Unit",
+      "dailyChange": "进入：#60 Resident Evil Survival Unit；掉榜：Sea of Conquest: Pirate War",
+      "movement": "上涨：Duck Survival +5、Doomsday +4、Kingdom Guard +3；下跌：Infinity Kingdom -8、Stormshot -5、Overgeared Hero -4",
+      "analysis": "TOP60整体较昨日稳定，排名变化主要集中在中后段。新进的Resident Evil停在榜尾，暂时更像IP产品回榜测试；Infinity Kingdom跌至#37，是Android侧最明显的单日回撤。"
+    },
+    "ios": {
+      "label": "App Store · iPhone/iOS",
+      "sourceTime": "Apple RSS北京时间 2026-08-26",
+      "anchors": "#1 Pokémon GO · #25 MARVEL SNAP · #60 Lords Mobile x Transformers",
+      "dailyChange": "进入：#43 DC: Dark Legion、#56 Warpath、#57 Kingdom Guard；掉榜：Kingdom Clash、Overgeared Hero、Guns of Glory",
+      "movement": "上涨：Star Wars: Galaxy of Heroes +21、Summoners War +16、Forge Master与Galaxy Defense各+8；下跌：Boom Beach -18、Watcher of Realms -17",
+      "analysis": "iOS中腰部波动显著高于Android。Star Wars与Summoners War的跃升更符合版本、活动或IP内容带来的短时付费抬升；Boom Beach与Watcher的同步回落，需要继续观察是活动高点回吐还是排名中枢下移。"
+    }
+  },
+  "crossStore": [
+    {
+      "title": "跨端新产品领跑者明确",
+      "detail": "Game of Thrones: Dragonfire在Google与iOS均为#15，是近90天上架产品中唯一同时进入双端TOP20的产品。"
+    },
+    {
+      "title": "同产品存在平台效率差",
+      "detail": "Lordrush在iOS #23、Google #38，iOS变现位置更强；Top Force在Google #35、iOS #47，Android侧承接更好。Warpath与Kingdom Guard两端排名接近，分别为Google #47/iOS #56、Google #55/iOS #57。"
+    },
+    {
+      "title": "90天状态仍以新上架识别为主",
+      "detail": "Google有5款、iOS有4款近90天上架并进入TOP60；因缺少2026-05-28精确同口径基准，较老产品暂不判断“近三个月飙升”。"
+    }
+  ],
+  "watchpoints": [
+    {
+      "priority": "高",
+      "title": "判断iOS头部跃升是否可持续",
+      "detail": "连续跟踪Star Wars: Galaxy of Heroes与Summoners War 2—3个工作日，区分活动付费峰值与新排名中枢。"
+    },
+    {
+      "priority": "高",
+      "title": "观察榜尾IP产品留存",
+      "detail": "Resident Evil Survival Unit今日仅以Google #60回榜；若连续留榜，才说明IP与版本运营形成了更稳定的付费承接。"
+    },
+    {
+      "priority": "中",
+      "title": "跟踪iOS回落产品的反弹",
+      "detail": "重点看Boom Beach与Watcher of Realms能否在活动切换后回到原有区间，避免把单日回撤误判为长期衰退。"
+    },
+    {
+      "priority": "中",
+      "title": "比较新产品跨端扩量节奏",
+      "detail": "持续比较Dragonfire、Lordrush、Top Force、Top Lords与Narco Empire的跨端位置，识别投放预算、用户结构和付费深度差异。"
+    },
+    {
+      "priority": "中",
+      "title": "关注DC: Dark Legion回榜强度",
+      "detail": "该产品今日进入iOS #43但并非近90天新品；后续结合Supergirl等内容活动判断回榜是否具备延续性。"
+    }
+  ],
+  "status": {
+    "googlePlay": { "top60": 60, "newRelease90d": 5, "surge90d": 0, "baselineAvailable": false },
+    "ios": { "top60": 60, "newRelease90d": 4, "surge90d": 0, "baselineAvailable": false }
+  },
+  "sources": [
+    {
+      "label": "Google Play美国区策略畅销榜直连",
+      "url": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
+      "capturedAt": "2026-08-26T09:52:02+08:00"
+    },
+    {
+      "label": "Apple官方美国区iPhone策略畅销RSS",
+      "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
+      "updated": "2026-08-25T18:47:51-07:00"
+    }
+  ],
+  "downloads": {
+    "markdown": "reports/2026-08-26.md",
+    "json": "data/market-brief-20260826.json"
+  }
+}
