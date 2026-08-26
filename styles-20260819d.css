@@ -133,3 +133,95 @@
   .baseline-notice { align-items: flex-start; flex-direction: column; gap: 6px; }
   .method-grid article.source-policy { grid-column: auto; }
 }
+
+.market-brief {
+  margin: 88px 0 0;
+  padding: 34px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #dfe5ef;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 18px 55px rgba(22,34,61,.07);
+}
+.market-brief::before {
+  content: "";
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  right: -180px;
+  top: -220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37,99,235,.12), transparent 70%);
+  pointer-events: none;
+}
+.market-brief__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  position: relative;
+}
+.market-brief__heading h2 { margin: 0; font-size: 36px; letter-spacing: -.04em; }
+.market-brief__lead { max-width: 880px; margin: 14px 0 0; color: #475467; font-size: 13px; line-height: 1.8; }
+.market-brief__actions { min-width: 320px; display: flex; justify-content: flex-end; align-items: center; gap: 8px; flex-wrap: wrap; }
+.market-brief__actions .button { display: inline-grid; place-items: center; text-decoration: none; }
+.market-brief__date { width: 100%; color: #667085; font-size: 11px; font-weight: 750; text-align: right; }
+.market-platforms { margin-top: 26px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.market-platform-card { min-width: 0; padding: 22px; border: 1px solid #e2e7f0; border-radius: 16px; background: #f8fafc; }
+.market-platform-card--googlePlay { border-top: 3px solid #8bcf20; }
+.market-platform-card--ios { border-top: 3px solid #5591ee; }
+.market-platform-card__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.market-platform-card__head span { color: #2563eb; font-size: 9px; font-weight: 850; letter-spacing: .14em; }
+.market-platform-card__head h3 { margin: 5px 0 0; font-size: 19px; letter-spacing: -.025em; }
+.market-platform-card__head small { max-width: 220px; color: #667085; font-size: 9px; line-height: 1.5; text-align: right; }
+.market-platform-card dl { margin: 20px 0 0; display: grid; gap: 10px; }
+.market-platform-card dl > div { display: grid; grid-template-columns: 72px 1fr; gap: 12px; }
+.market-platform-card dt { color: #667085; font-size: 10px; font-weight: 750; }
+.market-platform-card dd { margin: 0; color: #253b68; font-size: 11px; line-height: 1.65; overflow-wrap: anywhere; }
+.market-platform-card__analysis { margin: 17px 0 0; padding: 14px; border-radius: 10px; background: #fff; color: #344054; font-size: 11px; line-height: 1.75; }
+.market-brief__lower { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.market-insights, .market-watch { padding: 22px; border: 1px solid #e2e7f0; border-radius: 16px; }
+.market-panel-title { margin-bottom: 14px; }
+.market-panel-title span { color: #2563eb; font-size: 9px; font-weight: 850; letter-spacing: .14em; }
+.market-panel-title h3 { margin: 5px 0 0; font-size: 18px; }
+.market-insight-item, .market-watch-item { padding: 14px 0; display: flex; gap: 13px; border-top: 1px solid #edf0f4; }
+.market-insight-item:first-child, .market-watch-item:first-child { border-top: 0; }
+.market-insight-item > span { color: #2563eb; font-size: 10px; font-weight: 900; }
+.market-insight-item strong, .market-watch-item strong { display: block; color: #253b68; font-size: 12px; }
+.market-insight-item p, .market-watch-item p { margin: 6px 0 0; color: #667085; font-size: 11px; line-height: 1.65; }
+.watch-priority { height: 22px; min-width: 31px; padding: 0 7px; display: inline-grid; place-items: center; border-radius: 999px; background: #eef3fb; color: #3b5f9e; font-size: 9px; font-weight: 850; }
+.watch-priority.high { background: #fff0e7; color: #c35516; }
+.report-archive { margin-top: 16px; padding: 22px; display: grid; grid-template-columns: minmax(220px, .35fr) minmax(0, 1fr); gap: 26px; border-radius: 16px; background: #0b1120; color: #fff; }
+.report-archive__copy > span { color: var(--lime); font-size: 9px; font-weight: 850; letter-spacing: .14em; }
+.report-archive__copy strong { display: block; margin-top: 7px; font-size: 17px; }
+.report-archive__copy p { margin: 9px 0 0; color: #91a0b8; font-size: 10px; line-height: 1.65; }
+.report-list { min-width: 0; display: grid; gap: 8px; }
+.report-item { padding: 13px 14px; display: grid; grid-template-columns: 90px minmax(0, 1fr) auto; gap: 14px; align-items: center; border: 1px solid rgba(255,255,255,.1); border-radius: 10px; background: rgba(255,255,255,.05); }
+.report-item time { color: var(--lime); font-size: 10px; font-weight: 800; }
+.report-item strong { display: block; font-size: 11px; }
+.report-item p { margin: 4px 0 0; color: #9aa9c0; font-size: 9px; line-height: 1.5; }
+.report-item__links { display: flex; gap: 7px; }
+.report-item__links a { padding: 7px 9px; border: 1px solid rgba(255,255,255,.15); border-radius: 7px; color: #dbe7f8; font-size: 9px; font-weight: 750; text-decoration: none; white-space: nowrap; }
+.report-item__links a:hover { border-color: var(--lime); color: var(--lime); }
+.market-loading { margin: 0; color: #667085; font-size: 11px; }
+
+@media (max-width: 1000px) {
+  .market-brief__heading { flex-direction: column; }
+  .market-brief__actions { min-width: 0; justify-content: flex-start; }
+  .market-brief__date { text-align: left; }
+  .market-platforms, .market-brief__lower { grid-template-columns: 1fr; }
+  .report-archive { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .market-brief { margin-top: 60px; padding: 22px; }
+  .market-brief__heading h2 { font-size: 30px; }
+  .market-brief__actions { width: 100%; }
+  .market-brief__actions .button { flex: 1; padding-inline: 10px; }
+  .market-platform-card__head { flex-direction: column; }
+  .market-platform-card__head small { max-width: none; text-align: left; }
+  .market-platform-card dl > div { grid-template-columns: 1fr; gap: 4px; }
+  .report-item { grid-template-columns: 1fr; }
+  .report-item__links { justify-content: flex-start; }
+}

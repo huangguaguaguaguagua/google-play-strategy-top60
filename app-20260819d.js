@@ -1,6 +1,8 @@
 "use strict";
 
-const CACHE_VERSION = "20260826a";
+const CACHE_VERSION = "20260826b";
+const MARKET_BRIEF_PATH = "data/market-brief-20260826.json";
+const REPORTS_MANIFEST_PATH = "reports/manifest.json";
 const STORE_CONFIGS = {
   googlePlay: {
     key: "googlePlay",
@@ -70,6 +72,14 @@ const elements = {
   modalRank: document.querySelector("#modal-rank"),
   modalTitle: document.querySelector("#modal-title"),
   modalKeywords: document.querySelector("#modal-keywords"),
+  marketBriefLead: document.querySelector("#market-brief-lead"),
+  marketBriefDate: document.querySelector("#market-brief-date"),
+  marketBriefDownload: document.querySelector("#market-brief-download"),
+  marketBriefJson: document.querySelector("#market-brief-json"),
+  marketPlatforms: document.querySelector("#market-platforms"),
+  marketInsights: document.querySelector("#market-insights"),
+  marketWatchpoints: document.querySelector("#market-watchpoints"),
+  reportList: document.querySelector("#report-list"),
 };
 
 function config() {
@@ -92,6 +102,12 @@ function safeUrl(value) {
   } catch {
     return "#";
   }
+}
+
+function safeLocalPath(value) {
+  const path = String(value ?? "").trim();
+  if (!/^(reports|data)\/[a-z0-9._/-]+$/i.test(path) || path.includes("..")) return "#";
+  return path;
 }
 
 function padRank(rank) {
@@ -208,6 +224,70 @@ async function fetchJson(path, label) {
   const response = await fetch(path + "?v=" + CACHE_VERSION);
   if (!response.ok) throw new Error(label + "加载失败：" + response.status);
   return response.json();
+}
+
+function platformBriefHtml(platform, key) {
+  const badge = key === "googlePlay" ? "ANDROID" : "iPHONE · iOS";
+  return '<article class="market-platform-card market-platform-card--' + escapeHtml(key) + '">' +
+    '<div class="market-platform-card__head"><div><span>' + escapeHtml(badge) + '</span><h3>' +
+      escapeHtml(platform.label) + '</h3></div><small>' + escapeHtml(platform.sourceTime) + '</small></div>' +
+    '<dl><div><dt>榜单锚点</dt><dd>' + escapeHtml(platform.anchors) + '</dd></div>' +
+    '<div><dt>当日进出</dt><dd>' + escapeHtml(platform.dailyChange) + '</dd></div>' +
+    '<div><dt>主要升降</dt><dd>' + escapeHtml(platform.movement) + '</dd></div></dl>' +
+    '<p class="market-platform-card__analysis">' + escapeHtml(platform.analysis) + '</p></article>';
+}
+
+function insightHtml(item, index) {
+  return '<article class="market-insight-item"><span>' + String(index + 1).padStart(2, "0") +
+    '</span><div><strong>' + escapeHtml(item.title) + '</strong><p>' + escapeHtml(item.detail) + '</p></div></article>';
+}
+
+function watchpointHtml(item) {
+  const priorityClass = item.priority === "高" ? " high" : "";
+  return '<article class="market-watch-item"><span class="watch-priority' + priorityClass + '">' +
+    escapeHtml(item.priority) + '</span><div><strong>' + escapeHtml(item.title) + '</strong><p>' +
+    escapeHtml(item.detail) + '</p></div></article>';
+}
+
+function reportItemHtml(report) {
+  const markdown = safeLocalPath(report.markdown);
+  const json = safeLocalPath(report.json);
+  return '<article class="report-item"><time datetime="' + escapeHtml(report.date) + '">' +
+    escapeHtml(report.date) + '</time><div><strong>' + escapeHtml(report.title) + '</strong><p>' +
+    escapeHtml(report.summary) + '</p></div><div class="report-item__links"><a href="' + escapeHtml(markdown) +
+    '" download>Markdown ↓</a><a href="' + escapeHtml(json) + '" download>JSON ↓</a></div></article>';
+}
+
+async function loadMarketBrief() {
+  try {
+    const [brief, archive] = await Promise.all([
+      fetchJson(MARKET_BRIEF_PATH, "市场日报"),
+      fetchJson(REPORTS_MANIFEST_PATH, "日报归档"),
+    ]);
+    elements.marketBriefLead.textContent = brief.title + "。" + brief.summary;
+    elements.marketBriefDate.textContent = brief.date + " · 北京时间";
+    elements.marketBriefDownload.href = safeLocalPath(brief.downloads?.markdown);
+    elements.marketBriefJson.href = safeLocalPath(brief.downloads?.json);
+    elements.marketPlatforms.innerHTML = [
+      platformBriefHtml(brief.platforms.googlePlay, "googlePlay"),
+      platformBriefHtml(brief.platforms.ios, "ios"),
+    ].join("");
+    elements.marketInsights.innerHTML = (brief.crossStore || []).map(insightHtml).join("");
+    elements.marketWatchpoints.innerHTML = (brief.watchpoints || []).map(watchpointHtml).join("");
+    elements.reportList.innerHTML = (archive.reports || []).length
+      ? archive.reports.map(reportItemHtml).join("")
+      : '<span class="market-loading">暂无已归档日报。</span>';
+    window.__MARKET_BRIEF_READY__ = true;
+  } catch (error) {
+    console.error(error);
+    elements.marketBriefLead.textContent = "当日市场日报暂时加载失败，榜单明细仍可正常使用。";
+    elements.marketPlatforms.innerHTML = '<article class="market-platform-card"><p class="market-loading">' +
+      escapeHtml(error.message) + '</p></article>';
+    elements.marketInsights.innerHTML = '<p class="market-loading">暂无综合判断。</p>';
+    elements.marketWatchpoints.innerHTML = '<p class="market-loading">暂无关注点。</p>';
+    elements.reportList.innerHTML = '<span class="market-loading">日报归档加载失败。</span>';
+    window.__MARKET_BRIEF_READY__ = false;
+  }
 }
 
 async function loadAssets(storeConfig) {
@@ -535,6 +615,7 @@ function bindEvents() {
 
 function init() {
   bindEvents();
+  loadMarketBrief();
   switchStore(initialStore, false);
 }
 
