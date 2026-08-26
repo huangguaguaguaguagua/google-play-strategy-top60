@@ -7,8 +7,8 @@
     <meta name="color-scheme" content="light" />
     <title>美国区策略游戏畅销榜 TOP60｜Google Play / App Store</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles-20260819d.css?v=20260826b" />
-    <script defer src="app-20260819d.js?v=20260826b"></script>
+    <link rel="stylesheet" href="styles-20260819d.css?v=20260826c" />
+    <script defer src="app-20260819d.js?v=20260826c"></script>
   </head>
   <body>
     <header class="topbar">
@@ -68,27 +68,38 @@
           </div>
         </div>
 
-        <div class="market-platforms" id="market-platforms" aria-live="polite">
-          <article class="market-platform-card"><span>GOOGLE PLAY</span><p>正在加载…</p></article>
-          <article class="market-platform-card"><span>APP STORE</span><p>正在加载…</p></article>
-        </div>
+        <section class="market-section market-dynamics" aria-labelledby="market-dynamics-heading">
+          <div class="market-section__heading">
+            <div><span>01 · RANKING MOVERS</span><h3 id="market-dynamics-heading">双榜当日异动产品</h3></div>
+            <p>按产品拆解当日进榜、回榜和主要升降；每张卡片均显示当前名次、变动方向与简要判断。</p>
+          </div>
+          <div class="market-platforms" id="market-platforms" aria-live="polite">
+            <article class="market-platform-card"><span>GOOGLE PLAY</span><p>正在加载…</p></article>
+            <article class="market-platform-card"><span>APP STORE</span><p>正在加载…</p></article>
+          </div>
+        </section>
 
-        <div class="market-brief__lower">
-          <article class="market-insights">
-            <div class="market-panel-title"><span>MARKET READ</span><h3>双端综合判断</h3></div>
-            <div id="market-insights"><p class="market-loading">正在加载…</p></div>
-          </article>
-          <article class="market-watch">
-            <div class="market-panel-title"><span>NEXT WATCH</span><h3>后续关注点</h3></div>
-            <div id="market-watchpoints"><p class="market-loading">正在加载…</p></div>
-          </article>
-        </div>
+        <section class="market-section market-news" aria-labelledby="market-news-heading">
+          <div class="market-section__heading">
+            <div><span>02 · STRATEGY MARKET RADAR</span><h3 id="market-news-heading">策略手游市场热点</h3></div>
+            <p id="market-news-method">按时效、厂商/IP体量、榜单关联度及品类影响综合排序，非第三方流量统计。</p>
+          </div>
+          <div class="market-news-grid" id="market-news-list"><p class="market-loading">正在加载热点新闻…</p></div>
+        </section>
+
+        <section class="market-section market-closing" aria-labelledby="market-closing-heading">
+          <div class="market-section__heading market-section__heading--light">
+            <div><span>03 · FINAL READ</span><h3 id="market-closing-heading">综合判断与后续关注</h3></div>
+            <p>把今日榜面信号与外部市场事件合并，形成可继续跟踪的结论。</p>
+          </div>
+          <div class="market-closing-grid" id="market-closing-list"><p class="market-loading">正在加载综合判断…</p></div>
+        </section>
 
         <div class="report-archive">
           <div class="report-archive__copy">
             <span>DAILY REPORT ARCHIVE</span>
             <strong>历史日报下载</strong>
-            <p>自2026年8月26日起按真实榜单日期归档，保留当日排名变化、跨端判断、90天状态与后续关注点。</p>
+            <p>自2026年8月26日起按真实榜单日期归档，保留异动产品分析、约10条市场热点，以及合并后的综合判断与关注点。</p>
           </div>
           <div class="report-list" id="report-list"><span class="market-loading">正在加载报告归档…</span></div>
         </div>
