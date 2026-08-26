@@ -2,64 +2,247 @@
   "date": "2026-08-26",
   "timezone": "Asia/Shanghai",
   "title": "iOS事件型波动放大，Google榜尾继续换防",
-  "summary": "Google Play今日结构偏稳，仅榜尾发生一进一出；App Store中腰部出现更明显的事件型重排。两端共同的新近产品中，《Game of Thrones: Dragonfire》均居#15，是当前跨端承接最完整的新产品。",
-  "platforms": {
+  "summary": "今日市场动态改为产品卡片、策略手游热点和统一收尾三层结构。Google Play榜面偏稳，iOS成熟产品受活动与IP内容影响出现更明显的单日升降。",
+  "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与对策略品类的影响综合排序；不是第三方阅读量或舆情指数。",
+  "iconBundle": "assets/market-icons-20260826.json",
+  "rankingSources": {
+    "googlePlay": "data/games-20260826.json",
+    "ios": "data/ios-games-20260826.json"
+  },
+  "rankingDynamics": {
     "googlePlay": {
       "label": "Google Play · Android",
       "sourceTime": "北京时间 2026-08-26 09:52:02 直连抓取",
-      "anchors": "#1 Kingshot · #25 Narco Empire · #60 Resident Evil Survival Unit",
-      "dailyChange": "进入：#60 Resident Evil Survival Unit；掉榜：Sea of Conquest: Pirate War",
-      "movement": "上涨：Duck Survival +5、Doomsday +4、Kingdom Guard +3；下跌：Infinity Kingdom -8、Stormshot -5、Overgeared Hero -4",
-      "analysis": "TOP60整体较昨日稳定，排名变化主要集中在中后段。新进的Resident Evil停在榜尾，暂时更像IP产品回榜测试；Infinity Kingdom跌至#37，是Android侧最明显的单日回撤。"
+      "anchors": "榜单锚点：#1 Kingshot · #25 Narco Empire · #60 Resident Evil Survival Unit",
+      "products": [
+        {
+          "gameName": "Resident Evil Survival Unit",
+          "productId": "com.aniplex.resu",
+          "iconKey": "googlePlay:com.aniplex.resu",
+          "tone": "entry",
+          "changeLabel": "进入 · #60",
+          "analysis": "昨日榜外、今日压线回到TOP60；产品并非近90天新品，目前更像IP与版本运营带来的榜尾回流，需先确认能否连续留榜。"
+        },
+        {
+          "gameName": "Duck Survival",
+          "productId": "com.mrtgd2us.google",
+          "iconKey": "googlePlay:com.mrtgd2us.google",
+          "tone": "up",
+          "changeLabel": "+5 · #29",
+          "analysis": "由#34升至#29，是Android侧最明显上涨并重新进入前30；若未来两日仍在前30，才可视为排名中枢上移。"
+        },
+        {
+          "gameName": "Doomsday: Odysseus Returns",
+          "productId": "com.igg.android.doomsdaylastsurvivors",
+          "iconKey": "googlePlay:com.igg.android.doomsdaylastsurvivors",
+          "tone": "up",
+          "changeLabel": "+4 · #39",
+          "analysis": "由#43回升至#39、重新进入前40，属于成熟SLG的温和修复，暂未形成足以改变长期位置的单日幅度。"
+        },
+        {
+          "gameName": "Infinity Kingdom",
+          "productId": "com.gtarcade.ioe.global",
+          "iconKey": "googlePlay:com.gtarcade.ioe.global",
+          "tone": "down",
+          "changeLabel": "−8 · #37",
+          "analysis": "由#29降至#37并跌出前30，是Google榜最大回撤；后续若无法快速回到30名附近，需警惕付费高点已经回吐。"
+        },
+        {
+          "gameName": "Stormshot: Isle of Adventure",
+          "productId": "com.sivona.stormshot.e",
+          "iconKey": "googlePlay:com.sivona.stormshot.e",
+          "tone": "down",
+          "changeLabel": "−5 · #54",
+          "analysis": "由#49降至#54，已接近榜尾换防区；单日幅度不算极端，但留给活动切换和自然回升的缓冲空间明显变小。"
+        }
+      ]
     },
     "ios": {
       "label": "App Store · iPhone/iOS",
-      "sourceTime": "Apple RSS北京时间 2026-08-26",
-      "anchors": "#1 Pokémon GO · #25 MARVEL SNAP · #60 Lords Mobile x Transformers",
-      "dailyChange": "进入：#43 DC: Dark Legion、#56 Warpath、#57 Kingdom Guard；掉榜：Kingdom Clash、Overgeared Hero、Guns of Glory",
-      "movement": "上涨：Star Wars: Galaxy of Heroes +21、Summoners War +16、Forge Master与Galaxy Defense各+8；下跌：Boom Beach -18、Watcher of Realms -17",
-      "analysis": "iOS中腰部波动显著高于Android。Star Wars与Summoners War的跃升更符合版本、活动或IP内容带来的短时付费抬升；Boom Beach与Watcher的同步回落，需要继续观察是活动高点回吐还是排名中枢下移。"
+      "sourceTime": "Apple RSS 北京时间 2026-08-26",
+      "anchors": "榜单锚点：#1 Pokémon GO · #25 MARVEL SNAP · #60 Lords Mobile x Transformers",
+      "products": [
+        {
+          "gameName": "DC: Dark Legion",
+          "productId": "6479020757",
+          "iconKey": "ios:6479020757",
+          "tone": "entry",
+          "changeLabel": "进入 · #43",
+          "analysis": "从榜外直接回到#43，强于一般的榜尾试探；它不是近90天新品，更应按IP内容与成熟期活动带来的回榜观察。"
+        },
+        {
+          "gameName": "Warpath: Ace Shooter",
+          "productId": "1529067679",
+          "iconKey": "ios:1529067679",
+          "tone": "entry",
+          "changeLabel": "进入 · #56",
+          "analysis": "成熟产品回到iOS榜尾，同时位于Google #47；双端仍有付费承接，但iOS侧尚未脱离高掉榜风险区。"
+        },
+        {
+          "gameName": "Kingdom Guard: Tower Defense",
+          "productId": "1570095804",
+          "iconKey": "ios:1570095804",
+          "tone": "entry",
+          "changeLabel": "进入 · #57",
+          "analysis": "iOS回榜至#57、Google同步位于#55，呈现双端榜尾共振；需要连续留榜后再判断是否由同一轮活动或投放支撑。"
+        },
+        {
+          "gameName": "Star Wars: Galaxy of Heroes",
+          "productId": "921022358",
+          "iconKey": "ios:921022358",
+          "tone": "up",
+          "changeLabel": "+21 · #6",
+          "analysis": "由#27跃升至#6，是今日幅度最大的头部重排；成熟IP产品出现这种跳升通常伴随集中付费事件，持续性需看未来2—3日。"
+        },
+        {
+          "gameName": "Summoners War X Frieren",
+          "productId": "852912420",
+          "iconKey": "ios:852912420",
+          "tone": "up",
+          "changeLabel": "+16 · #30",
+          "analysis": "由#46回到#30，产品名中的《葬送的芙莉莲》联动曝光与内容消费是当前最直接的驱动线索，重点看联动热度能否延续。"
+        },
+        {
+          "gameName": "Boom Beach",
+          "productId": "672150402",
+          "iconKey": "ios:672150402",
+          "tone": "down",
+          "changeLabel": "−18 · #49",
+          "analysis": "由#31降至#49，回撤时间与Warships第91赛季启动后的首轮波动重叠；需区分赛季开局付费高点回吐与位置持续下移。"
+        },
+        {
+          "gameName": "Watcher of Realms - US",
+          "productId": "6741674823",
+          "iconKey": "ios:6741674823",
+          "tone": "down",
+          "changeLabel": "−17 · #52",
+          "analysis": "由#35降至#52，已进入榜尾风险区；若没有新活动承接，短期更可能表现为上一轮付费高点后的回落。"
+        }
+      ]
     }
   },
-  "crossStore": [
+  "marketNews": [
     {
-      "title": "跨端新产品领跑者明确",
-      "detail": "Game of Thrones: Dragonfire在Google与iOS均为#15，是近90天上架产品中唯一同时进入双端TOP20的产品。"
+      "category": "IP联动",
+      "date": "2026-08-25",
+      "title": "State of Survival宣布《如龙8》联动，活动8月28日开启",
+      "summary": "联动加入春日一番、桐生一马与真岛吾朗，并配置联盟Boss、节奏玩法和排行榜活动。",
+      "impact": "State of Survival当前Google #33，8月28日前后的双端排名可直接检验成熟SLG用强IP拉动回流与付费的效率。",
+      "source": "FunPlus",
+      "url": "https://funplus.com/state-of-survival-x-like-a-dragon-infinite-wealth-crossover-event/"
     },
     {
-      "title": "同产品存在平台效率差",
-      "detail": "Lordrush在iOS #23、Google #38，iOS变现位置更强；Top Force在Google #35、iOS #47，Android侧承接更好。Warpath与Kingdom Guard两端排名接近，分别为Google #47/iOS #56、Google #55/iOS #57。"
+      "category": "收入榜",
+      "date": "2026-08-13",
+      "title": "Pokémon GO十周年推动7月收入创多年高点",
+      "summary": "AppMagic口径显示十周年活动令产品7月冲到全球收入榜第5，并录得多年最佳月份。",
+      "impact": "它今日仍为美国iOS策略畅销#1，说明周年庆、线下活动与高价值IP能让超长生命周期产品重新进入强付费周期。",
+      "source": "PocketGamer.biz / AppMagic",
+      "url": "https://www.pocketgamer.biz/july-2026-mobile-game-charts/"
     },
     {
-      "title": "90天状态仍以新上架识别为主",
-      "detail": "Google有5款、iOS有4款近90天上架并进入TOP60；因缺少2026-05-28精确同口径基准，较老产品暂不判断“近三个月飙升”。"
+      "category": "资本动态",
+      "date": "2026-08-17",
+      "title": "报道称阿里将以逾20亿美元出售灵犀互娱",
+      "summary": "报道指Trustar Capital将收购阿里所持全部股份，现管理层继续留任；灵犀代表产品包括《三国志·战略版》。",
+      "impact": "交易若落地，将改变重要三国SLG团队的资本归属；短期管理层留任意味着产品和出海节奏未必立刻变化。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/alibaba-to-sell-lingxi-games-in-more-than-2bn-deal/"
+    },
+    {
+      "category": "长线运营",
+      "date": "2026-08-24",
+      "title": "Supercell复盘Clash Royale两次失败更新与C.H.A.O.S.成功经验",
+      "summary": "团队承认移除Season Shop和等级扩张损害信任，而不依赖既有养成进度的C.H.A.O.S.模式显著改善参与度。",
+      "impact": "当前Clash Royale为Google #17、iOS #12；成熟策略产品的关键不只是加内容，还要控制付费公平感和社区预期。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/we-killed-clash-royale-what-supercell-learned-from-failed-updates/"
+    },
+    {
+      "category": "运营方法",
+      "date": "2026-08-25",
+      "title": "Heroes of History将日更活动改为4—8周“Big Beats”主题弧",
+      "summary": "InnoGames强调活动节奏重于覆盖率、奖励重于单一机制，并计划每年运行3—4个长主题周期。",
+      "impact": "这给中重度策略产品提供了可复用信号：用稀疏但更完整的主题弧同时服务回流、买量素材和核心用户，而非无限堆叠日常活动。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/innogames-zoran-gjorgiev-on-rebuilding-heroes-of-historys-live-ops-one-layer-at-a-time/"
+    },
+    {
+      "category": "月度活动",
+      "date": "2026-07-31",
+      "title": "Clash of Clans上线整月Clash of Cards收集与部落交易活动",
+      "summary": "8月活动通过战斗掉落卡包、完成收藏和部落内交换重复卡，形成贯穿整月的回访目标。",
+      "impact": "产品今日Google #11、iOS #10；把收集、社交交换和月度奖励叠加，是成熟战争策略维持双端稳定头部的典型做法。",
+      "source": "Supercell",
+      "url": "https://supercell.com/en/games/clashofclans/blog/news/clash-of-cards-event/"
+    },
+    {
+      "category": "赛季更新",
+      "date": "2026-07-27",
+      "title": "Boom Beach第91赛季已于8月24日开启",
+      "summary": "新Warships赛季持续至9月13日，8月底还将接入Sonar Ops、Heavy Mania等轮换内容。",
+      "impact": "今日iOS排名却下跌18位至#49，接下来数日可观察赛季内容能否把首轮回撤重新拉回。",
+      "source": "Supercell",
+      "url": "https://supercell.com/en/games/boombeach/blog/blog/this-august-on-boom-beach-2/"
+    },
+    {
+      "category": "品类趋势",
+      "date": "2026-08-25",
+      "title": "移动游戏安装量承压，老产品继续占据下载头部",
+      "summary": "Azur Games观点称用户注意力向短视频迁移，当前下载TOP300中超过半数产品在2024年前已发布。",
+      "impact": "策略赛道更依赖成熟产品的内容再包装、混合玩法入口和长线联盟生态，新团队直接复制头部4X的获量成本将更高。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/puzzle-games-rise-as-mobile-genres-compete-for-attention-in-2026/"
+    },
+    {
+      "category": "新品上线",
+      "date": "2026-08-19",
+      "title": "像素城市策略游戏Dawnfolk登陆iOS与Android",
+      "summary": "该作以高级买断、短局城市建设和轻量策略为主要定位，与主流F2P长线4X形成差异化。",
+      "impact": "虽然未进入本次TOP60，但它代表策略手游在重付费SLG之外继续测试高完成度、低负担的精品化细分路径。",
+      "source": "PocketGamer.com",
+      "url": "https://www.pocketgamer.com/dawnfolk/out-now/"
+    },
+    {
+      "category": "软启动",
+      "date": "2026-07-06",
+      "title": "InnoGames软启动英雄驱动塔防Horizon: Dominion TD",
+      "summary": "产品自6月15日起在波兰Google Play测试，用可招募升级的英雄替代传统固定防御塔。",
+      "impact": "英雄养成与塔防波次的结合继续成为策略新品降低理解门槛、同时保留中长期付费深度的重要试验方向。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/the-latest-and-most-interesting-mobile-games-in-soft-launch-update/"
     }
   ],
-  "watchpoints": [
+  "closing": [
     {
-      "priority": "高",
-      "title": "判断iOS头部跃升是否可持续",
-      "detail": "连续跟踪Star Wars: Galaxy of Heroes与Summoners War 2—3个工作日，区分活动付费峰值与新排名中枢。"
+      "type": "判断",
+      "title": "iOS对事件型付费更敏感，Google更适合观察稳定中枢",
+      "detail": "Google今日仅一进一出，变化集中在中后段；iOS则同时出现+21、+16和−18、−17，成熟产品的活动与内容周期被放大得更明显。"
     },
     {
-      "priority": "高",
-      "title": "观察榜尾IP产品留存",
-      "detail": "Resident Evil Survival Unit今日仅以Google #60回榜；若连续留榜，才说明IP与版本运营形成了更稳定的付费承接。"
+      "type": "判断",
+      "title": "强IP与结构化长线运营仍是成熟策略产品的两条主线",
+      "detail": "Pokémon GO、Star Wars、Summoners War和即将启动联动的State of Survival体现IP事件拉峰；Clash Royale、Clash of Clans与Heroes of History则强调信任、奖励与活动节奏。"
     },
     {
-      "priority": "中",
-      "title": "跟踪iOS回落产品的反弹",
-      "detail": "重点看Boom Beach与Watcher of Realms能否在活动切换后回到原有区间，避免把单日回撤误判为长期衰退。"
+      "type": "判断",
+      "title": "新品需要更低门槛的获量层，但长期变现仍依赖深层系统",
+      "detail": "Horizon: Dominion TD的英雄塔防和Dawnfolk的轻量城市建设都在避开传统4X的高理解成本；榜单内新产品则继续验证跨端投放与深层经营承接。"
     },
     {
-      "priority": "中",
-      "title": "比较新产品跨端扩量节奏",
-      "detail": "持续比较Dragonfire、Lordrush、Top Force、Top Lords与Narco Empire的跨端位置，识别投放预算、用户结构和付费深度差异。"
+      "type": "关注",
+      "title": "未来2—3个工作日：验证iOS大幅升降是否回归原区间",
+      "detail": "重点跟踪Star Wars、Summoners War能否守住头部，以及Boom Beach、Watcher of Realms是否快速反弹；这将区分活动峰值、峰后回吐和新排名中枢。"
     },
     {
-      "priority": "中",
-      "title": "关注DC: Dark Legion回榜强度",
-      "detail": "该产品今日进入iOS #43但并非近90天新品；后续结合Supergirl等内容活动判断回榜是否具备延续性。"
+      "type": "关注",
+      "title": "8月28日起：跟踪State of Survival联动的双端响应",
+      "detail": "以当前Google #33为起点，记录《如龙8》活动上线后的3日和7日排名；若iOS同时回榜，说明联动对跨端高价值用户形成了更完整的承接。"
+    },
+    {
+      "type": "关注",
+      "title": "中期：持续观察资本变化与塔防混合新品测试",
+      "detail": "关注灵犀互娱交易是否正式落地及产品节奏是否变化，同时跟踪英雄塔防、轻量城建等低门槛策略形态能否从测试进入规模化发行。"
     }
   ],
   "status": {
