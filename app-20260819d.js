@@ -1,7 +1,7 @@
 "use strict";
 
-const CACHE_VERSION = "20260826c";
-const MARKET_BRIEF_PATH = "data/market-brief-20260826.json";
+const CACHE_VERSION = "20260827a";
+const MARKET_BRIEF_PATH = "data/market-brief-20260827.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
 const STORE_CONFIGS = {
   googlePlay: {
@@ -10,18 +10,18 @@ const STORE_CONFIGS = {
     mark: "GP",
     storeName: "Google Play",
     platform: "Android",
-    date: "2026-08-26",
-    baselineDate: "2026-05-28",
+    date: "2026-08-27",
+    baselineDate: "2026-05-29",
     eyebrow: "GOOGLE PLAY · ANDROID · STRATEGY · TOP GROSSING",
     title: "Google Play 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · Android",
-    footer: "Google Play US Strategy · TOP60 · Direct capture 2026-08-26",
-    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-08-26 09:52:02（北京时间）。AppBrain仅作交叉检查（重合60款、最大位差1位），未覆盖直连结果。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-05-28 → 2026-08-26。近90天内上架且当前进入TOP60的5款产品标为新上榜；较老产品因缺少精确基准快照，暂不判断飙升并按常规样式展示。",
-    games: "data/games-20260826.json",
-    enrichment: "data/enrichment-20260826.json",
-    trends: "data/trends-20260826.json",
-    counterpartGames: "data/ios-games-20260826.json",
+    footer: "Google Play US Strategy · TOP60 · Direct capture 2026-08-27",
+    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-08-27 09:52:18（北京时间）。AppBrain仅作交叉检查（重合59款、同位57款、最大位差1位），未覆盖直连结果。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-05-29 → 2026-08-27。近90天内上架且当前进入TOP60的4款产品标为新上榜；Game of Thrones: Dragonfire于2026-05-28上架，今日已超出90天窗口，恢复常规样式。较老产品因缺少精确基准快照，暂不判断飙升。",
+    games: "data/games-20260827.json",
+    enrichment: "data/enrichment-20260827.json",
+    trends: "data/trends-20260827.json",
+    counterpartGames: "data/ios-games-20260827.json",
     counterpartRankLabel: "iOS",
     assetManifest: "assets/manifest.json",
     linkHeader: "Google Play 链接",
@@ -34,18 +34,18 @@ const STORE_CONFIGS = {
     mark: "AS",
     storeName: "App Store",
     platform: "iPhone · iOS",
-    date: "2026-08-26",
-    baselineDate: "2026-05-28",
+    date: "2026-08-27",
+    baselineDate: "2026-05-29",
     eyebrow: "APPLE APP STORE · iPHONE · STRATEGY · TOP GROSSING",
     title: "App Store 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · iPhone",
-    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-08-26",
-    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60；RSS更新时间为2026-08-25 18:47:51（美国太平洋时间），换算北京时间为8月26日。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-05-28 → 2026-08-26。近90天内上架且当前进入TOP60的4款产品标为新上榜；iOS精确排名历史从2026-08-19开始积累，较老产品暂不判断飙升。",
-    games: "data/ios-games-20260826.json",
-    enrichment: "data/ios-enrichment-20260826.json",
-    trends: "data/ios-trends-20260826.json",
-    counterpartGames: "data/games-20260826.json",
+    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-08-27",
+    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60；RSS更新时间为2026-08-26 18:52:26（美国太平洋时间），换算北京时间为8月27日。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-05-29 → 2026-08-27。近90天内上架且当前进入TOP60的4款产品标为新上榜；iOS精确排名历史从2026-08-19开始积累，较老产品暂不判断飙升。",
+    games: "data/ios-games-20260827.json",
+    enrichment: "data/ios-enrichment-20260827.json",
+    trends: "data/ios-trends-20260827.json",
+    counterpartGames: "data/games-20260827.json",
     counterpartRankLabel: "Google",
     assetManifest: "assets/ios-manifest.json",
     linkHeader: "App Store 链接",
@@ -233,7 +233,7 @@ async function fetchJson(path, label) {
 }
 
 function movementProductHtml(item, icons) {
-  const tone = ["entry", "up", "down"].includes(item.tone) ? item.tone : "flat";
+  const tone = ["entry", "exit", "up", "down"].includes(item.tone) ? item.tone : "flat";
   const icon = safeInlineImage(icons[item.iconKey]);
   const iconHtml = icon
     ? '<img src="' + icon + '" alt="' + escapeHtml(item.gameName) + ' ICON" loading="lazy">'

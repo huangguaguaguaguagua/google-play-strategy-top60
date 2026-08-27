@@ -9,6 +9,10 @@
     "googlePlay": "data/games-20260826.json",
     "ios": "data/ios-games-20260826.json"
   },
+  "previousRankingSources": {
+    "googlePlay": "data/games-20260825.json",
+    "ios": "data/ios-games-20260825.json"
+  },
   "rankingDynamics": {
     "googlePlay": {
       "label": "Google Play · Android",
@@ -22,6 +26,14 @@
           "tone": "entry",
           "changeLabel": "进入 · #60",
           "analysis": "昨日榜外、今日压线回到TOP60；产品并非近90天新品，目前更像IP与版本运营带来的榜尾回流，需先确认能否连续留榜。"
+        },
+        {
+          "gameName": "Sea of Conquest: Pirate War",
+          "productId": "com.seaofconquest.global",
+          "iconKey": "googlePlay:com.seaofconquest.global",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#59",
+          "analysis": "昨日仅处#59、今日跌出TOP60，暂时更像榜尾自然换防；若短期无法回榜，才需要进一步判断版本活动承接是否转弱。"
         },
         {
           "gameName": "Duck Survival",
@@ -85,6 +97,30 @@
           "tone": "entry",
           "changeLabel": "进入 · #57",
           "analysis": "iOS回榜至#57、Google同步位于#55，呈现双端榜尾共振；需要连续留榜后再判断是否由同一轮活动或投放支撑。"
+        },
+        {
+          "gameName": "Kingdom Clash: Medieval Defense",
+          "productId": "1611722542",
+          "iconKey": "ios:1611722542",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#47",
+          "analysis": "由昨日#47直接跌出TOP60，幅度明显大于普通榜尾轮换；需要观察是付费活动结束后的集中回吐，还是iOS位置持续走弱。"
+        },
+        {
+          "gameName": "Overgeared Hero: Merge RPG",
+          "productId": "6755585789",
+          "iconKey": "ios:6755585789",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#54",
+          "analysis": "iOS从#54跌出，但Google仍位于#36、当日仅下降4位；同一产品出现明显平台分化，Android侧的付费承接暂时更稳。"
+        },
+        {
+          "gameName": "Guns of Glory: Lost Island",
+          "productId": "1274354704",
+          "iconKey": "ios:1274354704",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#57",
+          "analysis": "iOS从榜尾掉出，Google却上涨3位至#32；这更像平台侧活动或付费节奏分化，而不是产品整体同步走弱。"
         },
         {
           "gameName": "Star Wars: Galaxy of Heroes",

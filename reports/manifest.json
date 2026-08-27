@@ -1,11 +1,18 @@
 {
-  "updated": "2026-08-26",
+  "updated": "2026-08-27",
   "timezone": "Asia/Shanghai",
   "reports": [
     {
+      "date": "2026-08-27",
+      "title": "iOS榜尾四进四出，Foundation双端同步升至第23名",
+      "summary": "Google Play仅一进一出、整体仍偏稳；iOS出现四进四出及多组两位数升降，成熟产品的版本与活动付费信号在iPhone侧继续被放大。Foundation双端同日升至第23名，是今天最清晰的跨端共同异动。",
+      "markdown": "reports/2026-08-27.md",
+      "json": "data/market-brief-20260827.json"
+    },
+    {
       "date": "2026-08-26",
       "title": "iOS事件型波动放大，Google榜尾继续换防",
-      "summary": "12款异动产品逐项拆解，并收录10条策略手游热点与统一收尾判断。",
+      "summary": "16款进出与主要升降产品逐项拆解，并收录10条策略手游热点与统一收尾判断。",
       "markdown": "reports/2026-08-26.md",
       "json": "data/market-brief-20260826.json"
     }

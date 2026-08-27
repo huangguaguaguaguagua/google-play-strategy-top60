@@ -1,0 +1,315 @@
+{
+  "date": "2026-08-27",
+  "timezone": "Asia/Shanghai",
+  "title": "iOS榜尾四进四出，Foundation双端同步升至第23名",
+  "summary": "Google Play仅一进一出、整体仍偏稳；iOS出现四进四出及多组两位数升降，成熟产品的版本与活动付费信号在iPhone侧继续被放大。Foundation双端同日升至第23名，是今天最清晰的跨端共同异动。",
+  "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与对策略品类的影响综合排序；不是第三方阅读量或舆情指数。",
+  "iconBundle": "assets/market-icons-20260827.json",
+  "rankingSources": {
+    "googlePlay": "data/games-20260827.json",
+    "ios": "data/ios-games-20260827.json"
+  },
+  "previousRankingSources": {
+    "googlePlay": "data/games-20260826.json",
+    "ios": "data/ios-games-20260826.json"
+  },
+  "rankingDynamics": {
+    "googlePlay": {
+      "label": "Google Play · Android",
+      "sourceTime": "北京时间 2026-08-27 09:52:18 直连抓取",
+      "anchors": "榜单锚点：#1 Kingshot · #25 Lords Mobile x Transformers · #60 Draft Showdown",
+      "products": [
+        {
+          "gameName": "Sea of Conquest: Pirate War",
+          "productId": "com.seaofconquest.global",
+          "iconKey": "googlePlay:com.seaofconquest.global",
+          "tone": "entry",
+          "changeLabel": "回榜 · #57",
+          "analysis": "8月26日掉榜后一天即回到#57，仍处高换防区；当前只能确认是榜尾回补，若未来两日继续留榜才说明位置重新稳定。"
+        },
+        {
+          "gameName": "Ant Legion: For The Swarm",
+          "productId": "com.global.antgame",
+          "iconKey": "googlePlay:com.global.antgame",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#58",
+          "analysis": "昨日位于#58、今日被挤出TOP60，属于典型榜尾换防；暂未发现可确认的重大运营节点，不把单日掉榜外推为长期衰退。"
+        },
+        {
+          "gameName": "Foundation: Galactic Frontier",
+          "productId": "com.games.foundation",
+          "iconKey": "googlePlay:com.games.foundation",
+          "tone": "up",
+          "changeLabel": "+3 · #23",
+          "analysis": "由#26升至#23，iOS同时由#36升至#23，形成今天少见的双端同位上涨；Google商品页8月21日更新且有在运营活动，但仍需连续数据确认驱动。"
+        },
+        {
+          "gameName": "Infinity Kingdom",
+          "productId": "com.gtarcade.ioe.global",
+          "iconKey": "googlePlay:com.gtarcade.ioe.global",
+          "tone": "down",
+          "changeLabel": "−4 · #41",
+          "analysis": "由#37降至#41；结合前一日从#29降至#37，两日累计下移12位，已比普通单日噪声更值得警惕，但尚未跌入TOP60出榜区。"
+        }
+      ]
+    },
+    "ios": {
+      "label": "App Store · iPhone/iOS",
+      "sourceTime": "Apple RSS 北京时间 2026-08-27",
+      "anchors": "榜单锚点：#1 Pokémon GO · #25 Lordrush · #60 Last Shelter: Survival",
+      "products": [
+        {
+          "gameName": "Hearthstone",
+          "productId": "625257520",
+          "iconKey": "ios:625257520",
+          "tone": "entry",
+          "changeLabel": "进入 · #44",
+          "analysis": "成熟卡牌产品从榜外进入#44；36.4于8月25日上线四组职业套牌、新竞技场赛季和免费活动，回榜时间与更新重合，但单日数据尚不足以确认因果。"
+        },
+        {
+          "gameName": "Guns of Glory: Lost Island",
+          "productId": "1274354704",
+          "iconKey": "ios:1274354704",
+          "tone": "entry",
+          "changeLabel": "回榜 · #47",
+          "analysis": "8月26日掉榜后以#47回归，且Google同步升至#30；Apple版本13.25.0在8月26日更新，但说明仅称界面与体验优化，当前更适合视作待验证的阶段回榜。"
+        },
+        {
+          "gameName": "Jurassic World Alive",
+          "productId": "1231085864",
+          "iconKey": "ios:1231085864",
+          "tone": "entry",
+          "changeLabel": "进入 · #55",
+          "analysis": "长线IP产品回到榜尾；3.22的Mattel收集活动、两只限定恐龙和Travel Hub采集效率调整仍在近期运营窗口内，但#55离再次掉榜只有很小缓冲。"
+        },
+        {
+          "gameName": "Last Shelter: Survival",
+          "productId": "1342290011",
+          "iconKey": "ios:1342290011",
+          "tone": "entry",
+          "changeLabel": "回榜 · #60",
+          "analysis": "以第60名压线回榜，Google侧同时位于#45并下降2位；这是成熟丧尸SLG的榜尾信号，至少需再留榜一天才有分析活动支撑的价值。"
+        },
+        {
+          "gameName": "Vikings: War of Clans PvP",
+          "productId": "966810173",
+          "iconKey": "ios:966810173",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#45",
+          "analysis": "由昨日#45直接跌出TOP60，幅度显著高于普通压线换防；如果短期不能回榜，应进一步检查前一轮付费节点是否已经集中回吐。"
+        },
+        {
+          "gameName": "Boom Beach: War Strategy Game",
+          "productId": "672150402",
+          "iconKey": "ios:672150402",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#49",
+          "analysis": "8月25日#31、26日#49、今日出榜，连续两日走弱；Warships第91赛季8月24日开启，但现阶段只能确认时间重合，不能据此断言赛季效果不佳。"
+        },
+        {
+          "gameName": "Kingdom Guard: Tower Defense",
+          "productId": "1570095804",
+          "iconKey": "ios:1570095804",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#57",
+          "analysis": "昨日刚回榜至#57、今日立即掉出，iOS回流没有站稳；Google仍在#55，说明产品整体尚未离榜，但两端都处于高风险尾部。"
+        },
+        {
+          "gameName": "League of Legends: Wild Rift",
+          "productId": "1480616990",
+          "iconKey": "ios:1480616990",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 昨日#59",
+          "analysis": "昨日仅#59、今日掉榜，属于榜尾自然换防概率较高的单日信号；Google仍为#46，当前更像平台付费节奏差异而非双端同步转弱。"
+        },
+        {
+          "gameName": "Foundation: Galactic Frontier",
+          "productId": "6737595599",
+          "iconKey": "ios:6737595599",
+          "tone": "up",
+          "changeLabel": "+13 · #23",
+          "analysis": "由#36升至#23，是今天最强的跨端共同上涨；Google也升至#23。双端同位降低了单一平台噪声的解释力，但仍需未来2—3日判断是活动峰值还是排名中枢上移。"
+        },
+        {
+          "gameName": "Forge Master – Idle RPG",
+          "productId": "6746636289",
+          "iconKey": "ios:6746636289",
+          "tone": "up",
+          "changeLabel": "+10 · #22",
+          "analysis": "由#32升至#22，而Google仅由#44升至#43，跨端相差21位；当前更像iOS侧集中付费或活动响应，暂未形成双端共同抬升。"
+        },
+        {
+          "gameName": "DC: Dark Legion",
+          "productId": "6479020757",
+          "iconKey": "ios:6479020757",
+          "tone": "down",
+          "changeLabel": "−15 · #58",
+          "analysis": "昨日从榜外回到#43、今日即跌至#58，回榜峰值快速回吐并重新进入掉榜风险区；需要观察DC内容更新是否还能带来第二波承接。"
+        },
+        {
+          "gameName": "Age of Empires Mobile",
+          "productId": "6476261995",
+          "iconKey": "ios:6476261995",
+          "tone": "down",
+          "changeLabel": "−9 · #40",
+          "analysis": "由#31降至#40，Google侧位于#49；两端仍在榜但位置都不高，今天的iOS回撤先视为待验证信号，不能仅凭一天判断长线中枢下移。"
+        }
+      ]
+    }
+  },
+  "marketNews": [
+    {
+      "category": "市场报告",
+      "date": "2026-08-26",
+      "title": "Moloco：2025年19万款新手游中仅2500款首年突破50万下载",
+      "summary": "报告覆盖55款新游、超过15亿美元IAP和2000多万付费用户；突破型产品平均使用93套创意，且47%的创意在上线后第7—11个月才投入。",
+      "impact": "策略新品不能只看首发冲量；持续买量、后期创意换代和首年高价值用户培养，正成为少数突破产品的共同条件。",
+      "source": "PocketGamer.biz / Moloco",
+      "url": "https://www.pocketgamer.biz/report-only-2500-of-190000-mobile-games-released-in-2025-surpassed-500000-downloads/"
+    },
+    {
+      "category": "社交能力",
+      "date": "2026-08-26",
+      "title": "Discord将Social Layer开放到移动端",
+      "summary": "Discord称对15款以上游戏的因果研究显示，PC接入后留存最高提升31%、启动天数最高提升57%，现已针对手机屏幕适配。",
+      "impact": "联盟、组队和跨服生态是策略手游的核心留存层；移动端社交基础设施若成熟，可能降低游戏自建社区与召回链路的成本。",
+      "source": "PocketGamer.biz / Discord",
+      "url": "https://www.pocketgamer.biz/discord-brings-social-layer-to-mobile-after-seeing-31-retention-increase-on-pc/"
+    },
+    {
+      "category": "IP联动",
+      "date": "2026-08-25",
+      "title": "State of Survival《如龙8》联动将于8月28日开启",
+      "summary": "联动加入春日一番、桐生一马与真岛吾朗，并配置联盟Boss、节奏玩法、感染摩托与排行榜活动。",
+      "impact": "State of Survival今日Google #33；活动上线后的3日与7日双端排名，可直接检验成熟SLG用强IP拉动回流和付费的效率。",
+      "source": "FunPlus",
+      "url": "https://funplus.com/state-of-survival-x-like-a-dragon-infinite-wealth-crossover-event/"
+    },
+    {
+      "category": "版本更新",
+      "date": "2026-08-24",
+      "title": "Hearthstone 36.4上线四组职业套牌与Rulebreaker Revelry",
+      "summary": "版本新增牧师、潜行者、术士和战士Class Sets、新竞技场赛季、免费奖励轨及世界冠军乱斗预热。",
+      "impact": "Hearthstone今日进入iOS #44，更新与回榜时间重合；未来数日可区分套牌付费高点、免费活动回流和竞技场赛季的持续性。",
+      "source": "Blizzard",
+      "url": "https://news.blizzard.com/en-us/article/24293283/36-4-patch-notes"
+    },
+    {
+      "category": "渠道变现",
+      "date": "2026-08-25",
+      "title": "Sensor Tower披露部分手游D2C收入占比已超过30%",
+      "summary": "美国H1 2026数据显示，赌场、RPG和桌游的Web Store占比较高，策略与解谜仍偏低；直接访问与社交渠道是主要导流来源。",
+      "impact": "应用商店畅销榜已不能覆盖全部收入，策略产品若加码D2C，未来需要把商店榜位与官网流量、联盟社群和直购活动一起看。",
+      "source": "PocketGamer.biz / Sensor Tower",
+      "url": "https://www.pocketgamer.biz/sensor-tower-reveals-the-hidden-impact-of-d2c-revenue-in-mobile-games/"
+    },
+    {
+      "category": "新品预注册",
+      "date": "2026-08-25",
+      "title": "PUBG Mobile Light开放预注册，计划11月上线",
+      "summary": "Light版本主打更低存储和设备负担，Android约1GB、iOS约2GB，同时宣称保留核心体验。",
+      "impact": "PUBG MOBILE今日iOS升至#7；轻量版本显示成熟大作正继续用设备门槛分层扩市场，也可能为大型策略手游的轻客户端提供参照。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/pubg-mobile-light-is-now-available-for-pre-registration/"
+    },
+    {
+      "category": "长线运营",
+      "date": "2026-08-25",
+      "title": "Heroes of History将日更活动改为4—8周“Big Beats”主题弧",
+      "summary": "InnoGames减少每天堆活动，转向每年3—4个更完整的主题周期，并强调奖励与节奏优先于单一机制覆盖。",
+      "impact": "中重度策略产品可用较少但更完整的主题弧同时服务回流、买量素材与核心用户，避免活动密度过高造成疲劳。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/innogames-zoran-gjorgiev-on-rebuilding-heroes-of-historys-live-ops-one-layer-at-a-time/"
+    },
+    {
+      "category": "运营复盘",
+      "date": "2026-08-24",
+      "title": "Supercell复盘Clash Royale两次失败更新与C.H.A.O.S.经验",
+      "summary": "团队承认移除Season Shop和等级扩张伤害玩家信任，而不依赖既有养成进度的C.H.A.O.S.模式显著改善参与。",
+      "impact": "Clash Royale今日Google升至#15、iOS #12；成熟策略产品新增内容时，付费公平感与既有资产保护和机制本身同样重要。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/we-killed-clash-royale-what-supercell-learned-from-failed-updates/"
+    },
+    {
+      "category": "厂商与长线IP",
+      "date": "2026-08-26",
+      "title": "Scopely获2026 Pocket Gamer Mobile Games Awards最佳发行商",
+      "summary": "评选强调Monopoly Go、Pokémon GO与Pikmin Bloom组合；Pokémon GO十周年与免费Go Fest让7月成为多年最强收入期之一。",
+      "impact": "Pokémon GO今日仍为iOS策略畅销#1，说明超长生命周期产品可通过周年庆、线下活动和区域合作重新开启高付费周期。",
+      "source": "PocketGamer.biz",
+      "url": "https://www.pocketgamer.biz/scopely-wins-best-publisher-at-the-pocket-gamer-mobile-games-awards-2026/"
+    },
+    {
+      "category": "IP活动",
+      "date": "2026-08-06",
+      "title": "Jurassic World Alive 3.22以Mattel收集活动和Travel Hub调整拉动回访",
+      "summary": "版本加入两只Mattel活动恐龙、Toy Chips与限时成长路径，并把Travel Hub普通采集时长从10秒提高到16秒。",
+      "impact": "产品今日进入iOS #55；接下来应观察活动结束后是否仍能留榜，以及远程采集效率是否改善成熟收藏用户的回访与付费。",
+      "source": "Ludia / Jurassic World Alive",
+      "url": "https://jurassicworldalive.com/release-notes/update-3-22-release-notes/"
+    }
+  ],
+  "closing": [
+    {
+      "type": "判断",
+      "title": "iOS继续放大事件型波动，Google榜面更接近稳定中枢",
+      "detail": "Google今日仅一进一出且最大升降为4位；iOS则四进四出，并同时出现+13、+10和−15、−9。两端差异仍说明iPhone榜对短期付费节点更敏感。"
+    },
+    {
+      "type": "判断",
+      "title": "Foundation是今天最值得继续验证的跨端共同信号",
+      "detail": "它在Google由#26升至#23、iOS由#36升至#23，双端同位降低了单平台噪声解释；但单日共同上涨仍不能直接定义为长期中枢上移。"
+    },
+    {
+      "type": "判断",
+      "title": "策略产品的竞争已延伸到首发后的创意、社交和D2C",
+      "detail": "Moloco数据显示突破产品持续在后期新增创意；Discord移动社交层与Sensor Tower的Web Store数据又说明，联盟留存和商店外变现正在成为榜单之外的重要变量。"
+    },
+    {
+      "type": "关注",
+      "title": "未来2—3个工作日：验证iOS四款回榜产品的留存",
+      "detail": "重点看Hearthstone能否守住#44，以及Jurassic World Alive、Last Shelter能否离开#55—60高风险区；Guns of Glory需确认#47回榜是否连续。"
+    },
+    {
+      "type": "关注",
+      "title": "8月28日起：记录State of Survival联动的3日与7日响应",
+      "detail": "以当前Google #33为起点，跟踪《如龙8》活动上线后是否上升、iOS是否回榜；只有跨端和连续窗口同时改善，才可判断联动形成有效付费拉升。"
+    },
+    {
+      "type": "关注",
+      "title": "截至9月15日：拆分Hearthstone 36.4的内容付费与免费回流",
+      "detail": "Rulebreaker Revelry持续至9月15日；若首周峰值后仍能留榜，再结合职业套牌、竞技场赛季和免费奖励节奏判断是哪一层在支撑。"
+    }
+  ],
+  "status": {
+    "googlePlay": {
+      "top60": 60,
+      "newRelease90d": 4,
+      "surge90d": 0,
+      "baselineAvailable": false
+    },
+    "ios": {
+      "top60": 60,
+      "newRelease90d": 4,
+      "surge90d": 0,
+      "baselineAvailable": false
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play美国区策略畅销榜直连",
+      "url": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
+      "capturedAt": "2026-08-27T09:52:18+08:00"
+    },
+    {
+      "label": "Apple官方美国区iPhone策略畅销RSS",
+      "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
+      "updated": "2026-08-26T18:52:26-07:00",
+      "sourceDateBeijing": "2026-08-27"
+    }
+  ],
+  "downloads": {
+    "markdown": "reports/2026-08-27.md",
+    "json": "data/market-brief-20260827.json"
+  }
+}

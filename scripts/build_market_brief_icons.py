@@ -37,8 +37,14 @@ def main() -> None:
     output: dict[str, str] = {}
 
     for store_key, (id_field, manifest_path) in store_config.items():
-        games = load_json(repo / brief["rankingSources"][store_key])
-        games_by_id = {str(game[id_field]): game for game in games}
+        ranking_paths = [brief["rankingSources"][store_key]]
+        previous_path = brief.get("previousRankingSources", {}).get(store_key)
+        if previous_path:
+            ranking_paths.append(previous_path)
+        games_by_id = {}
+        for ranking_path in ranking_paths:
+            for game in load_json(repo / ranking_path):
+                games_by_id.setdefault(str(game[id_field]), game)
         assets = load_assets(repo, manifest_path)
         for product in brief["rankingDynamics"][store_key]["products"]:
             product_id = str(product["productId"])
