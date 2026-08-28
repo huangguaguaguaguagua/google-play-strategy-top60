@@ -1,7 +1,14 @@
 {
-  "updated": "2026-08-27",
+  "updated": "2026-08-28",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-08-28",
+      "title": "GFL2双端进入，Google与iOS同步扩大榜面换防",
+      "summary": "Google Play由昨日一进一出扩大为三进三出，iOS连续第二日四进四出。GIRLS' FRONTLINE 2同时进入Google #35与iOS #21，是今天最清晰的跨端版本信号；TFT随18.1进入iOS #50，而Hearthstone和Jurassic World Alive回榜后分别跌至#58与#60，显示版本峰值的持续性仍需逐日验证。",
+      "markdown": "reports/2026-08-28.md",
+      "json": "data/market-brief-20260828.json"
+    },
     {
       "date": "2026-08-27",
       "title": "iOS榜尾四进四出，Foundation双端同步升至第23名",
