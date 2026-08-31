@@ -1,7 +1,14 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-08-31",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-08-31",
+      "title": "Tacticus双端同步上行，GFL2出现跨端分化；iOS周末后六进六出",
+      "summary": "与8月28日上一份有效快照相比，Google Play两进两出，iOS六进六出。Warhammer 40,000: Tacticus在Google升至#33、iOS升至#30，是本期最清晰的双端共同信号；GIRLS' FRONTLINE 2则在Google跃升至#14、iOS由#21掉榜。iOS的六款进入产品全部位于#53—60，换防范围虽大但主要集中在榜尾。",
+      "markdown": "reports/2026-08-31.md",
+      "json": "data/market-brief-20260831.json"
+    },
     {
       "date": "2026-08-28",
       "title": "GFL2双端进入，Google与iOS同步扩大榜面换防",
