@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20260831a";
+const CACHE_VERSION = "20260831b";
 const MARKET_BRIEF_PATH = "data/market-brief-20260831.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
 const STORE_CONFIGS = {
