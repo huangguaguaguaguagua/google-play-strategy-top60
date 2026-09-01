@@ -1,7 +1,14 @@
 {
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-01",
+      "title": "Age of Empires双端回升，SD Gundam随500日庆典进入iOS；iOS继续六进六出",
+      "summary": "与8月31日相比，Google Play仅一进一出，Age of Empires回到#49；iOS连续第二次六进六出，Fire Emblem以#31回榜、SD Gundam首次进入#53。Overgeared与Kingdom Guard双端同步上涨，但Tacticus出现Google升至#30、iOS回落至#38的活动峰值分化。",
+      "markdown": "reports/2026-09-01.md",
+      "json": "data/market-brief-20260901.json"
+    },
     {
       "date": "2026-08-31",
       "title": "Tacticus双端同步上行，GFL2出现跨端分化；iOS周末后六进六出",
