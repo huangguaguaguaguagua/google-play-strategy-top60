@@ -36,6 +36,7 @@ def product(game_name, product_id, store, tone, label, analysis):
 
 google_history = load("data/history/google-play/2026-09-02.json")
 ios_history = load("data/history/ios/2026-09-02.json")
+revenue_module = load("data/revenue-module-latest.json")
 captured = datetime.fromisoformat(google_history["sourceCapturedAt"])
 source_date = datetime.fromisoformat(ios_history["sourceUpdated"].replace("Z", "+00:00")).astimezone(ZoneInfo("Asia/Shanghai"))
 
@@ -103,6 +104,7 @@ brief = {
     },
     "marketNews": news,
     "closing": closing,
+    "revenueModule": revenue_module,
     "status": {
         "googlePlay": {"top60": 60, "newRelease90d": 6, "surge90d": 0, "baselineAvailable": False},
         "ios": {"top60": 60, "newRelease90d": 2, "surge90d": 0, "baselineAvailable": False},
@@ -153,6 +155,49 @@ def build_markdown(value):
     lines += ["## 3. 综合判断与后续关注", ""]
     for item in value["closing"]:
         lines += [f"### {item['type']}｜{item['title']}", "", item["detail"], ""]
+    revenue = value["revenueModule"]
+    lines += [
+        "## 4. 收入观察与畅销动能",
+        "",
+        revenue["disclaimer"],
+        "",
+        "### 重点产品收入观察",
+        "",
+    ]
+    for item in revenue["observations"]:
+        lines += [
+            f"#### [{item['gameName']}]({item['url']})｜{item['metric']}",
+            "",
+            f"- 数据期间：{item['period']}｜发布日期：{item['publishedDate']}｜可信度：{item['confidence']}",
+            f"- 地区 / 商店：{item['region']}｜{item['stores']}",
+            f"- 观察：{item['observation']}",
+            f"- 口径：{item['scope']}｜来源：{item['source']}",
+            "",
+        ]
+    lines += ["### 全榜收入动能", ""]
+    for store in ("googlePlay", "ios"):
+        summary = revenue["stores"][store]
+        risers = "；".join(
+            f"{item['gameName']} {item['momentum5d']:+g}位（#{item['currentRank']}）"
+            for item in summary["topRisers"][:5]
+        ) or "暂无"
+        fallers = "；".join(
+            f"{item['gameName']} {item['momentum5d']:+g}位（#{item['currentRank']}）"
+            for item in summary["topFallers"][:5]
+        ) or "暂无"
+        lines += [
+            f"#### {summary['label']}",
+            "",
+            f"- 30日窗口有效快照：{summary['validSnapshotCount30d']}个｜可信度：{summary['confidence']}",
+            f"- 动能上升：{risers}",
+            f"- 动能回落：{fallers}",
+            f"- 结构化数据：`{summary['path']}`",
+            "",
+        ]
+    lines += [
+        "计算方法：前5个有效快照平均名次减去最近5个有效快照平均名次，正值代表改善；仅在当日TOP60完整有效时计样本，产品缺席按第61名，周末与缺失快照不补值。",
+        "",
+    ]
     lines += [
         "## 下载与来源",
         "",

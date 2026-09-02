@@ -1,0 +1,62 @@
+{
+  "updated": "2026-09-02",
+  "policy": "Only public, attributable observations are stored. Figures from intelligence providers remain estimates and are never presented as publisher-reported revenue.",
+  "observations": [
+    {
+      "productKey": "pokemon go",
+      "gameName": "Pokémon GO",
+      "period": "2026年7月",
+      "publishedDate": "2026-08-19",
+      "region": "全球",
+      "stores": "App Store + Google Play（不含第三方Android商店）",
+      "metric": "进入全球手游收入TOP5",
+      "observation": "Sensor Tower将Pokémon GO列入2026年7月全球手游收入前五，并将表现与GO Fest 2026及十周年活动窗口联系起来。",
+      "scope": "第三方估算的全球商店内购收入排名，不是美国区单产品流水。",
+      "source": "Sensor Tower",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-july-2026",
+      "confidence": "中"
+    },
+    {
+      "productKey": "whiteout survival",
+      "gameName": "Whiteout Survival",
+      "period": "2026年6月",
+      "publishedDate": "2026-07-09",
+      "region": "全球",
+      "stores": "App Store + Google Play（不含第三方Android商店）",
+      "metric": "全球手游收入第1",
+      "observation": "Sensor Tower将Whiteout Survival列为2026年6月全球收入最高的手游；公开分析指出月内活动日历支撑收入表现。",
+      "scope": "第三方估算的全球商店内购收入排名，不代表美国区月流水。",
+      "source": "Sensor Tower",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-june-2026",
+      "confidence": "中"
+    },
+    {
+      "productKey": "kingshot",
+      "gameName": "Kingshot",
+      "period": "截至2026年1月",
+      "publishedDate": "2026-02-17",
+      "region": "全球；美国约占该产品收入40%",
+      "stores": "App Store + Google Play净收入估算",
+      "metric": "上线不足一年累计净收入约5亿美元",
+      "observation": "Appfigures公开估算Kingshot上线不足一年累计净收入达到约5亿美元；该数值适合作为生命周期里程碑，不作为当前月收入。",
+      "scope": "第三方净收入估算（扣除平台分成后），不是厂商财报披露。",
+      "source": "Appfigures",
+      "url": "https://appfigures.com/resources/insights/kingshot-500m-revenue-century-games",
+      "confidence": "中"
+    },
+    {
+      "productKey": "last war survival",
+      "gameName": "Last War: Survival",
+      "period": "2026年第一季度",
+      "publishedDate": "2026-05-27",
+      "region": "全球",
+      "stores": "App Store + Google Play（不含第三方Android商店）",
+      "metric": "季度IAP收入超过5亿美元",
+      "observation": "Mobilegamer.biz转述Sensor Tower季度数据称，Last War在2026年第一季度IAP收入超过5亿美元，并连续第六个季度位居全球手游IAP收入首位。",
+      "scope": "行业媒体转述的第三方全球IAP估算，不是美国区或厂商财报口径。",
+      "source": "Mobilegamer.biz / Sensor Tower",
+      "url": "https://mobilegamer.biz/data-digest-anime-gtas-debut-tencent-games-10bn-quarter-us-top-grossing-and-ad-charts-more/",
+      "confidence": "中"
+    }
+  ]
+}

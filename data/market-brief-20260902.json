@@ -321,6 +321,241 @@
       "detail": "逐项检查The Tower、MLBB、Raid Rush与Last Day on Earth是否至少守住本期区间；若多数回吐，继续把本期定义为iOS单日波动而非市场整体上行。"
     }
   ],
+  "revenueModule": {
+    "date": "2026-09-02",
+    "timezone": "Asia/Shanghai",
+    "generatedAt": "2026-09-02T10:03:47+08:00",
+    "title": "收入观察与畅销动能",
+    "disclaimer": "收入观察仅引用公开披露或第三方公开估算；全榜动能只反映同商店畅销排名变化，不等同于收入金额或同比。",
+    "observationCadence": "工作日保留最新有效观察；每周一复核最多8款，且每月8日后的首个工作日深度复核上月最多20款。",
+    "momentumCadence": "每个工作日随双榜更新重算，Google Play与iOS严格分开。",
+    "observations": [
+      {
+        "productKey": "pokemon go",
+        "gameName": "Pokémon GO",
+        "period": "2026年7月",
+        "publishedDate": "2026-08-19",
+        "region": "全球",
+        "stores": "App Store + Google Play（不含第三方Android商店）",
+        "metric": "进入全球手游收入TOP5",
+        "observation": "Sensor Tower将Pokémon GO列入2026年7月全球手游收入前五，并将表现与GO Fest 2026及十周年活动窗口联系起来。",
+        "scope": "第三方估算的全球商店内购收入排名，不是美国区单产品流水。",
+        "source": "Sensor Tower",
+        "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-july-2026",
+        "confidence": "中"
+      },
+      {
+        "productKey": "whiteout survival",
+        "gameName": "Whiteout Survival",
+        "period": "2026年6月",
+        "publishedDate": "2026-07-09",
+        "region": "全球",
+        "stores": "App Store + Google Play（不含第三方Android商店）",
+        "metric": "全球手游收入第1",
+        "observation": "Sensor Tower将Whiteout Survival列为2026年6月全球收入最高的手游；公开分析指出月内活动日历支撑收入表现。",
+        "scope": "第三方估算的全球商店内购收入排名，不代表美国区月流水。",
+        "source": "Sensor Tower",
+        "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-june-2026",
+        "confidence": "中"
+      },
+      {
+        "productKey": "kingshot",
+        "gameName": "Kingshot",
+        "period": "截至2026年1月",
+        "publishedDate": "2026-02-17",
+        "region": "全球；美国约占该产品收入40%",
+        "stores": "App Store + Google Play净收入估算",
+        "metric": "上线不足一年累计净收入约5亿美元",
+        "observation": "Appfigures公开估算Kingshot上线不足一年累计净收入达到约5亿美元；该数值适合作为生命周期里程碑，不作为当前月收入。",
+        "scope": "第三方净收入估算（扣除平台分成后），不是厂商财报披露。",
+        "source": "Appfigures",
+        "url": "https://appfigures.com/resources/insights/kingshot-500m-revenue-century-games",
+        "confidence": "中"
+      },
+      {
+        "productKey": "last war survival",
+        "gameName": "Last War: Survival",
+        "period": "2026年第一季度",
+        "publishedDate": "2026-05-27",
+        "region": "全球",
+        "stores": "App Store + Google Play（不含第三方Android商店）",
+        "metric": "季度IAP收入超过5亿美元",
+        "observation": "Mobilegamer.biz转述Sensor Tower季度数据称，Last War在2026年第一季度IAP收入超过5亿美元，并连续第六个季度位居全球手游IAP收入首位。",
+        "scope": "行业媒体转述的第三方全球IAP估算，不是美国区或厂商财报口径。",
+        "source": "Mobilegamer.biz / Sensor Tower",
+        "url": "https://mobilegamer.biz/data-digest-anime-gtas-debut-tencent-games-10bn-quarter-us-top-grossing-and-ad-charts-more/",
+        "confidence": "中"
+      }
+    ],
+    "stores": {
+      "googlePlay": {
+        "label": "Google Play · Android",
+        "path": "data/revenue-momentum/google-play/2026-09-02.json",
+        "validSnapshotCount30d": 10,
+        "confidence": "中",
+        "topRisers": [
+          {
+            "productId": "com.Sunborn.SnqxExilium.Glo",
+            "gameName": "GIRLS' FRONTLINE 2: EXILIUM",
+            "currentRank": 13,
+            "momentum5d": 33.8,
+            "label": "新进/回榜"
+          },
+          {
+            "productId": "com.zroute.global",
+            "gameName": "Z Route: Redemption",
+            "currentRank": 12,
+            "momentum5d": 9.8,
+            "label": "强势上升"
+          },
+          {
+            "productId": "com.s01.global",
+            "gameName": "Lordrush",
+            "currentRank": 28,
+            "momentum5d": 9.8,
+            "label": "强势上升"
+          },
+          {
+            "productId": "com.nvsgames.snap",
+            "gameName": "MARVEL SNAP: Hero Strategy CCG",
+            "currentRank": 37,
+            "momentum5d": 8.8,
+            "label": "强势上升"
+          },
+          {
+            "productId": "com.games.foundation",
+            "gameName": "Foundation: Galactic Frontier",
+            "currentRank": 21,
+            "momentum5d": 7.6,
+            "label": "上升"
+          }
+        ],
+        "topFallers": [
+          {
+            "productId": "com.gtarcade.ioe.global",
+            "gameName": "Infinity Kingdom",
+            "currentRank": 40,
+            "momentum5d": -16.6,
+            "label": "明显回落"
+          },
+          {
+            "productId": "com.riotgames.league.wildrift",
+            "gameName": "League of Legends: Wild Rift",
+            "currentRank": 38,
+            "momentum5d": -7.8,
+            "label": "回落"
+          },
+          {
+            "productId": "com.more.dayzsurvival.gp",
+            "gameName": "Last Shelter: Survival",
+            "currentRank": 53,
+            "momentum5d": -7.6,
+            "label": "回落"
+          },
+          {
+            "productId": "com.sivona.stormshot.e",
+            "gameName": "Stormshot: Isle of Adventure",
+            "currentRank": 46,
+            "momentum5d": -7.2,
+            "label": "回落"
+          },
+          {
+            "productId": "com.farlightgames.samo.gp",
+            "gameName": "Call of Dragons",
+            "currentRank": 55,
+            "momentum5d": -6.4,
+            "label": "回落"
+          }
+        ]
+      },
+      "ios": {
+        "label": "App Store · iPhone/iOS",
+        "path": "data/revenue-momentum/ios/2026-09-02.json",
+        "validSnapshotCount30d": 10,
+        "confidence": "中",
+        "topRisers": [
+          {
+            "productId": "852912420",
+            "gameName": "Summoners War",
+            "currentRank": 21,
+            "momentum5d": 19.6,
+            "label": "强势上升"
+          },
+          {
+            "productId": "6767834940",
+            "gameName": "Top Lords",
+            "currentRank": 32,
+            "momentum5d": 14.4,
+            "label": "强势上升"
+          },
+          {
+            "productId": "1599937506",
+            "gameName": "Warhammer 40,000: Tacticus ™",
+            "currentRank": 43,
+            "momentum5d": 12.4,
+            "label": "强势上升"
+          },
+          {
+            "productId": "6761893238",
+            "gameName": "Top Force: Commander",
+            "currentRank": 40,
+            "momentum5d": 11.0,
+            "label": "强势上升"
+          },
+          {
+            "productId": "1592081003",
+            "gameName": "MARVEL SNAP - Hero Card Game",
+            "currentRank": 22,
+            "momentum5d": 9.0,
+            "label": "强势上升"
+          }
+        ],
+        "topFallers": [
+          {
+            "productId": "1487451427",
+            "gameName": "Infinity Kingdom",
+            "currentRank": 50,
+            "momentum5d": -9.6,
+            "label": "明显回落"
+          },
+          {
+            "productId": "6738469826",
+            "gameName": "Lands of Jail",
+            "currentRank": 46,
+            "momentum5d": -9.6,
+            "label": "明显回落"
+          },
+          {
+            "productId": "6447612873",
+            "gameName": "Sea War: Uboat Raid",
+            "currentRank": 49,
+            "momentum5d": -8.4,
+            "label": "明显回落"
+          },
+          {
+            "productId": "1035712810",
+            "gameName": "Game of Thrones: Conquest ™",
+            "currentRank": 42,
+            "momentum5d": -7.4,
+            "label": "回落"
+          },
+          {
+            "productId": "6755173751",
+            "gameName": "Evo Defense",
+            "currentRank": 52,
+            "momentum5d": -6.6,
+            "label": "回落"
+          }
+        ]
+      }
+    },
+    "methodology": {
+      "formula": "前5个有效快照平均名次 - 最近5个有效快照平均名次；正值代表榜位改善。",
+      "missingRule": "仅在商店当日TOP60快照完整有效时计算；产品缺席该有效快照按第61名计，周末和缺失快照不补值。",
+      "thresholds": "≥+8强势上升；+3至+7.9上升；-2.9至+2.9稳定；-3至-7.9回落；≤-8明显回落。",
+      "confidence": "30日有效快照≥15为高、10—14为中、5—9为低、少于5为积累中。"
+    }
+  },
   "status": {
     "googlePlay": {
       "top60": 60,

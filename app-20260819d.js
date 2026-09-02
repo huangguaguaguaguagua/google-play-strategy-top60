@@ -1,8 +1,9 @@
 "use strict";
 
-const CACHE_VERSION = "20260902a";
+const CACHE_VERSION = "20260902b";
 const MARKET_BRIEF_PATH = "data/market-brief-20260902.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
+const REVENUE_MODULE_PATH = "data/revenue-module-latest.json";
 const STORE_CONFIGS = {
   googlePlay: {
     key: "googlePlay",
@@ -21,6 +22,7 @@ const STORE_CONFIGS = {
     games: "data/games-20260902.json",
     enrichment: "data/enrichment-20260902.json",
     trends: "data/trends-20260902.json",
+    momentum: "data/revenue-momentum/google-play/2026-09-02.json",
     counterpartGames: "data/ios-games-20260902.json",
     counterpartRankLabel: "iOS",
     assetManifest: "assets/manifest.json",
@@ -45,6 +47,7 @@ const STORE_CONFIGS = {
     games: "data/ios-games-20260902.json",
     enrichment: "data/ios-enrichment-20260902.json",
     trends: "data/ios-trends-20260902.json",
+    momentum: "data/revenue-momentum/ios/2026-09-02.json",
     counterpartGames: "data/games-20260902.json",
     counterpartRankLabel: "Google",
     assetManifest: "assets/ios-manifest.json",
@@ -56,7 +59,7 @@ const STORE_CONFIGS = {
 
 const requestedStore = new URLSearchParams(window.location.search).get("store");
 const initialStore = requestedStore === "ios" ? "ios" : "googlePlay";
-const state = { store: initialStore, games: [], visible: [], datasets: {}, loadToken: 0 };
+const state = { store: initialStore, games: [], visible: [], datasets: {}, revenueModule: null, loadToken: 0 };
 
 const elements = {
   search: document.querySelector("#search"),
@@ -81,6 +84,11 @@ const elements = {
   marketNewsList: document.querySelector("#market-news-list"),
   marketClosingList: document.querySelector("#market-closing-list"),
   reportList: document.querySelector("#report-list"),
+  revenueDisclaimer: document.querySelector("#revenue-disclaimer"),
+  revenueMeta: document.querySelector("#revenue-meta"),
+  revenueObservationList: document.querySelector("#revenue-observation-list"),
+  revenueMomentumSummary: document.querySelector("#revenue-momentum-summary"),
+  revenueDataDownload: document.querySelector("#revenue-data-download"),
 };
 
 function config() {
@@ -196,8 +204,9 @@ function trendSummaryHtml(summary) {
   ].map((section) => "<span>" + escapeHtml(section) + "</span>").join("");
 }
 
-function mergeData(rawGames, enrichment, assets, trends, counterpartGames, counterpartRankLabel) {
+function mergeData(rawGames, enrichment, assets, trends, counterpartGames, counterpartRankLabel, momentum) {
   const counterpartByProduct = new Map(counterpartGames.map((game) => [productKey(game.gameName), game]));
+  const momentumById = new Map((momentum.games || []).map((item) => [String(item.productId), item]));
   return rawGames.map((game) => {
     const key = String(game.rank);
     const company = enrichment.productCompaniesByRank?.[key] ?? {
@@ -213,12 +222,14 @@ function mergeData(rawGames, enrichment, assets, trends, counterpartGames, count
       sections: { development: "待补充。", rankPath: "待补充。", turningPoints: "待补充。", creative: "待补充。", watch: "待补充。" },
     };
     const counterpart = counterpartByProduct.get(productKey(game.gameName));
+    const productId = String(game.packageName ?? game.appId ?? "");
     return {
       ...game,
       company,
       trend,
       counterpartRank: counterpart?.rank ?? null,
       counterpartRankLabel,
+      revenueMomentum: momentumById.get(productId) || null,
       status: game.comparison90d?.status || "pending",
       icon: game.iconData || assets[assetPrefix + "_icon"],
       storeImage: game.storeImageData || assets[assetPrefix + "_store"],
@@ -319,6 +330,93 @@ async function loadMarketBrief() {
   }
 }
 
+function signedNumber(value) {
+  if (!Number.isFinite(value)) return "—";
+  if (value > 0) return "+" + value.toFixed(1).replace(/\.0$/, "");
+  return value.toFixed(1).replace(/\.0$/, "");
+}
+
+function momentumTone(status) {
+  if (["strong-up", "up", "new-reentry"].includes(status)) return "up";
+  if (["strong-down", "down"].includes(status)) return "down";
+  return "stable";
+}
+
+function revenueObservationHtml(item) {
+  const game = state.games.find((candidate) => productKey(candidate.gameName) === item.productKey);
+  const icon = game?.icon;
+  const iconHtml = icon
+    ? '<img src="' + escapeHtml(icon) + '" alt="' + escapeHtml(item.gameName) + ' ICON" loading="lazy">'
+    : '<span aria-hidden="true">' + escapeHtml(item.gameName.slice(0, 1)) + '</span>';
+  let rankCopy = "当前商店未进入TOP60";
+  if (game) {
+    rankCopy = config().storeName + " #" + game.rank;
+    if (game.counterpartRank !== null) rankCopy += " · " + game.counterpartRankLabel + " #" + game.counterpartRank;
+  }
+  return '<article class="revenue-observation-card"><div class="revenue-observation-card__head">' +
+    '<div class="revenue-observation-card__icon">' + iconHtml + '</div><div><span>' +
+    escapeHtml(item.period) + '</span><h3>' + escapeHtml(item.gameName) + '</h3><small>' +
+    escapeHtml(rankCopy) + '</small></div><b>可信度 ' + escapeHtml(item.confidence) + '</b></div>' +
+    '<strong class="revenue-observation-card__metric">' + escapeHtml(item.metric) + '</strong><p>' +
+    escapeHtml(item.observation) + '</p><dl><div><dt>地区 / 商店</dt><dd>' + escapeHtml(item.region) + ' · ' +
+    escapeHtml(item.stores) + '</dd></div><div><dt>口径</dt><dd>' + escapeHtml(item.scope) +
+    '</dd></div></dl><a href="' + escapeHtml(safeUrl(item.url)) + '" target="_blank" rel="noopener noreferrer">' +
+    escapeHtml(item.source) + ' · ' + escapeHtml(item.publishedDate) + ' ↗</a></article>';
+}
+
+function momentumMoverHtml(item, tone) {
+  return '<li><span><strong>' + escapeHtml(item.gameName) + '</strong><small>当前 #' +
+    escapeHtml(item.currentRank) + ' · ' + escapeHtml(item.label) + '</small></span><b class="momentum-number momentum-number--' +
+    tone + '">' + escapeHtml(signedNumber(item.momentum5d)) + '位</b></li>';
+}
+
+function renderRevenueModule() {
+  const module = state.revenueModule;
+  if (!module) return;
+  elements.revenueDisclaimer.textContent = module.disclaimer;
+  elements.revenueMeta.textContent = module.date + " · 北京时间 · " + module.momentumCadence;
+  elements.revenueObservationList.innerHTML = (module.observations || []).map(revenueObservationHtml).join("") ||
+    '<p class="market-loading">暂无符合公开来源标准的收入观察。</p>';
+  const summary = module.stores[state.store];
+  elements.revenueDataDownload.href = safeLocalPath(summary.path);
+  const counts = { up: 0, stable: 0, down: 0, reentry: 0 };
+  state.games.forEach((game) => {
+    const status = game.revenueMomentum?.status;
+    if (["strong-up", "up"].includes(status)) counts.up += 1;
+    else if (["strong-down", "down"].includes(status)) counts.down += 1;
+    else if (status === "new-reentry") counts.reentry += 1;
+    else counts.stable += 1;
+  });
+  const statCopy = state.games.length
+    ? '<div class="revenue-momentum-stats"><span><b>' + counts.up + '</b>上升</span><span><b>' + counts.stable +
+      '</b>稳定</span><span><b>' + counts.down + '</b>回落</span><span><b>' + counts.reentry + '</b>新进/回榜</span></div>'
+    : '';
+  const risers = (summary.topRisers || []).map((item) => momentumMoverHtml(item, "up")).join("");
+  const fallers = (summary.topFallers || []).map((item) => momentumMoverHtml(item, "down")).join("");
+  elements.revenueMomentumSummary.innerHTML = '<article class="revenue-momentum-overview"><div><span>' +
+    escapeHtml(summary.label) + '</span><h3>全榜收入动能</h3></div><p>最近5个有效快照与前5个有效快照对比。当前30日窗口有 <strong>' +
+    escapeHtml(summary.validSnapshotCount30d) + '</strong> 个有效样本，可信度<strong>' +
+    escapeHtml(summary.confidence) + '</strong>；完整历史会在后续工作日自然累积。</p>' + statCopy + '</article>' +
+    '<article class="revenue-mover-card revenue-mover-card--up"><div><span>TOP RISERS</span><h3>动能上升</h3></div><ol>' +
+    (risers || '<li>暂无可计算产品</li>') + '</ol></article>' +
+    '<article class="revenue-mover-card revenue-mover-card--down"><div><span>TOP FALLERS</span><h3>动能回落</h3></div><ol>' +
+    (fallers || '<li>暂无可计算产品</li>') + '</ol></article>';
+  window.__REVENUE_MODULE_READY__ = true;
+}
+
+async function loadRevenueModule() {
+  try {
+    state.revenueModule = await fetchJson(REVENUE_MODULE_PATH, "收入观察与畅销动能");
+    renderRevenueModule();
+  } catch (error) {
+    console.error(error);
+    elements.revenueDisclaimer.textContent = "收入观察模块暂时加载失败，榜单明细仍可正常使用。";
+    elements.revenueObservationList.innerHTML = '<p class="market-loading">公开收入观察加载失败。</p>';
+    elements.revenueMomentumSummary.innerHTML = '<p class="market-loading">全榜收入动能加载失败。</p>';
+    window.__REVENUE_MODULE_READY__ = false;
+  }
+}
+
 async function loadAssets(storeConfig) {
   const manifest = await fetchJson(storeConfig.assetManifest, "图片清单");
   const basePath = storeConfig.assetManifest.slice(0, storeConfig.assetManifest.lastIndexOf("/") + 1);
@@ -335,8 +433,9 @@ async function loadStoreData(storeKey) {
     loadAssets(storeConfig),
     fetchJson(storeConfig.trends, "趋势数据"),
     fetchJson(storeConfig.counterpartGames, "跨商店排名数据"),
-  ]).then(([rawGames, enrichment, assets, trends, counterpartGames]) =>
-    mergeData(rawGames, enrichment, assets, trends, counterpartGames, storeConfig.counterpartRankLabel));
+    fetchJson(storeConfig.momentum, "收入动能数据"),
+  ]).then(([rawGames, enrichment, assets, trends, counterpartGames, momentum]) =>
+    mergeData(rawGames, enrichment, assets, trends, counterpartGames, storeConfig.counterpartRankLabel, momentum));
   state.datasets[storeKey] = promise;
   try {
     return await promise;
@@ -407,6 +506,7 @@ function getVisibleGames() {
       game.company.cn,
       game.trend.summary,
       fullTrendText(game.trend),
+      game.revenueMomentum?.label,
     ].join(" ").toLowerCase();
     return (!query || haystack.includes(query))
       && (elements.genre.value === "all" || game.genre.startsWith(elements.genre.value))
@@ -417,8 +517,25 @@ function getVisibleGames() {
   return filtered.sort((a, b) => {
     if (elements.sort.value === "release") return b.releaseDateIso.localeCompare(a.releaseDateIso);
     if (elements.sort.value === "installs") return parseInstalls(b.recentInstalls30d) - parseInstalls(a.recentInstalls30d);
+    if (elements.sort.value === "momentum") {
+      const aValue = Number.isFinite(a.revenueMomentum?.momentum5d) ? a.revenueMomentum.momentum5d : -Infinity;
+      const bValue = Number.isFinite(b.revenueMomentum?.momentum5d) ? b.revenueMomentum.momentum5d : -Infinity;
+      return bValue - aValue || a.rank - b.rank;
+    }
     return a.rank - b.rank;
   });
+}
+
+function momentumCellHtml(game) {
+  const item = game.revenueMomentum;
+  if (!item) return '<td class="momentum-cell"><span class="momentum-badge momentum-badge--stable">待计算</span></td>';
+  const tone = momentumTone(item.status);
+  const movement = Number.isFinite(item.momentum5d) ? signedNumber(item.momentum5d) + "位" : "样本积累中";
+  return '<td class="momentum-cell"><span class="momentum-badge momentum-badge--' + tone + '">' +
+    escapeHtml(item.label) + '</span><strong>近5期 ' + escapeHtml(movement) + '</strong><small>30日均位 #' +
+    escapeHtml(item.averageRank30d) + ' · 在榜率 ' + escapeHtml(item.top60Rate30d) +
+    '%</small><small>有效样本 ' + escapeHtml(item.validSnapshotCount30d) + '/30 · 可信度' +
+    escapeHtml(item.confidence) + '</small>' + (item.crossStoreResonance ? '<em>双端共振</em>' : '') + '</td>';
 }
 
 function rowHtml(game) {
@@ -434,6 +551,7 @@ function rowHtml(game) {
     '<td><div class="game-cell"><img src="' + escapeHtml(game.icon) + '" alt="' + escapeHtml(game.gameName) +
       ' icon" loading="lazy" /><div><strong>' + escapeHtml(game.gameName) + "</strong><small>" +
       escapeHtml(secondary) + '</small><small class="cross-rank">' + escapeHtml(counterpartRank) + "</small></div></div></td>" +
+    momentumCellHtml(game) +
     '<td class="taxonomy-cell"><strong>' + escapeHtml(game.genre) + "</strong><p>" + escapeHtml(game.keywords) + "</p></td>" +
     '<td><button class="shot-button" type="button" data-rank="' + game.rank + '" aria-label="放大查看 ' +
       escapeHtml(game.gameName) + ' 商店图"><img src="' + escapeHtml(game.storeImage) + '" alt="' +
@@ -456,7 +574,7 @@ function renderTable() {
   elements.resultCount.textContent = state.visible.length;
   elements.body.innerHTML = state.visible.length
     ? state.visible.map(rowHtml).join("")
-    : '<tr><td colspan="8" class="empty-state">没有匹配结果，请调整筛选条件。</td></tr>';
+    : '<tr><td colspan="9" class="empty-state">没有匹配结果，请调整筛选条件。</td></tr>';
 }
 
 function tooltipHtml(game) {
@@ -522,8 +640,11 @@ function csvEscape(value) {
 
 function exportCsv() {
   const storeConfig = config();
-  const header = ["商店", "排名", storeConfig.counterpartRankLabel + "排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", storeConfig.linkHeader, "趋势摘要", "趋势全文", "素材核验", "生命周期核验"];
-  const rows = state.visible.map((game) => [
+  const header = ["商店", "排名", storeConfig.counterpartRankLabel + "排名", "榜单状态", "游戏名称", "游戏类型", "游戏关键字", "出品公司（英文）", "出品公司（中文）", "上架时间", storeConfig.linkHeader, "趋势摘要", "趋势全文", "素材核验", "生命周期核验", "近5期动能", "近30日平均排名", "近30日在榜率", "有效样本数", "动能状态", "跨端共振", "最新公开收入观察", "收入数据期间", "收入数据口径", "收入来源URL"];
+  const rows = state.visible.map((game) => {
+    const momentum = game.revenueMomentum || {};
+    const observation = (state.revenueModule?.observations || []).find((item) => item.productKey === productKey(game.gameName)) || {};
+    return [
     storeConfig.storeName,
     game.rank,
     game.counterpartRank ?? "无排名",
@@ -539,7 +660,18 @@ function exportCsv() {
     fullTrendText(game.trend),
     game.trend.sourceAudit ? sourceAuditText(game.trend.sourceAudit) : "",
     game.trend.lifecycleAudit ? lifecycleAuditText(game.trend.lifecycleAudit) : "",
-  ]);
+    Number.isFinite(momentum.momentum5d) ? momentum.momentum5d : "样本积累中",
+    momentum.averageRank30d ?? "",
+    momentum.top60Rate30d === undefined ? "" : momentum.top60Rate30d + "%",
+    momentum.validSnapshotCount30d ?? "",
+    momentum.label ?? "",
+    momentum.crossStoreResonance ? "是" : "否",
+    observation.observation ?? "",
+    observation.period ?? "",
+    observation.scope ?? "",
+    observation.url ?? "",
+    ];
+  });
   const content = [header, ...rows].map((row) => row.map(csvEscape).join(",")).join("\n");
   const url = URL.createObjectURL(new Blob(["\ufeff", content], { type: "text/csv;charset=utf-8" }));
   const anchor = document.createElement("a");
@@ -565,7 +697,7 @@ async function switchStore(storeKey, updateUrl = true) {
   if (!elements.modal.hidden) closeModal();
   refreshStoreChrome();
   resetFilters(false);
-  elements.body.innerHTML = '<tr><td colspan="8" class="empty-state">正在加载 ' + escapeHtml(config().storeName) + " 榜单数据…</td></tr>";
+  elements.body.innerHTML = '<tr><td colspan="9" class="empty-state">正在加载 ' + escapeHtml(config().storeName) + " 榜单数据…</td></tr>";
   elements.resultCount.textContent = "0";
   if (updateUrl) {
     const url = new URL(window.location.href);
@@ -581,12 +713,13 @@ async function switchStore(storeKey, updateUrl = true) {
     renderLeader();
     renderStats();
     renderTable();
+    renderRevenueModule();
     window.__APP_READY__ = true;
     window.__ACTIVE_STORE__ = storeKey;
   } catch (error) {
     console.error(error);
     if (token !== state.loadToken) return;
-    elements.body.innerHTML = '<tr><td colspan="8" class="empty-state">数据加载失败，请稍后刷新页面。<br /><small>' +
+    elements.body.innerHTML = '<tr><td colspan="9" class="empty-state">数据加载失败，请稍后刷新页面。<br /><small>' +
       escapeHtml(error.message) + "</small></td></tr>";
     window.__APP_READY__ = false;
   }
@@ -645,6 +778,7 @@ function bindEvents() {
 function init() {
   bindEvents();
   loadMarketBrief();
+  loadRevenueModule();
   switchStore(initialStore, false);
 }
 
