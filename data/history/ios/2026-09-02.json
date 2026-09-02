@@ -1,0 +1,372 @@
+{
+  "store": "ios",
+  "country": "US",
+  "device": "iPhone",
+  "category": "Games > Strategy > Top Grossing",
+  "date": "2026-09-02",
+  "dataDate": "2026-09-02",
+  "sourceUpdated": "2026-09-01T19:03:54-07:00",
+  "sourceUrl": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
+  "rankings": [
+    {
+      "rank": 1,
+      "appId": "1094591345",
+      "gameName": "Pokémon GO",
+      "sourceUrl": "https://apps.apple.com/us/app/id1094591345"
+    },
+    {
+      "rank": 2,
+      "appId": "529479190",
+      "gameName": "Clash of Clans",
+      "sourceUrl": "https://apps.apple.com/us/app/id529479190"
+    },
+    {
+      "rank": 3,
+      "appId": "6739554056",
+      "gameName": "Kingshot",
+      "sourceUrl": "https://apps.apple.com/us/app/id6739554056"
+    },
+    {
+      "rank": 4,
+      "appId": "6443575749",
+      "gameName": "Whiteout Survival",
+      "sourceUrl": "https://apps.apple.com/us/app/id6443575749"
+    },
+    {
+      "rank": 5,
+      "appId": "6448786147",
+      "gameName": "Last War:Survival",
+      "sourceUrl": "https://apps.apple.com/us/app/id6448786147"
+    },
+    {
+      "rank": 6,
+      "appId": "6503272652",
+      "gameName": "Last Z: Survival Shooter",
+      "sourceUrl": "https://apps.apple.com/us/app/id6503272652"
+    },
+    {
+      "rank": 7,
+      "appId": "1098157959",
+      "gameName": "Evony",
+      "sourceUrl": "https://apps.apple.com/us/app/id1098157959"
+    },
+    {
+      "rank": 8,
+      "appId": "1274132545",
+      "gameName": "Total Battle: War Strategy",
+      "sourceUrl": "https://apps.apple.com/us/app/id1274132545"
+    },
+    {
+      "rank": 9,
+      "appId": "6670441558",
+      "gameName": "Dark War:Survival",
+      "sourceUrl": "https://apps.apple.com/us/app/id6670441558"
+    },
+    {
+      "rank": 10,
+      "appId": "1376515087",
+      "gameName": "Age of Origins:Tower Defense",
+      "sourceUrl": "https://apps.apple.com/us/app/id1376515087"
+    },
+    {
+      "rank": 11,
+      "appId": "6744812012",
+      "gameName": "X-Clash: Survival Challenge",
+      "sourceUrl": "https://apps.apple.com/us/app/id6744812012"
+    },
+    {
+      "rank": 12,
+      "appId": "1330123889",
+      "gameName": "PUBG MOBILE",
+      "sourceUrl": "https://apps.apple.com/us/app/id1330123889"
+    },
+    {
+      "rank": 13,
+      "appId": "6741568655",
+      "gameName": "Mobile Legends: Bang Bang.US",
+      "sourceUrl": "https://apps.apple.com/us/app/id6741568655"
+    },
+    {
+      "rank": 14,
+      "appId": "6756989323",
+      "gameName": "Last Asylum: Plague",
+      "sourceUrl": "https://apps.apple.com/us/app/id6756989323"
+    },
+    {
+      "rank": 15,
+      "appId": "1053012308",
+      "gameName": "Clash Royale",
+      "sourceUrl": "https://apps.apple.com/us/app/id1053012308"
+    },
+    {
+      "rank": 16,
+      "appId": "1642607669",
+      "gameName": "Game of Thrones: Dragonfire",
+      "sourceUrl": "https://apps.apple.com/us/app/id1642607669"
+    },
+    {
+      "rank": 17,
+      "appId": "329218549",
+      "gameName": "Chess.com - Play and Learn",
+      "sourceUrl": "https://apps.apple.com/us/app/id329218549"
+    },
+    {
+      "rank": 18,
+      "appId": "921022358",
+      "gameName": "Star Wars™: Galaxy of Heroes",
+      "sourceUrl": "https://apps.apple.com/us/app/id921022358"
+    },
+    {
+      "rank": 19,
+      "appId": "1517980891",
+      "gameName": "Puzzles & Survival",
+      "sourceUrl": "https://apps.apple.com/us/app/id1517980891"
+    },
+    {
+      "rank": 20,
+      "appId": "1371565796",
+      "gameName": "RAID: Shadow Legends",
+      "sourceUrl": "https://apps.apple.com/us/app/id1371565796"
+    },
+    {
+      "rank": 21,
+      "appId": "852912420",
+      "gameName": "Summoners War",
+      "sourceUrl": "https://apps.apple.com/us/app/id852912420"
+    },
+    {
+      "rank": 22,
+      "appId": "1592081003",
+      "gameName": "MARVEL SNAP - Hero Card Game",
+      "sourceUrl": "https://apps.apple.com/us/app/id1592081003"
+    },
+    {
+      "rank": 23,
+      "appId": "1496227521",
+      "gameName": "Magic: The Gathering Arena",
+      "sourceUrl": "https://apps.apple.com/us/app/id1496227521"
+    },
+    {
+      "rank": 24,
+      "appId": "6762268182",
+      "gameName": "Z Route: Redemption",
+      "sourceUrl": "https://apps.apple.com/us/app/id6762268182"
+    },
+    {
+      "rank": 25,
+      "appId": "6746328263",
+      "gameName": "Castle Busters",
+      "sourceUrl": "https://apps.apple.com/us/app/id6746328263"
+    },
+    {
+      "rank": 26,
+      "appId": "1354260888",
+      "gameName": "Rise of Kingdoms",
+      "sourceUrl": "https://apps.apple.com/us/app/id1354260888"
+    },
+    {
+      "rank": 27,
+      "appId": "6759788962",
+      "gameName": "Lordrush",
+      "sourceUrl": "https://apps.apple.com/us/app/id6759788962"
+    },
+    {
+      "rank": 28,
+      "appId": "6738109752",
+      "gameName": "Tiles Survive!",
+      "sourceUrl": "https://apps.apple.com/us/app/id6738109752"
+    },
+    {
+      "rank": 29,
+      "appId": "6757350661",
+      "gameName": "Police Chief",
+      "sourceUrl": "https://apps.apple.com/us/app/id6757350661"
+    },
+    {
+      "rank": 30,
+      "appId": "6446389130",
+      "gameName": "Puzzles & Chaos: Frozen Castle",
+      "sourceUrl": "https://apps.apple.com/us/app/id6446389130"
+    },
+    {
+      "rank": 31,
+      "appId": "1662335371",
+      "gameName": "Raid Rush: Tower Defense TD",
+      "sourceUrl": "https://apps.apple.com/us/app/id1662335371"
+    },
+    {
+      "rank": 32,
+      "appId": "6767834940",
+      "gameName": "Top Lords",
+      "sourceUrl": "https://apps.apple.com/us/app/id6767834940"
+    },
+    {
+      "rank": 33,
+      "appId": "1575590830",
+      "gameName": "The Tower - Idle Tower Defense",
+      "sourceUrl": "https://apps.apple.com/us/app/id1575590830"
+    },
+    {
+      "rank": 34,
+      "appId": "1071744151",
+      "gameName": "War and Order",
+      "sourceUrl": "https://apps.apple.com/us/app/id1071744151"
+    },
+    {
+      "rank": 35,
+      "appId": "6737595599",
+      "gameName": "Foundation: Galactic Frontier",
+      "sourceUrl": "https://apps.apple.com/us/app/id6737595599"
+    },
+    {
+      "rank": 36,
+      "appId": "1181774280",
+      "gameName": "Fire Emblem Heroes",
+      "sourceUrl": "https://apps.apple.com/us/app/id1181774280"
+    },
+    {
+      "rank": 37,
+      "appId": "6741674823",
+      "gameName": "Watcher of Realms - US",
+      "sourceUrl": "https://apps.apple.com/us/app/id6741674823"
+    },
+    {
+      "rank": 38,
+      "appId": "1562817072",
+      "gameName": "Mob Control",
+      "sourceUrl": "https://apps.apple.com/us/app/id1562817072"
+    },
+    {
+      "rank": 39,
+      "appId": "6476261995",
+      "gameName": "Age of Empires Mobile",
+      "sourceUrl": "https://apps.apple.com/us/app/id6476261995"
+    },
+    {
+      "rank": 40,
+      "appId": "6761893238",
+      "gameName": "Top Force: Commander",
+      "sourceUrl": "https://apps.apple.com/us/app/id6761893238"
+    },
+    {
+      "rank": 41,
+      "appId": "1241932094",
+      "gameName": "Last Day on Earth: Survival",
+      "sourceUrl": "https://apps.apple.com/us/app/id1241932094"
+    },
+    {
+      "rank": 42,
+      "appId": "1035712810",
+      "gameName": "Game of Thrones: Conquest ™",
+      "sourceUrl": "https://apps.apple.com/us/app/id1035712810"
+    },
+    {
+      "rank": 43,
+      "appId": "1599937506",
+      "gameName": "Warhammer 40,000: Tacticus ™",
+      "sourceUrl": "https://apps.apple.com/us/app/id1599937506"
+    },
+    {
+      "rank": 44,
+      "appId": "1510997559",
+      "gameName": "Supremacy: World War 3",
+      "sourceUrl": "https://apps.apple.com/us/app/id1510997559"
+    },
+    {
+      "rank": 45,
+      "appId": "6746636289",
+      "gameName": "Forge Master – Idle RPG",
+      "sourceUrl": "https://apps.apple.com/us/app/id6746636289"
+    },
+    {
+      "rank": 46,
+      "appId": "6738469826",
+      "gameName": "Lands of Jail",
+      "sourceUrl": "https://apps.apple.com/us/app/id6738469826"
+    },
+    {
+      "rank": 47,
+      "appId": "1479198816",
+      "gameName": "Top War: Battle Game",
+      "sourceUrl": "https://apps.apple.com/us/app/id1479198816"
+    },
+    {
+      "rank": 48,
+      "appId": "1570095804",
+      "gameName": "Kingdom Guard:Tower Defense TD",
+      "sourceUrl": "https://apps.apple.com/us/app/id1570095804"
+    },
+    {
+      "rank": 49,
+      "appId": "6447612873",
+      "gameName": "Sea War: Uboat Raid",
+      "sourceUrl": "https://apps.apple.com/us/app/id6447612873"
+    },
+    {
+      "rank": 50,
+      "appId": "1487451427",
+      "gameName": "Infinity Kingdom",
+      "sourceUrl": "https://apps.apple.com/us/app/id1487451427"
+    },
+    {
+      "rank": 51,
+      "appId": "6751086804",
+      "gameName": "Dragon Traveler",
+      "sourceUrl": "https://apps.apple.com/us/app/id6751086804"
+    },
+    {
+      "rank": 52,
+      "appId": "6755173751",
+      "gameName": "Evo Defense",
+      "sourceUrl": "https://apps.apple.com/us/app/id6755173751"
+    },
+    {
+      "rank": 53,
+      "appId": "6754545818",
+      "gameName": "Last Light: Wasteland",
+      "sourceUrl": "https://apps.apple.com/us/app/id6754545818"
+    },
+    {
+      "rank": 54,
+      "appId": "6755585789",
+      "gameName": "Overgeared Hero: Merge RPG",
+      "sourceUrl": "https://apps.apple.com/us/app/id6755585789"
+    },
+    {
+      "rank": 55,
+      "appId": "1480616990",
+      "gameName": "League of Legends: Wild Rift",
+      "sourceUrl": "https://apps.apple.com/us/app/id1480616990"
+    },
+    {
+      "rank": 56,
+      "appId": "1611722542",
+      "gameName": "Kingdom Clash：Medieval Defense",
+      "sourceUrl": "https://apps.apple.com/us/app/id1611722542"
+    },
+    {
+      "rank": 57,
+      "appId": "6740189002",
+      "gameName": "Galaxy Defense: Fortress TD",
+      "sourceUrl": "https://apps.apple.com/us/app/id6740189002"
+    },
+    {
+      "rank": 58,
+      "appId": "1274354704",
+      "gameName": "Guns of Glory: Lost Island",
+      "sourceUrl": "https://apps.apple.com/us/app/id1274354704"
+    },
+    {
+      "rank": 59,
+      "appId": "1071976327",
+      "gameName": "Lords Mobile x Transformers",
+      "sourceUrl": "https://apps.apple.com/us/app/id1071976327"
+    },
+    {
+      "rank": 60,
+      "appId": "6450953550",
+      "gameName": "Top Heroes: Kingdom Saga",
+      "sourceUrl": "https://apps.apple.com/us/app/id6450953550"
+    }
+  ]
+}

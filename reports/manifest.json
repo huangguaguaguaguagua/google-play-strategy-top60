@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-02",
+      "title": "Last Shelter: War Z首次进入Google；MARVEL SNAP与Clash of Clans双端上行",
+      "summary": "与9月1日相比，Google Play两进两出：Raid Rush回榜#58、近90天新品Last Shelter: War Z进入#60；iOS三进三出，但The Tower、MLBB、MARVEL SNAP和Raid Rush出现两位数上涨。Vikings是唯一双端共同掉榜产品，MARVEL SNAP、Raid Rush与Clash of Clans则形成值得连续验证的双端共同信号。",
+      "markdown": "reports/2026-09-02.md",
+      "json": "data/market-brief-20260902.json"
+    },
     {
       "date": "2026-09-01",
       "title": "Age of Empires双端回升，SD Gundam随500日庆典进入iOS；iOS继续六进六出",
