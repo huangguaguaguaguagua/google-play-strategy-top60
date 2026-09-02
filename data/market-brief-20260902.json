@@ -1,0 +1,355 @@
+{
+  "date": "2026-09-02",
+  "timezone": "Asia/Shanghai",
+  "title": "Last Shelter: War Z首次进入Google；MARVEL SNAP与Clash of Clans双端上行",
+  "summary": "与9月1日相比，Google Play两进两出：Raid Rush回榜#58、近90天新品Last Shelter: War Z进入#60；iOS三进三出，但The Tower、MLBB、MARVEL SNAP和Raid Rush出现两位数上涨。Vikings是唯一双端共同掉榜产品，MARVEL SNAP、Raid Rush与Clash of Clans则形成值得连续验证的双端共同信号。",
+  "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与对策略品类的影响综合排序；不是第三方阅读量或舆情指数。",
+  "iconBundle": "assets/market-icons-20260902.json",
+  "rankingSources": {
+    "googlePlay": "data/games-20260902.json",
+    "ios": "data/ios-games-20260902.json"
+  },
+  "previousRankingSources": {
+    "googlePlay": "data/games-20260901.json",
+    "ios": "data/ios-games-20260901.json"
+  },
+  "rankingDynamics": {
+    "googlePlay": {
+      "label": "Google Play · Android",
+      "sourceTime": "北京时间 2026-09-02 10:03:47 直连抓取",
+      "anchors": "榜单锚点：#1 Kingshot · #25 Lands of Jail · #60 Last Shelter: War Z",
+      "products": [
+        {
+          "gameName": "Raid Rush: Tower Defense TD",
+          "productId": "com.wireless.defenseland",
+          "iconKey": "googlePlay:com.wireless.defenseland",
+          "tone": "entry",
+          "changeLabel": "回榜 · #58",
+          "analysis": "8月28日曾位于Google #60，随后连续两个快照掉榜，本期回到#58；iOS同时上涨11位至#31。两端共同回升比单端榜尾噪声更值得观察，但8月26日商品页版本仅注明性能与错误修复，暂无证据确认具体原因。"
+        },
+        {
+          "gameName": "Last Shelter: War Z",
+          "productId": "com.more.lastshelter.gp",
+          "iconKey": "googlePlay:com.more.lastshelter.gp",
+          "tone": "entry",
+          "changeLabel": "进入 · #60",
+          "analysis": "2026年6月24日上架后首次进入项目Google TOP60，按上架日期标记为近三个月新上榜；iOS有对应商品但未入榜。当前仅压线#60，8月26日联盟玩法更新与进榜时间接近，仍只能作为待验证首发/版本信号。"
+        },
+        {
+          "gameName": "Warpath: Ace Shooter",
+          "productId": "com.wondergames.warpath.gp",
+          "iconKey": "googlePlay:com.wondergames.warpath.gp",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#58",
+          "analysis": "上期已降至Google #58，本期掉榜；iOS也继续处于榜外。双端均无TOP60承接，是本期较明确的短期弱化信号，但两次快照仍不足以推导长期下行。"
+        },
+        {
+          "gameName": "Vikings: War of Clans PvP",
+          "productId": "com.plarium.vikings",
+          "iconKey": "googlePlay:com.plarium.vikings",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#60",
+          "analysis": "Google从最后一名掉榜，iOS也由上期#57退出，是今日唯一双端共同掉榜产品。由于两边此前都处榜尾，先记为榜尾风险同步兑现，而不是产品长线收入结论。"
+        },
+        {
+          "gameName": "Game of Thrones: Conquest ™",
+          "productId": "com.wb.goog.got.conquest",
+          "iconKey": "googlePlay:com.wb.goog.got.conquest",
+          "tone": "up",
+          "changeLabel": "+10 · #49",
+          "analysis": "从Google #59升至#49，iOS也上升3位至#42，形成双端同向回补；未发现与9月1日完全对应的官方重大活动节点，当前只确认收入位置回升，不能断言原因。"
+        },
+        {
+          "gameName": "MARVEL SNAP",
+          "productId": "com.nvsgames.snap",
+          "iconKey": "googlePlay:com.nvsgames.snap",
+          "tone": "up",
+          "changeLabel": "+6 · #37",
+          "analysis": "Google升6位至#37，iOS升13位至#22。官方8月31日开启AXIS: Inversion赛季，包含新季票、角色、地点和整月活动；节点与双端上涨重合，但仍需下一个快照验证是否形成持续赛季峰值。"
+        }
+      ]
+    },
+    "ios": {
+      "label": "App Store · iPhone/iOS",
+      "sourceTime": "Apple RSS 北京时间 2026-09-02",
+      "anchors": "榜单锚点：#1 Pokémon GO · #25 Castle Busters · #60 Top Heroes",
+      "products": [
+        {
+          "gameName": "Galaxy Defense: Fortress TD",
+          "productId": "6740189002",
+          "iconKey": "ios:6740189002",
+          "tone": "entry",
+          "changeLabel": "回榜 · #57",
+          "analysis": "昨日掉榜后立即回到iOS #57，Google则小降1位至#56；两端都紧贴榜尾，属于换防信号，尚未显示稳定上行。"
+        },
+        {
+          "gameName": "Guns of Glory: Lost Island",
+          "productId": "1274354704",
+          "iconKey": "ios:1274354704",
+          "tone": "entry",
+          "changeLabel": "回榜 · #58",
+          "analysis": "iOS在掉榜一天后回到#58，Google仍位于中段。成熟SLG的两端收入重心继续偏Android，本次iPhone回榜只能按短期付费回补观察。"
+        },
+        {
+          "gameName": "Lords Mobile x Transformers",
+          "productId": "1071976327",
+          "iconKey": "ios:1071976327",
+          "tone": "entry",
+          "changeLabel": "回榜 · #59",
+          "analysis": "iOS在掉榜一天后压线回到#59，Google则下降3位至#32。联动产品在Android仍有较强承接，但iPhone位置尚未摆脱榜尾风险。"
+        },
+        {
+          "gameName": "SD Gundam G Generation ETERNAL",
+          "productId": "6692615881",
+          "iconKey": "ios:6692615881",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#53",
+          "analysis": "昨日随500日庆典首次进入项目iOS #53，本期即掉榜，Google也未进入策略TOP60；庆典节点尚未转化为连续榜位，因此继续按短期IP活动峰值处理。"
+        },
+        {
+          "gameName": "Vikings: War of Clans PvP",
+          "productId": "966810173",
+          "iconKey": "ios:966810173",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#57",
+          "analysis": "iOS从#57掉榜，Google也从#60退出，成为本期唯一双端共同掉榜产品；两端都是从榜尾离开，需要后续回榜情况判断是否只是日内换防。"
+        },
+        {
+          "gameName": "Game of Kings:The Blood Throne",
+          "productId": "1071673198",
+          "iconKey": "ios:1071673198",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#60",
+          "analysis": "昨日首次进入项目历史快照且仅位于#60，本期立即退出；公开版本仍以错误修复为主，没有证据支持特定活动解释，符合存量核心用户短时付费脉冲特征。"
+        },
+        {
+          "gameName": "The Tower - Idle Tower Defense",
+          "productId": "1575590830",
+          "iconKey": "ios:1575590830",
+          "tone": "up",
+          "changeLabel": "+26 · #33",
+          "analysis": "由#59跃升至#33，是今日iOS最大涨幅；Google策略榜无对应排名，也未找到同期可确认重大节点，因此只标记为单端强回补信号，下一次排名决定其是否脱离脉冲。"
+        },
+        {
+          "gameName": "Mobile Legends: Bang Bang.US",
+          "productId": "6741568655",
+          "iconKey": "ios:6741568655",
+          "tone": "up",
+          "changeLabel": "+23 · #13",
+          "analysis": "从#36升至#13，9月StarLight上线Hanzo“Fangs of Slaughter”皮肤及会员权益与上涨窗口重合。当前可确认的是iOS付费位置跃升，仍不能仅凭一天把全部变化归因于皮肤。"
+        },
+        {
+          "gameName": "MARVEL SNAP - Hero Card Game",
+          "productId": "1592081003",
+          "iconKey": "ios:1592081003",
+          "tone": "up",
+          "changeLabel": "+13 · #22",
+          "analysis": "iOS升至#22，Google也升至#37，是今日最明确的双端共同上涨之一。AXIS: Inversion新赛季于8月31日公布完整季票、角色与活动排期，为上涨提供同期节点，后续需看赛季首周留存。"
+        },
+        {
+          "gameName": "Raid Rush: Tower Defense TD",
+          "productId": "1662335371",
+          "iconKey": "ios:1662335371",
+          "tone": "up",
+          "changeLabel": "+11 · #31",
+          "analysis": "iOS由#42升至#31，Google同时从榜外回到#58。双端同步提高了信号质量，但现有商店版本只注明性能优化和错误修复，原因继续保持待核验。"
+        },
+        {
+          "gameName": "Last Day on Earth: Survival",
+          "productId": "1241932094",
+          "iconKey": "ios:1241932094",
+          "tone": "up",
+          "changeLabel": "+10 · #41",
+          "analysis": "由#51升至#41，Google策略榜无对应排名；成熟生存产品出现iPhone单端回补，但没有足以支撑活动归因的同期官方节点。"
+        },
+        {
+          "gameName": "Clash of Clans",
+          "productId": "529479190",
+          "iconKey": "ios:529479190",
+          "tone": "up",
+          "changeLabel": "+6 · #2",
+          "analysis": "iOS升至#2，Google也升2位至#8；9月1日开启WWE“Search for Cena”整月活动，包含限定皮肤、场景、挑战、临时兵种和部落玩法。双端同向与节点重合，但需用9月首周判断峰值持续性。"
+        },
+        {
+          "gameName": "Kingdom Clash：Medieval Defense",
+          "productId": "1611722542",
+          "iconKey": "ios:1611722542",
+          "tone": "down",
+          "changeLabel": "−9 · #56",
+          "analysis": "昨日回榜#47后回落至#56，Google仍无对应TOP60排名；当前再次落入榜尾风险区，说明昨日回补尚未形成稳定位置。"
+        },
+        {
+          "gameName": "Age of Empires Mobile",
+          "productId": "6476261995",
+          "iconKey": "ios:6476261995",
+          "tone": "down",
+          "changeLabel": "−9 · #39",
+          "analysis": "iOS由#30降至#39，Google也小降2位至#51。8月31日Hero Reset活动后的双端回升只维持一个快照，本期表明活动相关信号正在降温，但仍未双端掉榜。"
+        },
+        {
+          "gameName": "Overgeared Hero: Merge RPG",
+          "productId": "6755585789",
+          "iconKey": "ios:6755585789",
+          "tone": "down",
+          "changeLabel": "−8 · #54",
+          "analysis": "iOS由#46降至#54，Google也下降2位至#39；昨日双端同向上涨后今天共同回吐，暂不能认定建立了更高榜位中枢。"
+        }
+      ]
+    }
+  },
+  "marketNews": [
+    {
+      "category": "IP联动",
+      "date": "2026-09-01",
+      "title": "Clash of Clans开启WWE“Search for Cena”整月活动",
+      "summary": "官方列出9月1—30日限定WWE英雄皮肤与场景、John Cena挑战、临时兵种、部落冲刺和多段资源/装备活动。",
+      "impact": "Clash of Clans本期iOS升至#2、Google升至#8，双端同向与活动首日重合；限定外观、部落玩法和战斗事件的贡献仍需拆分。",
+      "source": "Supercell / Clash of Clans官方",
+      "url": "https://supercell.com/en/games/clashofclans/blog/news/wwe-search-for-cena-steps-into-the-ring/"
+    },
+    {
+      "category": "新赛季",
+      "date": "2026-08-31",
+      "title": "MARVEL SNAP发布AXIS: Inversion赛季",
+      "summary": "新赛季加入Superior Iron Man季票、多个Series 5角色、两处新地点、21日登录日历、Draft与Team Clash等整月活动。",
+      "impact": "产品本期Google +6、iOS +13，形成双端共同上行；赛季首周能否维持TOP25/40将决定这是首日付费峰值还是榜位抬升。",
+      "source": "MARVEL SNAP官方",
+      "url": "https://marvelsnap.com/new-season-axis-inversion/"
+    },
+    {
+      "category": "皮肤与会员",
+      "date": "2026-09-01",
+      "title": "Mobile Legends美国版上线9月StarLight",
+      "summary": "北美官方账号确认Hanzo“Fangs of Slaughter”专属皮肤与StarLight会员权益开放，包含皮肤、Crystals of Aurora等内容。",
+      "impact": "iOS美国版本期从#36升至#13，节点与付费跃升重合；需验证皮肤热度能否维持两次以上快照。",
+      "source": "Mobile Legends: Bang Bang北美官方",
+      "url": "https://www.facebook.com/MobileLegendsNorthAmerica/posts/september-starlight-is-officially-available-for-only-300-diamonds-you-can-get-th/1079137584518950/"
+    },
+    {
+      "category": "新品与榜单",
+      "date": "2026-08-26",
+      "title": "Last Shelter: War Z更新联盟玩法后首次进入Google TOP60",
+      "summary": "Google Play商品页显示产品6月24日上架、8月26日更新联盟玩法与Doomsday Transport；本期以#60首次进入项目榜。",
+      "impact": "这是近90天新品的首个可见Google收入信号，但位置仅在榜尾；需同时观察留榜率与iOS是否出现同步承接。",
+      "source": "Google Play美国区商品页",
+      "url": "https://play.google.com/store/apps/details?id=com.more.lastshelter.gp&hl=en_US&gl=US"
+    },
+    {
+      "category": "报道 / 软启动",
+      "date": "2026-08-31",
+      "title": "报道：腾讯Level Infinite测试Crownstone Survival",
+      "summary": "Mobilegamer.biz援引AppMagic称该生存新游拟在菲律宾、法国、印尼、土耳其和美国Google Play软启动；具体范围仍可能变化。",
+      "impact": "腾讯继续测试生存经营赛道，新品若在美国开放，值得对照Last War、Kingshot等产品的轻玩法入口与4X承接方式。",
+      "source": "Mobilegamer.biz（报道）",
+      "url": "https://mobilegamer.biz/the-soft-launch-games-you-need-to-know-about/"
+    },
+    {
+      "category": "报道 / 新品测试",
+      "date": "2026-08-31",
+      "title": "报道：Century Games准备Frozen Manor: Merge Mystery早期测试",
+      "summary": "报道援引AppMagic称，Whiteout Survival厂商Century Games出现新的Android合成产品页面，目前尚未记录Google Play下载。",
+      "impact": "若测试推进，将检验点点互动是否把冰雪题材从4X生存延伸到合成经营；当前尚处无下载早期阶段，不能视为正式发行。",
+      "source": "Mobilegamer.biz（报道）",
+      "url": "https://mobilegamer.biz/the-soft-launch-games-you-need-to-know-about/"
+    },
+    {
+      "category": "报道 / 塔防测试",
+      "date": "2026-08-31",
+      "title": "报道：Small Giant在菲律宾软启动Defend the Castle",
+      "summary": "报道援引AppMagic称，Zynga旗下Small Giant在菲律宾Google Play测试一款卡牌收集塔防产品。",
+      "impact": "卡牌收集与塔防融合继续成为策略新品测试方向，可与Kingshot、Raid Rush等不同深度的塔防获量/长期养成结构对照。",
+      "source": "Mobilegamer.biz（报道）",
+      "url": "https://mobilegamer.biz/the-soft-launch-games-you-need-to-know-about/"
+    },
+    {
+      "category": "活动复盘",
+      "date": "2026-08-31",
+      "title": "Age of Empires Mobile的Hero Reset信号开始回落",
+      "summary": "官方Hero Reset活动于8月31日开启；昨日产品Google回榜、iOS升至#30，本期两端分别降至#51和#39。",
+      "impact": "明确活动也可能只形成短时收入回补；后续应把活动持续时间与商店榜位分别记录，避免把单日回榜写成长期增长。",
+      "source": "Age of Empires Mobile官方",
+      "url": "https://www.facebook.com/aoemobile/posts/758561977064142/"
+    },
+    {
+      "category": "IP联动",
+      "date": "2026-08-28",
+      "title": "State of Survival推进《如龙8》联动",
+      "summary": "FunPlus公布春日一番、桐生一马和真岛吾朗英雄，以及联盟Boss、节奏挑战、感染摩托和排行榜活动。",
+      "impact": "产品本期Google小降至#42、iOS仍未进榜，暂未显示联动带来双端同步上行；应继续观察完整活动周期。",
+      "source": "FunPlus官方",
+      "url": "https://funplus.com/state-of-survival-x-like-a-dragon-infinite-wealth-crossover-event/"
+    },
+    {
+      "category": "版本运营",
+      "date": "2026-08-25",
+      "title": "GFL2的Chiral Redundancy版本继续维持Android高位",
+      "summary": "官方公告列出OTs-14、Nemesis: Gnosis、限时剧情和Tile Transformation等内容；产品本期Google仍处#13，iOS继续榜外。",
+      "impact": "版本后的Android信号已连续保持前段，而iOS没有对应承接；这是当前最明显的跨端支付节奏分化之一。",
+      "source": "GIRLS' FRONTLINE 2官方",
+      "url": "https://gf2exilium.sunborngame.com/NewsInfo?id=393&typeId=3"
+    }
+  ],
+  "closing": [
+    {
+      "type": "判断",
+      "title": "Google换榜扩大到两进两出，iOS换防收敛为三进三出",
+      "detail": "Google新增Raid Rush与Last Shelter: War Z、掉出Warpath与Vikings；iOS进入/掉榜数量由昨日六组收敛到三组，但中段仍有多款两位数涨幅。"
+    },
+    {
+      "type": "判断",
+      "title": "MARVEL SNAP、Raid Rush和Clash of Clans形成双端共同信号",
+      "detail": "MARVEL SNAP两端分别+6/+13，Raid Rush在Google回榜且iOS +11，Clash of Clans两端+2/+6；其中前者和后者有明确新赛季/IP活动节点，Raid Rush原因仍待核验。"
+    },
+    {
+      "type": "判断",
+      "title": "新品增加，但榜面主导权仍在成熟产品与活动窗口",
+      "detail": "Google近90天新品增至6款，Last Shelter: War Z仅#60；当天最大位移仍来自The Tower、MLBB和MARVEL SNAP等成熟产品，说明新品入榜不等于改变头中部结构。"
+    },
+    {
+      "type": "关注",
+      "title": "截至9月3日：验证Last Shelter: War Z首个留榜结果",
+      "detail": "若继续留在TOP60并脱离#60，才把本次进榜升级为可持续首发信号；若立即掉榜，则维持榜尾首次试探判断，同时检查iOS是否仍无排名。"
+    },
+    {
+      "type": "关注",
+      "title": "9月3—4日：跟踪MARVEL SNAP与Clash of Clans活动峰值",
+      "detail": "检查MARVEL SNAP能否保持iOS TOP25、Google TOP40，以及Clash of Clans能否维持iOS TOP3、Google TOP10；满足条件再判断新赛季/IP活动形成短期中枢。"
+    },
+    {
+      "type": "关注",
+      "title": "截至9月4日：复核iOS两位数上涨留存率",
+      "detail": "逐项检查The Tower、MLBB、Raid Rush与Last Day on Earth是否至少守住本期区间；若多数回吐，继续把本期定义为iOS单日波动而非市场整体上行。"
+    }
+  ],
+  "status": {
+    "googlePlay": {
+      "top60": 60,
+      "newRelease90d": 6,
+      "surge90d": 0,
+      "baselineAvailable": false
+    },
+    "ios": {
+      "top60": 60,
+      "newRelease90d": 2,
+      "surge90d": 0,
+      "baselineAvailable": false
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play美国区策略畅销榜直连",
+      "url": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
+      "capturedAt": "2026-09-02T10:03:47+08:00"
+    },
+    {
+      "label": "Apple官方美国区iPhone策略畅销RSS",
+      "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
+      "updated": "2026-09-01T19:03:54-07:00",
+      "sourceDateBeijing": "2026-09-02"
+    }
+  ],
+  "downloads": {
+    "markdown": "reports/2026-09-02.md",
+    "json": "data/market-brief-20260902.json"
+  }
+}
