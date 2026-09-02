@@ -41,7 +41,10 @@ def save(path: Path, value):
 
 
 def product_key(value: str) -> str:
-    normalized = unicodedata.normalize("NFKD", value or "").lower()
+    normalized = "".join(
+        character for character in unicodedata.normalize("NFKD", value or "").lower()
+        if unicodedata.category(character) != "Mn"
+    )
     normalized = normalized.replace("™", "").replace("®", "")
     normalized = re.sub(r"[^a-z0-9]+", " ", normalized).strip()
     aliases = {

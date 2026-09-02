@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20260902b";
+const CACHE_VERSION = "20260902c";
 const MARKET_BRIEF_PATH = "data/market-brief-20260902.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
 const REVENUE_MODULE_PATH = "data/revenue-module-latest.json";
@@ -139,6 +139,7 @@ function productKey(name) {
   const normalized = String(name ?? "")
     .normalize("NFKD")
     .toLowerCase()
+    .replace(/\p{M}+/gu, "")
     .replaceAll("™", "")
     .replaceAll("®", "")
     .replace(/[^a-z0-9]+/g, " ")
