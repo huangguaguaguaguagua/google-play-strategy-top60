@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-03",
+      "title": "MARVEL SNAP双端连续上行；两端换榜收敛但iOS中段仍高波动",
+      "summary": "与9月2日相比，两端均只有一进一出：Google Play的Arknights回榜#60、Kiss of War掉榜；iOS的Last Fortress回榜#58、Kingdom Clash掉榜。MARVEL SNAP继续双端上升，Age of Empires也同步回补；iOS中段则同时出现多组9—14位涨跌。",
+      "markdown": "reports/2026-09-03.md",
+      "json": "data/market-brief-20260903.json"
+    },
     {
       "date": "2026-09-02",
       "title": "Last Shelter: War Z首次进入Google；MARVEL SNAP与Clash of Clans双端上行",

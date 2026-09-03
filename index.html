@@ -7,8 +7,8 @@
     <meta name="color-scheme" content="light" />
     <title>美国区策略游戏畅销榜 TOP60｜Google Play / App Store</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles-20260819d.css?v=20260902c" />
-    <script defer src="app-20260819d.js?v=20260902c"></script>
+    <link rel="stylesheet" href="styles-20260819d.css?v=20260903a" />
+    <script defer src="app-20260819d.js?v=20260903a"></script>
   </head>
   <body>
     <header class="topbar">
@@ -35,7 +35,7 @@
           <p class="eyebrow" id="store-eyebrow">GOOGLE PLAY · STRATEGY · TOP GROSSING</p>
           <h1 id="hero-title">美国区策略游戏<br />畅销榜 TOP60</h1>
           <p class="hero-description" id="hero-description">近三个月内上架且当前进入TOP60标记为新上榜；上架更早且90天内提升超过5位标记为飙升，其余统一按常规样式展示。趋势列先显示上线后发展、榜位走向与关键转折摘要，悬停或聚焦后查看分段分析。</p>
-          <div class="date-pill"><span>榜单日期</span><strong data-date>2026-09-02</strong><i>北京时间</i></div>
+          <div class="date-pill"><span>榜单日期</span><strong data-date>2026-09-03</strong><i>北京时间</i></div>
         </div>
         <div class="leader-card" aria-live="polite">
           <div class="leader-label"><span>#1</span> CURRENT LEADER</div>
@@ -99,7 +99,7 @@
           <div class="report-archive__copy">
             <span>DAILY REPORT ARCHIVE</span>
             <strong>历史日报下载</strong>
-            <p>自2026年8月26日起按真实榜单日期归档；最新报告同时保留异动产品、市场热点、综合判断、公开收入观察与双端独立动能。</p>
+            <p>自2026年8月26日起按真实榜单日期归档；最新报告同时保留异动产品、市场热点、综合判断与Sensor Tower最新公开全球月收入TOP10。</p>
           </div>
           <div class="report-list" id="report-list"><span class="market-loading">正在加载报告归档…</span></div>
         </div>
@@ -108,30 +108,36 @@
       <section class="revenue-panel" id="revenue-panel" aria-labelledby="revenue-panel-heading">
         <div class="revenue-panel__heading">
           <div>
-            <p class="eyebrow">REVENUE WATCH &amp; CHART MOMENTUM</p>
-            <h2 id="revenue-panel-heading">收入观察与畅销动能</h2>
-            <p id="revenue-disclaimer">正在载入公开收入观察与双商店榜位动能…</p>
+            <p class="eyebrow">SENSOR TOWER · WORLDWIDE MONTHLY</p>
+            <h2 id="revenue-panel-heading">全球手游月收入 TOP10</h2>
+            <p id="global-revenue-disclaimer">只展示Sensor Tower最新公开的同一期全球榜单，不与其他来源、美国单区榜位或自算代理指标混合。</p>
           </div>
           <div class="revenue-panel__actions">
-            <span id="revenue-meta">—</span>
-            <a class="button ghost" id="revenue-data-download" href="#" download>下载当前商店动能数据</a>
+            <span id="global-revenue-meta">正在确认最新公开月份…</span>
+            <a class="button ghost" id="global-revenue-source" href="#" target="_blank" rel="noopener noreferrer">查看Sensor Tower原文 ↗</a>
+            <a class="button ghost" id="global-revenue-download" href="data/sensortower-global-revenue-top10-latest.json" download>下载本期TOP10数据</a>
           </div>
         </div>
 
-        <section class="revenue-section" aria-labelledby="revenue-observation-heading">
+        <div class="global-revenue-stats" id="global-revenue-stats" aria-label="本期全球手游市场概览">
+          <span class="market-loading">正在载入本期市场概览…</span>
+        </div>
+
+        <section class="revenue-section" aria-labelledby="global-revenue-ranking-heading">
           <div class="revenue-section__heading">
-            <div><span>01 · PUBLIC SIGNALS</span><h3 id="revenue-observation-heading">重点产品收入观察</h3></div>
-            <p>只保留可追溯的公开披露或第三方公开估算，固定标注期间、地区、商店、口径、发布日期与可信度；没有可靠数据就不补数。</p>
+            <div><span>01 · OFFICIAL REVENUE RANKING</span><h3 id="global-revenue-ranking-heading">本期全球收入榜</h3></div>
+            <p>升降箭头仅表示相对上期的方向；Sensor Tower公开图未披露单款收入金额，本站不以其他来源补数。</p>
           </div>
-          <div class="revenue-observation-grid" id="revenue-observation-list"><p class="market-loading">正在加载重点产品…</p></div>
+          <ol class="global-revenue-ranking" id="global-revenue-ranking"><li class="market-loading">正在加载全球TOP10…</li></ol>
         </section>
 
-        <section class="revenue-section revenue-momentum" aria-labelledby="revenue-momentum-heading">
+        <section class="revenue-section global-revenue-read" aria-labelledby="global-revenue-read-heading">
           <div class="revenue-section__heading">
-            <div><span>02 · FULL-CHART MOMENTUM</span><h3 id="revenue-momentum-heading">全榜收入动能</h3></div>
-            <p>按当前商店单独计算：前5个有效工作日快照平均名次减去最近5个；正值代表改善。有效榜单中缺席按第61名，周末与缺失快照不补值。</p>
+            <div><span>02 · OFFICIAL READ</span><h3 id="global-revenue-read-heading">本期官方解读</h3></div>
+            <p id="global-revenue-scope">全球 · Apple App Store + Google Play · 不含第三方Android商店</p>
           </div>
-          <div class="revenue-momentum-grid" id="revenue-momentum-summary"><p class="market-loading">正在计算当前商店动能…</p></div>
+          <ul id="global-revenue-highlights"><li class="market-loading">正在加载官方解读…</li></ul>
+          <p class="global-revenue-method" id="global-revenue-method"></p>
         </section>
       </section>
 
@@ -146,22 +152,22 @@
         </div>
 
         <div class="baseline-notice">
-          <span id="baseline-copy"><strong>状态窗口：</strong><span data-baseline-date>2026-06-04</span> → <span data-date>2026-09-02</span>。页面仅用单独颜色突出“近三个月新上榜”和“近三个月飙升”，其余游戏统一采用常规展示。</span>
+          <span id="baseline-copy"><strong>状态窗口：</strong><span data-baseline-date>2026-06-05</span> → <span data-date>2026-09-03</span>。页面仅用单独颜色突出“近三个月新上榜”和“近三个月飙升”，其余游戏统一采用常规展示。</span>
         </div>
 
         <div class="toolbar">
           <label class="search-field"><span>搜索</span><input id="search" type="search" placeholder="游戏、公司、关键词或素材方向" /></label>
           <label><span>游戏类型</span><select id="genre"><option value="all">全部类型</option></select></label>
           <label><span>榜单状态</span><select id="status"><option value="all">全部状态</option><option value="normal">常规在榜</option><option value="new">近三个月新上榜</option><option value="surge">近三个月飙升</option></select></label>
-          <label><span>排序</span><select id="sort"><option value="rank">按畅销排名</option><option value="momentum">按收入动能</option><option value="release">按上架时间</option><option value="installs">按近30日新增</option></select></label>
+          <label><span>排序</span><select id="sort"><option value="rank">按畅销排名</option><option value="release">按上架时间</option><option value="installs">按近30日新增</option></select></label>
           <div class="toolbar-actions"><button class="button ghost" id="reset" type="button">重置</button><button class="button primary" id="export" type="button">导出当前结果</button></div>
         </div>
         <div class="result-line"><span>显示 <strong id="result-count">0</strong> / <span id="total-count">60</span> 款</span><span>悬停趋势摘要看分段全文；点击商店图查看大图</span></div>
 
         <div class="table-frame">
           <table>
-            <thead><tr><th>排名</th><th>游戏</th><th>收入动能</th><th>类型 / 关键词</th><th>商店图</th><th>最终公司归属</th><th>上架时间</th><th>趋势摘要（悬停看全文）</th><th>商店</th></tr></thead>
-            <tbody id="ranking-body"><tr><td colspan="9" class="empty-state">正在加载榜单数据…</td></tr></tbody>
+            <thead><tr><th>排名</th><th>游戏</th><th>类型 / 关键词</th><th>商店图</th><th>最终公司归属</th><th>上架时间</th><th>趋势摘要（悬停看全文）</th><th>商店</th></tr></thead>
+            <tbody id="ranking-body"><tr><td colspan="8" class="empty-state">正在加载榜单数据…</td></tr></tbody>
           </table>
         </div>
       </section>
@@ -172,11 +178,11 @@
           <article><span>01</span><strong>当日榜单</strong><p id="method-current">Google Play 美国区 Strategy 畅销榜，按北京时间对应的当日公开榜单收录TOP60。</p></article>
           <article><span>02</span><strong>近三个月状态</strong><p>近90天内上架且当前进入TOP60＝新上榜；上架更早、基准日已在榜且提升超过5位＝飙升；两类均以单独行色突出。</p></article>
           <article><span>03</span><strong>常规展示</strong><p>上架早于窗口且尚缺精确90天排名基准的产品按常规样式展示；历史快照补齐后再自动判断是否飙升。</p></article>
-          <article class="source-policy"><span>04</span><strong>玩法、素材与生命周期审计</strong><p>核心玩法、获量素材和生命周期转折分开记录。趋势从测试/上架期起追踪产品改动、素材迁移、IP/版本节点和榜位阶段；没有可核验证据时降低可信度，并明确写“未发现重大转折”，不再用通用增长模板补齐。</p><a href="data/source-methodology-20260819i.json?v=20260902c" target="_blank" rel="noreferrer">查看机器可读来源规则 ↗</a></article>
+          <article class="source-policy"><span>04</span><strong>玩法、素材与生命周期审计</strong><p>核心玩法、获量素材和生命周期转折分开记录。趋势从测试/上架期起追踪产品改动、素材迁移、IP/版本节点和榜位阶段；没有可核验证据时降低可信度，并明确写“未发现重大转折”，不再用通用增长模板补齐。</p><a href="data/source-methodology-20260819i.json?v=20260903a" target="_blank" rel="noreferrer">查看机器可读来源规则 ↗</a></article>
         </div>
       </section>
 
-      <footer><strong>STRATEGY PULSE</strong><span id="footer-store">Google Play US Strategy · TOP60 · Updated <span data-date>2026-09-02</span></span></footer>
+      <footer><strong>STRATEGY PULSE</strong><span id="footer-store">Google Play US Strategy · TOP60 · Updated <span data-date>2026-09-03</span></span></footer>
     </main>
 
     <div class="trend-tooltip" id="trend-tooltip" role="tooltip" hidden></div>

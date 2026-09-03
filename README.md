@@ -7,13 +7,13 @@
 - 每个商店各60款游戏，ICON与单张商店图以内嵌静态资源保存，不依赖运行时图片外链
 - 支持双商店切换、独立搜索/类型/状态筛选、排序、商店图放大与 CSV 导出
 - 首页提供“当日双端市场动态”和“后续关注点”，日报自2026-08-26起按真实榜单日期存入 `reports/` 并开放 Markdown / JSON 下载
-- “收入观察与畅销动能”仅引用有来源的公开收入观察，并以各商店独立的有效TOP60快照计算最近5期相对前5期的榜位动能；它不是收入金额或同比估算
+- “Sensor Tower全球手游月收入TOP10”只采用最新一期官方公开月榜，统一展示全球收入排名、发行商与较上期方向；不混入其他收入来源或自算榜位动能
 - 公司归属按产品、发行品牌与最终集团溯源，无法确认时标注“疑似”
 - 新上榜按“近90天内上架且当前进入TOP60”判断；较老产品仅在取得同商店、同地区、同口径90天基准后判断是否提升超过5位
 
 手动验证Google直连榜锚点：`python scripts/google_play_direct.py`
 
-重建当前收入动能：`python scripts/build_revenue_momentum.py --date YYYY-MM-DD`
+收入月榜在每个工作日检查Sensor Tower官方最新报告；只有官方发布新一期时才更新版本化JSON与latest文件
 
 公开页面：<https://huangguaguaguagua.github.io/google-play-strategy-top60/>
 
