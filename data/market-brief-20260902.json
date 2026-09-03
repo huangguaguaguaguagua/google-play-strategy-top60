@@ -321,6 +321,124 @@
       "detail": "逐项检查The Tower、MLBB、Raid Rush与Last Day on Earth是否至少守住本期区间；若多数回吐，继续把本期定义为iOS单日波动而非市场整体上行。"
     }
   ],
+  "globalRevenueTop10": {
+    "schemaVersion": 1,
+    "reportId": "sensortower-worldwide-mobile-games-revenue-2026-07",
+    "title": "Sensor Tower 全球手游月收入 TOP10",
+    "period": "2026-07",
+    "periodLabel": "2026年7月",
+    "publicationLabel": "2026年8月",
+    "estimateAsOf": "2026-08-05",
+    "checkedAt": "2026-09-02",
+    "source": "Sensor Tower",
+    "sourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-july-2026",
+    "sourceEvidence": "Sensor Tower官方文章及图表“2026-jul-top-10-mobile-games-rev”",
+    "updatePolicy": "每个工作日仅检查Sensor Tower是否发布新一期官方月榜；未发布时保留本期真实月份，不重算、不混入其他数据源。",
+    "scope": {
+      "region": "全球",
+      "stores": "Apple App Store + Google Play",
+      "metric": "Sensor Tower估算的移动游戏消费者支出排名",
+      "exclusions": "不含第三方Android商店",
+      "individualRevenueAmountsPublished": false
+    },
+    "marketSummary": {
+      "globalConsumerSpendingUsd": 6600000000,
+      "monthOverMonthPercent": 7.7,
+      "marketShares": [
+        {
+          "market": "美国",
+          "percent": 29.5
+        },
+        {
+          "market": "中国",
+          "qualifier": "仅iOS",
+          "percent": 16.7
+        },
+        {
+          "market": "日本",
+          "percent": 12.3
+        }
+      ]
+    },
+    "rankings": [
+      {
+        "rank": 1,
+        "gameName": "Honor of Kings",
+        "publisher": "Tencent",
+        "movement": "up",
+        "movementLabel": "较上期上升"
+      },
+      {
+        "rank": 2,
+        "gameName": "Pokémon GO",
+        "publisher": "Niantic",
+        "movement": "up",
+        "movementLabel": "较上期上升"
+      },
+      {
+        "rank": 3,
+        "gameName": "Gossip Harbor",
+        "publisher": "Microfun",
+        "movement": "up",
+        "movementLabel": "较上期上升"
+      },
+      {
+        "rank": 4,
+        "gameName": "Whiteout Survival",
+        "publisher": "Century Games",
+        "movement": "down",
+        "movementLabel": "较上期下降"
+      },
+      {
+        "rank": 5,
+        "gameName": "Royal Match",
+        "publisher": "Dream Games",
+        "movement": "down",
+        "movementLabel": "较上期下降"
+      },
+      {
+        "rank": 6,
+        "gameName": "MONOPOLY GO!",
+        "publisher": "Scopely",
+        "movement": "down",
+        "movementLabel": "较上期下降"
+      },
+      {
+        "rank": 7,
+        "gameName": "Candy Crush Saga",
+        "publisher": "King",
+        "movement": "down",
+        "movementLabel": "较上期下降"
+      },
+      {
+        "rank": 8,
+        "gameName": "Kingshot",
+        "publisher": "Century Games",
+        "movement": "down",
+        "movementLabel": "较上期下降"
+      },
+      {
+        "rank": 9,
+        "gameName": "Coin Master",
+        "publisher": "Moon Active",
+        "movement": "down",
+        "movementLabel": "较上期下降"
+      },
+      {
+        "rank": 10,
+        "gameName": "eFootball",
+        "publisher": "Konami",
+        "movement": "flat",
+        "movementLabel": "较上期持平"
+      }
+    ],
+    "officialHighlights": [
+      "Honor of Kings依靠中国与国际版本的差异化内容、联动、皮肤和电竞节点升至全球收入第1。",
+      "Pokémon GO的GO Fest 2026、十周年活动及月度GO Pass共同支撑其升至第2。",
+      "Gossip Harbor、Whiteout Survival与Royal Match以连续主题活动、收集目标和团队玩法维持全球前五。"
+    ],
+    "methodologyNote": "榜单、发行商和升降方向均来自同一张Sensor Tower官方月榜。官方公开材料未披露每款游戏的月收入金额，因此页面只展示排名，不用其他来源补金额。"
+  },
   "status": {
     "googlePlay": {
       "top60": 60,
@@ -346,6 +464,12 @@
       "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
       "updated": "2026-09-01T19:03:54-07:00",
       "sourceDateBeijing": "2026-09-02"
+    },
+    {
+      "label": "Sensor Tower全球手游月收入TOP10",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-july-2026",
+      "period": "2026-07",
+      "estimateAsOf": "2026-08-05"
     }
   ],
   "downloads": {
