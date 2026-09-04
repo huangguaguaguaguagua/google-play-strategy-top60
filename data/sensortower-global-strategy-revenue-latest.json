@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "reportId": "sensortower-worldwide-mobile-games-revenue-strategy-subset-2026-07",
+  "title": "Sensor Tower 全球收入榜 · 策略产品",
+  "period": "2026-07",
+  "periodLabel": "2026年7月",
+  "previousPeriod": "2026-06",
+  "publicationLabel": "2026年8月",
+  "estimateAsOf": "2026-08-05",
+  "checkedAt": "2026-09-03",
+  "source": "Sensor Tower",
+  "sourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-july-2026",
+  "previousPeriodSourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-june-2026",
+  "yearOverYearSourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-july-2025",
+  "sourceEvidence": "Sensor Tower官方2026年7月全球手游收入TOP10图表，以及官方2026年6月、2025年7月报告",
+  "sourceTop10Archive": "data/sensortower-global-revenue-top10-202607.json",
+  "iconBundle": "assets/sensortower-strategy-icons-202607.json",
+  "downloadPath": "data/sensortower-global-strategy-revenue-202607.json",
+  "updatePolicy": "每个工作日仅检查Sensor Tower是否发布新一期官方全球收入月榜；发布后筛选其中核心策略产品并更新一次，未发布时不改月份或数值。",
+  "scope": {
+    "region": "全球",
+    "stores": "Apple App Store + Google Play",
+    "metric": "Sensor Tower估算的移动游戏消费者支出排名",
+    "displayPopulation": "Sensor Tower全球手游收入TOP10中的核心策略产品",
+    "strategyDefinition": "核心循环属于SLG、4X、城建生存、塔防或战术经营；不因商店多标签而纳入MOBA、体育、消除、派对或RPG产品",
+    "sourceTop10Size": 10,
+    "strategyMatches": 2,
+    "isCompleteStrategyCategoryRanking": false,
+    "exclusions": "不含第三方Android商店",
+    "individualRevenueAmountsPublished": false,
+    "individualYoYPercentPublished": false
+  },
+  "marketSummary": {
+    "globalConsumerSpendingUsd": 6600000000,
+    "monthOverMonthPercent": 7.7,
+    "previousYearSameMonthConsumerSpendingUsd": 7100000000,
+    "yearOverYearPercentApprox": -7.0,
+    "yearOverYearCalculationNote": "以Sensor Tower公开的2026年7月约66亿美元和2025年7月约71亿美元两个四舍五入总额计算，因此只作为全市场约值，不代表单款游戏同比。",
+    "marketShares": [
+      {
+        "market": "美国",
+        "percent": 29.5
+      },
+      {
+        "market": "中国",
+        "qualifier": "仅iOS",
+        "percent": 16.7
+      },
+      {
+        "market": "日本",
+        "percent": 12.3
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "rank": 4,
+      "gameName": "Whiteout Survival",
+      "publisher": "Century Games",
+      "strategyGenre": "4X生存策略",
+      "iconKey": "whiteout-survival",
+      "previousPeriodRank": 1,
+      "rankChange": -3,
+      "movement": "down",
+      "movementLabel": "较上月下降3位",
+      "yoyRevenuePercent": null,
+      "yoyRevenueLabel": "单品同比未公开"
+    },
+    {
+      "rank": 8,
+      "gameName": "Kingshot",
+      "publisher": "Century Games",
+      "strategyGenre": "塔防获量 + 城建4X",
+      "iconKey": "kingshot",
+      "previousPeriodRank": 7,
+      "rankChange": -1,
+      "movement": "down",
+      "movementLabel": "较上月下降1位",
+      "yoyRevenuePercent": null,
+      "yoyRevenueLabel": "单品同比未公开"
+    }
+  ],
+  "officialHighlights": [
+    "Whiteout Survival位列7月全球手游收入总榜第4；Sensor Tower将新一代英雄、团队竞赛和攻城战列为当月运营节点。",
+    "Kingshot位列全球手游收入总榜第8；官方图表显示其较6月第7名下降1位，但未披露对应收入降幅。",
+    "本期全球收入TOP10仅有2款符合核心策略口径，不能据此宣称它们是完整的全球策略品类前两名。"
+  ],
+  "methodologyNote": "页面只展示Sensor Tower官方全球收入TOP10中的核心策略产品，并保留其全球总榜名次。逐款箭头和位数比较的是2026年6月至7月的榜位变化，不是收入同比。Sensor Tower公开图未披露单款收入或单品同比百分比，因此不以排名变化换算收入增幅；页面所示约-7.0%仅为两期官方四舍五入总额计算的全球手游市场同比。"
+}

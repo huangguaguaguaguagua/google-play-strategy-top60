@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-04",
+      "title": "Google零换榜保持稳定；iOS四进四出，MARVEL SNAP首轮回吐",
+      "summary": "与9月3日相比，Google Play完整60款没有进出，最大变化是GFL2下跌11位；iOS出现Yu-Gi-Oh!、Cell Survivor、Last Shelter与Draft Showdown回榜，Watcher of Realms、Galaxy Defense、Guns of Glory与Overgeared Hero掉榜。Dragon Traveler上升21位、The Tower下降15位，iOS中后段波动继续显著高于Google。",
+      "markdown": "reports/2026-09-04.md",
+      "json": "data/market-brief-20260904.json"
+    },
     {
       "date": "2026-09-03",
       "title": "MARVEL SNAP双端连续上行；两端换榜收敛但iOS中段仍高波动",
