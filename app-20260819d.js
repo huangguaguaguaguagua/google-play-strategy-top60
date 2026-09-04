@@ -1,9 +1,9 @@
 "use strict";
 
-const CACHE_VERSION = "20260903a";
-const MARKET_BRIEF_PATH = "data/market-brief-20260903.json";
+const CACHE_VERSION = "20260904a";
+const MARKET_BRIEF_PATH = "data/market-brief-20260904.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
-const GLOBAL_REVENUE_PATH = "data/sensortower-global-revenue-top10-latest.json";
+const GLOBAL_REVENUE_PATH = "data/sensortower-global-strategy-revenue-latest.json";
 const STORE_CONFIGS = {
   googlePlay: {
     key: "googlePlay",
@@ -11,18 +11,18 @@ const STORE_CONFIGS = {
     mark: "GP",
     storeName: "Google Play",
     platform: "Android",
-    date: "2026-09-03",
-    baselineDate: "2026-06-05",
+    date: "2026-09-04",
+    baselineDate: "2026-06-06",
     eyebrow: "GOOGLE PLAY · ANDROID · STRATEGY · TOP GROSSING",
     title: "Google Play 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · Android",
-    footer: "Google Play US Strategy · TOP60 · Direct capture 2026-09-03",
-    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-09-03 09:31:15（北京时间）。AppBrain仅作交叉检查（其9月2日榜与直连榜重合59款、同位25款、最大位差6位），未覆盖直连结果。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-06-05 → 2026-09-03。近90天内上架且当前进入TOP60的6款产品标为新上榜；较老产品因缺少精确基准快照，暂不判断飙升。",
-    games: "data/games-20260903.json",
-    enrichment: "data/enrichment-20260903.json",
-    trends: "data/trends-20260903.json",
-    counterpartGames: "data/ios-games-20260903.json",
+    footer: "Google Play US Strategy · TOP60 · Direct capture 2026-09-04",
+    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-09-04 09:45:46（北京时间）。AppBrain仅作交叉检查（其9月3日榜与直连榜重合59款、同位22款、最大位差11位），未覆盖直连结果。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-06-06 → 2026-09-04。近90天内上架且当前进入TOP60的6款产品标为新上榜；较老产品因缺少精确基准快照，暂不判断飙升。",
+    games: "data/games-20260904.json",
+    enrichment: "data/enrichment-20260904.json",
+    trends: "data/trends-20260904.json",
+    counterpartGames: "data/ios-games-20260904.json",
     counterpartRankLabel: "iOS",
     assetManifest: "assets/manifest.json",
     linkHeader: "Google Play 链接",
@@ -35,18 +35,18 @@ const STORE_CONFIGS = {
     mark: "AS",
     storeName: "App Store",
     platform: "iPhone · iOS",
-    date: "2026-09-03",
-    baselineDate: "2026-06-05",
+    date: "2026-09-04",
+    baselineDate: "2026-06-06",
     eyebrow: "APPLE APP STORE · iPHONE · STRATEGY · TOP GROSSING",
     title: "App Store 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · iPhone",
-    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-09-03",
-    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60；RSS更新时间为2026-09-02 18:27:48（美国太平洋时间），换算北京时间为9月3日。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-06-05 → 2026-09-03。近90天内上架且当前进入TOP60的2款产品标为新上榜；iOS精确排名历史从2026-08-19开始积累，较老产品暂不判断飙升。",
-    games: "data/ios-games-20260903.json",
-    enrichment: "data/ios-enrichment-20260903.json",
-    trends: "data/ios-trends-20260903.json",
-    counterpartGames: "data/games-20260903.json",
+    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-09-04",
+    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60；RSS更新时间为2026-09-03 18:44:39（美国太平洋时间），换算北京时间为9月4日。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-06-06 → 2026-09-04。近90天内上架且当前进入TOP60的2款产品标为新上榜；iOS精确排名历史从2026-08-19开始积累，较老产品暂不判断飙升。",
+    games: "data/ios-games-20260904.json",
+    enrichment: "data/ios-enrichment-20260904.json",
+    trends: "data/ios-trends-20260904.json",
+    counterpartGames: "data/games-20260904.json",
     counterpartRankLabel: "Google",
     assetManifest: "assets/ios-manifest.json",
     linkHeader: "App Store 链接",
@@ -57,7 +57,7 @@ const STORE_CONFIGS = {
 
 const requestedStore = new URLSearchParams(window.location.search).get("store");
 const initialStore = requestedStore === "ios" ? "ios" : "googlePlay";
-const state = { store: initialStore, games: [], visible: [], datasets: {}, globalRevenue: null, loadToken: 0 };
+const state = { store: initialStore, games: [], visible: [], datasets: {}, globalRevenue: null, globalRevenueIcons: {}, loadToken: 0 };
 
 const elements = {
   search: document.querySelector("#search"),
@@ -335,15 +335,28 @@ function formatUsdBillions(value) {
   return Number.isFinite(billions) ? "$" + billions.toFixed(1).replace(/\.0$/, "") + "B" : "—";
 }
 
-function globalRevenueRankingHtml(item) {
+function formatSignedPercent(value, approximate = false) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "—";
+  const sign = number > 0 ? "+" : number < 0 ? "−" : "";
+  return (approximate ? "约" : "") + sign + Math.abs(number).toFixed(1).replace(/\.0$/, "") + "%";
+}
+
+function globalRevenueRankingHtml(item, icons) {
   const movement = ["up", "down", "flat"].includes(item.movement) ? item.movement : "flat";
   const symbol = movement === "up" ? "▲" : movement === "down" ? "▼" : "＝";
+  const icon = safeInlineImage(icons[item.iconKey]);
+  const iconHtml = icon
+    ? '<img src="' + icon + '" alt="' + escapeHtml(item.gameName) + ' ICON" loading="lazy">'
+    : '<span class="global-revenue-icon__fallback" aria-hidden="true">' + escapeHtml(item.gameName.slice(0, 1)) + '</span>';
   return '<li class="global-revenue-row global-revenue-row--' + movement + '">' +
     '<span class="global-revenue-rank">' + escapeHtml(item.rank) + '</span>' +
-    '<span class="global-revenue-game"><strong>' + escapeHtml(item.gameName) + '</strong><small>' +
-    escapeHtml(item.publisher) + '</small></span>' +
+    '<span class="global-revenue-game"><span class="global-revenue-icon">' + iconHtml + '</span><span>' +
+    '<strong>' + escapeHtml(item.gameName) + '</strong><small>' + escapeHtml(item.publisher) + ' · ' +
+    escapeHtml(item.strategyGenre) + '</small></span></span>' +
     '<span class="global-revenue-movement" title="' + escapeHtml(item.movementLabel) + '"><b aria-hidden="true">' +
-    symbol + '</b><small>' + escapeHtml(item.movementLabel) + '</small></span></li>';
+    symbol + '</b><span><small>' + escapeHtml(item.movementLabel) + '</small><em>' +
+    escapeHtml(item.yoyRevenueLabel) + '</em></span></span></li>';
 }
 
 function renderGlobalRevenueModule() {
@@ -352,18 +365,21 @@ function renderGlobalRevenueModule() {
   const shares = module.marketSummary?.marketShares || [];
   elements.globalRevenueMeta.textContent = module.periodLabel + " · 估算截至 " + module.estimateAsOf + " · " + module.publicationLabel + "发布";
   elements.globalRevenueSource.href = safeUrl(module.sourceUrl);
-  elements.globalRevenueDownload.href = safeLocalPath("data/sensortower-global-revenue-top10-" + module.period.replace("-", "") + ".json");
-  elements.globalRevenueDisclaimer.textContent = "最新公开月榜：" + module.periodLabel + "。" + module.updatePolicy;
+  elements.globalRevenueDownload.href = safeLocalPath(module.downloadPath);
+  elements.globalRevenueDisclaimer.textContent = "最新公开月榜：" + module.periodLabel + "。仅显示全球总榜TOP10中的核心策略产品；不是完整策略品类TOP10。";
   const summaryStats = [
     [formatUsdBillions(module.marketSummary?.globalConsumerSpendingUsd), "全球手游消费"],
-    ["+" + escapeHtml(module.marketSummary?.monthOverMonthPercent) + "%", "环比"],
+    [formatSignedPercent(module.marketSummary?.monthOverMonthPercent), "全市场环比"],
+    [formatSignedPercent(module.marketSummary?.yearOverYearPercentApprox, true), "全市场同比（约）"],
+    [escapeHtml(module.scope?.strategyMatches) + "/" + escapeHtml(module.scope?.sourceTop10Size), "总榜中的策略产品"],
     ...shares.map((item) => [escapeHtml(item.percent) + "%", item.market + (item.qualifier ? "（" + item.qualifier + "）" : "")]),
   ];
   elements.globalRevenueStats.innerHTML = summaryStats.map(([value, label]) =>
     '<span><strong>' + value + '</strong><small>' + escapeHtml(label) + '</small></span>').join("");
-  elements.globalRevenueRanking.innerHTML = (module.rankings || []).map(globalRevenueRankingHtml).join("") ||
-    '<li class="market-loading">本期官方榜单暂不可用。</li>';
-  elements.globalRevenueScope.textContent = module.scope.region + " · " + module.scope.stores + " · " + module.scope.exclusions;
+  elements.globalRevenueRanking.innerHTML = (module.rankings || []).map((item) =>
+    globalRevenueRankingHtml(item, state.globalRevenueIcons)).join("") ||
+    '<li class="market-loading">本期全球收入TOP10没有符合口径的核心策略产品。</li>';
+  elements.globalRevenueScope.textContent = module.scope.region + " · " + module.scope.stores + " · " + module.scope.exclusions + " · 策略命中 " + module.scope.strategyMatches + "/" + module.scope.sourceTop10Size;
   elements.globalRevenueHighlights.innerHTML = (module.officialHighlights || []).map((item) =>
     '<li>' + escapeHtml(item) + '</li>').join("");
   elements.globalRevenueMethod.textContent = module.methodologyNote;
@@ -372,11 +388,14 @@ function renderGlobalRevenueModule() {
 
 async function loadGlobalRevenueModule() {
   try {
-    state.globalRevenue = await fetchJson(GLOBAL_REVENUE_PATH, "Sensor Tower全球手游月收入TOP10");
+    state.globalRevenue = await fetchJson(GLOBAL_REVENUE_PATH, "Sensor Tower全球收入榜策略产品");
+    state.globalRevenueIcons = state.globalRevenue.iconBundle
+      ? await fetchJson(state.globalRevenue.iconBundle, "Sensor Tower策略产品ICON")
+      : {};
     renderGlobalRevenueModule();
   } catch (error) {
     console.error(error);
-    elements.globalRevenueDisclaimer.textContent = "Sensor Tower月榜暂时加载失败，双商店榜单明细仍可正常使用。";
+    elements.globalRevenueDisclaimer.textContent = "Sensor Tower策略产品月榜暂时加载失败，双商店榜单明细仍可正常使用。";
     elements.globalRevenueStats.innerHTML = '<span class="market-loading">市场概览加载失败。</span>';
     elements.globalRevenueRanking.innerHTML = '<li class="market-loading">全球TOP10加载失败。</li>';
     elements.globalRevenueHighlights.innerHTML = '<li class="market-loading">官方解读加载失败。</li>';
@@ -607,7 +626,7 @@ function exportCsv() {
     fullTrendText(game.trend),
     game.trend.sourceAudit ? sourceAuditText(game.trend.sourceAudit) : "",
     game.trend.lifecycleAudit ? lifecycleAuditText(game.trend.lifecycleAudit) : "",
-    globalRank.rank ?? "未进入全球TOP10",
+    globalRank.rank ?? "未进入全球TOP10策略子集",
     globalRank.movementLabel ?? "",
     globalRank.rank ? state.globalRevenue.sourceUrl : "",
     ];
