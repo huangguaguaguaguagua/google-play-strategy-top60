@@ -36,7 +36,7 @@ def product(game_name, product_id, store, tone, label, analysis):
 
 google_history = load("data/history/google-play/2026-09-03.json")
 ios_history = load("data/history/ios/2026-09-03.json")
-global_revenue = load("data/sensortower-global-revenue-top10-latest.json")
+global_strategy_revenue = load("data/sensortower-global-strategy-revenue-latest.json")
 captured = datetime.fromisoformat(google_history["sourceCapturedAt"])
 source_date = datetime.fromisoformat(ios_history["sourceUpdated"].replace("Z", "+00:00")).astimezone(ZoneInfo("Asia/Shanghai"))
 
@@ -97,7 +97,7 @@ brief = {
     },
     "marketNews": news,
     "closing": closing,
-    "globalRevenueTop10": global_revenue,
+    "globalStrategyRevenue": global_strategy_revenue,
     "status": {
         "googlePlay": {"top60": 60, "newRelease90d": 6, "surge90d": 0, "baselineAvailable": False},
         "ios": {"top60": 60, "newRelease90d": 2, "surge90d": 0, "baselineAvailable": False},
@@ -105,7 +105,7 @@ brief = {
     "sources": [
         {"label": "Google Play美国区策略畅销榜直连", "url": google_history["sourceUrl"], "capturedAt": google_history["sourceCapturedAt"]},
         {"label": "Apple官方美国区iPhone策略畅销RSS", "url": ios_history["sourceUrl"], "updated": ios_history["sourceUpdated"], "sourceDateBeijing": ios_history["dataDate"]},
-        {"label": "Sensor Tower全球手游月收入TOP10", "url": global_revenue["sourceUrl"], "period": global_revenue["period"], "estimateAsOf": global_revenue["estimateAsOf"]},
+        {"label": "Sensor Tower全球收入榜中的策略产品", "url": global_strategy_revenue["sourceUrl"], "period": global_strategy_revenue["period"], "estimateAsOf": global_strategy_revenue["estimateAsOf"]},
     ],
     "downloads": {"markdown": "reports/2026-09-03.md", "json": "data/market-brief-20260903.json"},
 }
@@ -138,20 +138,28 @@ def build_markdown(value):
     lines += ["## 3. 综合判断与后续关注", ""]
     for item in value["closing"]:
         lines += [f"### {item['type']}｜{item['title']}", "", item["detail"], ""]
-    revenue = value["globalRevenueTop10"]
+    revenue = value["globalStrategyRevenue"]
     lines += [
-        "## 4. Sensor Tower 全球手游月收入 TOP10", "",
+        "## 4. Sensor Tower 全球收入榜中的策略产品", "",
         f"- 数据期：{revenue['periodLabel']}｜官方页面：{revenue['publicationLabel']}｜估算截至：{revenue['estimateAsOf']}",
         f"- 口径：{revenue['scope']['region']}｜{revenue['scope']['stores']}｜{revenue['scope']['exclusions']}",
-        f"- 市场总览：全球手游消费者支出约${revenue['marketSummary']['globalConsumerSpendingUsd'] / 1_000_000_000:g}B，环比+{revenue['marketSummary']['monthOverMonthPercent']:g}%",
+        f"- 策略筛选：官方全球收入TOP10中命中{revenue['scope']['strategyMatches']}款核心策略产品；这不是完整策略品类TOP10",
+        f"- 市场总览：全球手游消费者支出约${revenue['marketSummary']['globalConsumerSpendingUsd'] / 1_000_000_000:g}B，环比+{revenue['marketSummary']['monthOverMonthPercent']:g}%，全市场同比约{revenue['marketSummary']['yearOverYearPercentApprox']:g}%",
         f"- 原始来源：[{revenue['source']}]({revenue['sourceUrl']})", "",
-        "| 排名 | 游戏 | 发行商 | 较上期 |", "|---:|---|---|---|",
+        "| 全球总榜 | 游戏 | 发行商 | 策略类型 | 较上月榜位 | 单品收入同比 |", "|---:|---|---|---|---|---|",
     ]
     for item in revenue["rankings"]:
-        lines.append(f"| {item['rank']} | {item['gameName']} | {item['publisher']} | {item['movementLabel']} |")
-    lines += ["", "### 本期官方解读", ""]
+        lines.append(f"| {item['rank']} | {item['gameName']} | {item['publisher']} | {item['strategyGenre']} | {item['movementLabel']} | {item['yoyRevenueLabel']} |")
+    lines += ["", "### 策略产品与同比口径", ""]
     lines += [f"- {item}" for item in revenue["officialHighlights"]]
-    lines += ["", revenue["methodologyNote"], "", "## 下载与来源", "", f"- JSON：`{value['downloads']['json']}`", "- Google Play直连源：https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US", "- Apple官方RSS：https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json", ""]
+    lines += [
+        "", revenue["methodologyNote"], "", "## 下载与来源", "",
+        f"- JSON：`{value['downloads']['json']}`",
+        f"- Sensor Tower上月对照：{revenue['previousPeriodSourceUrl']}",
+        f"- Sensor Tower同比对照：{revenue['yearOverYearSourceUrl']}",
+        "- Google Play直连源：https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
+        "- Apple官方RSS：https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json", "",
+    ]
     return "\n".join(lines)
 
 
