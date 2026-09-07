@@ -4,8 +4,8 @@
   "reports": [
     {
       "date": "2026-09-07",
-      "title": "周末后Google两进两出、iOS五进五出；War and Order双端同步上扬",
-      "summary": "与9月4日上一份有效快照相比，Google Play有Forge of Empires与Last Fortress: Underground进入/回榜，Sea War与Arknights掉榜；iOS有5款回榜、5款掉榜。War and Order双端升至#26/#25，是最清晰的共同上行；Lords Mobile、Kingdom Guard与MARVEL SNAP则呈跨端分化。",
+      "title": "周末后Google两进两出、iOS五进五出；War and Order与Tacticus双端靠拢",
+      "summary": "与9月4日上一份有效快照相比，Google Play有Forge of Empires与Last Fortress: Underground进入/回榜，Sea War与Arknights掉榜；iOS有5款回榜、5款掉榜。War and Order升至Google #26/iOS #28，Tacticus升至#27/#29；Lords Mobile、Kingdom Guard与MARVEL SNAP则呈跨端分化。",
       "markdown": "reports/2026-09-07.md",
       "json": "data/market-brief-20260907.json"
     },
