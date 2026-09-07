@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "reportId": "sensortower-worldwide-mobile-games-revenue-2026-08",
+  "title": "Sensor Tower 全球手游月收入 TOP10（来源审计）",
+  "period": "2026-08",
+  "periodLabel": "2026年8月",
+  "publicationLabel": "2026年9月",
+  "estimateAsOf": "2026-09-04",
+  "checkedAt": "2026-09-07",
+  "source": "Sensor Tower",
+  "sourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
+  "sourceEvidence": "Sensor Tower官方文章及完整图表“2026-aug-top-10-mobile-games-rev”",
+  "scope": {
+    "region": "全球",
+    "stores": "Apple App Store + Google Play",
+    "metric": "Sensor Tower估算的移动游戏消费者支出排名",
+    "exclusions": "不含第三方Android商店",
+    "individualRevenueAmountsPublished": false
+  },
+  "marketSummary": {
+    "globalConsumerSpendingUsd": 6570000000,
+    "monthOverMonthPercent": -1.0,
+    "marketShares": [
+      {
+        "market": "美国",
+        "percent": 28.6
+      },
+      {
+        "market": "中国",
+        "qualifier": "仅iOS",
+        "percent": 16.7
+      },
+      {
+        "market": "日本",
+        "percent": 12.2
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "gameName": "Honor of Kings",
+      "publisher": "Tencent",
+      "movement": "flat",
+      "movementLabel": "较上月持平"
+    },
+    {
+      "rank": 2,
+      "gameName": "Gossip Harbor",
+      "publisher": "Microfun",
+      "movement": "up",
+      "movementLabel": "较上月上升"
+    },
+    {
+      "rank": 3,
+      "gameName": "Whiteout Survival",
+      "publisher": "Century Games",
+      "movement": "up",
+      "movementLabel": "较上月上升"
+    },
+    {
+      "rank": 4,
+      "gameName": "Royal Match",
+      "publisher": "Dream Games",
+      "movement": "up",
+      "movementLabel": "较上月上升"
+    },
+    {
+      "rank": 5,
+      "gameName": "Candy Crush Saga",
+      "publisher": "King",
+      "movement": "up",
+      "movementLabel": "较上月上升"
+    },
+    {
+      "rank": 6,
+      "gameName": "MONOPOLY GO!",
+      "publisher": "Scopely",
+      "movement": "flat",
+      "movementLabel": "较上月持平"
+    },
+    {
+      "rank": 7,
+      "gameName": "Kingshot",
+      "publisher": "Century Games",
+      "movement": "up",
+      "movementLabel": "较上月上升"
+    },
+    {
+      "rank": 8,
+      "gameName": "Game For Peace",
+      "publisher": "Tencent",
+      "movement": "up",
+      "movementLabel": "较上月上升"
+    },
+    {
+      "rank": 9,
+      "gameName": "Coin Master",
+      "publisher": "Moon Active",
+      "movement": "flat",
+      "movementLabel": "较上月持平"
+    },
+    {
+      "rank": 10,
+      "gameName": "eFootball",
+      "publisher": "Konami",
+      "movement": "flat",
+      "movementLabel": "较上月持平"
+    }
+  ],
+  "methodologyNote": "完整TOP10仅用于来源审计；公开模块与日报只展示其中符合核心策略定义的产品。"
+}
