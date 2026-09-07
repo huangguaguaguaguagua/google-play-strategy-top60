@@ -1,8 +1,8 @@
 {
   "date": "2026-09-07",
   "timezone": "Asia/Shanghai",
-  "title": "周末后Google两进两出、iOS五进五出；War and Order双端同步上扬",
-  "summary": "与9月4日上一份有效快照相比，Google Play有Forge of Empires与Last Fortress: Underground进入/回榜，Sea War与Arknights掉榜；iOS有5款回榜、5款掉榜。War and Order双端升至#26/#25，是最清晰的共同上行；Lords Mobile、Kingdom Guard与MARVEL SNAP则呈跨端分化。",
+  "title": "周末后Google两进两出、iOS五进五出；War and Order与Tacticus双端靠拢",
+  "summary": "与9月4日上一份有效快照相比，Google Play有Forge of Empires与Last Fortress: Underground进入/回榜，Sea War与Arknights掉榜；iOS有5款回榜、5款掉榜。War and Order升至Google #26/iOS #28，Tacticus升至#27/#29；Lords Mobile、Kingdom Guard与MARVEL SNAP则呈跨端分化。",
   "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与对策略品类的影响综合排序；不是第三方阅读量或舆情指数。",
   "iconBundle": "assets/market-icons-20260907.json",
   "rankingSources": {
@@ -16,7 +16,7 @@
   "rankingDynamics": {
     "googlePlay": {
       "label": "Google Play · Android",
-      "sourceTime": "北京时间 2026-09-07 09:29:19 直连抓取",
+      "sourceTime": "北京时间 2026-09-07 09:53:18 直连抓取",
       "anchors": "榜单锚点：#1 Kingshot · #25 Lords Mobile x Transformers · #60 Last Fortress: Underground",
       "products": [
         {
@@ -81,7 +81,7 @@
           "iconKey": "googlePlay:com.diandian.gog",
           "tone": "up",
           "changeLabel": "+7 · #30",
-          "analysis": "Google由#37升至#30，同时iOS回榜#59。两端方向一致但强度差异很大；Google已进入中段，iOS仍压线，需连续快照确认是否与同期活动有关。"
+          "analysis": "Google由#37升至#30，同时iOS回榜#58。两端方向一致但强度差异很大；Google已进入中段，iOS仍压线，需连续快照确认是否与同期活动有关。"
         },
         {
           "gameName": "Lords Mobile x Transformers",
@@ -104,15 +104,15 @@
     "ios": {
       "label": "App Store · iPhone/iOS",
       "sourceTime": "Apple RSS 北京时间 2026-09-07",
-      "anchors": "榜单锚点：#1 Pokémon GO · #25 War and Order · #60 Fire Emblem Heroes",
+      "anchors": "榜单锚点：#1 Pokémon GO · #25 Mobile Legends: Bang Bang.US · #60 Fire Emblem Heroes",
       "products": [
         {
           "gameName": "The Battle Cats",
           "productId": "850057092",
           "iconKey": "ios:850057092",
           "tone": "entry",
-          "changeLabel": "回榜 · #28",
-          "analysis": "8月31日最后一次在榜为#53，本期回到#28，属于成熟产品从榜尾回到中段；Google当前无对应TOP60排名，缺少活动证据，先按iOS单端回补信号处理。"
+          "changeLabel": "回榜 · #26",
+          "analysis": "8月31日最后一次在榜为#53，本期回到#26，属于成熟产品从榜尾回到中段；Google当前无对应TOP60排名，缺少活动证据，先按iOS单端回补信号处理。"
         },
         {
           "gameName": "Watcher of Realms - US",
@@ -136,15 +136,15 @@
           "iconKey": "ios:6742809194",
           "tone": "entry",
           "changeLabel": "回榜 · #56",
-          "analysis": "8月24日曾位于#58，本期回到#56；按iOS 7月22日上架日期仍属于近90天新品。Google已升至#28，当前明显由Android侧承接，iOS仍有榜尾风险。"
+          "analysis": "8月24日曾位于#58，本期回到#56；按iOS 7月22日上架日期仍属于近90天新品。Google当前位于#29，主要由Android侧承接，iOS仍有榜尾风险。"
         },
         {
           "gameName": "Guns of Glory: Lost Island",
           "productId": "1274354704",
           "iconKey": "ios:1274354704",
           "tone": "entry",
-          "changeLabel": "回榜 · #59",
-          "analysis": "9月4日从#59掉榜后再次以同一位置回归；Google同期升7位至#30。iOS反复压线，双端共同在榜但商业化强度仍由Google主导。"
+          "changeLabel": "回榜 · #58",
+          "analysis": "9月4日从#59掉榜后本期回到#58；Google同期升7位至#30。iOS反复压线，双端共同在榜但商业化强度仍由Google主导。"
         },
         {
           "gameName": "Lords Mobile x Transformers",
@@ -192,55 +192,55 @@
           "iconKey": "ios:1599937506",
           "tone": "up",
           "changeLabel": "+19 · #29",
-          "analysis": "iOS由#48升至#29，是本期最大上涨；Google同期位于#28且变化有限，双端重新靠拢到相近区间。尚无与本次周末涨幅直接对应的官方节点，先记为待验证信号。"
+          "analysis": "iOS由#48升至#29，是本期主要上涨；Google同期升2位至#27，双端重新靠拢到相近区间。尚无与本次周末涨幅直接对应的官方节点，先记为待验证信号。"
         },
         {
           "gameName": "Dragon Traveler",
           "productId": "6751086804",
           "iconKey": "ios:6751086804",
           "tone": "down",
-          "changeLabel": "−17 · #48",
-          "analysis": "9月4日刚从#52升至#31，本期回落到#48，前一轮高位基本回吐；Google仍无对应TOP60排名。若下一快照继续下滑，将重新接近榜尾。"
+          "changeLabel": "−14 · #45",
+          "analysis": "9月4日刚从#52升至#31，本期回落到#45，前一轮高位明显回吐；Google仍无对应TOP60排名。若下一快照继续下滑，将重新接近榜尾。"
         },
         {
           "gameName": "Kingdom Guard: Tower Defense",
           "productId": "1570095804",
           "iconKey": "ios:1570095804",
           "tone": "up",
-          "changeLabel": "+16 · #36",
-          "analysis": "iOS由#52升至#36，但Google由#47降至#52，形成明确跨端分化。iPhone侧回补强，Android侧却进入榜尾风险区，不能合并为统一收入趋势。"
+          "changeLabel": "+14 · #38",
+          "analysis": "iOS由#52升至#38，但Google由#47降至#52，形成明确跨端分化。iPhone侧回补强，Android侧却进入榜尾风险区，不能合并为统一收入趋势。"
         },
         {
           "gameName": "Forge Master – Idle RPG",
           "productId": "6746636289",
           "iconKey": "ios:6746636289",
           "tone": "down",
-          "changeLabel": "−16 · #51",
-          "analysis": "iOS由#35降至#51，Google没有对应TOP60排名。产品从中段退回榜尾，周末累计跌幅较大，但当前缺少可核验的活动结束节点。"
+          "changeLabel": "−14 · #49",
+          "analysis": "iOS由#35降至#49，Google没有对应TOP60排名。产品从中段退到后段，周末累计跌幅较大，但当前缺少可核验的活动结束节点。"
         },
         {
           "gameName": "War and Order",
           "productId": "1071744151",
           "iconKey": "ios:1071744151",
           "tone": "up",
-          "changeLabel": "+14 · #25",
-          "analysis": "iOS由#39升至#25，Google也由#30升至#26，是本期最清晰的双端同步上行之一。三天累计信号尚不能外推长期趋势，下一工作日是否守住双端TOP30更关键。"
+          "changeLabel": "+11 · #28",
+          "analysis": "iOS由#39升至#28，Google也由#30升至#26，是本期最清晰的双端同步上行之一。三天累计信号尚不能外推长期趋势，下一工作日是否守住双端TOP30更关键。"
         },
         {
           "gameName": "MARVEL SNAP",
           "productId": "1592081003",
           "iconKey": "ios:1592081003",
           "tone": "down",
-          "changeLabel": "−14 · #39",
-          "analysis": "iOS由#25降至#39，而Google小升至#33，AXIS赛季后的双端走势转为分化。iOS回吐明显，Google维持中段，需避免把一个商店的跌幅扩展为全产品判断。"
+          "changeLabel": "−11 · #36",
+          "analysis": "iOS由#25降至#36，而Google小升至#33，AXIS赛季后的双端走势转为分化。iOS回吐明显，Google维持中段，需避免把一个商店的跌幅扩展为全产品判断。"
         },
         {
           "gameName": "Yu-Gi-Oh! Master Duel",
           "productId": "1554247785",
           "iconKey": "ios:1554247785",
           "tone": "down",
-          "changeLabel": "−21 · #45",
-          "analysis": "9月4日借回榜来到#24，本期回落到#45，WCS同期高位没有继续维持。产品仍在榜，但三天后大幅回吐使短期赛事/付费峰值解释更可信。"
+          "changeLabel": "−22 · #46",
+          "analysis": "9月4日借回榜来到#24，本期回落到#46，WCS同期高位没有继续维持。产品仍在榜，但三天后大幅回吐使短期赛事/付费峰值解释更可信。"
         },
         {
           "gameName": "Summoners War",
@@ -321,7 +321,7 @@
       "date": "2026-08-31",
       "title": "MARVEL SNAP继续运营AXIS: Inversion赛季",
       "summary": "赛季包含新角色、地点、登录日历、Draft、Team Clash与多段活动，并提供网页商店季票奖励。",
-      "impact": "今日Google #33、iOS #39，iPhone侧较9月4日回落14位；赛季首周的双端承接已出现分化。",
+      "impact": "今日Google #33、iOS #36，iPhone侧较9月4日回落11位；赛季首周的双端承接已出现分化。",
       "source": "MARVEL SNAP官方",
       "url": "https://marvelsnap.com/new-season-axis-inversion/"
     },
@@ -357,12 +357,12 @@
     {
       "type": "判断",
       "title": "周末后三天累计波动主要集中在iOS中后段",
-      "detail": "Google为2进2出，iOS为5进5出；iOS还出现Yu-Gi-Oh! −21、Tacticus +19和Dragon Traveler −17。由于这是9月4日至7日累计变化，不把幅度解释为单日冲击。"
+      "detail": "Google为2进2出，iOS为5进5出；iOS还出现Yu-Gi-Oh! −22、Tacticus +19，以及Dragon Traveler与Forge Master均−14。由于这是9月4日至7日累计变化，不把幅度解释为单日冲击。"
     },
     {
       "type": "判断",
-      "title": "War and Order形成今日最清晰的双端共同上行",
-      "detail": "Google +4至#26、iOS +14至#25，两个商店收敛到相邻位置；相比Lords Mobile、Kingdom Guard和MARVEL SNAP的跨端分化，这一信号更值得连续验证，但仍不足以断言长期趋势。"
+      "title": "War and Order与Tacticus形成双端同向信号",
+      "detail": "War and Order在Google +4至#26、iOS +11至#28；Tacticus在Google +2至#27、iOS +19至#29。两款都收敛到双端TOP30，但三天累计信号仍不足以断言长期趋势。"
     },
     {
       "type": "判断",
@@ -377,7 +377,7 @@
     {
       "type": "关注",
       "title": "9月8日下一快照：核对五款iOS回榜产品留存",
-      "detail": "The Battle Cats #28与Watcher #35信号强于位于#52、#56、#59的Star Trek、Warline和Guns of Glory；后三款若不能脱离榜尾，继续按短期回补处理。"
+      "detail": "The Battle Cats #26与Watcher #35信号强于位于#52、#56、#58的Star Trek、Warline和Guns of Glory；后三款若不能脱离榜尾，继续按短期回补处理。"
     },
     {
       "type": "关注",
@@ -492,12 +492,12 @@
     {
       "label": "Google Play美国区策略畅销榜直连",
       "url": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
-      "capturedAt": "2026-09-07T09:29:19+08:00"
+      "capturedAt": "2026-09-07T09:53:18+08:00"
     },
     {
       "label": "Apple官方美国区iPhone策略畅销RSS",
       "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
-      "updated": "2026-09-06T18:29:27-07:00",
+      "updated": "2026-09-06T18:52:53-07:00",
       "sourceDateBeijing": "2026-09-07"
     },
     {

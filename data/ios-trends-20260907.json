@@ -840,10 +840,67 @@
     }
   },
   "16": {
+    "summary": "趋势：2020年上线时用三消战斗降低传统SLG的首日门槛，再通过英雄收集、基地扩张与联盟战争建立深度。；关键转折：上线时的关键产品调整，是把三消进度与战略成长绑定，并简化联盟功能，让休闲用户更自然地进入集结和战争系统，而不是在教学后流失。；主力素材：丧尸三消、英雄技能与女性角色；外层素材还使用数字门射击、守屋求生和尸潮选择，核心钩子集中在“三消杀僵尸／低门槛生存闯关”。",
+    "sections": {
+      "development": "2020年上线时用三消战斗降低传统SLG的首日门槛，再通过英雄收集、基地扩张与联盟战争建立深度。产品早期完成品类融合验证后进入成熟头部，后续榜位主要由新英雄、节日活动和联盟内容拉动，属于稳定盘面上周期性回升。",
+      "rankPath": "本次位于iOS美国策略畅销榜第16名（较前一榜单上升3位）。2020年以三消接SLG建立成熟盘，当前iOS第18；大活动、英雄版本和投放补量时抬升，平时在中上段区间震荡。",
+      "turningPoints": "上线时的关键产品调整，是把三消进度与战略成长绑定，并简化联盟功能，让休闲用户更自然地进入集结和战争系统，而不是在教学后流失。形成稳定付费盘后，买量素材不再只拍棋盘，逐步加入破屋避难、海洋污染版本、数字门射击和女性幸存者等剧情钩子；三消则保留在中段作为“确实可玩”的信任锚点。它的成熟波动更多来自主题版本和联动，而非核心循环发生过一次彻底重做。",
+      "creative": "丧尸三消、英雄技能与女性角色；外层素材还使用数字门射击、守屋求生和尸潮选择，核心钩子集中在“三消杀僵尸／低门槛生存闯关”。",
+      "watch": "重点观察“丧尸／三消战斗”前端素材向英雄养成与联盟SLG中后期的转化率，以及新英雄/联盟活动能否形成新的付费峰值。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已纠偏",
+      "confidence": "中",
+      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
+      "changeReason": "补入当前商店图和公开素材中的数字门射击、守屋求生表现层。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1517980891",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.global.ztmslg&hl=en_US&gl=US",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "高",
+      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
+      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1517980891",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.global.ztmslg&hl=en_US&gl=US",
+          "type": "primary"
+        },
+        {
+          "label": "Puzzles & Survival团队产品复盘",
+          "url": "https://www.prnewswire.com/news-releases/puzzles--survival-team-share-their-experience-at-googles-think-games-event-301355517.html",
+          "type": "lifecycle-analysis"
+        },
+        {
+          "label": "Puzzles & Survival海洋版本广告",
+          "url": "https://www.ispot.tv/ad/bz_s/puzzles-survival-ocean-version",
+          "type": "lifecycle-analysis"
+        }
+      ]
+    }
+  },
+  "17": {
     "summary": "趋势：2026年首发依靠《权力的游戏／龙之家族》认知、巨龙收集和维斯特洛阵营迅速聚集IP用户，并在版本宣发配合下进入TOP20。；关键转折：产品没有可被验证的多年素材迁移，现阶段最重要的节点是发行节奏：4月公布并开放预注册，6月全球上线，同时承接《龙之家族》新季的注意力。；主力素材：巨龙与龙骑手、维斯特洛城堡、家族阵营、格子战场与铁王座争夺，核心外层钩子集中在“权力的游戏／巨龙”。",
     "sections": {
       "development": "2026年首发依靠《权力的游戏／龙之家族》认知、巨龙收集和维斯特洛阵营迅速聚集IP用户，并在版本宣发配合下进入TOP20。当前仍处首发红利期，发展重点已从下载起量转向家族联盟、城堡成长和持续活动承接，以判断IP热度退潮后能否守住中头部。",
-      "rankPath": "本次位于iOS美国策略畅销榜第16名（较前一榜单下降5位）。按iOS商品页上架日期2026-06-02计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-02计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-02计算，属于近三个月新上榜。2026年6月2日上架后迅速进入iOS美国策略畅销榜TOP20，当前第11名；按上架日期口径属于近三个月新上榜。榜位仍带明显IP新品峰值，首轮王座竞争结束后的留存和联盟生态将决定稳定区间。",
+      "rankPath": "本次位于iOS美国策略畅销榜第17名（较前一榜单下降6位）。按iOS商品页上架日期2026-06-02计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-02计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-02计算，属于近三个月新上榜。2026年6月2日上架后迅速进入iOS美国策略畅销榜TOP20，当前第11名；按上架日期口径属于近三个月新上榜。榜位仍带明显IP新品峰值，首轮王座竞争结束后的留存和联盟生态将决定稳定区间。",
       "turningPoints": "产品没有可被验证的多年素材迁移，现阶段最重要的节点是发行节奏：4月公布并开放预注册，6月全球上线，同时承接《龙之家族》新季的注意力。素材没有只消费铁王座和角色脸，而是反复突出孵龙、五支龙领军队、格子战场和限时Reign赛季，尝试把IP用户导向社交策略。接下来能否在剧集热度回落后维持榜位，才会形成第二个真正的生命周期转折。",
       "creative": "巨龙与龙骑手、维斯特洛城堡、家族阵营、格子战场与铁王座争夺，核心外层钩子集中在“权力的游戏／巨龙”。",
       "watch": "重点观察“权力的游戏／巨龙”IP节点、联动和大版本的回流转化，以及活动结束后榜位能否守住。"
@@ -901,63 +958,6 @@
         {
           "label": "Dragonfire全球发行与赛季结构",
           "url": "https://www.brandinginasia.com/warner-bros-games-launches-game-of-thrones-dragonfire-mobile-strategy-game/",
-          "type": "lifecycle-analysis"
-        }
-      ]
-    }
-  },
-  "17": {
-    "summary": "趋势：2020年上线时用三消战斗降低传统SLG的首日门槛，再通过英雄收集、基地扩张与联盟战争建立深度。；关键转折：上线时的关键产品调整，是把三消进度与战略成长绑定，并简化联盟功能，让休闲用户更自然地进入集结和战争系统，而不是在教学后流失。；主力素材：丧尸三消、英雄技能与女性角色；外层素材还使用数字门射击、守屋求生和尸潮选择，核心钩子集中在“三消杀僵尸／低门槛生存闯关”。",
-    "sections": {
-      "development": "2020年上线时用三消战斗降低传统SLG的首日门槛，再通过英雄收集、基地扩张与联盟战争建立深度。产品早期完成品类融合验证后进入成熟头部，后续榜位主要由新英雄、节日活动和联盟内容拉动，属于稳定盘面上周期性回升。",
-      "rankPath": "本次位于iOS美国策略畅销榜第17名（较前一榜单上升2位）。2020年以三消接SLG建立成熟盘，当前iOS第18；大活动、英雄版本和投放补量时抬升，平时在中上段区间震荡。",
-      "turningPoints": "上线时的关键产品调整，是把三消进度与战略成长绑定，并简化联盟功能，让休闲用户更自然地进入集结和战争系统，而不是在教学后流失。形成稳定付费盘后，买量素材不再只拍棋盘，逐步加入破屋避难、海洋污染版本、数字门射击和女性幸存者等剧情钩子；三消则保留在中段作为“确实可玩”的信任锚点。它的成熟波动更多来自主题版本和联动，而非核心循环发生过一次彻底重做。",
-      "creative": "丧尸三消、英雄技能与女性角色；外层素材还使用数字门射击、守屋求生和尸潮选择，核心钩子集中在“三消杀僵尸／低门槛生存闯关”。",
-      "watch": "重点观察“丧尸／三消战斗”前端素材向英雄养成与联盟SLG中后期的转化率，以及新英雄/联盟活动能否形成新的付费峰值。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已纠偏",
-      "confidence": "中",
-      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
-      "changeReason": "补入当前商店图和公开素材中的数字门射击、守屋求生表现层。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1517980891",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.global.ztmslg&hl=en_US&gl=US",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "高",
-      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1517980891",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.global.ztmslg&hl=en_US&gl=US",
-          "type": "primary"
-        },
-        {
-          "label": "Puzzles & Survival团队产品复盘",
-          "url": "https://www.prnewswire.com/news-releases/puzzles--survival-team-share-their-experience-at-googles-think-games-event-301355517.html",
-          "type": "lifecycle-analysis"
-        },
-        {
-          "label": "Puzzles & Survival海洋版本广告",
-          "url": "https://www.ispot.tv/ad/bz_s/puzzles-survival-ocean-version",
           "type": "lifecycle-analysis"
         }
       ]
@@ -1112,67 +1112,10 @@
     }
   },
   "22": {
-    "summary": "趋势：2018年上线后凭多文明选择、自由行军和大地图实时会战建立差异化，较早形成全球化头部规模。；关键转折：早期主要卖点是“选一种文明，在大地图自由调兵”，与当时固定行军线的SLG形成区隔；2019年因版权限制更名为Rise of Kingdoms，是品牌全球化的明确节点。；主力素材：文明选择、农田与聚落建设、自由行军和大规模联盟会战；素材从可视化文明发展切入，再放大实时地图与领土竞争。",
-    "sections": {
-      "development": "2018年上线后凭多文明选择、自由行军和大地图实时会战建立差异化，较早形成全球化头部规模。进入成熟期后，征服赛季、文明更新和联盟战成为主要回流节点；当前回到前列更像内容周期带来的抬升，而非重新进入首发增长期。",
-      "rankPath": "本次位于iOS美国策略畅销榜第22名（较前一榜单上升4位）。2018年从文明选择与自由行军打开市场，当前iOS第26；周年、赛季和大型联盟战拉动回流，整体处于成熟头腰部波动。",
-      "turningPoints": "早期主要卖点是“选一种文明，在大地图自由调兵”，与当时固定行军线的SLG形成区隔；2019年因版权限制更名为Rise of Kingdoms，是品牌全球化的明确节点。进入成熟期后，获量大量采用战力数字、身份羞辱和文明选择带来逆袭的动画/真人短剧，以社会情境替代复杂战场讲解。近期公开素材又更多展示收留难民、资源管理、科技树和多人会战，说明品牌在保留情景钩子的同时，重新强化产品真实性与长期策略感。",
-      "creative": "文明选择、农田与聚落建设、自由行军和大规模联盟会战；素材从可视化文明发展切入，再放大实时地图与领土竞争。",
-      "watch": "重点观察“多文明／实时行军”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已纠偏",
-      "confidence": "中",
-      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
-      "changeReason": "补入当前商店素材强调的文明选择与农田经营入口。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1354260888",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp&hl=en_US&gl=US",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "高",
-      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1354260888",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp&hl=en_US&gl=US",
-          "type": "primary"
-        },
-        {
-          "label": "Rise of Kingdoms成熟期广告观察",
-          "url": "https://mobilegamer.biz/ad-break-rise-of-kingdoms-jocks-geeks-planes-pianos-and-speeding-tickets/",
-          "type": "lifecycle-analysis"
-        },
-        {
-          "label": "Rise of Kingdoms当前城建素材",
-          "url": "https://www.facebook.com/riseofkingdomsgame/videos/start-never-stop-/786219597749120/",
-          "type": "lifecycle-analysis"
-        }
-      ]
-    }
-  },
-  "23": {
     "summary": "趋势：2026年上线后以废墟堡垒重建、资源采集和波次守城构成直观的中世纪生存循环，两个月内进入TOP60。；关键转折：公开时间线显示它先在5月进行测试，随后进入正式发行；初期素材直接从废墟开始，采木石铁、修城墙、升级炮塔，最后抵挡一波领主进攻。；主力素材：中世纪领主、废墟堡垒重建、木石铁采集、城墙与炮塔升级、英雄招募及波次守城，核心外层钩子集中在“中世纪／堡垒重建”。",
     "sections": {
       "development": "2026年上线后以废墟堡垒重建、资源采集和波次守城构成直观的中世纪生存循环，两个月内进入TOP60。产品仍处早期买量验证期，关卡与重建已经承担获客作用，后续需要通过英雄、炮塔路线和更长建设目标提升留存与付费深度。",
-      "rankPath": "本次位于iOS美国策略畅销榜第23名（较前一榜单下降1位）。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。2026年7月19日上架后一个月进入iOS美国策略畅销榜TOP30，当前第27名；按上架日期口径属于近三个月新上榜。中世纪守城入口已形成初量，后续需观察堡垒经营与英雄系统能否承接长期留存。",
+      "rankPath": "本次位于iOS美国策略畅销榜第22名（较前一榜单持平）。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。按iOS商品页上架日期2026-07-19计算，属于近三个月新上榜。2026年7月19日上架后一个月进入iOS美国策略畅销榜TOP30，当前第27名；按上架日期口径属于近三个月新上榜。中世纪守城入口已形成初量，后续需观察堡垒经营与英雄系统能否承接长期留存。",
       "turningPoints": "公开时间线显示它先在5月进行测试，随后进入正式发行；初期素材直接从废墟开始，采木石铁、修城墙、升级炮塔，最后抵挡一波领主进攻。这个循环比纯4X城建更容易在30秒内讲清，也是首轮进入榜单的主要钩子。产品尚未经历第二个内容阶段，当前只能把“测试到正式放量”视为转折，不能提前写成熟期会转向联盟或角色。",
       "creative": "中世纪领主、废墟堡垒重建、木石铁采集、城墙与炮塔升级、英雄招募及波次守城，核心外层钩子集中在“中世纪／堡垒重建”。",
       "watch": "重点观察“中世纪／堡垒重建”关卡钩子向中长期养成付费的转化，以及新炮塔、路线和章节能否支撑持续回流。"
@@ -1220,6 +1163,63 @@
         {
           "label": "Lordrush官方商品页",
           "url": "https://play.google.com/store/apps/details?hl=en&id=com.s01.global",
+          "type": "lifecycle-analysis"
+        }
+      ]
+    }
+  },
+  "23": {
+    "summary": "趋势：2018年上线后凭多文明选择、自由行军和大地图实时会战建立差异化，较早形成全球化头部规模。；关键转折：早期主要卖点是“选一种文明，在大地图自由调兵”，与当时固定行军线的SLG形成区隔；2019年因版权限制更名为Rise of Kingdoms，是品牌全球化的明确节点。；主力素材：文明选择、农田与聚落建设、自由行军和大规模联盟会战；素材从可视化文明发展切入，再放大实时地图与领土竞争。",
+    "sections": {
+      "development": "2018年上线后凭多文明选择、自由行军和大地图实时会战建立差异化，较早形成全球化头部规模。进入成熟期后，征服赛季、文明更新和联盟战成为主要回流节点；当前回到前列更像内容周期带来的抬升，而非重新进入首发增长期。",
+      "rankPath": "本次位于iOS美国策略畅销榜第23名（较前一榜单上升3位）。2018年从文明选择与自由行军打开市场，当前iOS第26；周年、赛季和大型联盟战拉动回流，整体处于成熟头腰部波动。",
+      "turningPoints": "早期主要卖点是“选一种文明，在大地图自由调兵”，与当时固定行军线的SLG形成区隔；2019年因版权限制更名为Rise of Kingdoms，是品牌全球化的明确节点。进入成熟期后，获量大量采用战力数字、身份羞辱和文明选择带来逆袭的动画/真人短剧，以社会情境替代复杂战场讲解。近期公开素材又更多展示收留难民、资源管理、科技树和多人会战，说明品牌在保留情景钩子的同时，重新强化产品真实性与长期策略感。",
+      "creative": "文明选择、农田与聚落建设、自由行军和大规模联盟会战；素材从可视化文明发展切入，再放大实时地图与领土竞争。",
+      "watch": "重点观察“多文明／实时行军”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已纠偏",
+      "confidence": "中",
+      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
+      "changeReason": "补入当前商店素材强调的文明选择与农田经营入口。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1354260888",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp&hl=en_US&gl=US",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "高",
+      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
+      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1354260888",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp&hl=en_US&gl=US",
+          "type": "primary"
+        },
+        {
+          "label": "Rise of Kingdoms成熟期广告观察",
+          "url": "https://mobilegamer.biz/ad-break-rise-of-kingdoms-jocks-geeks-planes-pianos-and-speeding-tickets/",
+          "type": "lifecycle-analysis"
+        },
+        {
+          "label": "Rise of Kingdoms当前城建素材",
+          "url": "https://www.facebook.com/riseofkingdomsgame/videos/start-never-stop-/786219597749120/",
           "type": "lifecycle-analysis"
         }
       ]
@@ -1278,67 +1278,10 @@
     }
   },
   "25": {
-    "summary": "趋势：2016年上线后以兽人、精灵和中世纪城堡包装经典4X，靠长期新服、联盟战争和跨服活动累积稳定用户盘。；关键转折：上线早期传播靠3D奇幻军团和大城堡攻防，甚至出现与Stronghold画面相似的争议素材，说明当时主要用PC策略观感抬高品质预期。；主力素材：俯视指挥军团、城堡塔防与奇幻兵种作战，随后转入兽人精灵、联盟战争和大地图扩张，核心钩子集中在“即时指挥／奇幻城堡防御”。",
-    "sections": {
-      "development": "2016年上线后以兽人、精灵和中世纪城堡包装经典4X，靠长期新服、联盟战争和跨服活动累积稳定用户盘。进入成熟期后产品不再追求连续爬升，而是通过赛季与大活动维持中头部长尾，新增负责补充生态，核心收入依赖长期联盟玩家。",
-      "rankPath": "本次位于iOS美国策略畅销榜第25名（较前一榜单上升14位）。2016年上线的老牌奇幻4X位于iOS第31；城堡与联盟付费保持长尾，塔防/经营入口更新时会短暂拉回中上段。",
-      "turningPoints": "上线早期传播靠3D奇幻军团和大城堡攻防，甚至出现与Stronghold画面相似的争议素材，说明当时主要用PC策略观感抬高品质预期。多年后，为降低老4X理解成本，广告改用射击墙体、数字分路和30秒塔防等轻钩子；当前商品页也把tower defense写进产品定位。它的成熟转折是“广告先轻量化、产品再补充可承接的塔防”，而不是核心联盟战争被替代。",
-      "creative": "俯视指挥军团、城堡塔防与奇幻兵种作战，随后转入兽人精灵、联盟战争和大地图扩张，核心钩子集中在“即时指挥／奇幻城堡防御”。",
-      "watch": "重点观察“奇幻中世纪／兽人精灵”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已纠偏",
-      "confidence": "中",
-      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
-      "changeReason": "Google Play描述把产品列为实时策略、塔防和城堡建设，原分类漏掉塔防。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1071744151",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.camelgames.superking&hl=en_US&gl=US",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "高",
-      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1071744151",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.camelgames.superking&hl=en_US&gl=US",
-          "type": "primary"
-        },
-        {
-          "label": "War and Order早期广告争议样本",
-          "url": "https://www.reddit.com/r/stronghold/comments/a9guty/anyone_else_getting_ads_for_the_mobile_game_war/",
-          "type": "lifecycle-analysis"
-        },
-        {
-          "label": "War and Order当前官方玩法说明",
-          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.camelgames.superking",
-          "type": "lifecycle-analysis"
-        }
-      ]
-    }
-  },
-  "26": {
     "summary": "趋势：美国独立版本承接MLBB多年全球运营基础，重点不是从零验证玩法，而是完成商店迁移和本地化续运营；关键转折：Skystone店铺主体上线后保留账号、英雄与电竞认知；主力素材：十分钟5v5、英雄高光、团战翻盘和本地赛事。",
     "sections": {
       "development": "核心产品早已在海外市场完成MOBA规模化，2025年美国版本上线主要解决本地发行与连续运营，依靠既有英雄池、社交关系和赛事内容降低迁移成本。",
-      "rankPath": "本次位于iOS美国策略畅销榜第26名（较前一榜单下降8位）。美国独立版本承接原MLBB用户后位于iOS第32；榜位由账号迁移、赛季皮肤和本地活动共同驱动，不宜按新品自然爬坡解读。",
+      "rankPath": "本次位于iOS美国策略畅销榜第25名（较前一榜单下降7位）。美国独立版本承接原MLBB用户后位于iOS第32；榜位由账号迁移、赛季皮肤和本地活动共同驱动，不宜按新品自然爬坡解读。",
       "turningPoints": "关键节点是美国专用包体与Skystone发行主体落地；产品层面仍延续MOONTON的英雄、匹配与电竞体系，因此素材需要同时解释‘仍是原来的MLBB’和当前版本更新。",
       "creative": "5v5三路团战、十分钟快节奏、英雄连杀、皮肤特效、好友开黑与电竞现场；成熟期更依赖新英雄/皮肤和赛事时刻。",
       "watch": "关注迁移摩擦、美国本地买量效率以及与其他移动MOBA的用户争夺。"
@@ -1366,6 +1309,43 @@
         {
           "label": "Apple App Store美国区商品页",
           "url": "https://apps.apple.com/us/app/id6741568655",
+          "type": "primary"
+        }
+      ]
+    }
+  },
+  "26": {
+    "summary": "趋势：2014年靠极简横版出兵和荒诞猫咪美术形成长尾，十余年通过新形态、关卡和高频联动反复回流；关键转折：从单纯推线扩展出稀有猫养成与高难挑战，收藏成为长期付费核心；主力素材：怪猫进化、巨大敌人、低成本反差和联动角色。",
+    "sections": {
+      "development": "产品先用点按出兵、猫炮和推倒敌方基地建立极低门槛，再逐步堆叠属性克制、稀有扭蛋、真形态和传奇关卡，形成外表轻松、后期构筑很深的结构。",
+      "rankPath": "本次位于iOS美国策略畅销榜第26名（首次进入本期榜单）。2014年上线的长青塔防仍位于iOS第46；联动、周年和稀有扭蛋带来周期峰，庞大关卡与收藏盘使其具备十年长尾。",
+      "turningPoints": "真正的长线转折是稀有猫与进化系统把一次性搞笑体验变成收集；后续大量合作活动不断引入回流理由，而高难关卡保证核心玩家继续研究阵容。",
+      "creative": "细长腿猫、巨型猫和怪异进化、海量猫群压线、Boss尺寸反差、猫炮逆转，以及动漫/游戏联动角色混入猫军。",
+      "watch": "观察老系统负担、新手追赶和联动档期能否继续覆盖成熟用户流失。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已核验",
+      "confidence": "中",
+      "basis": "核心玩法与当前商店素材以Apple商品页为主，并结合公开产品时间线判断。",
+      "changeReason": "iOS分榜首次建档，未将缺少证据的相关性写成确定因果。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id850057092",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "中",
+      "scope": "从iOS上架期起区分产品更新、获量入口和成熟期素材迁移。",
+      "evidenceNote": "以商店版本、公开产品节点和既有跨平台研究归纳；iOS历史排名从本期开始独立积累。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id850057092",
           "type": "primary"
         }
       ]
@@ -1424,38 +1404,58 @@
     }
   },
   "28": {
-    "summary": "趋势：2014年靠极简横版出兵和荒诞猫咪美术形成长尾，十余年通过新形态、关卡和高频联动反复回流；关键转折：从单纯推线扩展出稀有猫养成与高难挑战，收藏成为长期付费核心；主力素材：怪猫进化、巨大敌人、低成本反差和联动角色。",
+    "summary": "趋势：2016年上线后以兽人、精灵和中世纪城堡包装经典4X，靠长期新服、联盟战争和跨服活动累积稳定用户盘。；关键转折：上线早期传播靠3D奇幻军团和大城堡攻防，甚至出现与Stronghold画面相似的争议素材，说明当时主要用PC策略观感抬高品质预期。；主力素材：俯视指挥军团、城堡塔防与奇幻兵种作战，随后转入兽人精灵、联盟战争和大地图扩张，核心钩子集中在“即时指挥／奇幻城堡防御”。",
     "sections": {
-      "development": "产品先用点按出兵、猫炮和推倒敌方基地建立极低门槛，再逐步堆叠属性克制、稀有扭蛋、真形态和传奇关卡，形成外表轻松、后期构筑很深的结构。",
-      "rankPath": "本次位于iOS美国策略畅销榜第28名（首次进入本期榜单）。2014年上线的长青塔防仍位于iOS第46；联动、周年和稀有扭蛋带来周期峰，庞大关卡与收藏盘使其具备十年长尾。",
-      "turningPoints": "真正的长线转折是稀有猫与进化系统把一次性搞笑体验变成收集；后续大量合作活动不断引入回流理由，而高难关卡保证核心玩家继续研究阵容。",
-      "creative": "细长腿猫、巨型猫和怪异进化、海量猫群压线、Boss尺寸反差、猫炮逆转，以及动漫/游戏联动角色混入猫军。",
-      "watch": "观察老系统负担、新手追赶和联动档期能否继续覆盖成熟用户流失。"
+      "development": "2016年上线后以兽人、精灵和中世纪城堡包装经典4X，靠长期新服、联盟战争和跨服活动累积稳定用户盘。进入成熟期后产品不再追求连续爬升，而是通过赛季与大活动维持中头部长尾，新增负责补充生态，核心收入依赖长期联盟玩家。",
+      "rankPath": "本次位于iOS美国策略畅销榜第28名（较前一榜单上升11位）。2016年上线的老牌奇幻4X位于iOS第31；城堡与联盟付费保持长尾，塔防/经营入口更新时会短暂拉回中上段。",
+      "turningPoints": "上线早期传播靠3D奇幻军团和大城堡攻防，甚至出现与Stronghold画面相似的争议素材，说明当时主要用PC策略观感抬高品质预期。多年后，为降低老4X理解成本，广告改用射击墙体、数字分路和30秒塔防等轻钩子；当前商品页也把tower defense写进产品定位。它的成熟转折是“广告先轻量化、产品再补充可承接的塔防”，而不是核心联盟战争被替代。",
+      "creative": "俯视指挥军团、城堡塔防与奇幻兵种作战，随后转入兽人精灵、联盟战争和大地图扩张，核心钩子集中在“即时指挥／奇幻城堡防御”。",
+      "watch": "重点观察“奇幻中世纪／兽人精灵”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
     },
     "sourceAudit": {
       "reviewedAt": "2026-09-07",
-      "status": "已核验",
+      "status": "已纠偏",
       "confidence": "中",
-      "basis": "核心玩法与当前商店素材以Apple商品页为主，并结合公开产品时间线判断。",
-      "changeReason": "iOS分榜首次建档，未将缺少证据的相关性写成确定因果。",
+      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
+      "changeReason": "Google Play描述把产品列为实时策略、塔防和城堡建设，原分类漏掉塔防。",
       "sources": [
         {
           "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id850057092",
+          "url": "https://apps.apple.com/us/app/id1071744151",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.camelgames.superking&hl=en_US&gl=US",
           "type": "primary"
         }
       ]
     },
     "lifecycleAudit": {
       "reviewedAt": "2026-09-07",
-      "confidence": "中",
-      "scope": "从iOS上架期起区分产品更新、获量入口和成熟期素材迁移。",
-      "evidenceNote": "以商店版本、公开产品节点和既有跨平台研究归纳；iOS历史排名从本期开始独立积累。",
+      "confidence": "高",
+      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
+      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
       "sources": [
         {
           "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id850057092",
+          "url": "https://apps.apple.com/us/app/id1071744151",
           "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.camelgames.superking&hl=en_US&gl=US",
+          "type": "primary"
+        },
+        {
+          "label": "War and Order早期广告争议样本",
+          "url": "https://www.reddit.com/r/stronghold/comments/a9guty/anyone_else_getting_ads_for_the_mobile_game_war/",
+          "type": "lifecycle-analysis"
+        },
+        {
+          "label": "War and Order当前官方玩法说明",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.camelgames.superking",
+          "type": "lifecycle-analysis"
         }
       ]
     }
@@ -1644,62 +1644,10 @@
     }
   },
   "33": {
-    "summary": "趋势：2025年上线后以太空歌剧、舰队和女性角色叙事吸引科幻与RPG用户，再通过银河地图和阵营发展增加策略深度。；关键转折：晚2024测试期的产品仍偏横屏大地图和硬核《基地》IP说明，不利于移动端快速理解。；主力素材：太空女主、舰队、银河地图与阵营剧情，常用外层钩子集中在“太空歌剧／舰队”。",
-    "sections": {
-      "development": "2025年上线后以太空歌剧、舰队和女性角色叙事吸引科幻与RPG用户，再通过银河地图和阵营发展增加策略深度。产品逐步爬入前30后开始形成稳定区间，后续发展需要持续供给剧情、舰船和阵营目标，避免首发世界观新鲜感消退后回落。",
-      "rankPath": "本次位于iOS美国策略畅销榜第33名（较前一榜单上升1位）。2025年10月上线后以太空IP感和舰队经营推进，当前iOS第23；仍在首年内容扩充阶段，大版本与创意规模决定是否继续上移。",
-      "turningPoints": "晚2024测试期的产品仍偏横屏大地图和硬核《基地》IP说明，不利于移动端快速理解。全球发行前，官方确认加入竖屏模式、新旗舰、故事、活动和角色系统，这是一次可验证的产品调整；2025年正式上线时，素材也把玩家身份具体化为商人、赏金猎人和政治操盘者，而非只讲银河帝国衰落。当前增长更应归因于发行前重构和IP全球发布，而不是上线后临时换了一套广告。",
-      "creative": "太空女主、舰队、银河地图与阵营剧情，常用外层钩子集中在“太空歌剧／舰队”。",
-      "watch": "重点观察“太空歌剧／舰队”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已复核",
-      "confidence": "中",
-      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
-      "changeReason": "商店描述与当前商店图同现有标签基本一致，保留原口径。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id6737595599",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.games.foundation&hl=en_US&gl=US",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "高",
-      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id6737595599",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.games.foundation&hl=en_US&gl=US",
-          "type": "primary"
-        },
-        {
-          "label": "Foundation全球发行与测试期改动",
-          "url": "https://funplus.com/foundation-galactic-frontier-global-launch/",
-          "type": "lifecycle-analysis"
-        }
-      ]
-    }
-  },
-  "34": {
     "summary": "趋势：2015年上线后以维京题材、王国建设和部族战争建立早期4X用户盘，并通过长期服务器运营维持付费。；关键转折：首发时期以高质感维京电影预告和“成为Jarl”建立权力幻想，随后电视广告用生活情境扩大品牌知名度。；主力素材：维京首领、中世纪军团、王国征服，常用外层钩子集中在“维京／王国建设”。",
     "sections": {
       "development": "2015年上线后以维京题材、王国建设和部族战争建立早期4X用户盘，并通过长期服务器运营维持付费。当前已是典型成熟长尾，新下载规模较小，榜位回升主要依赖大型活动、老玩家召回和核心部族继续竞争。",
-      "rankPath": "本次位于iOS美国策略畅销榜第34名（较前一榜单下降5位）。2019年上线后靠重度养成和持续投放形成长尾，当前iOS第41；新英雄、联动和周年期回升，平时由公会与竞技盘支撑。",
+      "rankPath": "本次位于iOS美国策略畅销榜第33名（较前一榜单下降4位）。2019年上线后靠重度养成和持续投放形成长尾，当前iOS第41；新英雄、联动和周年期回升，平时由公会与竞技盘支撑。",
       "turningPoints": "首发时期以高质感维京电影预告和“成为Jarl”建立权力幻想，随后电视广告用生活情境扩大品牌知名度。十年长线阶段，素材更多直给英雄装备、氏族协作、入侵者和回流奖励，因为现有用户的社交关系比解释世界观更能维持收入。它当前位于榜单尾部，表现更符合稳定老产品，而不是有证据显示某次调整后突然重新增长。",
       "creative": "维京首领、中世纪军团、王国征服，常用外层钩子集中在“维京／王国建设”。",
       "watch": "重点观察“维京／王国建设”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
@@ -1747,6 +1695,58 @@
         {
           "label": "Vikings当前官方商品页",
           "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.plarium.vikings",
+          "type": "lifecycle-analysis"
+        }
+      ]
+    }
+  },
+  "34": {
+    "summary": "趋势：2025年上线后以太空歌剧、舰队和女性角色叙事吸引科幻与RPG用户，再通过银河地图和阵营发展增加策略深度。；关键转折：晚2024测试期的产品仍偏横屏大地图和硬核《基地》IP说明，不利于移动端快速理解。；主力素材：太空女主、舰队、银河地图与阵营剧情，常用外层钩子集中在“太空歌剧／舰队”。",
+    "sections": {
+      "development": "2025年上线后以太空歌剧、舰队和女性角色叙事吸引科幻与RPG用户，再通过银河地图和阵营发展增加策略深度。产品逐步爬入前30后开始形成稳定区间，后续发展需要持续供给剧情、舰船和阵营目标，避免首发世界观新鲜感消退后回落。",
+      "rankPath": "本次位于iOS美国策略畅销榜第34名（较前一榜单持平）。2025年10月上线后以太空IP感和舰队经营推进，当前iOS第23；仍在首年内容扩充阶段，大版本与创意规模决定是否继续上移。",
+      "turningPoints": "晚2024测试期的产品仍偏横屏大地图和硬核《基地》IP说明，不利于移动端快速理解。全球发行前，官方确认加入竖屏模式、新旗舰、故事、活动和角色系统，这是一次可验证的产品调整；2025年正式上线时，素材也把玩家身份具体化为商人、赏金猎人和政治操盘者，而非只讲银河帝国衰落。当前增长更应归因于发行前重构和IP全球发布，而不是上线后临时换了一套广告。",
+      "creative": "太空女主、舰队、银河地图与阵营剧情，常用外层钩子集中在“太空歌剧／舰队”。",
+      "watch": "重点观察“太空歌剧／舰队”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已复核",
+      "confidence": "中",
+      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
+      "changeReason": "商店描述与当前商店图同现有标签基本一致，保留原口径。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id6737595599",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.games.foundation&hl=en_US&gl=US",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "高",
+      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
+      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id6737595599",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.games.foundation&hl=en_US&gl=US",
+          "type": "primary"
+        },
+        {
+          "label": "Foundation全球发行与测试期改动",
+          "url": "https://funplus.com/foundation-galactic-frontier-global-launch/",
           "type": "lifecycle-analysis"
         }
       ]
@@ -1830,156 +1830,10 @@
     }
   },
   "36": {
-    "summary": "趋势：2020年凭士兵合成和守护龙蛋的真实塔防入口起量，之后逐步扩展为联盟沙盒；关键转折：成熟获量从固定塔位合成转向巨蛇追击、推回入侵和数字压制等更夸张的超休闲场景，广告范围扩大但与核心塔防距离也变大；主力素材：合成士兵、守护龙蛋、推回入侵、巨型敌人与联盟王座。",
-    "sections": {
-      "development": "2020年上线后用士兵合成、守护龙蛋和路线塔防形成轻度且适合广告展示的核心循环，再逐步加入英雄与长期养成。产品目前处于稳定长尾，发展主要依靠新关卡、英雄和活动延长内容寿命，而不是重新进行大规模品类扩张。",
-      "rankPath": "本次位于iOS美国策略畅销榜第36名（较前一榜单上升16位）。首发增长结束后已进入成熟运营，榜位以区间震荡为主，活动和版本上线时抬升、内容空档期回落，长期方向取决于老用户付费盘和持续获客效率。",
-      "turningPoints": "首发创新是把“训练等待”改成拖拽合成：两个同级士兵立刻升级，并在塔位上保护最后的龙蛋，这一玩法真实存在且适合playable。形成收入后，广告进一步借用巨蛇追击、道路推回和数字等级压制等超休闲结构，有些只代表理想化场景；产品本体则继续扩展联盟和沙盒王座。它的转折是获量边界不断外扩，而不是塔防核心被移除，因此摘要同时保留真实入口和成熟期夸张化。",
-      "creative": "士兵合成、等级压制、推回入侵者、守护龙蛋、塔防路线和英雄养成，核心钩子集中在“合成升级／击退敌潮”。",
-      "watch": "重点观察“合成士兵／守护龙蛋”关卡钩子向中长期养成付费的转化，以及新炮塔、路线和章节能否支撑持续回流。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已纠偏",
-      "confidence": "中",
-      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
-      "changeReason": "补入当前商店图呈现的等级压制和推回入侵场景。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1570095804",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.tap4fun.odin.kingdomguard&hl=en_US&gl=US",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "高",
-      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1570095804",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.tap4fun.odin.kingdomguard&hl=en_US&gl=US",
-          "type": "primary"
-        },
-        {
-          "label": "Kingdom Guard获量演化分析",
-          "url": "https://lancaric.me/user-acquisition-revolution-fake-ads-fake-core-gameplay/",
-          "type": "lifecycle-analysis"
-        },
-        {
-          "label": "Kingdom Guard当前官方玩法",
-          "url": "https://play.google.com/store/apps/details?hl=en&id=com.tap4fun.odin.kingdomguard",
-          "type": "lifecycle-analysis"
-        }
-      ]
-    }
-  },
-  "37": {
-    "summary": "趋势：2026年上线后以前线基地流水线、士兵补给和点击扩建提供极易理解的放置经营体验，测试放量很快推动产品进入TOP50。；关键转折：新品的首发循环被设计成非常适合短视频：士兵排队领取装备，玩家点击扩建设施，收入再投入下一条流水线，最后抵挡一波敌人。；主力素材：前线基地流水线、士兵武装与补给、点击扩建、敌军波次和轻度放置经营，核心外层钩子集中在“前线基地／士兵补给”。",
-    "sections": {
-      "development": "2026年上线后以前线基地流水线、士兵补给和点击扩建提供极易理解的放置经营体验，测试放量很快推动产品进入TOP50。当前仍处早期验证阶段，下一步需要增加战斗目标、长期养成与活动节奏，避免基础循环过快耗尽。",
-      "rankPath": "本次位于iOS美国策略畅销榜第37名（较前一榜单上升3位）。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。2026年6月8日上架后以前线补给和放置经营素材进入iOS美国策略畅销榜TOP50，当前第49名；按上架日期口径属于近三个月新上榜。当前仍是新作首轮商业化阶段，稳定段取决于服务器活动与长期养成承接。",
-      "turningPoints": "新品的首发循环被设计成非常适合短视频：士兵排队领取装备，玩家点击扩建设施，收入再投入下一条流水线，最后抵挡一波敌人。它进入前50说明这一“军事版Idle Tycoon”入口已获得首轮付费，但当前没有足够历史证明后来做过重大调整。后续若加入联盟、角色或更宏观战争并成为主要素材，再记录为第二阶段；现在不提前替它编造成熟期。",
-      "creative": "前线基地流水线、士兵武装与补给、点击扩建、敌军波次和轻度放置经营，核心外层钩子集中在“前线基地／士兵补给”。",
-      "watch": "重点观察“前线基地／士兵补给”经营叙事向中后期数值成长与联盟付费的承接，以及素材疲劳后能否继续维持买量效率。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已复核",
-      "confidence": "中",
-      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
-      "changeReason": "商店描述与当前商店图同现有标签基本一致，保留原口径。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id6761893238",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.project.idle.cd&hl=en_US&gl=US",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "低",
-      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "新品生命周期不足或历史素材公开样本有限；只记录已发生的首发变化，不推断成熟期。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id6761893238",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.project.idle.cd&hl=en_US&gl=US",
-          "type": "primary"
-        },
-        {
-          "label": "Top Force官方商品页",
-          "url": "https://play.google.com/store/apps/details?id=com.project.idle.cd",
-          "type": "lifecycle-analysis"
-        }
-      ]
-    }
-  },
-  "38": {
-    "summary": "趋势：2020年以多日实时大战略服务硬核小众，靠长期对局、联盟外交和现代兵种维持；关键转折：移动端优化与更清晰的新手引导降低了浏览器大战略门槛；主力素材：全球地图推进、航母核武、联盟背刺和跨时区战局。",
-    "sections": {
-      "development": "产品强调数天到数周持续运行的国家级战争，资源、科研、外交和海陆空部署共同决定胜负；移动端承担随时查看战线与下达命令。",
-      "rankPath": "本次位于iOS美国策略畅销榜第38名（较前一榜单上升5位）。2020年上线后服务小众硬核长局，当前iOS第43；榜位不会持续陡升，而随新地图、赛季和联盟战争形成缓慢波动。",
-      "turningPoints": "从浏览器式复杂界面逐步优化移动交互是关键；联盟协同和核威慑等高阶目标延长单局，使付费集中在加速战略窗口而非短关卡消耗。",
-      "creative": "全球领土染色、坦克/航母/隐形战机推进、核按钮、战线包围与联盟外交消息；素材强调‘真实玩家24小时战争’。",
-      "watch": "关注长局时间负担、付费加速公平性和新玩家在首局中的流失。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已核验",
-      "confidence": "中",
-      "basis": "核心玩法与当前商店素材以Apple商品页为主，并结合公开产品时间线判断。",
-      "changeReason": "iOS分榜首次建档，未将缺少证据的相关性写成确定因果。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1510997559",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "中",
-      "scope": "从iOS上架期起区分产品更新、获量入口和成熟期素材迁移。",
-      "evidenceNote": "以商店版本、公开产品节点和既有跨平台研究归纳；iOS历史排名从本期开始独立积累。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1510997559",
-          "type": "primary"
-        }
-      ]
-    }
-  },
-  "39": {
     "summary": "趋势：2022年上线后凭漫威角色、短局卡牌和区域规则形成强首发吸引力，快速建立独立于传统CCG的产品认知。；关键转折：三个月软启动验证后，全球首发把短局、熟悉英雄和Snap押注机制作为明确产品创新，同时用Samuel L. Jackson电影广告建立大众声量、UGC解释亲和力、实机展示收藏和反转。；主力素材：漫威英雄、快速翻牌、地形与回合反转，常用外层钩子集中在“漫威／短局”。",
     "sections": {
       "development": "2022年上线后凭漫威角色、短局卡牌和区域规则形成强首发吸引力，快速建立独立于传统CCG的产品认知。进入成熟期后，赛季通行证、新卡与平衡调整持续改变环境，榜位随影视IP节点和卡牌版本波动，核心仍是卡组生态与收藏驱动。",
-      "rankPath": "本次位于iOS美国策略畅销榜第39名（较前一榜单下降14位）。2022年首发后进入月度赛季通行证节奏，当前iOS第30；新卡与影视节点带来短峰，快速对局保证稳定但也受卡牌环境口碑影响。",
+      "rankPath": "本次位于iOS美国策略畅销榜第36名（较前一榜单下降11位）。2022年首发后进入月度赛季通行证节奏，当前iOS第30；新卡与影视节点带来短峰，快速对局保证稳定但也受卡牌环境口碑影响。",
       "turningPoints": "三个月软启动验证后，全球首发把短局、熟悉英雄和Snap押注机制作为明确产品创新，同时用Samuel L. Jackson电影广告建立大众声量、UGC解释亲和力、实机展示收藏和反转。首轮爆发后，产品通过Conquest等新模式和月度卡季补足长期内容，素材随漫威影视节点切换角色，而非一直重复“这是新卡牌游戏”。2025年重做Web Shop则是商业侧转折，增长目标从只获新用户扩展到提高存量玩家直购与长期价值。",
       "creative": "漫威英雄、快速翻牌、地形与回合反转，常用外层钩子集中在“漫威／短局”。",
       "watch": "重点观察“漫威／短局”IP节点、联动和大版本的回流转化，以及活动结束后榜位能否守住。"
@@ -2032,6 +1886,152 @@
         {
           "label": "MARVEL SNAP Web Shop重做",
           "url": "https://xsolla.com/blog/inside-the-marvel-snap-web-shop-relaunch-a-blueprint-for-player-centric-d2c-success",
+          "type": "lifecycle-analysis"
+        }
+      ]
+    }
+  },
+  "37": {
+    "summary": "趋势：2020年以多日实时大战略服务硬核小众，靠长期对局、联盟外交和现代兵种维持；关键转折：移动端优化与更清晰的新手引导降低了浏览器大战略门槛；主力素材：全球地图推进、航母核武、联盟背刺和跨时区战局。",
+    "sections": {
+      "development": "产品强调数天到数周持续运行的国家级战争，资源、科研、外交和海陆空部署共同决定胜负；移动端承担随时查看战线与下达命令。",
+      "rankPath": "本次位于iOS美国策略畅销榜第37名（较前一榜单上升6位）。2020年上线后服务小众硬核长局，当前iOS第43；榜位不会持续陡升，而随新地图、赛季和联盟战争形成缓慢波动。",
+      "turningPoints": "从浏览器式复杂界面逐步优化移动交互是关键；联盟协同和核威慑等高阶目标延长单局，使付费集中在加速战略窗口而非短关卡消耗。",
+      "creative": "全球领土染色、坦克/航母/隐形战机推进、核按钮、战线包围与联盟外交消息；素材强调‘真实玩家24小时战争’。",
+      "watch": "关注长局时间负担、付费加速公平性和新玩家在首局中的流失。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已核验",
+      "confidence": "中",
+      "basis": "核心玩法与当前商店素材以Apple商品页为主，并结合公开产品时间线判断。",
+      "changeReason": "iOS分榜首次建档，未将缺少证据的相关性写成确定因果。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1510997559",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "中",
+      "scope": "从iOS上架期起区分产品更新、获量入口和成熟期素材迁移。",
+      "evidenceNote": "以商店版本、公开产品节点和既有跨平台研究归纳；iOS历史排名从本期开始独立积累。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1510997559",
+          "type": "primary"
+        }
+      ]
+    }
+  },
+  "38": {
+    "summary": "趋势：2020年凭士兵合成和守护龙蛋的真实塔防入口起量，之后逐步扩展为联盟沙盒；关键转折：成熟获量从固定塔位合成转向巨蛇追击、推回入侵和数字压制等更夸张的超休闲场景，广告范围扩大但与核心塔防距离也变大；主力素材：合成士兵、守护龙蛋、推回入侵、巨型敌人与联盟王座。",
+    "sections": {
+      "development": "2020年上线后用士兵合成、守护龙蛋和路线塔防形成轻度且适合广告展示的核心循环，再逐步加入英雄与长期养成。产品目前处于稳定长尾，发展主要依靠新关卡、英雄和活动延长内容寿命，而不是重新进行大规模品类扩张。",
+      "rankPath": "本次位于iOS美国策略畅销榜第38名（较前一榜单上升14位）。首发增长结束后已进入成熟运营，榜位以区间震荡为主，活动和版本上线时抬升、内容空档期回落，长期方向取决于老用户付费盘和持续获客效率。",
+      "turningPoints": "首发创新是把“训练等待”改成拖拽合成：两个同级士兵立刻升级，并在塔位上保护最后的龙蛋，这一玩法真实存在且适合playable。形成收入后，广告进一步借用巨蛇追击、道路推回和数字等级压制等超休闲结构，有些只代表理想化场景；产品本体则继续扩展联盟和沙盒王座。它的转折是获量边界不断外扩，而不是塔防核心被移除，因此摘要同时保留真实入口和成熟期夸张化。",
+      "creative": "士兵合成、等级压制、推回入侵者、守护龙蛋、塔防路线和英雄养成，核心钩子集中在“合成升级／击退敌潮”。",
+      "watch": "重点观察“合成士兵／守护龙蛋”关卡钩子向中长期养成付费的转化，以及新炮塔、路线和章节能否支撑持续回流。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已纠偏",
+      "confidence": "中",
+      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
+      "changeReason": "补入当前商店图呈现的等级压制和推回入侵场景。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1570095804",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.tap4fun.odin.kingdomguard&hl=en_US&gl=US",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "高",
+      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
+      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1570095804",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.tap4fun.odin.kingdomguard&hl=en_US&gl=US",
+          "type": "primary"
+        },
+        {
+          "label": "Kingdom Guard获量演化分析",
+          "url": "https://lancaric.me/user-acquisition-revolution-fake-ads-fake-core-gameplay/",
+          "type": "lifecycle-analysis"
+        },
+        {
+          "label": "Kingdom Guard当前官方玩法",
+          "url": "https://play.google.com/store/apps/details?hl=en&id=com.tap4fun.odin.kingdomguard",
+          "type": "lifecycle-analysis"
+        }
+      ]
+    }
+  },
+  "39": {
+    "summary": "趋势：2026年上线后以前线基地流水线、士兵补给和点击扩建提供极易理解的放置经营体验，测试放量很快推动产品进入TOP50。；关键转折：新品的首发循环被设计成非常适合短视频：士兵排队领取装备，玩家点击扩建设施，收入再投入下一条流水线，最后抵挡一波敌人。；主力素材：前线基地流水线、士兵武装与补给、点击扩建、敌军波次和轻度放置经营，核心外层钩子集中在“前线基地／士兵补给”。",
+    "sections": {
+      "development": "2026年上线后以前线基地流水线、士兵补给和点击扩建提供极易理解的放置经营体验，测试放量很快推动产品进入TOP50。当前仍处早期验证阶段，下一步需要增加战斗目标、长期养成与活动节奏，避免基础循环过快耗尽。",
+      "rankPath": "本次位于iOS美国策略畅销榜第39名（较前一榜单上升1位）。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。按iOS商品页上架日期2026-06-08计算，属于近三个月新上榜。2026年6月8日上架后以前线补给和放置经营素材进入iOS美国策略畅销榜TOP50，当前第49名；按上架日期口径属于近三个月新上榜。当前仍是新作首轮商业化阶段，稳定段取决于服务器活动与长期养成承接。",
+      "turningPoints": "新品的首发循环被设计成非常适合短视频：士兵排队领取装备，玩家点击扩建设施，收入再投入下一条流水线，最后抵挡一波敌人。它进入前50说明这一“军事版Idle Tycoon”入口已获得首轮付费，但当前没有足够历史证明后来做过重大调整。后续若加入联盟、角色或更宏观战争并成为主要素材，再记录为第二阶段；现在不提前替它编造成熟期。",
+      "creative": "前线基地流水线、士兵武装与补给、点击扩建、敌军波次和轻度放置经营，核心外层钩子集中在“前线基地／士兵补给”。",
+      "watch": "重点观察“前线基地／士兵补给”经营叙事向中后期数值成长与联盟付费的承接，以及素材疲劳后能否继续维持买量效率。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已复核",
+      "confidence": "中",
+      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
+      "changeReason": "商店描述与当前商店图同现有标签基本一致，保留原口径。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id6761893238",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.project.idle.cd&hl=en_US&gl=US",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "低",
+      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
+      "evidenceNote": "新品生命周期不足或历史素材公开样本有限；只记录已发生的首发变化，不推断成熟期。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id6761893238",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.project.idle.cd&hl=en_US&gl=US",
+          "type": "primary"
+        },
+        {
+          "label": "Top Force官方商品页",
+          "url": "https://play.google.com/store/apps/details?id=com.project.idle.cd",
           "type": "lifecycle-analysis"
         }
       ]
@@ -2273,10 +2273,57 @@
     }
   },
   "45": {
+    "summary": "趋势：2026年以异世界恋爱喜剧和轻量放置卡牌切入，角色收集与夸张剧情承担首发获量；关键转折：近期BUFF 101联动强化限定角色和事件传播；主力素材：动画角色、龙与勇者反差、恋爱桥段、抽卡阵容和放置奖励。",
+    "sections": {
+      "development": "2026年上线后以勇者与龙的身份反转、恋爱喜剧对白和二次元角色收集作为入口，战斗与养成则采用较轻的放置卡牌结构，降低追剧情用户的操作负担。",
+      "rankPath": "本次位于iOS美国策略畅销榜第45名（较前一榜单下降14位）。2026年1月上架，早于本期90天窗口；因缺少2026-05-26同口径TOP60快照，暂不判断近三个月飙升。",
+      "turningPoints": "目前可确认的节点是BUFF 101合作内容进入商店标题与传播主位，获量重点由基础世界观进一步转向限定角色/事件；除此之外尚未发现可确认的重大系统转折。",
+      "creative": "动画立绘、勇者与龙的反差关系、恋爱喜剧对白、限定角色、十连抽/阵容展示、离线收益和联动视觉。",
+      "watch": "观察联动结束后的榜位留存，以及轻量卡牌循环能否承接由剧情与角色素材带来的新增用户。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已复核",
+      "confidence": "中",
+      "basis": "核心玩法以商店描述和官方资料为主；素材判断结合当前商店图与公开产品节点。",
+      "changeReason": "当日进榜产品首次建档，未将缺少证据的相关性写成确定因果。",
+      "sources": [
+        {
+          "label": "商店美国区商品页",
+          "url": "https://apps.apple.com/us/app/id6751086804",
+          "type": "primary"
+        },
+        {
+          "label": "Dragon Traveler官方站",
+          "url": "https://dt.game-tree.com/",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "中",
+      "scope": "从上架期归纳产品改动、榜位阶段与素材迁移。",
+      "evidenceNote": "仅记录可由商品页、官方站点和公开产品节点支撑的变化。",
+      "sources": [
+        {
+          "label": "商店美国区商品页",
+          "url": "https://apps.apple.com/us/app/id6751086804",
+          "type": "primary"
+        },
+        {
+          "label": "Dragon Traveler官方站",
+          "url": "https://dt.game-tree.com/",
+          "type": "primary"
+        }
+      ]
+    }
+  },
+  "46": {
     "summary": "趋势：2022年以完整大师规则和跨平台品质快速吸收实体牌手，之后靠新卡包、杯赛与禁限卡表维持；关键转折：从高热度首发转入环境轮换驱动，强势主题牌组成为每轮收入开关；主力素材：召唤动画、连锁展开、竞技卡组和周年奖励。",
     "sections": {
       "development": "首发以高规格演出、跨平台账号和相对完整的卡池解决数字游戏王分散问题；成熟期围绕选择卡包、主题卡组、Solo内容和排名赛持续运转。",
-      "rankPath": "本次位于iOS美国策略畅销榜第45名（较前一榜单下降21位）。2022年高热首发后转入卡包与禁限表周期，当前iOS第24；周年、新主题和杯赛时上移，环境稳定期回到核心牌手区间。",
+      "rankPath": "本次位于iOS美国策略畅销榜第46名（较前一榜单下降22位）。2022年高热首发后转入卡包与禁限表周期，当前iOS第24；周年、新主题和杯赛时上移，环境稳定期回到核心牌手区间。",
       "turningPoints": "首发热潮后，运营重心转向快速同步新主题和限时杯赛；环境强度与卡包价值直接影响付费，周年赠送则承担大规模回流。",
       "creative": "黑魔导/青眼白龙等经典IP、王牌怪兽召唤动画、复杂连锁一回合展开、强势新主题卡包和周年宝石福利。",
       "watch": "关注先后手与长展开口碑、禁限表节奏，以及新手是否能在高复杂度环境中留存。"
@@ -2309,11 +2356,11 @@
       ]
     }
   },
-  "46": {
+  "47": {
     "summary": "趋势：2024年上线后借《帝国时代》IP和大规模中世纪战场获得较高首发关注，随后榜位从首发峰值回归稳定区间。；关键转折：预注册和首发素材强调经典文明、历史战役和大军团，核心任务是让PC玩家相信它保留《帝国时代》身份。；主力素材：帝国时代IP、农田与聚落发展、中世纪军团和大规模实时战场；商店入口先强调熟悉的文明经营，再承接移动端联盟战争。",
     "sections": {
       "development": "2024年上线后借《帝国时代》IP和大规模中世纪战场获得较高首发关注，随后榜位从首发峰值回归稳定区间。当前的发展任务是把PC用户对即时战略的期待转化为移动端长期养成、文明发展和联盟战争，版本内容决定能否再次上行。",
-      "rankPath": "本次位于iOS美国策略畅销榜第46名（较前一榜单下降9位）。2024年10月首发高热后回落至iOS第42；帝国时代IP完成首轮转化，现阶段更依赖赛季、文明平衡与联盟内容拉回。",
+      "rankPath": "本次位于iOS美国策略畅销榜第47名（较前一榜单下降10位）。2024年10月首发高热后回落至iOS第42；帝国时代IP完成首轮转化，现阶段更依赖赛季、文明平衡与联盟内容拉回。",
       "turningPoints": "预注册和首发素材强调经典文明、历史战役和大军团，核心任务是让PC玩家相信它保留《帝国时代》身份。上线后，产品实际重心逐渐被表述为快速资源、英雄、联盟和移动端专属成长，素材也更多展示农田、聚落和英雄技能，而非只复刻PC界面；这是从IP承诺到移动产品现实的调整。后续PC版与跨平台计划则是一次反向补强，尝试重新吸引偏重度的系列用户，但当前还不能断言已造成榜位反弹。",
       "creative": "帝国时代IP、农田与聚落发展、中世纪军团和大规模实时战场；商店入口先强调熟悉的文明经营，再承接移动端联盟战争。",
       "watch": "重点观察“帝国时代IP／中世纪”IP节点、联动和大版本的回流转化，以及活动结束后榜位能否守住。"
@@ -2366,11 +2413,11 @@
       ]
     }
   },
-  "47": {
+  "48": {
     "summary": "趋势：2021年上线后以高辨识度英灵美术、巨龙和城堡4X吸引奇幻SLG用户，首发增长后逐步进入稳定盘。；关键转折：全球首发先靠美术化历史名人和元素巨龙区别于写实战争SLG。；主力素材：美术化名将、巨龙、城堡与联盟战，常用外层钩子集中在“奇幻王国／英灵”。",
     "sections": {
       "development": "2021年上线后以高辨识度英灵美术、巨龙和城堡4X吸引奇幻SLG用户，首发增长后逐步进入稳定盘。后续主要通过英雄扩充、联动和限时活动维持活跃，当前发展脉络是用内容节点唤醒存量玩家，同时控制新服与老服之间的付费衰减。",
-      "rankPath": "本次位于iOS美国策略畅销榜第47名（较前一榜单下降3位）。2021年首发后从高位转入成熟4X区间，当前iOS第46；巨龙、英灵和联盟赛季更新决定阶段峰值，常态依赖核心服生态。",
+      "rankPath": "本次位于iOS美国策略畅销榜第48名（较前一榜单下降4位）。2021年首发后从高位转入成熟4X区间，当前iOS第46；巨龙、英灵和联盟赛季更新决定阶段峰值，常态依赖核心服生态。",
       "turningPoints": "全球首发先靠美术化历史名人和元素巨龙区别于写实战争SLG。第二个清晰节点是日本市场本地化：定制开屏创意和渠道组合使其在发行初期快速进入当地商店前列。进入成熟期后，产品不再只堆新英灵，而是增加Affinity、徽记、外观和更快赛季，让玩家在赛季重置之外保留长期身份；对应素材也从“唤醒巨龙”扩展到阵容收集和长期账号成长。",
       "creative": "美术化名将、巨龙、城堡与联盟战，常用外层钩子集中在“奇幻王国／英灵”。",
       "watch": "重点观察“奇幻王国／英灵”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
@@ -2423,61 +2470,14 @@
       ]
     }
   },
-  "48": {
-    "summary": "趋势：2026年以异世界恋爱喜剧和轻量放置卡牌切入，角色收集与夸张剧情承担首发获量；关键转折：近期BUFF 101联动强化限定角色和事件传播；主力素材：动画角色、龙与勇者反差、恋爱桥段、抽卡阵容和放置奖励。",
-    "sections": {
-      "development": "2026年上线后以勇者与龙的身份反转、恋爱喜剧对白和二次元角色收集作为入口，战斗与养成则采用较轻的放置卡牌结构，降低追剧情用户的操作负担。",
-      "rankPath": "本次位于iOS美国策略畅销榜第48名（较前一榜单下降17位）。2026年1月上架，早于本期90天窗口；因缺少2026-05-26同口径TOP60快照，暂不判断近三个月飙升。",
-      "turningPoints": "目前可确认的节点是BUFF 101合作内容进入商店标题与传播主位，获量重点由基础世界观进一步转向限定角色/事件；除此之外尚未发现可确认的重大系统转折。",
-      "creative": "动画立绘、勇者与龙的反差关系、恋爱喜剧对白、限定角色、十连抽/阵容展示、离线收益和联动视觉。",
-      "watch": "观察联动结束后的榜位留存，以及轻量卡牌循环能否承接由剧情与角色素材带来的新增用户。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已复核",
-      "confidence": "中",
-      "basis": "核心玩法以商店描述和官方资料为主；素材判断结合当前商店图与公开产品节点。",
-      "changeReason": "当日进榜产品首次建档，未将缺少证据的相关性写成确定因果。",
-      "sources": [
-        {
-          "label": "商店美国区商品页",
-          "url": "https://apps.apple.com/us/app/id6751086804",
-          "type": "primary"
-        },
-        {
-          "label": "Dragon Traveler官方站",
-          "url": "https://dt.game-tree.com/",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "中",
-      "scope": "从上架期归纳产品改动、榜位阶段与素材迁移。",
-      "evidenceNote": "仅记录可由商品页、官方站点和公开产品节点支撑的变化。",
-      "sources": [
-        {
-          "label": "商店美国区商品页",
-          "url": "https://apps.apple.com/us/app/id6751086804",
-          "type": "primary"
-        },
-        {
-          "label": "Dragon Traveler官方站",
-          "url": "https://dt.game-tree.com/",
-          "type": "primary"
-        }
-      ]
-    }
-  },
   "49": {
-    "summary": "趋势：2017年上线时凭《权力的游戏》角色、七国势力和铁王座争夺快速聚集剧集粉丝，再以联盟4X延长付费周期。；关键转折：上线节点本身紧贴剧集热度和下一季等待窗口，营销目标是让粉丝在无新剧可看时继续留在维斯特洛。；主力素材：铁王座、巨龙、城堡与剧集角色，常用外层钩子集中在“权力的游戏／七国”。",
+    "summary": "趋势：2025年上线后用铁匠铺、锻造反馈和时代推进构成清晰的放置成长线，先吸引经营与合成用户，再扩展英雄和装备养成。；关键转折：首发优势在于锻造过程本身适合短视频：加热、敲击、成型和数值提升都有即时反馈。；主力素材：铁砧锻造、时代推进、装备合成与英雄养成，常用外层钩子集中在“铁匠铺／锻造”。",
     "sections": {
-      "development": "2017年上线时凭《权力的游戏》角色、七国势力和铁王座争夺快速聚集剧集粉丝，再以联盟4X延长付费周期。产品进入成熟IP长尾后，剧集播出、巨龙内容和周年活动成为主要回升节点，平时依靠核心联盟维持底盘。",
-      "rankPath": "本次位于iOS美国策略畅销榜第49名（较前一榜单下降8位）。2017年上线后依靠权游IP与联盟政治长期运营，当前iOS第32；剧集/IP节点和巨龙内容制造回流，平时处于成熟长尾区间。",
-      "turningPoints": "上线节点本身紧贴剧集热度和下一季等待窗口，营销目标是让粉丝在无新剧可看时继续留在维斯特洛。剧集结束后，产品若只靠新观众自然进入会迅速衰减，因此运营转向月度故事弧、Battlegrounds、Discord社区和经典事件复刻；当前Lord of Light活动就是用熟悉宗教和角色记忆制造回流。它的成熟关键不是素材越来越泛，而是从“当季剧集同步”转成“可重复消费的IP档案馆”。",
-      "creative": "铁王座、巨龙、城堡与剧集角色，常用外层钩子集中在“权力的游戏／七国”。",
-      "watch": "重点观察“权力的游戏／七国”IP节点、联动和大版本的回流转化，以及活动结束后榜位能否守住。"
+      "development": "2025年上线后用铁匠铺、锻造反馈和时代推进构成清晰的放置成长线，先吸引经营与合成用户，再扩展英雄和装备养成。产品由中腰部持续上行，当前正验证轻度锻造入口能否支撑更长内容周期，以及新装备与时代阶段是否足以维持付费动力。",
+      "rankPath": "本次位于iOS美国策略畅销榜第49名（较前一榜单下降14位）。2025年上架后以锻造放置持续爬升，当前iOS第24；早期铁匠铺爽感已扩展到时代和装备循环，当前是中段放量期。",
+      "turningPoints": "首发优势在于锻造过程本身适合短视频：加热、敲击、成型和数值提升都有即时反馈。后续素材把一个铁砧扩展为完整工坊和时代推进，再展示装备被英雄穿上后立刻变强，逐步说明放置RPG的长期目标。产品仍在早期，没有可靠公开资料支持“某个版本突然救活榜位”，因此只记录可观察到的素材范围扩张，不强行制造转折。",
+      "creative": "铁砧锻造、时代推进、装备合成与英雄养成，常用外层钩子集中在“铁匠铺／锻造”。",
+      "watch": "重点观察“铁匠铺／锻造”经营叙事向中后期数值成长与联盟付费的承接，以及素材疲劳后能否继续维持买量效率。"
     },
     "sourceAudit": {
       "reviewedAt": "2026-09-07",
@@ -2488,41 +2488,31 @@
       "sources": [
         {
           "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1035712810",
+          "url": "https://apps.apple.com/us/app/id6746636289",
           "type": "primary"
         },
         {
           "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.wb.goog.got.conquest&hl=en_US&gl=US",
+          "url": "https://play.google.com/store/apps/details?id=com.hariwn.legendofcivilizations&hl=en_US&gl=US",
           "type": "primary"
         }
       ]
     },
     "lifecycleAudit": {
       "reviewedAt": "2026-09-07",
-      "confidence": "高",
+      "confidence": "低",
       "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
+      "evidenceNote": "新品生命周期不足或历史素材公开样本有限；只记录已发生的首发变化，不推断成熟期。",
       "sources": [
         {
           "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1035712810",
+          "url": "https://apps.apple.com/us/app/id6746636289",
           "type": "primary"
         },
         {
           "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.wb.goog.got.conquest&hl=en_US&gl=US",
+          "url": "https://play.google.com/store/apps/details?id=com.hariwn.legendofcivilizations&hl=en_US&gl=US",
           "type": "primary"
-        },
-        {
-          "label": "Game of Thrones: Conquest首发营销背景",
-          "url": "https://www.marketingdive.com/news/new-game-of-thrones-mobile-game-seeks-to-satiate-fan-appetites/506433/",
-          "type": "lifecycle-analysis"
-        },
-        {
-          "label": "Conquest成熟期月度活动",
-          "url": "https://m.economictimes.com/news/international/global-trends/game-of-thrones-lord-of-light-is-coming-heres-all-you-need-to-know/articleshow/132866660.cms",
-          "type": "lifecycle-analysis"
         }
       ]
     }
@@ -2580,13 +2570,13 @@
     }
   },
   "51": {
-    "summary": "趋势：2025年上线后用铁匠铺、锻造反馈和时代推进构成清晰的放置成长线，先吸引经营与合成用户，再扩展英雄和装备养成。；关键转折：首发优势在于锻造过程本身适合短视频：加热、敲击、成型和数值提升都有即时反馈。；主力素材：铁砧锻造、时代推进、装备合成与英雄养成，常用外层钩子集中在“铁匠铺／锻造”。",
+    "summary": "趋势：2017年上线时凭《权力的游戏》角色、七国势力和铁王座争夺快速聚集剧集粉丝，再以联盟4X延长付费周期。；关键转折：上线节点本身紧贴剧集热度和下一季等待窗口，营销目标是让粉丝在无新剧可看时继续留在维斯特洛。；主力素材：铁王座、巨龙、城堡与剧集角色，常用外层钩子集中在“权力的游戏／七国”。",
     "sections": {
-      "development": "2025年上线后用铁匠铺、锻造反馈和时代推进构成清晰的放置成长线，先吸引经营与合成用户，再扩展英雄和装备养成。产品由中腰部持续上行，当前正验证轻度锻造入口能否支撑更长内容周期，以及新装备与时代阶段是否足以维持付费动力。",
-      "rankPath": "本次位于iOS美国策略畅销榜第51名（较前一榜单下降16位）。2025年上架后以锻造放置持续爬升，当前iOS第24；早期铁匠铺爽感已扩展到时代和装备循环，当前是中段放量期。",
-      "turningPoints": "首发优势在于锻造过程本身适合短视频：加热、敲击、成型和数值提升都有即时反馈。后续素材把一个铁砧扩展为完整工坊和时代推进，再展示装备被英雄穿上后立刻变强，逐步说明放置RPG的长期目标。产品仍在早期，没有可靠公开资料支持“某个版本突然救活榜位”，因此只记录可观察到的素材范围扩张，不强行制造转折。",
-      "creative": "铁砧锻造、时代推进、装备合成与英雄养成，常用外层钩子集中在“铁匠铺／锻造”。",
-      "watch": "重点观察“铁匠铺／锻造”经营叙事向中后期数值成长与联盟付费的承接，以及素材疲劳后能否继续维持买量效率。"
+      "development": "2017年上线时凭《权力的游戏》角色、七国势力和铁王座争夺快速聚集剧集粉丝，再以联盟4X延长付费周期。产品进入成熟IP长尾后，剧集播出、巨龙内容和周年活动成为主要回升节点，平时依靠核心联盟维持底盘。",
+      "rankPath": "本次位于iOS美国策略畅销榜第51名（较前一榜单下降10位）。2017年上线后依靠权游IP与联盟政治长期运营，当前iOS第32；剧集/IP节点和巨龙内容制造回流，平时处于成熟长尾区间。",
+      "turningPoints": "上线节点本身紧贴剧集热度和下一季等待窗口，营销目标是让粉丝在无新剧可看时继续留在维斯特洛。剧集结束后，产品若只靠新观众自然进入会迅速衰减，因此运营转向月度故事弧、Battlegrounds、Discord社区和经典事件复刻；当前Lord of Light活动就是用熟悉宗教和角色记忆制造回流。它的成熟关键不是素材越来越泛，而是从“当季剧集同步”转成“可重复消费的IP档案馆”。",
+      "creative": "铁王座、巨龙、城堡与剧集角色，常用外层钩子集中在“权力的游戏／七国”。",
+      "watch": "重点观察“权力的游戏／七国”IP节点、联动和大版本的回流转化，以及活动结束后榜位能否守住。"
     },
     "sourceAudit": {
       "reviewedAt": "2026-09-07",
@@ -2597,31 +2587,41 @@
       "sources": [
         {
           "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id6746636289",
+          "url": "https://apps.apple.com/us/app/id1035712810",
           "type": "primary"
         },
         {
           "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.hariwn.legendofcivilizations&hl=en_US&gl=US",
+          "url": "https://play.google.com/store/apps/details?id=com.wb.goog.got.conquest&hl=en_US&gl=US",
           "type": "primary"
         }
       ]
     },
     "lifecycleAudit": {
       "reviewedAt": "2026-09-07",
-      "confidence": "低",
+      "confidence": "高",
       "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "新品生命周期不足或历史素材公开样本有限；只记录已发生的首发变化，不推断成熟期。",
+      "evidenceNote": "存在可核验的发行、产品改动、广告演化或联动节点；摘要按公开时间线归纳，不把相关性写成确定因果。",
       "sources": [
         {
           "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id6746636289",
+          "url": "https://apps.apple.com/us/app/id1035712810",
           "type": "primary"
         },
         {
           "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.hariwn.legendofcivilizations&hl=en_US&gl=US",
+          "url": "https://play.google.com/store/apps/details?id=com.wb.goog.got.conquest&hl=en_US&gl=US",
           "type": "primary"
+        },
+        {
+          "label": "Game of Thrones: Conquest首发营销背景",
+          "url": "https://www.marketingdive.com/news/new-game-of-thrones-mobile-game-seeks-to-satiate-fan-appetites/506433/",
+          "type": "lifecycle-analysis"
+        },
+        {
+          "label": "Conquest成熟期月度活动",
+          "url": "https://m.economictimes.com/news/international/global-trends/game-of-thrones-lord-of-light-is-coming-heres-all-you-need-to-know/articleshow/132866660.cms",
+          "type": "lifecycle-analysis"
         }
       ]
     }
@@ -2674,10 +2674,47 @@
     }
   },
   "53": {
+    "summary": "趋势：2021年从极简独立单塔守波起步，靠永久升级、实验室和锦标赛社区逐步爬升；关键转折：卡牌、终极武器与活动把离线增量循环扩成长期构筑；主力素材：一座塔清屏、数值指数增长、Boss波次和升级选择。",
+    "sections": {
+      "development": "最初以黑底极简画面和单塔自动射击降低制作与理解成本，玩家通过每局货币和永久研究不断推远波次；后续系统深度主要来自不同流派与长期目标。",
+      "rankPath": "本次位于iOS美国策略畅销榜第53名（较前一榜单上升2位）。2021年独立产品靠口碑与社区缓慢爬升至iOS第52；锦标赛、卡牌和终极武器更新造成阶梯式上扬，而非首发式爆发。",
+      "turningPoints": "实验室研究建立超长期时间线；卡牌和终极武器改变构筑上限；锦标赛让单机增量拥有比较目标。这些系统逐步把简单原型转成高留存产品。",
+      "creative": "极简几何弹幕、攻击速度暴涨、屏幕清场、波次数字突破、Boss压塔和研究前后收益对比。",
+      "watch": "关注后期升级时间、付费加速压力，以及新系统是否让早期极简体验变得过于复杂。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已核验",
+      "confidence": "中",
+      "basis": "核心玩法与当前商店素材以Apple商品页为主，并结合公开产品时间线判断。",
+      "changeReason": "iOS分榜首次建档，未将缺少证据的相关性写成确定因果。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1575590830",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "中",
+      "scope": "从iOS上架期起区分产品更新、获量入口和成熟期素材迁移。",
+      "evidenceNote": "以商店版本、公开产品节点和既有跨平台研究归纳；iOS历史排名从本期开始独立积累。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1575590830",
+          "type": "primary"
+        }
+      ]
+    }
+  },
+  "54": {
     "summary": "趋势：2023年上线后以潜艇、海军基地和舰队齐射切入相对稀缺的近现代海战题材，靠细分受众逐步累积而非一次爆量。；关键转折：首发最容易传播的是潜望镜锁定、预判航线和鱼雷击中舰船，先吸引喜欢载具动作的用户。；主力素材：潜艇、海军基地、舰队齐射，常用外层钩子集中在“潜艇／近现代海战”。",
     "sections": {
       "development": "2023年上线后以潜艇、海军基地和舰队齐射切入相对稀缺的近现代海战题材，靠细分受众逐步累积而非一次爆量。产品目前进入TOP60并形成初步稳定盘，后续增长取决于舰艇收集、联盟海战和持续事件能否扩大题材外用户。",
-      "rankPath": "本次位于iOS美国策略畅销榜第53名（较前一榜单下降3位）。2023年上线的潜艇题材处于长尾运营，当前iOS第35；海战题材差异化提供稳定盘，版本与投放补量时出现阶段抬升。",
+      "rankPath": "本次位于iOS美国策略畅销榜第54名（较前一榜单下降4位）。2023年上线的潜艇题材处于长尾运营，当前iOS第35；海战题材差异化提供稳定盘，版本与投放补量时出现阶段抬升。",
       "turningPoints": "首发最容易传播的是潜望镜锁定、预判航线和鱼雷击中舰船，先吸引喜欢载具动作的用户。产品进入稳定期后，商品页和素材逐步强调近现代欧洲地标、可选国家、历史军械和公会对抗，把“开一艘潜艇”扩大成海陆空军团经营。公开资料没有显示某次改版造成突涨，因此关键变化应谨慎描述为动作入口向完整4X世界的承接增强。",
       "creative": "潜艇、海军基地、舰队齐射，常用外层钩子集中在“潜艇／近现代海战”。",
       "watch": "重点观察“潜艇／近现代海战”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
@@ -2721,43 +2758,6 @@
           "label": "Sea War官方商品页",
           "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.bw.ud.googleplay",
           "type": "lifecycle-analysis"
-        }
-      ]
-    }
-  },
-  "54": {
-    "summary": "趋势：2021年从极简独立单塔守波起步，靠永久升级、实验室和锦标赛社区逐步爬升；关键转折：卡牌、终极武器与活动把离线增量循环扩成长期构筑；主力素材：一座塔清屏、数值指数增长、Boss波次和升级选择。",
-    "sections": {
-      "development": "最初以黑底极简画面和单塔自动射击降低制作与理解成本，玩家通过每局货币和永久研究不断推远波次；后续系统深度主要来自不同流派与长期目标。",
-      "rankPath": "本次位于iOS美国策略畅销榜第54名（较前一榜单上升1位）。2021年独立产品靠口碑与社区缓慢爬升至iOS第52；锦标赛、卡牌和终极武器更新造成阶梯式上扬，而非首发式爆发。",
-      "turningPoints": "实验室研究建立超长期时间线；卡牌和终极武器改变构筑上限；锦标赛让单机增量拥有比较目标。这些系统逐步把简单原型转成高留存产品。",
-      "creative": "极简几何弹幕、攻击速度暴涨、屏幕清场、波次数字突破、Boss压塔和研究前后收益对比。",
-      "watch": "关注后期升级时间、付费加速压力，以及新系统是否让早期极简体验变得过于复杂。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已核验",
-      "confidence": "中",
-      "basis": "核心玩法与当前商店素材以Apple商品页为主，并结合公开产品时间线判断。",
-      "changeReason": "iOS分榜首次建档，未将缺少证据的相关性写成确定因果。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1575590830",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "中",
-      "scope": "从iOS上架期起区分产品更新、获量入口和成熟期素材迁移。",
-      "evidenceNote": "以商店版本、公开产品节点和既有跨平台研究归纳；iOS历史排名从本期开始独立积累。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1575590830",
-          "type": "primary"
         }
       ]
     }
@@ -2899,10 +2899,57 @@
     }
   },
   "58": {
+    "summary": "趋势：2017年以火枪时代、蒸汽飞艇和城堡联盟战建立辨识度，后续通过Lost Island副标题和海岛探险扩展旧世界观；关键转折：成熟素材从纯城堡军团转向遗迹、岛屿、巨兽和角色冒险，给长期4X增加探索感，但榜位仍主要受版本与联盟活动推动；主力素材：火枪手、蒸汽飞艇、海岛遗迹、巨兽与城堡战争。",
+    "sections": {
+      "development": "2017年上线后用火枪时代、蒸汽飞艇和城堡战争建立差异化4X题材，随后依靠联盟、新服和长期活动维持规模。进入成熟长尾后，Lost Island等主题内容承担阶段性焕新作用，整体发展以稳定存量和周期回流为主。",
+      "rankPath": "本次位于iOS美国策略畅销榜第58名（首次进入本期榜单）。首发增长结束后已进入成熟运营，榜位以区间震荡为主，活动和版本上线时抬升、内容空档期回落，长期方向取决于老用户付费盘和持续获客效率。",
+      "turningPoints": "早期优势是把传统中世纪4X换成火枪、飞艇和蒸汽机械，素材多为大规模城堡战和奇观。进入长线后，Lost Island包装把用户注意力移到海岛、遗迹、巨兽和冒险角色，让八年老产品不只重复“升级城堡”；底层联盟战和付费成长没有改变。公开资料不足以证明某次海岛版本单独令榜位暴涨，因此这里把它记录为内容与素材的长期迁移，而非瞬时翻盘。",
+      "creative": "火枪手、蒸汽飞艇、城堡与巨兽，常用外层钩子集中在“火枪时代／蒸汽朋克”。",
+      "watch": "重点观察“火枪时代／蒸汽朋克”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
+    },
+    "sourceAudit": {
+      "reviewedAt": "2026-09-07",
+      "status": "已复核",
+      "confidence": "中",
+      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
+      "changeReason": "商店描述与当前商店图同现有标签基本一致，保留原口径。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1274354704",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.diandian.gog&hl=en_US&gl=US",
+          "type": "primary"
+        }
+      ]
+    },
+    "lifecycleAudit": {
+      "reviewedAt": "2026-09-07",
+      "confidence": "中",
+      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
+      "evidenceNote": "能确认上架、当前素材与至少一个历史节点；缺少完整投放曲线的部分按保守口径表述。",
+      "sources": [
+        {
+          "label": "Apple App Store美国区商品页",
+          "url": "https://apps.apple.com/us/app/id1274354704",
+          "type": "primary"
+        },
+        {
+          "label": "Google Play美国区商品页（描述与当前商店图）",
+          "url": "https://play.google.com/store/apps/details?id=com.diandian.gog&hl=en_US&gl=US",
+          "type": "primary"
+        }
+      ]
+    }
+  },
+  "59": {
     "summary": "趋势：2017年上线后以丧尸基地和联盟4X建立长期用户盘，前期与商店素材则持续用防御塔、左右分路和数字选择提供即时反馈。；关键转折：上线早期的卖点是写实废土、基地生产线、英雄和跨服联盟战争，属于典型长线丧尸4X。；主力素材：左右分路、数字强弱选择和丧尸追击；产品内还有炮塔布阵、基地升级、装甲车辆与联盟生存战，核心外层钩子集中在“数字选择／丧尸塔防”。",
     "sections": {
       "development": "2017年上线后以丧尸基地和联盟4X建立长期用户盘，前期与商店素材则持续用防御塔、左右分路和数字选择提供即时反馈。轻度塔防/闯关负责补充新增，服务器战争与基地成长负责成熟期收入，目前整体属于活动和老服生态驱动的长尾阶段。",
-      "rankPath": "本次位于iOS美国策略畅销榜第58名（较前一榜单上升1位）。2018年丧尸4X已进入成熟长尾，当前iOS第59；数字门/塔防素材用于持续补量，老服联盟和赛季决定回流峰。",
+      "rankPath": "本次位于iOS美国策略畅销榜第59名（较前一榜单持平）。2018年丧尸4X已进入成熟长尾，当前iOS第59；数字门/塔防素材用于持续补量，老服联盟和赛季决定回流峰。",
       "turningPoints": "上线早期的卖点是写实废土、基地生产线、英雄和跨服联盟战争，属于典型长线丧尸4X。多年后获量素材明显轻量化：角色在左右路线做数字选择、车辆撞开尸群、炮塔逐级升级；产品也把防御塔正式前置到商品说明，以提供至少一部分真实承接。它的成熟转折并非某次赛季，而是从“展示宏观国战”转为“先让用户解决一小波尸潮”，再导入旧有付费系统。",
       "creative": "左右分路、数字强弱选择和丧尸追击；产品内还有炮塔布阵、基地升级、装甲车辆与联盟生存战，核心外层钩子集中在“数字选择／丧尸塔防”。",
       "watch": "重点观察“丧尸末日／基地建设”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
@@ -2946,53 +2993,6 @@
           "label": "Last Shelter当前塔防定位",
           "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.more.dayzsurvival.gp",
           "type": "lifecycle-analysis"
-        }
-      ]
-    }
-  },
-  "59": {
-    "summary": "趋势：2017年以火枪时代、蒸汽飞艇和城堡联盟战建立辨识度，后续通过Lost Island副标题和海岛探险扩展旧世界观；关键转折：成熟素材从纯城堡军团转向遗迹、岛屿、巨兽和角色冒险，给长期4X增加探索感，但榜位仍主要受版本与联盟活动推动；主力素材：火枪手、蒸汽飞艇、海岛遗迹、巨兽与城堡战争。",
-    "sections": {
-      "development": "2017年上线后用火枪时代、蒸汽飞艇和城堡战争建立差异化4X题材，随后依靠联盟、新服和长期活动维持规模。进入成熟长尾后，Lost Island等主题内容承担阶段性焕新作用，整体发展以稳定存量和周期回流为主。",
-      "rankPath": "本次位于iOS美国策略畅销榜第59名（首次进入本期榜单）。首发增长结束后已进入成熟运营，榜位以区间震荡为主，活动和版本上线时抬升、内容空档期回落，长期方向取决于老用户付费盘和持续获客效率。",
-      "turningPoints": "早期优势是把传统中世纪4X换成火枪、飞艇和蒸汽机械，素材多为大规模城堡战和奇观。进入长线后，Lost Island包装把用户注意力移到海岛、遗迹、巨兽和冒险角色，让八年老产品不只重复“升级城堡”；底层联盟战和付费成长没有改变。公开资料不足以证明某次海岛版本单独令榜位暴涨，因此这里把它记录为内容与素材的长期迁移，而非瞬时翻盘。",
-      "creative": "火枪手、蒸汽飞艇、城堡与巨兽，常用外层钩子集中在“火枪时代／蒸汽朋克”。",
-      "watch": "重点观察“火枪时代／蒸汽朋克”素材的持续买量效率、联盟赛季内容对老服回流的拉动，以及版本间歇期的榜位稳定性。"
-    },
-    "sourceAudit": {
-      "reviewedAt": "2026-09-07",
-      "status": "已复核",
-      "confidence": "中",
-      "basis": "核心玩法以Google Play描述为准；主力素材以当前商店图、官方宣传和可公开核验的广告/创意资料交叉判断。",
-      "changeReason": "商店描述与当前商店图同现有标签基本一致，保留原口径。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1274354704",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.diandian.gog&hl=en_US&gl=US",
-          "type": "primary"
-        }
-      ]
-    },
-    "lifecycleAudit": {
-      "reviewedAt": "2026-09-07",
-      "confidence": "中",
-      "scope": "从上架/测试期起，区分产品改动、获量素材迁移、IP/版本节点与榜位阶段；不使用通用增长模板。",
-      "evidenceNote": "能确认上架、当前素材与至少一个历史节点；缺少完整投放曲线的部分按保守口径表述。",
-      "sources": [
-        {
-          "label": "Apple App Store美国区商品页",
-          "url": "https://apps.apple.com/us/app/id1274354704",
-          "type": "primary"
-        },
-        {
-          "label": "Google Play美国区商品页（描述与当前商店图）",
-          "url": "https://play.google.com/store/apps/details?id=com.diandian.gog&hl=en_US&gl=US",
-          "type": "primary"
         }
       ]
     }

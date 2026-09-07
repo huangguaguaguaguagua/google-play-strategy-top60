@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20260907a";
+const CACHE_VERSION = "20260907b";
 const MARKET_BRIEF_PATH = "data/market-brief-20260907.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
 const GLOBAL_REVENUE_PATH = "data/sensortower-global-strategy-revenue-latest.json";
@@ -17,7 +17,7 @@ const STORE_CONFIGS = {
     title: "Google Play 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · Android",
     footer: "Google Play US Strategy · TOP60 · Direct capture 2026-09-07",
-    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-09-07 09:29:19（北京时间）。AppBrain仅作交叉检查（其9月6日榜与直连榜重合60款、同位33款、最大位差6位），未覆盖直连结果。",
+    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-09-07 09:53:18（北京时间）。AppBrain仅作交叉检查（其9月6日榜与直连榜重合60款、同位31款、最大位差6位），未覆盖直连结果。",
     baselineCopy: "<strong>状态窗口：</strong>2026-06-09 → 2026-09-07。近90天内上架且当前进入TOP60的6款产品标为新上榜；较老产品因缺少精确基准快照，暂不判断飙升。",
     games: "data/games-20260907.json",
     enrichment: "data/enrichment-20260907.json",
@@ -41,7 +41,7 @@ const STORE_CONFIGS = {
     title: "App Store 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · iPhone",
     footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-09-07",
-    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60；RSS更新时间为2026-09-06 18:29:27（美国太平洋时间），换算北京时间为9月7日。",
+    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60；RSS更新时间为2026-09-06 18:52:53（美国太平洋时间），换算北京时间为9月7日。",
     baselineCopy: "<strong>状态窗口：</strong>2026-06-09 → 2026-09-07。近90天内上架且当前进入TOP60的2款产品标为新上榜；iOS精确排名历史从2026-08-19开始积累，较老产品暂不判断飙升。",
     games: "data/ios-games-20260907.json",
     enrichment: "data/ios-enrichment-20260907.json",
