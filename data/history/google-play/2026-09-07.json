@@ -4,7 +4,7 @@
   "category": "Games > Strategy > Top Grossing",
   "date": "2026-09-07",
   "dataDate": "2026-09-07",
-  "sourceCapturedAt": "2026-09-07T09:29:19+08:00",
+  "sourceCapturedAt": "2026-09-07T09:53:18+08:00",
   "sourceUrl": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
   "sourceEndpoint": "https://play.google.com/_/PlayStoreUi/data/batchexecute?rpcids=vyAe2&source-path=%2Fstore%2Fapps%2Fcategory%2FGAME_STRATEGY&hl=en_US&gl=US&rt=c",
   "sourceMethod": "Google Play PlayStoreUi / vyAe2 / topgrossing / GAME_STRATEGY / US",
@@ -15,7 +15,7 @@
     "sourceLastUpdated": "September 6, 2026",
     "rowCount": 60,
     "overlapCount": 60,
-    "sameRankCount": 33,
+    "sameRankCount": 31,
     "maxAbsRankDifference": 6,
     "note": "仅用于交叉检查，不覆盖Google Play直连排名、日期或产品字段。"
   },
@@ -178,21 +178,21 @@
     },
     {
       "rank": 27,
+      "packageName": "com.snowprintstudios.tacticus",
+      "gameName": "Warhammer 40,000: Tacticus ™",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.snowprintstudios.tacticus&hl=en_US&gl=US"
+    },
+    {
+      "rank": 28,
       "packageName": "com.topwar.gp",
       "gameName": "Top War: Battle Game",
       "sourceUrl": "https://play.google.com/store/apps/details?id=com.topwar.gp&hl=en_US&gl=US"
     },
     {
-      "rank": 28,
+      "rank": 29,
       "packageName": "com.farlightgames.warline.gp.global",
       "gameName": "Warline: Sniper Strike",
       "sourceUrl": "https://play.google.com/store/apps/details?id=com.farlightgames.warline.gp.global&hl=en_US&gl=US"
-    },
-    {
-      "rank": 29,
-      "packageName": "com.snowprintstudios.tacticus",
-      "gameName": "Warhammer 40,000: Tacticus ™",
-      "sourceUrl": "https://play.google.com/store/apps/details?id=com.snowprintstudios.tacticus&hl=en_US&gl=US"
     },
     {
       "rank": 30,

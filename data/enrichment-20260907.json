@@ -457,25 +457,25 @@
       "source": "https://www.camelgames.com/game/war_and_order"
     },
     "27": {
+      "en": "Snowprint Studios / MTG",
+      "cn": "Snowprint Studios（中文暂译：雪印工作室；MTG 控股）",
+      "confidence": "已确认",
+      "basis": "Snowprint 为 Tacticus 研发方，MTG 已取得多数股权。",
+      "source": "https://snowprintstudios.com/1632-2/"
+    },
+    "28": {
       "en": "RiverGame / Beijing RiverGame Technology",
       "cn": "北京江娱互动（RiverGame）",
       "confidence": "已确认",
       "basis": "Top War 为 RiverGame/江娱互动代表产品。",
       "source": "https://www.rivergame.net/zh/about.html"
     },
-    "28": {
+    "29": {
       "en": "Lilith Games / Farlight Games / Powerfantasy HK Limited",
       "cn": "上海莉莉丝网络（Farlight 海外发行品牌；Powerfantasy 香港主体）",
       "confidence": "已确认",
       "basis": "Google Play 包名和主体指向 Powerfantasy；Farlight 官方商店直接收录 Warline，公开发行信息确认 Farlight 为莉莉丝旗下品牌，故集团归属统一至莉莉丝。",
       "source": "https://store.farlightgames.com/powerfantasy/warline"
-    },
-    "29": {
-      "en": "Snowprint Studios / MTG",
-      "cn": "Snowprint Studios（中文暂译：雪印工作室；MTG 控股）",
-      "confidence": "已确认",
-      "basis": "Snowprint 为 Tacticus 研发方，MTG 已取得多数股权。",
-      "source": "https://snowprintstudios.com/1632-2/"
     },
     "30": {
       "en": "FunPlus / KingsGroup",
