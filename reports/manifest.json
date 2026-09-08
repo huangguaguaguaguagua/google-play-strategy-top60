@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-08",
+      "title": "Google仅一进一出；iOS换榜有限但三款老产品出现20位以上跳升",
+      "summary": "与9月7日快照相比，Google Play由Supremacy: World War 3进入#60、Last Fortress掉榜；iOS由Top Heroes和Overgeared Hero回榜，The Tower和Fire Emblem Heroes掉榜。Game of Thrones、Last Shelter与Forge Master在iOS分别上升27、21和20位，并在Google同步小幅上行；Clash Royale在Minion Academy开启后双端上涨。",
+      "markdown": "reports/2026-09-08.md",
+      "json": "data/market-brief-20260908.json"
+    },
     {
       "date": "2026-09-07",
       "title": "周末后Google两进两出、iOS五进五出；War and Order与Tacticus双端靠拢",
