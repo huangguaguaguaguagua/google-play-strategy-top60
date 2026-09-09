@@ -1,7 +1,7 @@
 "use strict";
 
-const CACHE_VERSION = "20260908a";
-const MARKET_BRIEF_PATH = "data/market-brief-20260908.json";
+const CACHE_VERSION = "20260909a";
+const MARKET_BRIEF_PATH = "data/market-brief-20260909.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
 const GLOBAL_REVENUE_PATH = "data/sensortower-global-strategy-revenue-latest.json";
 const STORE_CONFIGS = {
@@ -11,18 +11,18 @@ const STORE_CONFIGS = {
     mark: "GP",
     storeName: "Google Play",
     platform: "Android",
-    date: "2026-09-08",
-    baselineDate: "2026-06-10",
+    date: "2026-09-09",
+    baselineDate: "2026-06-11",
     eyebrow: "GOOGLE PLAY · ANDROID · STRATEGY · TOP GROSSING",
     title: "Google Play 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · Android",
-    footer: "Google Play US Strategy · TOP60 · Direct capture 2026-09-08",
-    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-09-08 10:02:25（北京时间）。AppBrain仅作交叉检查（其9月7日榜与直连榜重合59款、同位20款、最大位差10位），未覆盖直连结果。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-06-10 → 2026-09-08。近90天内上架且当前进入TOP60的6款产品标为新上榜；较老产品因缺少精确基准快照，暂不判断飙升。",
-    games: "data/games-20260908.json",
-    enrichment: "data/enrichment-20260908.json",
-    trends: "data/trends-20260908.json",
-    counterpartGames: "data/ios-games-20260908.json",
+    footer: "Google Play US Strategy · TOP60 · Direct capture 2026-09-09",
+    method: "直接请求Google Play美国区 GAME_STRATEGY 的 topgrossing 榜单接口，完整校验TOP60；本次直连抓取时间为2026-09-09 09:24:12（北京时间）。AppBrain仅作交叉检查（其9月8日榜与直连榜重合58款、同位21款、最大位差2位），未覆盖直连结果。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-06-11 → 2026-09-09。近90天内上架且当前进入TOP60的5款产品标为新上榜；较老产品因缺少精确基准快照，暂不判断飙升。",
+    games: "data/games-20260909.json",
+    enrichment: "data/enrichment-20260909.json",
+    trends: "data/trends-20260909.json",
+    counterpartGames: "data/ios-games-20260909.json",
     counterpartRankLabel: "iOS",
     assetManifest: "assets/manifest.json",
     linkHeader: "Google Play 链接",
@@ -35,18 +35,18 @@ const STORE_CONFIGS = {
     mark: "AS",
     storeName: "App Store",
     platform: "iPhone · iOS",
-    date: "2026-09-08",
-    baselineDate: "2026-06-10",
+    date: "2026-09-09",
+    baselineDate: "2026-06-11",
     eyebrow: "APPLE APP STORE · iPHONE · STRATEGY · TOP GROSSING",
     title: "App Store 美国区策略游戏畅销榜 TOP60",
     headerMeta: "每日跟踪 · 美国区 · iPhone",
-    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-09-08",
-    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60；RSS更新时间为2026-09-07 19:01:52（美国太平洋时间），换算北京时间为9月8日。",
-    baselineCopy: "<strong>状态窗口：</strong>2026-06-10 → 2026-09-08。近90天内上架且当前进入TOP60的2款产品标为新上榜；iOS精确排名历史从2026-08-19开始积累，较老产品暂不判断飙升。",
-    games: "data/ios-games-20260908.json",
-    enrichment: "data/ios-enrichment-20260908.json",
-    trends: "data/ios-trends-20260908.json",
-    counterpartGames: "data/games-20260908.json",
+    footer: "Apple App Store US iPhone Strategy · TOP60 · Updated 2026-09-09",
+    method: "Apple App Store 美国区 iPhone Games > Strategy 畅销榜，按Apple官方公开RSS同口径收录TOP60；RSS更新时间为2026-09-08 18:24:19（美国太平洋时间），换算北京时间为9月9日。",
+    baselineCopy: "<strong>状态窗口：</strong>2026-06-11 → 2026-09-09。近90天内上架且当前进入TOP60的2款产品标为新上榜；iOS精确排名历史从2026-08-19开始积累，较老产品暂不判断飙升。",
+    games: "data/ios-games-20260909.json",
+    enrichment: "data/ios-enrichment-20260909.json",
+    trends: "data/ios-trends-20260909.json",
+    counterpartGames: "data/games-20260909.json",
     counterpartRankLabel: "Google",
     assetManifest: "assets/ios-manifest.json",
     linkHeader: "App Store 链接",
@@ -156,6 +156,8 @@ function productKey(name) {
     "marvel snap hero card game": "marvel snap",
     "top force commander": "top force",
     "kingdom guard tower defense td": "kingdom guard tower defense",
+    "rise of castles ice and fire": "rise of castles",
+    "rise of castles fire and war": "rise of castles",
   };
   return aliases[normalized] || normalized;
 }

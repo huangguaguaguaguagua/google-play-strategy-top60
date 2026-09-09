@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-09",
+      "title": "Google三进三出、iOS五进五出；Sea War双端共同改善",
+      "summary": "与9月8日快照相比，Google Play由Sea War、Last Fortress和Ant Legion进入/回榜，Lordrush、Titan Rush与Forge of Empires掉榜；iOS有Fire Emblem、Vikings、Lords Mobile、Draft Showdown及Rise of Castles进入/回榜，另有5款掉榜。Sea War同时进入Google并在iOS上升16位，是今日最值得连续验证的共同信号。",
+      "markdown": "reports/2026-09-09.md",
+      "json": "data/market-brief-20260909.json"
+    },
     {
       "date": "2026-09-08",
       "title": "Google仅一进一出；iOS换榜有限但三款老产品出现20位以上跳升",
