@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-10",
+      "title": "Lordrush双端重回前25，Pokémon Champions首进iOS #19",
+      "summary": "与9月9日快照相比，Google Play由Lordrush、Titan Rush和Draft Showdown进入/回榜，Sea of Conquest、Supremacy与Ant Legion掉榜；iOS由Pokémon Champions、Last Fortress、F1 Clash和Galaxy Defense进入/回榜，Vikings、Kingdom Guard、Wild Rift与Top Heroes掉榜。Lordrush双端前25与Pokémon Champions首进#19是今日最值得连续验证的信号。",
+      "markdown": "reports/2026-09-10.md",
+      "json": "data/market-brief-20260910.json"
+    },
     {
       "date": "2026-09-09",
       "title": "Google三进三出、iOS五进五出；Sea War双端共同改善",
