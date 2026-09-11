@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-11",
+      "title": "Google成员零换榜，Watcher of Realms回到iOS #20",
+      "summary": "与9月10日快照相比，Google Play完整60款成员不变、最大位移仅3位；iOS由Watcher of Realms、Wild Rift、Top Heroes、Coop TD和DC Dark Legion进入/回榜，Age of Empires、Rise of Castles、F1 Clash、Warline和Galaxy Defense掉榜。Dragon Traveler +19、PUBG +11，Pokémon Champions与Tacticus均下降14位，iPhone端是今日波动中心。",
+      "markdown": "reports/2026-09-11.md",
+      "json": "data/market-brief-20260911.json"
+    },
     {
       "date": "2026-09-10",
       "title": "Lordrush双端重回前25，Pokémon Champions首进iOS #19",
