@@ -1,0 +1,508 @@
+{
+  "date": "2026-09-14",
+  "timezone": "Asia/Shanghai",
+  "title": "Pokémon Champions跨端分化；Vikings与Star Trek榜尾回归",
+  "summary": "较9月11日上一工作日快照，Google Play两进两出：Pokémon Champions首次进入#58、Vikings回榜#60，Galaxy Defense与Last Fortress掉榜；iOS六进六出，Age of Empires回榜#28、Star Trek末位#60。Top Heroes在Google升22位、Tacticus在iOS升23位；Wild Rift iOS跌27位而Google升6位。90天新品Google 5款、iOS 2款，缺少6月16日同口径基准，不判断较老产品的90天飙升。",
+  "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与对策略品类的影响综合排序；不是第三方阅读量或舆情指数。",
+  "iconBundle": "assets/market-icons-20260914.json",
+  "rankingSources": {
+    "googlePlay": "data/games-20260914.json",
+    "ios": "data/ios-games-20260914.json"
+  },
+  "previousRankingSources": {
+    "googlePlay": "data/games-20260911.json",
+    "ios": "data/ios-games-20260911.json"
+  },
+  "rankingDynamics": {
+    "googlePlay": {
+      "label": "Google Play · Android",
+      "sourceTime": "北京时间 2026-09-14 09:53:49 直连抓取",
+      "anchors": "榜单锚点：#1 Kingshot · #25 Top Heroes: Kingdom Saga · #60 Vikings: War of Clans PvP",
+      "products": [
+        {
+          "gameName": "Pokémon Champions",
+          "productId": "jp.pokemon.pokemonchampions",
+          "iconKey": "googlePlay:jp.pokemon.pokemonchampions",
+          "tone": "entry",
+          "changeLabel": "首次进入 · #58",
+          "analysis": "Google首次进入#58，但iOS从上期#33掉榜；美国Google商品页released为6月11日，早于90天窗口，不能误作近90天新品。9月8日竞技规则换季是已知节点，尚无证据证明其驱动今天的Android付费。观察能否脱离后十名。"
+        },
+        {
+          "gameName": "Vikings: War of Clans PvP",
+          "productId": "com.plarium.vikings",
+          "iconKey": "googlePlay:com.plarium.vikings",
+          "tone": "entry",
+          "changeLabel": "回榜 · #60",
+          "analysis": "成熟4X战争游戏回到Google末位#60，同时iOS回榜#56，是双端榜尾共同出现；两个末段位置仍有立即掉榜风险，周末后的短时付费波动尚待确认。"
+        },
+        {
+          "gameName": "Galaxy Defense: Fortress TD",
+          "productId": "com.cyberjoy.galaxydefense",
+          "iconKey": "googlePlay:com.cyberjoy.galaxydefense",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#53",
+          "analysis": "上期Google #53、这次退出，iOS同样榜外；9月10日还曾出现在iOS末位，跨端末段反复进出不支持稳定增长判断。"
+        },
+        {
+          "gameName": "Last Fortress: Underground",
+          "productId": "com.more.lastfortress.gp",
+          "iconKey": "googlePlay:com.more.lastfortress.gp",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#60",
+          "analysis": "上期Google压线#60后退出，iOS也从#51掉榜。两端同时离开TOP60是下一个快照需要验证的风险信号，不能凭两个快照推断长期衰退。"
+        },
+        {
+          "gameName": "Top Heroes: Kingdom Saga",
+          "productId": "com.greenmushroom.boomblitz.gp",
+          "iconKey": "googlePlay:com.greenmushroom.boomblitz.gp",
+          "tone": "up",
+          "changeLabel": "+22 · #25",
+          "analysis": "从#47跃升至#25，iOS也升至#35，两端中段回升；周末跨度比常规单日长，尚无与这一跃升匹配的独立版本或投放证据，先看能否连续留在前40。"
+        },
+        {
+          "gameName": "Call of Dragons",
+          "productId": "com.farlightgames.samo.gp",
+          "iconKey": "googlePlay:com.farlightgames.samo.gp",
+          "tone": "up",
+          "changeLabel": "+8 · #50",
+          "analysis": "升8位至#50但仍在后十名；iOS今日不在同口径TOP60，因此暂只有Android末段上行信号，不能单凭这次跨周末回弹归因联盟活动。"
+        },
+        {
+          "gameName": "Sea War: Uboat Raid",
+          "productId": "com.bw.ud.googleplay",
+          "iconKey": "googlePlay:com.bw.ud.googleplay",
+          "tone": "up",
+          "changeLabel": "+8 · #51",
+          "analysis": "Google升8位至#51，iOS却跌16位至#58；同一产品跨端方向相反且双端均贴近榜尾，不应写为市场共同改善。"
+        },
+        {
+          "gameName": "Doomsday:The Seven Deadly Sins",
+          "productId": "com.igg.android.doomsdaylastsurvivors",
+          "iconKey": "googlePlay:com.igg.android.doomsdaylastsurvivors",
+          "tone": "down",
+          "changeLabel": "−15 · #57",
+          "analysis": "Google下滑15位至#57，接近掉榜线；周末后的单次快照不足以确认用户或商业化转弱，未来两次更新若继续后十才提升风险等级。"
+        },
+        {
+          "gameName": "Kingdom Guard: Tower Defense",
+          "productId": "com.tap4fun.odin.kingdomguard",
+          "iconKey": "googlePlay:com.tap4fun.odin.kingdomguard",
+          "tone": "down",
+          "changeLabel": "−9 · #59",
+          "analysis": "Google下降9位至#59，距离出榜仅一名；其塔防与联盟经营的长期循环不能由本次后段波动评价，先检查下一工作日是否回到#50以内。"
+        },
+        {
+          "gameName": "MARVEL SNAP: Hero Strategy CCG",
+          "productId": "com.nvsgames.snap",
+          "iconKey": "googlePlay:com.nvsgames.snap",
+          "tone": "down",
+          "changeLabel": "−7 · #56",
+          "analysis": "Google下降7位至#56；官方9月10日调整Venus、Scorpion等卡牌，但现有证据只能说明平衡变更与榜位相邻，不能推断调整造成收入下滑。"
+        }
+      ]
+    },
+    "ios": {
+      "label": "App Store · iPhone/iOS",
+      "sourceTime": "Apple RSS 北京时间 2026-09-14（源更新：2026-09-13T18:53:58-07:00）",
+      "anchors": "榜单锚点：#1 Pokémon GO · #25 Top Lords · #60 Star Trek Fleet Command",
+      "products": [
+        {
+          "gameName": "Age of Empires Mobile",
+          "productId": "6476261995",
+          "iconKey": "ios:6476261995",
+          "tone": "entry",
+          "changeLabel": "回榜 · #28",
+          "analysis": "由上期榜外回到iOS #28，Google仍在后段；iPhone回归中前段优于常见榜尾脉冲，周末跨度内具体驱动未核实，至少再看两个快照能否守住前40。"
+        },
+        {
+          "gameName": "Warline: Sniper Strike",
+          "productId": "6742809194",
+          "iconKey": "ios:6742809194",
+          "tone": "entry",
+          "changeLabel": "回榜 · #49",
+          "analysis": "近90天上架的Warline回到iOS #49，Google仍在榜；双端继续有曝光但iPhone靠近后十，回榜能否留存需要观察到9月16日。"
+        },
+        {
+          "gameName": "Overgeared Hero: Merge RPG",
+          "productId": "6755585789",
+          "iconKey": "ios:6755585789",
+          "tone": "entry",
+          "changeLabel": "回榜 · #52",
+          "analysis": "iOS回榜#52，游戏以合成与角色成长经营为主、曾在项目榜尾进出；本次仍属高风险末段回补，暂没有已核验的版本因果。"
+        },
+        {
+          "gameName": "Idle Heroes - Idle Games",
+          "productId": "1153461915",
+          "iconKey": "ios:1153461915",
+          "tone": "entry",
+          "changeLabel": "回榜 · #54",
+          "analysis": "2017年老产品重回iOS #54，属于成熟经营产品的榜尾回归，而非90天新品；未找到与今日排名直接对应的发行节点，先验证是否维持两天。"
+        },
+        {
+          "gameName": "Vikings: War of Clans PvP",
+          "productId": "966810173",
+          "iconKey": "ios:966810173",
+          "tone": "entry",
+          "changeLabel": "回榜 · #56",
+          "analysis": "回到iOS #56且Google同日回榜#60，双端在榜是共同现象、但都处末段；不能从两次入榜直接推出收入持续增长。"
+        },
+        {
+          "gameName": "Star Trek Fleet Command",
+          "productId": "1427744264",
+          "iconKey": "ios:1427744264",
+          "tone": "entry",
+          "changeLabel": "回榜 · #60",
+          "analysis": "回到iOS末位#60。Scopely 9月12日Star Trek Day最后一日活动与9月14日代币商店截止已获官方确认；时间相邻但仍需下一工作日验证是否仅为活动尾声峰值。"
+        },
+        {
+          "gameName": "Pokémon Champions",
+          "productId": "6741503079",
+          "iconKey": "ios:6741503079",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#33",
+          "analysis": "iOS上期#33后退出，Google却首次进入#58；官方9月8日启用Regulation Set M-C，跨端出现相反变化，未有证据认定规则调整解释了iOS退出。"
+        },
+        {
+          "gameName": "Game of Thrones: Conquest ™",
+          "productId": "1035712810",
+          "iconKey": "ios:1035712810",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#41",
+          "analysis": "从上期#41离开iOS TOP60，Google仍在#44附近；双端排名分化但Android中段仍在榜，需等iOS连续离榜再判断风险。"
+        },
+        {
+          "gameName": "Last Fortress: Underground",
+          "productId": "1540557475",
+          "iconKey": "ios:1540557475",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#51",
+          "analysis": "上期#51后掉榜，Google也由末位退出；成熟联盟SLG的双端同日离榜值得跟踪，但周末累计变动不能等同单日收入降幅。"
+        },
+        {
+          "gameName": "Draft Showdown",
+          "productId": "6743368869",
+          "iconKey": "ios:6743368869",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#54",
+          "analysis": "上期#54后掉榜，Google仍在榜尾附近；轻量战术合成产品单端短暂上榜未获得持续位置，未来若Google同向退出需重新评估。"
+        },
+        {
+          "gameName": "Coop TD: Together",
+          "productId": "6503702666",
+          "iconKey": "ios:6503702666",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#55",
+          "analysis": "上期iOS #55、这次离榜，9月10日Google商品页更新内容未在iOS形成可确认的持续TOP60承接；跨端不同步，不能据此否定版本长期表现。"
+        },
+        {
+          "gameName": "Last Shelter: Survival",
+          "productId": "1342290011",
+          "iconKey": "ios:1342290011",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#57",
+          "analysis": "上期iOS #57后离榜，Google同名产品仍在榜中段；成熟SLG的iPhone端榜尾位置未延续，目前只记录设备侧分化。"
+        },
+        {
+          "gameName": "Warhammer 40,000: Tacticus ™",
+          "productId": "1599937506",
+          "iconKey": "ios:1599937506",
+          "tone": "up",
+          "changeLabel": "+23 · #36",
+          "analysis": "从上期#59回升23位至#36，摆脱立即掉榜区；没有与本轮幅度直接对应的官方活动证据，先看本周能否稳定在前40。"
+        },
+        {
+          "gameName": "Lands of Jail",
+          "productId": "6738469826",
+          "iconKey": "ios:6738469826",
+          "tone": "up",
+          "changeLabel": "+16 · #44",
+          "analysis": "iOS升16位至#44，Google仍在前段；Android与iPhone差距依然显著，iOS中后段的反弹需继续确认。"
+        },
+        {
+          "gameName": "War and Order",
+          "productId": "1071744151",
+          "iconKey": "ios:1071744151",
+          "tone": "up",
+          "changeLabel": "+12 · #27",
+          "analysis": "iOS上涨12位至#27，Google仍在中段；成熟4X跨端排名更接近，但单次工作日快照不构成经营拐点。"
+        },
+        {
+          "gameName": "League of Legends: Wild Rift",
+          "productId": "1480616990",
+          "iconKey": "ios:1480616990",
+          "tone": "down",
+          "changeLabel": "−27 · #53",
+          "analysis": "从#26下降27位至#53，Google却升6位到#34；Riot 9月9日7.2e是英雄与装备平衡更新，尚不能作为跨端相反榜位的确定原因。MOBA仅按Apple榜类目收录，不纳入核心4X收入子集。"
+        },
+        {
+          "gameName": "Fire Emblem Heroes",
+          "productId": "1181774280",
+          "iconKey": "ios:1181774280",
+          "tone": "down",
+          "changeLabel": "−20 · #51",
+          "analysis": "iOS下跌20位至#51，逼近后十名；任天堂战术RPG存量内容与角色活动不可凭本次排名推断强弱，后续观察是否继续滑落。"
+        },
+        {
+          "gameName": "Watcher of Realms - US",
+          "productId": "6741674823",
+          "iconKey": "ios:6741674823",
+          "tone": "down",
+          "changeLabel": "−17 · #37",
+          "analysis": "上期回榜#20后下跌17位至#37，iPhone端首个高位回归未完全维持；仍在榜中段，不能将周末后回落归因为活动结束。"
+        }
+      ]
+    }
+  },
+  "marketNews": [
+    {
+      "category": "IP活动 / 双端回榜",
+      "date": "2026-09-12",
+      "title": "Star Trek Fleet Command五日Star Trek Day迎来最终日",
+      "summary": "Scopely官方公布To Boldly Go敌方单位挑战、ST60代币与船员碎片，代币商店和兑换码持续至9月14日。",
+      "impact": "该作iOS今日回榜#60，Vikings同日双端回榜；活动与回榜时间相邻，仍需验证是否能在活动结束后留榜。",
+      "source": "Scopely官方",
+      "url": "https://startrekfleetcommand.com/news/star-trek-day-day-5-to-boldly-go/"
+    },
+    {
+      "category": "IP联动 / 长线运营",
+      "date": "2026-09-09",
+      "title": "Clash of Clans推出Equipment Blast勋章活动",
+      "summary": "Supercell公布9月9日至22日的WWE主题战斗活动，参与多人对战得Tag Tickets、Champ Medals并兑换装备、宝箱与临时兵种。",
+      "impact": "CoC仍居双端头部；这是可验证的长线活动节点，但名次高位不能拆算该活动收入。",
+      "source": "Supercell官方",
+      "url": "https://supercell.com/en/games/clashofclans/blog/news/equipment-blast-medal-event/"
+    },
+    {
+      "category": "竞技规则 / 跨端分化",
+      "date": "2026-09-02（9月8日生效）",
+      "title": "Pokémon Champions启用Regulation Set M-C",
+      "summary": "宝可梦官方宣布9月8日至12月1日适用新规则，加入多种Mega Evolution与24只新可用宝可梦。",
+      "impact": "今天Google首次入榜#58、iOS掉榜；规则更新与本轮跨端差异时间相近，但不足以确定其商业化因果。",
+      "source": "Pokémon官方",
+      "url": "https://www.pokemon.com/us/news/get-ready-for-regulation-set-m-c-in-pokemon-champions"
+    },
+    {
+      "category": "卡牌平衡",
+      "date": "2026-09-10",
+      "title": "MARVEL SNAP调整Venus、Scorpion等卡牌",
+      "summary": "官方OTA下调Venus和Scorpion Brand New Day的力量，并调整Blink、Vulture、The Collector等卡牌。",
+      "impact": "Google下降至#56，iOS继续在榜；内容节点是真实的，但未提供足以解释日榜收入变化的材料。",
+      "source": "MARVEL SNAP官方",
+      "url": "https://marvelsnap.com/balance-update-september-10-2026/"
+    },
+    {
+      "category": "版本 / 跨端",
+      "date": "2026-09-09",
+      "title": "Wild Rift 7.2e重排Vi与Swain等英雄强度",
+      "summary": "Riot说明Vi、Swain削弱，Janna、Nautilus、Malphite获得增强，并对多件装备作平衡修订。",
+      "impact": "iOS跌27位至#53、Google升6位到#34；不同平台方向相反，不能把版本更新视为确定驱动。",
+      "source": "Riot Games官方",
+      "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-72e/"
+    },
+    {
+      "category": "全球收入月榜",
+      "date": "2026-09-04",
+      "title": "Sensor Tower公布8月全球手游收入TOP10",
+      "summary": "全球Apple App Store与Google Play手游消费者支出估算约65.7亿美元，Whiteout Survival全球总榜#3、Kingshot #7。",
+      "impact": "两款核心策略产品较7月各升1位，但官方未公开单品收入同比，不能由名次换算收入百分比。",
+      "source": "Sensor Tower官方",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026"
+    },
+    {
+      "category": "赛季 / 平衡",
+      "date": "2026-09-08",
+      "title": "Clash Royale九月平衡调整覆盖Hero Balloon与Freeze",
+      "summary": "Supercell公布Hero Balloon、Freeze等卡牌与法术平衡修改，配合9月赛季更新竞技环境。",
+      "impact": "Clash Royale继续在Google与iOS头部；后续对局生态变化与畅销榜位置须分开验证。",
+      "source": "Supercell官方",
+      "url": "https://supercell.com/en/games/clashroyale/blog/release-notes/september-balance-changes-2026/"
+    },
+    {
+      "category": "长线运营",
+      "date": "2026-09-04",
+      "title": "King of Avalon十周年活动持续至9月30日",
+      "summary": "FunPlus宣布整月周年节点，开放Merlin与传奇地点、遗物、拼图及兑换码等内容。",
+      "impact": "该作仍在Google榜，iOS未形成同步高位；应观察活动持续期内是否连续抬升，而非仅凭活动存在判断增收。",
+      "source": "FunPlus官方",
+      "url": "https://funplus.com/king-of-avalon-celebrates-10th-anniversary/"
+    },
+    {
+      "category": "新赛季",
+      "date": "2026-09-07",
+      "title": "Clash Royale Minion Academy引入新卡和赛季玩法",
+      "summary": "官方公布Minion Giant、Ice Wizard英雄、Album Event及2v2 League等9月内容。",
+      "impact": "与上述平衡公告构成同一产品不同内容节点；双端前十仍需过赛季首周后观察，不可把榜位当单品营收。",
+      "source": "Supercell官方",
+      "url": "https://supercell.com/en/games/clashroyale/blog/release-notes/new-season-minion-academy/"
+    },
+    {
+      "category": "合作塔防 / 离榜",
+      "date": "2026-09-10",
+      "title": "Coop TD商店更新加入Demon Legion与Deep Sea",
+      "summary": "Google Play官方商品页9月10日更新，列出Clara Liberation、Deep Sea挑战与Demon Legion守墙等内容。",
+      "impact": "该作由iOS上期#55离榜，版本时间相近但跨平台不一致，暂只列为运营观察、非收入原因。",
+      "source": "Google Play官方商品页",
+      "url": "https://play.google.com/store/apps/details?id=com.percent.aos.cooptd&hl=en_US&gl=US"
+    }
+  ],
+  "closing": [
+    {
+      "type": "判断",
+      "title": "周末后iOS换榜更密集，Google主要为榜尾换人",
+      "detail": "较9月11日有效快照，Google两进两出且Pokémon Champions仅#58、Vikings #60；iOS六进六出，Age of Empires回到#28。Scopely 9月12日Star Trek Day末期与Star Trek iOS #60回榜时间相邻，但榜尾位置不足以确认持续反弹。"
+    },
+    {
+      "type": "判断",
+      "title": "同一产品跨端走出相反方向",
+      "detail": "Pokémon Champions在Google首次入榜却从iOS退出，Wild Rift在Google升6位但iOS跌27位，Sea War Android升8位、iPhone跌16位；Pokémon规则更新、Wild Rift补丁提供背景而非确定榜位原因。"
+    },
+    {
+      "type": "判断",
+      "title": "长线4X仍守头部，局部名次不能替代全球收入",
+      "detail": "Kingshot、Whiteout Survival继续处于双端前列；Sensor Tower的8月全球策略子集维持全球总榜#7与#3，且CoC的WWE活动正进行。Google与iOS日榜波动应与该全球月度口径分开。"
+    },
+    {
+      "type": "关注",
+      "title": "9月15—16日：验证榜尾双端回归是否留存",
+      "detail": "Vikings需在Google与iOS同时维持TOP60，Star Trek需在9月14日代币商店关闭后仍留在iOS；若立即退出，按活动尾声/榜尾脉冲归档，不推断长期回升。"
+    },
+    {
+      "type": "关注",
+      "title": "9月16日前：核对Pokémon与Wild Rift的跨端落差",
+      "detail": "Google版Pokémon若脱离后十、iOS重新进榜，才视为跨端承接改善；Wild Rift观察iOS能否由#53回到前40，并区分7.2e补丁与日榜变化。"
+    },
+    {
+      "type": "关注",
+      "title": "本周后半段：辨认长期运营和单点回弹",
+      "detail": "结合CoC的Equipment Blast（至9月22日）与Clash Royale赛季，检查双端前列的延续性；Tacticus #36、Top Heroes Google #25若只保持一个快照，不升级为中期上升结论。"
+    }
+  ],
+  "globalStrategyRevenue": {
+    "schemaVersion": 2,
+    "reportId": "sensortower-worldwide-mobile-games-revenue-strategy-subset-2026-08",
+    "title": "Sensor Tower 全球收入榜 · 策略产品",
+    "period": "2026-08",
+    "periodLabel": "2026年8月",
+    "previousPeriod": "2026-07",
+    "publicationLabel": "2026年9月",
+    "estimateAsOf": "2026-09-04",
+    "checkedAt": "2026-09-07",
+    "source": "Sensor Tower",
+    "sourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
+    "previousPeriodSourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-july-2026",
+    "yearOverYearSourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2025",
+    "sourceEvidence": "Sensor Tower官方2026年8月全球手游收入TOP10图表，以及官方2026年7月、2025年8月报告",
+    "sourceTop10Archive": "data/sensortower-global-revenue-top10-202608.json",
+    "iconBundle": "assets/sensortower-strategy-icons-202608.json",
+    "downloadPath": "data/sensortower-global-strategy-revenue-202608.json",
+    "updatePolicy": "每个工作日仅检查Sensor Tower是否发布新一期官方全球收入月榜；发布后筛选其中核心策略产品并更新一次，未发布时不改月份或数值。",
+    "scope": {
+      "region": "全球",
+      "stores": "Apple App Store + Google Play",
+      "metric": "Sensor Tower估算的移动游戏消费者支出排名",
+      "displayPopulation": "Sensor Tower全球手游收入TOP10中的核心策略产品",
+      "strategyDefinition": "核心循环属于SLG、4X、城建生存、塔防或战术经营；不因商店多标签而纳入MOBA、体育、消除、派对、射击或RPG产品",
+      "sourceTop10Size": 10,
+      "strategyMatches": 2,
+      "isCompleteStrategyCategoryRanking": false,
+      "exclusions": "不含第三方Android商店",
+      "individualRevenueAmountsPublished": false,
+      "individualYoYPercentPublished": false
+    },
+    "marketSummary": {
+      "globalConsumerSpendingUsd": 6570000000,
+      "monthOverMonthPercent": -1.0,
+      "previousYearSameMonthConsumerSpendingUsd": 7150000000,
+      "yearOverYearPercentApprox": -8.1,
+      "yearOverYearCalculationNote": "以Sensor Tower公开的2026年8月65.7亿美元和2025年8月约71.5亿美元计算，因此只作为全市场约值，不代表单款游戏同比。",
+      "marketShares": [
+        {
+          "market": "美国",
+          "percent": 28.6
+        },
+        {
+          "market": "中国",
+          "qualifier": "仅iOS",
+          "percent": 16.7
+        },
+        {
+          "market": "日本",
+          "percent": 12.2
+        }
+      ]
+    },
+    "rankings": [
+      {
+        "rank": 3,
+        "gameName": "Whiteout Survival",
+        "publisher": "Century Games",
+        "strategyGenre": "4X生存策略",
+        "iconKey": "whiteout-survival",
+        "previousPeriodRank": 4,
+        "rankChange": 1,
+        "movement": "up",
+        "movementLabel": "较上月上升1位",
+        "yoyRevenuePercent": null,
+        "yoyRevenueLabel": "单品同比未公开"
+      },
+      {
+        "rank": 7,
+        "gameName": "Kingshot",
+        "publisher": "Century Games",
+        "strategyGenre": "塔防获量 + 城建4X",
+        "iconKey": "kingshot",
+        "previousPeriodRank": 8,
+        "rankChange": 1,
+        "movement": "up",
+        "movementLabel": "较上月上升1位",
+        "yoyRevenuePercent": null,
+        "yoyRevenueLabel": "单品同比未公开"
+      }
+    ],
+    "officialHighlights": [
+      "Whiteout Survival位列8月全球手游收入总榜第3，较7月第4名上升1位；Sensor Tower将Kingshot联动、Twin Star Adventure、State of Power和Winter Siege列为当月运营节点。",
+      "Kingshot位列全球手游收入总榜第7，较7月第8名上升1位；官方公开材料未披露对应的单品收入增幅或同比百分比。",
+      "本期全球收入TOP10仅有2款符合核心策略口径，不能据此宣称它们是完整的全球策略品类前两名。"
+    ],
+    "methodologyNote": "页面只展示Sensor Tower官方全球收入TOP10中的核心策略产品，并保留其全球总榜名次。逐款箭头和位数比较的是2026年7月至8月的榜位变化，不是收入同比。Sensor Tower公开材料未披露单款收入或单品同比百分比，因此不以排名变化换算收入增幅；页面所示约-8.1%仅为两期官方公开市场总额计算的全球手游市场同比。"
+  },
+  "status": {
+    "googlePlay": {
+      "top60": 60,
+      "newRelease90d": 5,
+      "surge90d": 0,
+      "baselineAvailable": false,
+      "baselineDate": "2026-06-16"
+    },
+    "ios": {
+      "top60": 60,
+      "newRelease90d": 2,
+      "surge90d": 0,
+      "baselineAvailable": false,
+      "baselineDate": "2026-06-16"
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play美国区策略畅销榜直连",
+      "url": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
+      "capturedAt": "2026-09-14T09:53:49+08:00"
+    },
+    {
+      "label": "Apple官方美国区iPhone策略畅销RSS",
+      "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
+      "updated": "2026-09-13T18:53:58-07:00",
+      "sourceDateBeijing": "2026-09-14"
+    },
+    {
+      "label": "Sensor Tower全球收入榜中的策略产品",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
+      "period": "2026-08",
+      "estimateAsOf": "2026-09-04"
+    }
+  ],
+  "downloads": {
+    "markdown": "reports/2026-09-14.md",
+    "json": "data/market-brief-20260914.json"
+  }
+}
