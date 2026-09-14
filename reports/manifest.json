@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-14",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-14",
+      "title": "Pokémon Champions跨端分化；Vikings与Star Trek榜尾回归",
+      "summary": "较9月11日上一工作日快照，Google Play两进两出：Pokémon Champions首次进入#58、Vikings回榜#60，Galaxy Defense与Last Fortress掉榜；iOS六进六出，Age of Empires回榜#28、Star Trek末位#60。Top Heroes在Google升22位、Tacticus在iOS升23位；Wild Rift iOS跌27位而Google升6位。90天新品Google 5款、iOS 2款，缺少6月16日同口径基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-09-14.md",
+      "json": "data/market-brief-20260914.json"
+    },
     {
       "date": "2026-09-11",
       "title": "Google成员零换榜，Watcher of Realms回到iOS #20",
