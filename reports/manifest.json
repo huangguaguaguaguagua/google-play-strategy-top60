@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-15",
+      "title": "Infinity Kingdom双端上扬；Last Shelter两代产品压线进入iOS",
+      "summary": "较9月14日有效快照，Google Play两进两出：Ant Legion回榜#59、Last Fortress回榜#60，Doomsday联动版与Vikings掉榜；iOS五进五出，Game of Thrones、Kingdom Guard、The Tower、Last Shelter: Survival回榜，Last Shelter: War Z首次进入#60。Infinity Kingdom在Google升10位、iOS升23位，是今日最一致的跨端改善；90天新品Google 4款、iOS 2款，两端缺少6月17日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-15.md",
+      "json": "data/market-brief-20260915.json"
+    },
     {
       "date": "2026-09-14",
       "title": "Pokémon Champions跨端分化；Vikings与Star Trek榜尾回归",
