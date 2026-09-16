@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-16",
+      "title": "Last War升至iOS榜首；iOS四进四出、两款塔防各升19位",
+      "summary": "较9月15日有效快照，Google Play一进一出：Vikings回榜#60、Last Fortress掉榜；iOS四进四出，Hearthstone、Draft Showdown、Rise of Castles与Lords Mobile回榜，Wild Rift、两款Last Shelter及Last Day on Earth掉榜。Last War由#4升至iOS榜首；Evo Defense与The Tower各升19位。近90天新品Google 4款、iOS 2款；两端缺少6月18日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-16.md",
+      "json": "data/market-brief-20260916.json"
+    },
     {
       "date": "2026-09-15",
       "title": "Infinity Kingdom双端上扬；Last Shelter两代产品压线进入iOS",
