@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-17",
+      "title": "Age of Spirits首发入榜；iOS三款大涨、Pokémon GO重回榜首",
+      "summary": "较9月16日有效快照，Google Play两进两出：Supremacy回榜#58、Age of Spirits首次进入#59，Pokémon Champions与Game of Thrones: Conquest掉榜；iOS同样两进两出，DC: Dark Legion与SimCity回榜，MARVEL SNAP与Fire Emblem掉榜。Mobile Legends +35、Hearthstone +23、Raid Rush +17主导iOS波动，Pokémon GO重回榜首。近90天新品Google 5款、iOS 2款；两端缺少6月19日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-17.md",
+      "json": "data/market-brief-20260917.json"
+    },
     {
       "date": "2026-09-16",
       "title": "Last War升至iOS榜首；iOS四进四出、两款塔防各升19位",
