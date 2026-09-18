@@ -1,8 +1,8 @@
 {
   "date": "2026-09-17",
   "timezone": "Asia/Shanghai",
-  "title": "Age of Spirits首发入榜；iOS三款大涨、Pokémon GO重回榜首",
-  "summary": "较9月16日有效快照，Google Play两进两出：Supremacy回榜#58、Age of Spirits首次进入#59，Pokémon Champions与Game of Thrones: Conquest掉榜；iOS同样两进两出，DC: Dark Legion与SimCity回榜，MARVEL SNAP与Fire Emblem掉榜。Mobile Legends +35、Hearthstone +23、Raid Rush +17主导iOS波动，Pokémon GO重回榜首。近90天新品Google 5款、iOS 2款；两端缺少6月19日精确基准，较老产品不判断90天飙升。",
+  "title": "Age of Spirits首发入榜、Arknights首录；iOS三款大涨",
+  "summary": "较9月16日有效快照，Google Play两进两出：Supremacy回榜#58、Age of Spirits首次进入#59，Pokémon Champions与Game of Thrones: Conquest掉榜；iOS三进三出，DC: Dark Legion与SimCity回榜、Arknights首次进入项目记录，Warline、Sea War与Fire Emblem掉榜。Mobile Legends +35、Hearthstone +23、Raid Rush +17主导iOS波动，Pokémon GO重回榜首。近90天新品Google 5款、iOS 1款；两端缺少6月19日精确基准，较老产品不判断90天飙升。",
   "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与对策略品类的影响综合排序；不是第三方阅读量或舆情指数。",
   "iconBundle": "assets/market-icons-20260917.json",
   "rankingSources": {
@@ -16,7 +16,7 @@
   "rankingDynamics": {
     "googlePlay": {
       "label": "Google Play · Android",
-      "sourceTime": "北京时间 2026-09-17 09:14:44 直连抓取",
+      "sourceTime": "北京时间 2026-09-17 09:42:04 直连抓取",
       "anchors": "榜单锚点：#1 Kingshot · #25 Lands of Jail · #60 Sea War: Uboat Raid",
       "products": [
         {
@@ -25,7 +25,7 @@
           "iconKey": "googlePlay:com.doradogames.conflictnations.worldwar3",
           "tone": "entry",
           "changeLabel": "回榜 · #58",
-          "analysis": "9月8日、12日和今天三次在Google榜尾回归，本次为#58；iOS同时下滑6位至#47。连续进出说明Android端仍处边界波动，不能写成稳定回暖。"
+          "analysis": "9月8日、12日和今天三次在Google榜尾回归，本次为#58；iOS同时下滑3位至#44。连续进出说明Android端仍处边界波动，不能写成稳定回暖。"
         },
         {
           "gameName": "Age of Spirits",
@@ -49,7 +49,7 @@
           "iconKey": "googlePlay:com.wb.goog.got.conquest",
           "tone": "exit",
           "changeLabel": "掉榜 · 上期#59",
-          "analysis": "上期已降至Google #59，今天掉榜；iOS也下滑5位至#43。两端方向一致，但Google离榜仍只是一日边界信号。"
+          "analysis": "上期已降至Google #59，今天掉榜；iOS也下滑7位至#45。两端方向一致，但Google离榜仍只是一日边界信号。"
         },
         {
           "gameName": "Infinity Kingdom",
@@ -57,7 +57,7 @@
           "iconKey": "googlePlay:com.gtarcade.ioe.global",
           "tone": "up",
           "changeLabel": "+4 · #24",
-          "analysis": "Google升4位至#24，iOS小幅回落至#23；两端名次几乎重合并共同位于前半区，不过今天没有匹配幅度的官方活动证据。"
+          "analysis": "Google升4位至#24，iOS小幅回落至同为#24；两端名次重合并共同位于前半区，不过今天没有匹配幅度的官方活动证据。"
         },
         {
           "gameName": "Raid Rush: Tower Defense TD",
@@ -72,8 +72,8 @@
           "productId": "com.riotgames.league.wildrift",
           "iconKey": "googlePlay:com.riotgames.league.wildrift",
           "tone": "down",
-          "changeLabel": "−5 · #45",
-          "analysis": "Google下滑5位至#45，iOS继续在榜外；7.2e平衡补丁是近期节点，但没有证据把名次变化直接归因于版本。"
+          "changeLabel": "−6 · #46",
+          "analysis": "Google下滑6位至#46，iOS继续在榜外；7.2e平衡补丁是近期节点，但没有证据把名次变化直接归因于版本。"
         },
         {
           "gameName": "Last Shelter: Survival",
@@ -89,22 +89,22 @@
           "iconKey": "googlePlay:com.bw.ud.googleplay",
           "tone": "down",
           "changeLabel": "−2 · #60",
-          "analysis": "Google下滑2位至#60，iOS也位于#60；同产品在两个商店同时压线，是今天最明确的共同掉榜风险，但仍需后续快照验证。"
+          "analysis": "Google下滑2位至#60，iOS则从上期#56掉榜；同产品两端同步走弱，是今天最明确的共同掉榜风险，但仍需后续快照验证。"
         }
       ]
     },
     "ios": {
       "label": "App Store · iPhone/iOS",
-      "sourceTime": "Apple RSS 北京时间 2026-09-17（源更新：2026-09-16T18:13:01-07:00）",
-      "anchors": "榜单锚点：#1 Pokémon GO · #25 Magic: The Gathering Arena · #60 Sea War: Uboat Raid",
+      "sourceTime": "Apple RSS 北京时间 2026-09-17（源更新：2026-09-16T18:37:43-07:00）",
+      "anchors": "榜单锚点：#1 Pokémon GO · #25 Magic: The Gathering Arena · #60 Kingdom Guard:Tower Defense TD",
       "products": [
         {
           "gameName": "DC: Dark Legion™",
           "productId": "6479020757",
           "iconKey": "ios:6479020757",
           "tone": "entry",
-          "changeLabel": "回榜 · #46",
-          "analysis": "回到iOS #46。9月9日版本加入Forge Breach联盟占点玩法，并有Beast Boy相关活动；节点与回榜相邻，但不足以确认因果。"
+          "changeLabel": "回榜 · #47",
+          "analysis": "回到iOS #47。9月9日版本加入Forge Breach联盟占点玩法，并有Beast Boy相关活动；节点与回榜相邻，但不足以确认因果。"
         },
         {
           "gameName": "SimCity BuildIt",
@@ -115,12 +115,28 @@
           "analysis": "回到iOS #49，Google策略榜未收录同产品；当前仅能确认成熟城建产品的单端回榜，未发现可确认的重大运营转折。"
         },
         {
-          "gameName": "MARVEL SNAP - Hero Card Game",
-          "productId": "1592081003",
-          "iconKey": "ios:1592081003",
+          "gameName": "Arknights",
+          "productId": "1464872022",
+          "iconKey": "ios:1464872022",
+          "tone": "entry",
+          "changeLabel": "首次进入 · #58",
+          "analysis": "首次进入项目保存的iOS策略TOP60，位列#58；Apple本店2020年上架，因此不是近90天新品。当前版本为8月13日强制更新，未发现与今天回榜直接对应的可确认原因。"
+        },
+        {
+          "gameName": "Warline: Sniper Strike",
+          "productId": "6742809194",
+          "iconKey": "ios:6742809194",
           "tone": "exit",
-          "changeLabel": "掉榜 · 上期#51",
-          "analysis": "上期iOS #51后掉榜，Google反而小升至#55。9月15日57.x重做角色精通奖励并预告Draft回归，今天呈现跨端分化。"
+          "changeLabel": "掉榜 · 上期#52",
+          "analysis": "上期iOS #52后掉榜；Google仍小升至#29。该作按Apple本店7月22日上架日期仍属近90天产品，但今天呈现明显跨端分化。"
+        },
+        {
+          "gameName": "Sea War: Uboat Raid",
+          "productId": "6447612873",
+          "iconKey": "ios:6447612873",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#56",
+          "analysis": "上期iOS #56后掉榜，Google也下滑至#60；两端同步走弱并触及Android榜尾，是今天最清晰的共同风险信号，但仍需下一快照确认。"
         },
         {
           "gameName": "Fire Emblem Heroes",
@@ -175,16 +191,16 @@
           "productId": "6741674823",
           "iconKey": "ios:6741674823",
           "tone": "down",
-          "changeLabel": "−11 · #58",
-          "analysis": "由#47跌11位至#58，直接进入掉榜区；Google没有同口径排名，先按iPhone端榜尾风险处理。"
+          "changeLabel": "−8 · #55",
+          "analysis": "由#47跌8位至#55，直接进入掉榜区；Google没有同口径排名，先按iPhone端榜尾风险处理。"
         },
         {
           "gameName": "Rise of Kingdoms",
           "productId": "1354260888",
           "iconKey": "ios:1354260888",
           "tone": "down",
-          "changeLabel": "−8 · #36",
-          "analysis": "由#28跌8位至#36，Google对应《万国觉醒》仍在#5；成熟4X出现明显跨端差，不能用iOS单日回落概括产品整体。"
+          "changeLabel": "−6 · #34",
+          "analysis": "由#28跌6位至#34，Google同产品仍在#18；成熟4X出现16位跨端差，不能用iOS单日回落概括产品整体。"
         },
         {
           "gameName": "Dragon Traveler",
@@ -195,20 +211,20 @@
           "analysis": "由#40跌8位至#48，仍在上线初期的高波动阶段；Google策略榜未收录，暂按单端待验证信号。"
         },
         {
-          "gameName": "Warline: Sniper Strike",
-          "productId": "6742809194",
-          "iconKey": "ios:6742809194",
-          "tone": "down",
-          "changeLabel": "−7 · #59",
-          "analysis": "由#52跌7位至#59，仍按Apple本店7月22日上架日期归类为近三个月新上榜；Google #29，跨端相差30位且iOS已接近掉榜线。"
-        },
-        {
           "gameName": "Game of Thrones: Conquest ™",
           "productId": "1035712810",
           "iconKey": "ios:1035712810",
           "tone": "down",
-          "changeLabel": "−5 · #43",
-          "analysis": "iOS下滑5位至#43，Google则从#59掉榜；两端共同走弱但幅度不同，下一快照将检验是否只是短时回落。"
+          "changeLabel": "−7 · #45",
+          "analysis": "iOS下滑7位至#45，Google则从#59掉榜；两端共同走弱但幅度不同，下一快照将检验是否只是短时回落。"
+        },
+        {
+          "gameName": "Kingdom Guard:Tower Defense TD",
+          "productId": "1570095804",
+          "iconKey": "ios:1570095804",
+          "tone": "down",
+          "changeLabel": "−5 · #60",
+          "analysis": "由#55跌5位至#60，Google同产品也下滑2位至#53；两端同向回落且iOS压线，先按榜尾风险处理。"
         }
       ]
     }
@@ -246,7 +262,7 @@
       "date": "2026-09-09",
       "title": "DC: Dark Legion加入Forge Breach联盟占点玩法",
       "summary": "Apple版本说明显示联盟成员需要占领建筑、使用协议克制并摧毁核心；同期商品页也展示Beast Boy相关内容。",
-      "impact": "产品今天回到iOS #46；活动节点提供解释线索，但单次回榜不足以确认增收。",
+      "impact": "产品今天回到iOS #47；活动节点提供解释线索，但单次回榜不足以确认增收。",
       "source": "Apple App Store官方商品页",
       "url": "https://apps.apple.com/us/app/dc-dark-legion/id6479020757"
     },
@@ -255,7 +271,7 @@
       "date": "2026-09-15",
       "title": "MARVEL SNAP 57.x重做角色精通奖励轨道",
       "summary": "官方更新加入Wild Boosters、Split Reroll Coins、额外Custom Card槽位与Level 27奖励，并预告Draft于9月28日回归。",
-      "impact": "该作今天从iOS掉榜而Google升至#55，体现跨端分化；新系统应作为后续回流观察点。",
+      "impact": "该作今天iOS小升至#50、Google升至#55，两端仍靠近榜尾；新系统应作为后续回流观察点。",
       "source": "MARVEL SNAP官方",
       "url": "https://marvelsnap.com/patch-notes-september-15-2026/"
     },
@@ -273,7 +289,7 @@
       "date": "2026-09-09",
       "title": "Wild Rift 7.2e调整Vi、Swain及多件装备",
       "summary": "Riot削弱Vi、Swain，并增强Janna、Nautilus、Malphite等英雄，同时修改多件装备。",
-      "impact": "该作今天Google降至#45且iOS仍在榜外；补丁只是背景，尚无官方材料证明与名次存在因果。",
+      "impact": "该作今天Google降至#46且iOS仍在榜外；补丁只是背景，尚无官方材料证明与名次存在因果。",
       "source": "Riot Games官方",
       "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-72e/"
     },
@@ -309,7 +325,7 @@
     {
       "type": "判断",
       "title": "iOS波动显著高于Google，榜首也再次易位",
-      "detail": "两个商店均为两进两出，但58款共同在榜产品中，Google有49款日变动不超过2位、中位绝对变动1位；iOS只有33款不超过2位、中位绝对变动2位，并由Pokémon GO重回榜首。"
+      "detail": "Google两进两出、iOS三进三出；Google 58款共同在榜产品中有49款日变动不超过2位、中位绝对变动1位，iOS 57款共同在榜产品中只有31款不超过2位、中位绝对变动2位，并由Pokémon GO重回榜首。"
     },
     {
       "type": "判断",
@@ -319,7 +335,7 @@
     {
       "type": "判断",
       "title": "新品进入榜尾，成熟产品跨端风险并存",
-      "detail": "Age of Spirits美国区上架次日首次进入Google #59；Sea War双端同为#60，Game of Thrones: Conquest则Google掉榜且iOS下滑。新品首发与成熟产品边界风险同时出现。"
+      "detail": "Age of Spirits美国区上架次日首次进入Google #59，Arknights则以成熟产品身份首次进入项目iOS榜#58；Sea War在iOS掉榜且Google压至#60，Game of Thrones: Conquest也两端共同走弱。"
     },
     {
       "type": "关注",
@@ -328,13 +344,13 @@
     },
     {
       "type": "关注",
-      "title": "下一工作日：复核三组iOS大涨是否回吐",
-      "detail": "Mobile Legends需保持前20、Hearthstone保持前40、Raid Rush保持前30；任何一款大幅反向回落都应继续按活动/版本附近的单日波动处理。"
+      "title": "下一工作日：复核三组iOS大涨与Arknights回榜",
+      "detail": "Mobile Legends需保持前20、Hearthstone保持前40、Raid Rush保持前30；Arknights若仍停留后五名或立即掉榜，只记录为成熟产品榜尾脉冲。"
     },
     {
       "type": "关注",
-      "title": "截至9月22日：跟踪共同榜尾与活动窗口",
-      "detail": "重点看Sea War能否守住任一商店、Supremacy是否再次退出Google，并在Clash of Clans WWE活动结束前复核头部稳定度。"
+      "title": "截至9月22日：跟踪跨端榜尾与活动窗口",
+      "detail": "重点看Sea War能否守住Google、Kingdom Guard能否守住iOS、Supremacy是否再次退出Google，并在Clash of Clans WWE活动结束前复核头部稳定度。"
     }
   ],
   "globalStrategyRevenue": {
@@ -436,7 +452,7 @@
     },
     "ios": {
       "top60": 60,
-      "newRelease90d": 2,
+      "newRelease90d": 1,
       "surge90d": 0,
       "baselineAvailable": false,
       "baselineDate": "2026-06-19"
@@ -446,12 +462,12 @@
     {
       "label": "Google Play美国区策略畅销榜直连",
       "url": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
-      "capturedAt": "2026-09-17T09:14:44+08:00"
+      "capturedAt": "2026-09-17T09:42:04+08:00"
     },
     {
       "label": "Apple官方美国区iPhone策略畅销RSS",
       "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
-      "updated": "2026-09-16T18:13:01-07:00",
+      "updated": "2026-09-16T18:37:43-07:00",
       "sourceDateBeijing": "2026-09-17"
     },
     {

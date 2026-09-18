@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Beijing 2026-09-17 Google Play and Apple App Store snapshots."""
+"""Build the Beijing 2026-09-18 Google Play and Apple App Store snapshots."""
 
 from copy import deepcopy
 from datetime import datetime
@@ -13,19 +13,19 @@ from daily_update_20260828 import refresh_daily_rank_path
 from google_play_direct import fetch_top_grossing_strategy
 
 
-CAPTURE = "2026-09-17"
-GOOGLE_DATE = "2026-09-17"
-GOOGLE_BASELINE = "2026-06-19"
-IOS_DATE = "2026-09-17"
-IOS_BASELINE = "2026-06-19"
+CAPTURE = "2026-09-18"
+GOOGLE_DATE = "2026-09-18"
+GOOGLE_BASELINE = "2026-06-20"
+IOS_DATE = "2026-09-18"
+IOS_BASELINE = "2026-06-20"
 
 GOOGLE_DATES = (
-    "20260916", "20260915", "20260914", "20260911", "20260910", "20260909", "20260908",
+    "20260917", "20260916", "20260915", "20260914", "20260911", "20260910", "20260909", "20260908",
     "20260907", "20260904", "20260903", "20260902", "20260901", "20260831", "20260828",
     "20260827", "20260826", "20260825", "20260824", "20260821", "20260820", "20260819d",
 )
 IOS_DATES = (
-    "20260916", "20260915", "20260914", "20260911", "20260910", "20260909", "20260908",
+    "20260917", "20260916", "20260915", "20260914", "20260911", "20260910", "20260909", "20260908",
     "20260907", "20260904", "20260903", "20260902", "20260901", "20260831", "20260828",
     "20260827", "20260826", "20260825", "20260824", "20260821", "20260820", "20260819",
 )
@@ -104,7 +104,7 @@ def aliens_profile(row, metadata):
     analysis = trend(
         "趋势：2024年以卡通外星人、丧尸潮和单机塔防上架，当前由路径控制、塔位布局与防御塔升级承接；关键转折：未发现可确认的重大转折/长期稳定运营，本次首次进入项目记录的Google TOP60；主力素材：密集丧尸波次、不同射程塔位、升级分支与基地防线。",
         "2024年11月上架，商品页从一开始即把外星入侵包装与经典塔防结合：玩家布置并升级防御塔、控制敌军行进路线、分配有限资源并抵御连续丧尸潮；离线单机是其区别于联盟4X产品的持续入口。",
-        "上架日期早于本期90天窗口；本次首次出现在项目保存的Google Play美国策略畅销TOP60，位列第60名。因缺少2026-06-19同口径基准，内部保持pending并按常规展示。",
+        "上架日期早于本期90天窗口；本次首次出现在项目保存的Google Play美国策略畅销TOP60，位列第60名。因缺少2026-06-20同口径基准，内部保持pending并按常规展示。",
         "官方商品页显示2026年8月31日更新，并在当前商店活动中突出Boss挑战与Fire Crossbow Tower解锁；除这一活动节点外，未发现可确认的玩法重构或商业化重大转折。",
         "卡通外星人对抗丧尸、分路推进的尸潮、塔位覆盖范围、火力升级选择、资源不足压力、Boss攻城与Fire Crossbow Tower奖励。素材判断仅基于Google商品页和当前商店图，可信度为中。",
         "观察首次#60是否只是Boss活动附近的榜尾脉冲，以及活动结束后能否连续留榜；没有连续快照前不推断长期趋势。",
@@ -164,7 +164,7 @@ def age_of_spirits_profile(row, metadata):
     return game, company, clean_analysis(analysis)
 
 
-def arknights_profile(row, metadata):
+def ios_arknights_profile(row, metadata):
     game = ios_game_from_metadata(
         row,
         metadata,
@@ -182,7 +182,7 @@ def arknights_profile(row, metadata):
     analysis = trend(
         "趋势：2020年全球上线后，以职业克制、部署顺序和技能时机形成长期塔防核心，并由干员收集、章节活动与基地经营维持成熟运营；关键转折：当前Apple版本为8月13日强制更新，未发现与本次#58回榜直接对应的可确认重大转折；主力素材：多职业干员编队、格子部署、敌人路线、技能爆发和罗德岛世界观。",
         "Apple美国区于2020年1月15日上架。产品长期用不同职业干员、攻击范围、部署费用与技能时机构成塔防关卡，再由角色收集、养成、基地建设和剧情活动承接核心用户；现阶段属于成熟长线运营。",
-        "本次首次出现在项目保存的iOS美国策略畅销TOP60，位列第58名；Apple本店releaseDate早于90天窗口，因此不是近三个月新上榜。因缺少2026-06-19精确同口径基准，内部保持pending并按常规展示。",
+        "本次首次出现在项目保存的iOS美国策略畅销TOP60，位列第58名；Apple本店releaseDate早于90天窗口，因此不是近三个月新上榜。因缺少2026-06-20精确同口径基准，内部保持pending并按常规展示。",
         "Apple Lookup显示当前36.7.22版本于8月13日发布，说明为强制更新及重新下载安装提醒。公开资料没有把该更新与今天回榜建立因果，也未发现更近的可确认重大转折。",
         "当前商店图集中展示多职业干员同场、格子塔防部署、敌人行进路线、技能范围与基地建设；早期到成熟期仍以角色叙事和高难关卡承接塔防核心。素材判断基于Apple商店图与官方产品资料，可信度为中。",
         "观察下一工作日能否脱离后五名并连续留榜；在没有官方活动或连续名次证据前，仅记录为成熟产品单日回榜信号。",
@@ -206,16 +206,231 @@ def arknights_profile(row, metadata):
     return game, company, analysis
 
 
+def google_limbus_profile(row, metadata):
+    release = metadata.get("released") or "2023-02-26"
+    game = {
+        "rank": row["rank"],
+        "packageName": row["packageName"],
+        "gameName": row["gameName"],
+        "developer": metadata.get("developer") or "Project Moon",
+        "totalInstalls": metadata.get("downloads", ""),
+        "recentInstalls30d": "",
+        "dailyChange": "NEW",
+        "rankIconUrl": metadata["icon"],
+        "store": "googlePlay",
+        "storeUrl": metadata["url"],
+        "iconUrl": metadata["icon"],
+        "screenshotUrl": metadata["screenshot"],
+        "shortDescription": metadata.get("description", ""),
+        "description": "Project Moon世界观下的回合制RPG：连接技能图标形成共鸣，在实时演出的Clash中比较硬币与技能结果，并用不同Identity、E.G.O和12名罪人应对异常体。",
+        "releaseDate": release,
+        "updatedDate": metadata.get("updated", ""),
+        "genre": "回合制RPG / 队伍构筑 / 战术连锁",
+        "keywords": "Project Moon；12名罪人；技能连锁；Clash；Identity；E.G.O；异常体；剧情RPG",
+        "note": "",
+        "releaseDateIso": release,
+        "assetRank": 77,
+        "comparison90d": comparison(None, row["rank"], GOOGLE_DATE, GOOGLE_BASELINE, True, release),
+    }
+    company = {
+        "en": "Project Moon Co., Ltd.",
+        "cn": "Project Moon（月亮计划；韩国独立研发与发行主体）",
+        "confidence": "已确认",
+        "basis": "Google Play发行名为Project Moon；Apple美国区Lookup列明Project Moon Co., Ltd.为seller，官方产品站将Limbus Company纳入Project Moon自有世界观。未发现需上溯的已披露集团归属。",
+        "source": "https://limbuscompany.com/",
+    }
+    analysis = trend(
+        "趋势：2023年以12名罪人、技能图标连锁和实时演出的Clash切入Project Moon核心用户，成熟期由章节、赛季、Identity与E.G.O更新支撑；关键转折：9月17日Apple 1.114.0明确上线Season 8、新Identity和新章节，时间上紧邻双端进榜但不直接认定因果；主力素材：反乌托邦都市、巴士小队、彩色技能链、硬币判定、E.G.O爆发和异常体Boss。",
+        "2023年2月上线后，产品用12名罪人的公路式都市叙事承接Project Moon既有世界观；战斗把回合制队伍构筑与实时演出的Clash结合，玩家连接同色或同罪属性技能、切换Identity与E.G.O，并在异常体战中手动指定攻击目标。成熟期主要由章节剧情、赛季通行证与角色形态更新维持核心用户。",
+        "本次由榜外进入Google Play美国策略畅销TOP60第43名；同日iOS进入第16名，形成明显的双端同步信号。Google本店released日期为2023年2月26日，早于90天窗口；因缺少2026-06-20精确基准，内部保持pending并按常规展示。",
+        "Apple官方1.114.0版本于9月17日发布，明确包含Season 8、新Identity与新章节；这是可确认的运营节点，且与今天双端进入时间相邻。现有证据只能说明时间重合，不能把榜位变化全部归因于版本。",
+        "12名罪人围绕巴士行动、阴郁反乌托邦都市、彩色技能图标连成共鸣、Clash硬币胜负、Identity立绘切换、E.G.O大招与异常体Boss。素材判断结合Google商品页、Apple版本说明与官方产品资料，可信度为中。",
+        "观察下一工作日能否同时守住Google前50与iOS前20；若两端快速回落，则把本次记录为Season 8窗口附近的短时付费峰值，而非长期趋势。",
+        game["storeUrl"],
+        [
+            {"label": "Limbus Company官方网站", "url": "https://limbuscompany.com/", "type": "primary"},
+            {"label": "Apple美国区商品页与1.114.0版本说明", "url": "https://apps.apple.com/us/app/limbus-company/id6444112366", "type": "lifecycle-analysis"},
+        ],
+    )
+    analysis = clean_analysis(analysis)
+    analysis["sourceAudit"].update(
+        confidence="中",
+        basis="玩法、Google本店上架日期与素材来自Google商品页；Season 8、新Identity和新章节来自Apple官方1.114.0版本说明，官方产品站用于核验产品体系。",
+        changeReason="双端当日进入，重新建立本店素材、公司归属与独立生命周期档案；仅记录版本与榜位时间相邻，不写成确定因果。",
+    )
+    analysis["lifecycleAudit"].update(
+        confidence="中",
+        scope="从2023年上线、技能连锁与Clash入口梳理至Season 8、章节、Identity和E.G.O成熟运营阶段。",
+        evidenceNote="上架、玩法和Season 8节点有官方依据；榜位原因与长期素材迁移缺少平台收入分拆证据。",
+    )
+    return game, company, analysis
+
+
+def google_arknights_profile(row, metadata):
+    release = metadata.get("released") or "2020-01-15"
+    game = {
+        "rank": row["rank"],
+        "packageName": row["packageName"],
+        "gameName": row["gameName"],
+        "developer": metadata.get("developer") or "Yostar Limited.",
+        "totalInstalls": metadata.get("downloads", ""),
+        "recentInstalls30d": "",
+        "dailyChange": "NEW",
+        "rankIconUrl": metadata["icon"],
+        "store": "googlePlay",
+        "storeUrl": metadata["url"],
+        "iconUrl": metadata["icon"],
+        "screenshotUrl": metadata["screenshot"],
+        "shortDescription": metadata.get("description", ""),
+        "description": "以干员职业、攻击范围、部署费用、敌人路线与技能时机为核心的格子塔防，并由角色收集、章节活动和基地建设承接长线养成。",
+        "releaseDate": release,
+        "updatedDate": metadata.get("updated", ""),
+        "genre": "塔防 / 战术编队 / 角色养成",
+        "keywords": "明日方舟；塔防；干员；职业编队；部署顺序；技能时机；基地建设；关卡策略",
+        "note": "",
+        "releaseDateIso": release,
+        "assetRank": 78,
+        "comparison90d": comparison(None, row["rank"], GOOGLE_DATE, GOOGLE_BASELINE, True, release),
+    }
+    company = {
+        "en": "Yostar Limited. / Hypergryph",
+        "cn": "悠星（海外发行）/ 鹰角网络（研发与产品体系）",
+        "confidence": "已确认",
+        "basis": "Google Play列明Yostar Limited.为发行主体；Arknights官方全球站由Yostar运营，鹰角网络官方招聘页将《明日方舟》列为公司项目。",
+        "source": "https://career.hypergryph.com/",
+    }
+    analysis = trend(
+        "趋势：2020年全球上线后，以职业克制、部署顺序和技能时机构成长线塔防核心，并由干员收集、章节活动与基地经营维持成熟运营；关键转折：当前Google版本为8月13日更新，未发现与本次#57进榜直接对应的可确认重大转折；主力素材：多职业干员编队、格子部署、敌人路线、技能爆发和罗德岛世界观。",
+        "2020年1月上线。产品长期用不同职业干员、攻击范围、部署费用与技能时机构成塔防关卡，再由角色收集、养成、基地建设和剧情活动承接核心用户；现阶段属于成熟长线运营。",
+        "本次首次进入项目保存的Google Play美国策略畅销TOP60，位列第57名；iOS则从上期第58名掉榜，呈现跨端反向边界波动。Google本店released日期早于90天窗口，且缺少2026-06-20精确基准，因此内部保持pending并按常规展示。",
+        "Google商品页显示当前版本于8月13日更新；公开资料没有把该更新与今天进榜建立因果，也未发现更近的可确认重大转折。",
+        "当前商店图集中展示多职业干员同场、格子塔防部署、敌人行进路线、技能范围与基地建设；成熟期仍以角色叙事和高难关卡承接塔防核心。素材判断基于Google商店图与官方产品资料，可信度为中。",
+        "观察下一工作日能否脱离后五名并连续留榜，同时对照iOS是否回榜；在没有官方活动或连续名次证据前，仅记录为成熟产品单日跨端反向信号。",
+        game["storeUrl"],
+        [
+            {"label": "Arknights全球官网", "url": "https://www.arknights.global/", "type": "primary"},
+            {"label": "鹰角网络官方招聘页", "url": "https://career.hypergryph.com/", "type": "company-research"},
+        ],
+    )
+    analysis = clean_analysis(analysis)
+    analysis["sourceAudit"].update(
+        confidence="中",
+        basis="上架日期、当前版本、玩法描述与商店图来自Google美国区商品页；官方全球站与鹰角网络官方招聘页用于交叉确认产品体系。",
+        changeReason="首次进入项目Google榜，补建Google本店上架日期、本地素材、公司归属和独立生命周期档案；未把8月更新写成本次进榜原因。",
+    )
+    analysis["lifecycleAudit"].update(
+        confidence="中",
+        scope="从2020年全球上线梳理至当前成熟塔防、角色养成与基地经营阶段。",
+        evidenceNote="玩法、上架时间和公司关系有官方依据；本次榜位变化缺少公开活动或收入证据。",
+    )
+    return game, company, analysis
+
+
+def ios_limbus_profile(row, metadata):
+    game = ios_game_from_metadata(
+        row,
+        metadata,
+        91,
+        "回合制RPG / 队伍构筑 / 战术连锁",
+        "Project Moon；12名罪人；技能连锁；Clash；Identity；E.G.O；异常体；剧情RPG",
+    )
+    company = {
+        "en": "Project Moon Co., Ltd.",
+        "cn": "Project Moon（月亮计划；韩国独立研发与发行主体）",
+        "confidence": "已确认",
+        "basis": "Apple美国区Lookup列明Project Moon Co., Ltd.为seller；官方产品站将Limbus Company纳入Project Moon自有世界观。未发现需上溯的已披露集团归属。",
+        "source": "https://limbuscompany.com/",
+    }
+    analysis = trend(
+        "趋势：2023年以12名罪人、技能图标连锁和实时演出的Clash切入Project Moon核心用户，成熟期由章节、赛季、Identity与E.G.O更新支撑；关键转折：9月17日1.114.0明确上线Season 8、新Identity和新章节，时间上紧邻双端进榜但不直接认定因果；主力素材：反乌托邦都市、巴士小队、彩色技能链、硬币判定、E.G.O爆发和异常体Boss。",
+        "2023年2月上线后，产品用12名罪人的公路式都市叙事承接Project Moon既有世界观；战斗把回合制队伍构筑与实时演出的Clash结合，玩家连接同色或同罪属性技能、切换Identity与E.G.O，并在异常体战中手动指定攻击目标。成熟期主要由章节剧情、赛季通行证与角色形态更新维持核心用户。",
+        "本次首次进入项目保存的iOS美国策略畅销TOP60，位列第16名；Google同日由榜外进入第43名，形成双端同步信号。Apple本店releaseDate为2023年2月27日，早于90天窗口；因缺少2026-06-20精确基准，内部保持pending并按常规展示。",
+        "Apple官方1.114.0版本于9月17日发布，明确包含Season 8、新Identity与新章节；这是可确认的运营节点，且与今天双端进入时间相邻。现有证据只能说明时间重合，不能把榜位变化全部归因于版本。",
+        "12名罪人围绕巴士行动、阴郁反乌托邦都市、彩色技能图标连成共鸣、Clash硬币胜负、Identity立绘切换、E.G.O大招与异常体Boss。素材判断结合Apple商店图、版本说明与官方产品资料，可信度为中。",
+        "观察下一工作日能否同时守住iOS前20与Google前50；若两端快速回落，则把本次记录为Season 8窗口附近的短时付费峰值，而非长期趋势。",
+        game["storeUrl"],
+        [
+            {"label": "Limbus Company官方网站", "url": "https://limbuscompany.com/", "type": "primary"},
+            {"label": "Google Play美国区商品页", "url": "https://play.google.com/store/apps/details?id=com.ProjectMoon.LimbusCompany&hl=en_US&gl=US", "type": "lifecycle-analysis"},
+        ],
+    )
+    analysis = clean_analysis(analysis)
+    analysis["sourceAudit"].update(
+        confidence="中",
+        basis="Apple本店上架日期、1.114.0版本说明、玩法与商店图来自Apple Lookup/商品页；官方产品站用于核验产品体系。",
+        changeReason="首次进入项目iOS榜，补建本店素材、公司归属和独立生命周期档案；仅记录Season 8与榜位时间相邻，不写成确定因果。",
+    )
+    analysis["lifecycleAudit"].update(
+        confidence="中",
+        scope="从2023年上线、技能连锁与Clash入口梳理至Season 8、章节、Identity和E.G.O成熟运营阶段。",
+        evidenceNote="上架、玩法和Season 8节点有官方依据；榜位原因与长期素材迁移缺少平台收入分拆证据。",
+    )
+    return game, company, analysis
+
+
+def ios_mafia_city_profile(row, metadata):
+    game = ios_game_from_metadata(
+        row,
+        metadata,
+        92,
+        "SLG / 黑帮经营 / 联盟战争",
+        "黑帮；城市经营；家族；地盘争夺；联盟；实时战争；豪车；Crew；Godfather",
+    )
+    company = {
+        "en": "VoyagerOne Pte. Ltd. / Phantix Games / Yotta Games",
+        "cn": "VoyagerOne（Apple法律主体）/ Phantix Games（海外发行品牌）/ 上海友塔网络（Yotta Games；产品体系）",
+        "confidence": "已确认",
+        "basis": "Apple美国区Lookup列明VoyagerOne Pte. Ltd.为seller、Phantix Games为发行展示名；商品页客服与条款指向Phantix，Mafia City官方站使用Yotta Games域名。产品统一归入上海友塔网络产品体系。",
+        "source": "https://mafia.yottagames.com/",
+    }
+    analysis = trend(
+        "趋势：2017年上线后以黑帮城市经营、家族联盟和实时地盘战承接付费，2018年前后又因“Level 1 Crook→Boss”等级逆袭短剧形成高辨识度获量资产；关键转折：9月17日1.8.519上线Beers without Borders活动、Dionysus Garden装饰与联盟招募调整，时间上紧邻本次iOS回榜但不直接认定因果；主力素材：等级逆袭、Boss权力、豪车、Crew编制、城市地盘与联盟对抗。",
+        "Apple美国区于2017年5月上架。产品本体以经营黑帮地盘、研究科技、配置Bulker/Shooter/Biker/Vehicle四类Crew、加入家族并进行实时城市战争为核心；成熟期主要依靠家族关系、跨服竞争、持续活动与高价值用户维持。外层获量则长期使用低等级角色受辱、选择后升级为Boss的短剧情景。",
+        "本次首次进入项目保存的iOS美国策略畅销TOP60，位列第59名；Google同产品当前第44名。Apple本店releaseDate为2017年5月16日，早于90天窗口；因缺少2026-06-20精确基准，内部保持pending并按常规展示。",
+        "Apple官方1.8.519版本于9月17日发布，新增Beers without Borders活动、Dionysus Garden地盘装饰与社交装饰套装，并调整Inventory、Island Edit、Vigilante Succession及Syndicate Recruitment。这是可确认的运营节点，但现有证据不能证明它单独造成今天回榜。",
+        "等级逆袭短剧、黑帮Boss身份、豪车与地盘视觉奖励构成外层获量；商店内层展示城市经营、四类Crew、家族协作、科技树、世界地图和实时地盘战。当前判断结合Apple商品页、官方版本说明与产品站，可信度为中。",
+        "观察下一工作日能否离开后五名并继续与Google同时在榜；若迅速退出，只记录为Beers without Borders更新窗口附近的榜尾回归信号。",
+        game["storeUrl"],
+        [
+            {"label": "Mafia City官方网站", "url": "https://mafia.yottagames.com/", "type": "primary"},
+            {"label": "Phantix Games官方条款", "url": "https://www.phantixgames.com/en/article/terms_of_use", "type": "company-research"},
+            {"label": "Google Play美国区商品页", "url": "https://play.google.com/store/apps/details?id=com.yottagames.mafiawar&hl=en_US&gl=US", "type": "lifecycle-analysis"},
+        ],
+    )
+    analysis = clean_analysis(analysis)
+    analysis["sourceAudit"].update(
+        confidence="中",
+        basis="Apple本店上架日期、玩法、版本说明与商店图来自Apple Lookup/商品页；官方产品站、Phantix条款及Google同产品页用于核验发行与产品体系。",
+        changeReason="首次进入项目iOS榜，补建Apple本店素材、公司归属和独立生命周期档案；仅记录1.8.519与回榜时间相邻。",
+    )
+    analysis["lifecycleAudit"].update(
+        confidence="中",
+        scope="从2017年黑帮城市SLG上线、2018年前后等级逆袭短剧传播梳理至当前家族、活动和地盘战成熟运营。",
+        evidenceNote="玩法、上架时间、当前活动和发行主体有官方依据；广告演化用于解释长期素材识别度，不将单日榜位写成确定因果。",
+    )
+    return game, company, analysis
+
+
 def build_google(rows, source_info):
     current = records(
-        "data/games-20260916.json", "data/enrichment-20260916.json", "data/trends-20260916.json", "packageName"
+        "data/games-20260917.json", "data/enrichment-20260917.json", "data/trends-20260917.json", "packageName"
     )
     historical = merged_records(history_specs("", GOOGLE_DATES), "packageName")
     old_rank = {product_id: value[0]["rank"] for product_id, value in current.items()}
     games, companies, trends, asset_bundle = [], {}, {}, {}
     for row in rows:
         rank, package = row["rank"], row["packageName"]
-        if package in current:
+        if package == "com.ProjectMoon.LimbusCompany":
+            metadata = play_metadata(package)
+            game, company, analysis = google_limbus_profile(row, metadata)
+            asset_bundle["77_icon"] = data_uri(metadata["icon"], (256, 256))
+            asset_bundle["77_store"] = data_uri(metadata["screenshot"], (720, 720))
+        elif package == "com.YoStarEN.Arknights":
+            metadata = play_metadata(package)
+            game, company, analysis = google_arknights_profile(row, metadata)
+            asset_bundle["78_icon"] = data_uri(metadata["icon"], (256, 256))
+            asset_bundle["78_store"] = data_uri(metadata["screenshot"], (720, 720))
+        elif package in current:
             game, company, analysis = map(deepcopy, current[package])
         elif package in historical:
             game, company, analysis = map(deepcopy, historical[package])
@@ -252,7 +467,7 @@ def build_google(rows, source_info):
         trends[str(rank)] = analysis
         games.append(game)
 
-    enrichment = deepcopy(load("data/enrichment-20260916.json"))
+    enrichment = deepcopy(load("data/enrichment-20260917.json"))
     enrichment["productCompaniesByRank"] = companies
     enrichment["comparisonPolicy"].update(
         baselineDate=GOOGLE_BASELINE,
@@ -262,20 +477,20 @@ def build_google(rows, source_info):
         normal="不满足新品或飙升条件；缺少精确基准的较老产品内部保留pending，页面按常规展示。",
         pending="上架早于窗口但缺少精确同口径90天基准，不做代理推断。",
     )
-    save("data/games-20260917.json", games)
-    save("data/enrichment-20260917.json", enrichment)
-    save("data/trends-20260917.json", trends)
+    save("data/games-20260918.json", games)
+    save("data/enrichment-20260918.json", enrichment)
+    save("data/trends-20260918.json", trends)
     manifest = load("assets/manifest.json")
     manifest["date"] = GOOGLE_DATE
     if asset_bundle:
-        save("assets/assets-14.json", asset_bundle)
-        if "assets-14.json" not in manifest["files"]:
-            manifest["files"].append("assets-14.json")
+        save("assets/assets-15.json", asset_bundle)
+        if "assets-15.json" not in manifest["files"]:
+            manifest["files"].append("assets-15.json")
     save("assets/manifest.json", manifest)
 
     cross_check = audit_google(rows)
     save(
-        "data/history/google-play/2026-09-17.json",
+        "data/history/google-play/2026-09-18.json",
         {
             "store": "google-play",
             "country": "US",
@@ -304,9 +519,9 @@ def build_google(rows, source_info):
 
 def build_ios(rows, source_url, source_updated):
     current = records(
-        "data/ios-games-20260916.json",
-        "data/ios-enrichment-20260916.json",
-        "data/ios-trends-20260916.json",
+        "data/ios-games-20260917.json",
+        "data/ios-enrichment-20260917.json",
+        "data/ios-trends-20260917.json",
         "appId",
     )
     historical = merged_records(history_specs("ios-", IOS_DATES), "appId")
@@ -314,13 +529,23 @@ def build_ios(rows, source_url, source_updated):
     games, companies, trends, asset_bundle = [], {}, {}, {}
     for row in rows:
         rank, app_id = row["rank"], row["appId"]
-        if app_id in current:
+        if app_id == "6444112366":
+            metadata = lookup([app_id])[app_id]
+            game, company, analysis = ios_limbus_profile(row, metadata)
+            asset_bundle["91_icon"] = data_uri(game["iconUrl"], (256, 256))
+            asset_bundle["91_store"] = data_uri(game["screenshotUrl"], (720, 720))
+        elif app_id == "1235569398":
+            metadata = lookup([app_id])[app_id]
+            game, company, analysis = ios_mafia_city_profile(row, metadata)
+            asset_bundle["92_icon"] = data_uri(game["iconUrl"], (256, 256))
+            asset_bundle["92_store"] = data_uri(game["screenshotUrl"], (720, 720))
+        elif app_id in current:
             game, company, analysis = map(deepcopy, current[app_id])
         elif app_id in historical:
             game, company, analysis = map(deepcopy, historical[app_id])
         elif app_id == "1464872022":
             metadata = lookup([app_id])[app_id]
-            game, company, analysis = arknights_profile(row, metadata)
+            game, company, analysis = ios_arknights_profile(row, metadata)
             asset_bundle["90_icon"] = data_uri(game["iconUrl"], (256, 256))
             asset_bundle["90_store"] = data_uri(game["screenshotUrl"], (720, 720))
         else:
@@ -343,7 +568,7 @@ def build_ios(rows, source_url, source_updated):
         trends[str(rank)] = analysis
         games.append(game)
 
-    enrichment = deepcopy(load("data/ios-enrichment-20260916.json"))
+    enrichment = deepcopy(load("data/ios-enrichment-20260917.json"))
     enrichment["productCompaniesByRank"] = companies
     enrichment["comparisonPolicy"].update(
         baselineDate=IOS_BASELINE,
@@ -353,22 +578,22 @@ def build_ios(rows, source_url, source_updated):
         normal="不满足新品或飙升条件；缺少精确基准的较老产品内部保留pending，页面按常规展示。",
         pending="上架早于窗口但缺少精确同口径90天基准，不做代理推断。",
     )
-    save("data/ios-games-20260917.json", games)
-    save("data/ios-enrichment-20260917.json", enrichment)
-    save("data/ios-trends-20260917.json", trends)
+    save("data/ios-games-20260918.json", games)
+    save("data/ios-enrichment-20260918.json", enrichment)
+    save("data/ios-trends-20260918.json", trends)
     manifest = load("assets/ios-manifest.json")
     manifest["date"] = IOS_DATE
     if asset_bundle:
-        save("assets/ios-assets-21.json", asset_bundle)
-        if "ios-assets-21.json" not in manifest["files"]:
-            manifest["files"].append("ios-assets-21.json")
+        save("assets/ios-assets-22.json", asset_bundle)
+        if "ios-assets-22.json" not in manifest["files"]:
+            manifest["files"].append("ios-assets-22.json")
     save("assets/ios-manifest.json", manifest)
 
     source_date = datetime.fromisoformat(source_updated.replace("Z", "+00:00")).astimezone(
         ZoneInfo("Asia/Shanghai")
     ).date().isoformat()
     save(
-        "data/history/ios/2026-09-17.json",
+        "data/history/ios/2026-09-18.json",
         {
             "store": "ios",
             "country": "US",

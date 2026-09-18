@@ -1,11 +1,18 @@
 {
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "timezone": "Asia/Shanghai",
   "reports": [
     {
+      "date": "2026-09-18",
+      "title": "Limbus双端共振，GFL2与Star Trek同步改善；iOS换位加快",
+      "summary": "较9月17日最终有效快照，Google Play三进三出：Limbus回榜#43，Arknights与Aliens vs Zombies首次进入项目记录；Vikings、Age of Spirits、Sea War掉榜。iOS六进六出：Limbus首次进入#16，GFL2、Sea War、Star Trek、Warline回榜，Mafia City首次进入；DC: Dark Legion、SimCity、Draft Showdown、Lords Mobile、Arknights与Kingdom Guard掉榜。GFL2在Google +21、Star Trek +6且两者同时iOS回榜；iOS存量最大涨跌为Dragon Traveler +10与The Tower -15。近90天新品Google 4款、iOS 2款；两端缺少6月20日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-18.md",
+      "json": "data/market-brief-20260918.json"
+    },
+    {
       "date": "2026-09-17",
-      "title": "Age of Spirits首发入榜；iOS三款大涨、Pokémon GO重回榜首",
-      "summary": "较9月16日有效快照，Google Play两进两出：Supremacy回榜#58、Age of Spirits首次进入#59，Pokémon Champions与Game of Thrones: Conquest掉榜；iOS同样两进两出，DC: Dark Legion与SimCity回榜，MARVEL SNAP与Fire Emblem掉榜。Mobile Legends +35、Hearthstone +23、Raid Rush +17主导iOS波动，Pokémon GO重回榜首。近90天新品Google 5款、iOS 2款；两端缺少6月19日精确基准，较老产品不判断90天飙升。",
+      "title": "Age of Spirits首发入榜、Arknights首录；iOS三款大涨",
+      "summary": "较9月16日有效快照，Google Play两进两出：Supremacy回榜#58、Age of Spirits首次进入#59，Pokémon Champions与Game of Thrones: Conquest掉榜；iOS三进三出，DC: Dark Legion与SimCity回榜、Arknights首次进入项目记录，Warline、Sea War与Fire Emblem掉榜。Mobile Legends +35、Hearthstone +23、Raid Rush +17主导iOS波动，Pokémon GO重回榜首。近90天新品Google 5款、iOS 1款；两端缺少6月19日精确基准，较老产品不判断90天飙升。",
       "markdown": "reports/2026-09-17.md",
       "json": "data/market-brief-20260917.json"
     },
