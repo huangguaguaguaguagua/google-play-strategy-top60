@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-21",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-21",
+      "title": "DC双端进入，Battle Cats跃升；Limbus与GFL2转为Android单端改善",
+      "summary": "较9月18日最终有效快照，Google Play四进四出：Last Fortress、Game of Thrones: Conquest和Doomsday回榜，DC: Dark Legion首次进入#51；Wild Rift、Draft Showdown、Supremacy和Aliens vs Zombies掉榜。iOS五进五出：Fire Emblem Heroes、Lords Mobile、DC、Guns of Glory与Last Day on Earth回榜；Limbus、GFL2、Cell Survivor、Mafia City与Rise of Castles掉榜。Google最大涨跌为GFL2 +12和Age of Empires -14；iOS为The Battle Cats +35和Age of Empires/Top Heroes各-10。近90天新品Google 4款、iOS 2款；两端缺少6月23日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-21.md",
+      "json": "data/market-brief-20260921.json"
+    },
     {
       "date": "2026-09-18",
       "title": "Limbus双端共振，GFL2与Star Trek同步改善；iOS换位加快",

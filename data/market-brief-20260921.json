@@ -1,0 +1,564 @@
+{
+  "date": "2026-09-21",
+  "timezone": "Asia/Shanghai",
+  "title": "DC双端进入，Battle Cats跃升；Limbus与GFL2转为Android单端改善",
+  "summary": "较9月18日最终有效快照，Google Play四进四出：Last Fortress、Game of Thrones: Conquest和Doomsday回榜，DC: Dark Legion首次进入#51；Wild Rift、Draft Showdown、Supremacy和Aliens vs Zombies掉榜。iOS五进五出：Fire Emblem Heroes、Lords Mobile、DC、Guns of Glory与Last Day on Earth回榜；Limbus、GFL2、Cell Survivor、Mafia City与Rise of Castles掉榜。Google最大涨跌为GFL2 +12和Age of Empires -14；iOS为The Battle Cats +35和Age of Empires/Top Heroes各-10。近90天新品Google 4款、iOS 2款；两端缺少6月23日精确基准，较老产品不判断90天飙升。",
+  "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与对策略品类的影响综合排序；不是第三方阅读量或舆情指数。",
+  "iconBundle": "assets/market-icons-20260921.json",
+  "rankingSources": {
+    "googlePlay": "data/games-20260921.json",
+    "ios": "data/ios-games-20260921.json"
+  },
+  "previousRankingSources": {
+    "googlePlay": "data/games-20260918.json",
+    "ios": "data/ios-games-20260918.json"
+  },
+  "rankingDynamics": {
+    "googlePlay": {
+      "label": "Google Play · Android",
+      "sourceTime": "北京时间 2026-09-21 10:01:52 直连抓取",
+      "anchors": "榜单锚点：#1 Kingshot · #25 Lands of Jail · #60 MARVEL SNAP: Hero Strategy CCG",
+      "products": [
+        {
+          "gameName": "Last Fortress: Underground",
+          "productId": "com.more.lastfortress.gp",
+          "iconKey": "googlePlay:com.more.lastfortress.gp",
+          "tone": "entry",
+          "changeLabel": "回榜 · #47",
+          "analysis": "回到Google #47；iOS今天未进榜。成熟城建生存产品重新越过榜尾线，但没有与本次回榜直接对应的公开版本节点，先按单端待验证信号处理。"
+        },
+        {
+          "gameName": "Game of Thrones: Conquest ™",
+          "productId": "com.wb.goog.got.conquest",
+          "iconKey": "googlePlay:com.wb.goog.got.conquest",
+          "tone": "entry",
+          "changeLabel": "回榜 · #49",
+          "analysis": "回到Google #49，iOS同口径未收录。Apple 9月14日版本仍在推进House of the Dragon第三季相关活动，但当前只能确认Android榜尾回归，不能把活动写成确定原因。"
+        },
+        {
+          "gameName": "DC: Dark Legion™",
+          "productId": "com.kingsgroup.dcdly",
+          "iconKey": "googlePlay:com.kingsgroup.dcdly",
+          "tone": "entry",
+          "changeLabel": "首次进入 · #51",
+          "analysis": "首次进入项目Google榜#51，iOS也回榜#55。9月18日官方版本加入Echoes of the Batcave弹珠主题活动；双端同步进入与节点相邻，但仍需下一快照验证持续性。"
+        },
+        {
+          "gameName": "Doomsday:The Seven Deadly Sins",
+          "productId": "com.igg.android.doomsdaylastsurvivors",
+          "iconKey": "googlePlay:com.igg.android.doomsdaylastsurvivors",
+          "tone": "entry",
+          "changeLabel": "回榜 · #59",
+          "analysis": "回到Google #59，仍在掉榜线附近；iOS未进入。没有发现可确认的当天重大转折，暂按联动产品的榜尾回归信号记录。"
+        },
+        {
+          "gameName": "League of Legends: Wild Rift",
+          "productId": "com.riotgames.league.wildrift",
+          "iconKey": "googlePlay:com.riotgames.league.wildrift",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#51",
+          "analysis": "上期Google #51后掉榜，iOS策略榜也未收录；成熟MOBA在Google策略分类边界退出，不能据此推断整体收入下滑。"
+        },
+        {
+          "gameName": "Draft Showdown",
+          "productId": "com.QuestLab.DraftWar",
+          "iconKey": "googlePlay:com.QuestLab.DraftWar",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#58",
+          "analysis": "上期Google #58后掉榜，iOS也不在榜；连续位于榜尾后退出，当前可确认的是边界承接不足，尚无公开节点可解释。"
+        },
+        {
+          "gameName": "Supremacy: World War 3",
+          "productId": "com.doradogames.conflictnations.worldwar3",
+          "iconKey": "googlePlay:com.doradogames.conflictnations.worldwar3",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#59",
+          "analysis": "上期Google #59后掉榜，iOS同样未在榜；成熟战争策略失去双端TOP60位置，下一次回榜前不把单次退出外推为长期衰退。"
+        },
+        {
+          "gameName": "Aliens vs Zombies: Invasion",
+          "productId": "aliens.zombies.invasion",
+          "iconKey": "googlePlay:aliens.zombies.invasion",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#60",
+          "analysis": "上期首次进入Google #60后退出；单机塔防的Boss活动附近只形成一次榜尾记录，尚未建立连续留榜。"
+        },
+        {
+          "gameName": "GIRLS' FRONTLINE 2: EXILIUM",
+          "productId": "com.Sunborn.SnqxExilium.Glo",
+          "iconKey": "googlePlay:com.Sunborn.SnqxExilium.Glo",
+          "tone": "up",
+          "changeLabel": "+12 · #16",
+          "analysis": "Google升12位至#16，成为Android最大涨幅；iOS却从上期#31掉榜。两端方向相反，当前更像平台付费节奏分化而非统一增长。"
+        },
+        {
+          "gameName": "Limbus Company",
+          "productId": "com.ProjectMoon.LimbusCompany",
+          "iconKey": "googlePlay:com.ProjectMoon.LimbusCompany",
+          "tone": "up",
+          "changeLabel": "+10 · #33",
+          "analysis": "Google升10位至#33，iOS则从上期#16掉榜。Season 8节点仍是背景，但两端反向幅度较大，不能继续沿用上期的“双端共振”判断。"
+        },
+        {
+          "gameName": "Raid Rush: Tower Defense TD",
+          "productId": "com.wireless.defenseland",
+          "iconKey": "googlePlay:com.wireless.defenseland",
+          "tone": "up",
+          "changeLabel": "+6 · #43",
+          "analysis": "Google升6位至#43，iOS却跌6位至#34。塔防产品在两端交换强弱，今天没有共同版本依据支持整体走强。"
+        },
+        {
+          "gameName": "Top Force",
+          "productId": "com.project.idle.cd",
+          "iconKey": "googlePlay:com.project.idle.cd",
+          "tone": "up",
+          "changeLabel": "+5 · #27",
+          "analysis": "Google升5位至#27，iOS当前未入榜；7月31日美国区上架，仍按近90天新品计算，当前是Android单端中段改善。"
+        },
+        {
+          "gameName": "Age of Empires Mobile",
+          "productId": "com.proximabeta.aoemobile",
+          "iconKey": "googlePlay:com.proximabeta.aoemobile",
+          "tone": "down",
+          "changeLabel": "−14 · #55",
+          "analysis": "Google跌14位至#55，iOS也跌10位至#60；两端同步进入危险区，是今天最明确的共同回落信号，但单日排名不能直接等同收入长期下降。"
+        },
+        {
+          "gameName": "Lords Mobile x Transformers",
+          "productId": "com.igg.android.lordsmobile",
+          "iconKey": "googlePlay:com.igg.android.lordsmobile",
+          "tone": "down",
+          "changeLabel": "−7 · #37",
+          "analysis": "Google跌7位至#37，但iOS回榜#53。Transformers联动仍在商品页展示，跨端一降一进说明活动承接并不一致。"
+        },
+        {
+          "gameName": "Age of Origins",
+          "productId": "com.camelgames.aoz",
+          "iconKey": "googlePlay:com.camelgames.aoz",
+          "tone": "down",
+          "changeLabel": "−6 · #26",
+          "analysis": "Google跌6位至#26，仍在前30；iOS未进榜。当前只是Android单日回调，未发现可确认的重大运营转折。"
+        },
+        {
+          "gameName": "Top Heroes: Kingdom Saga",
+          "productId": "com.greenmushroom.boomblitz.gp",
+          "iconKey": "googlePlay:com.greenmushroom.boomblitz.gp",
+          "tone": "down",
+          "changeLabel": "−6 · #32",
+          "analysis": "Google跌6位至#32，iOS也跌10位至#59。两端同向回落且iPhone接近掉榜线，需优先复核是否只是周末后支付节奏回落。"
+        }
+      ]
+    },
+    "ios": {
+      "label": "App Store · iPhone/iOS",
+      "sourceTime": "Apple RSS 北京时间 2026-09-21（源更新：2026-09-20T19:02:03-07:00）",
+      "anchors": "榜单锚点：#1 Kingshot · #25 Police Chief · #60 Age of Empires Mobile",
+      "products": [
+        {
+          "gameName": "Fire Emblem Heroes",
+          "productId": "1181774280",
+          "iconKey": "ios:1181774280",
+          "tone": "entry",
+          "changeLabel": "回榜 · #51",
+          "analysis": "回到iOS #51，Google策略榜未收录。任天堂长线角色策略RPG再次越过榜尾线，但没有与今天直接对应的公开版本证据，先按成熟产品回榜处理。"
+        },
+        {
+          "gameName": "Lords Mobile x Transformers",
+          "productId": "1071976327",
+          "iconKey": "ios:1071976327",
+          "tone": "entry",
+          "changeLabel": "回榜 · #53",
+          "analysis": "回到iOS #53，Google则跌7位至#37。Transformers联动背景相同但两端方向不同，不能合并判断为整体增长。"
+        },
+        {
+          "gameName": "DC: Dark Legion™",
+          "productId": "6479020757",
+          "iconKey": "ios:6479020757",
+          "tone": "entry",
+          "changeLabel": "回榜 · #55",
+          "analysis": "回到iOS #55，并首次进入Google #51。9月18日Echoes of the Batcave弹珠主题活动与双端进入时间相邻，是可继续验证的活动窗口信号。"
+        },
+        {
+          "gameName": "Guns of Glory: Lost Island",
+          "productId": "1274354704",
+          "iconKey": "ios:1274354704",
+          "tone": "entry",
+          "changeLabel": "回榜 · #56",
+          "analysis": "回到iOS #56，Google未入榜；位置仍在后五名，当前更接近成熟SLG的单端榜尾回归而非趋势反转。"
+        },
+        {
+          "gameName": "Last Day on Earth: Survival",
+          "productId": "1241932094",
+          "iconKey": "ios:1241932094",
+          "tone": "entry",
+          "changeLabel": "回榜 · #57",
+          "analysis": "回到iOS #57；9月16日版本重做Crooked Creek Farm并加入金币复活，但榜位仍处危险区，版本承接尚未稳定。"
+        },
+        {
+          "gameName": "Limbus Company",
+          "productId": "6444112366",
+          "iconKey": "ios:6444112366",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#16",
+          "analysis": "上期iOS #16后掉榜，Google反而升10位至#33。Season 8后的付费峰值没有在iPhone端延续，双端共振已转为平台分化。"
+        },
+        {
+          "gameName": "GIRLS' FRONTLINE 2: EXILIUM",
+          "productId": "6502505286",
+          "iconKey": "ios:6502505286",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#31",
+          "analysis": "上期iOS #31后掉榜，Google同时升12位至#16；与Limbus相似，今天的改善集中在Android端。"
+        },
+        {
+          "gameName": "Cell Survivor - Shoot Defense",
+          "productId": "6746465127",
+          "iconKey": "ios:6746465127",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#53",
+          "analysis": "上期iOS #53后掉榜，Google策略榜未收录；新品/小体量产品在榜尾未形成连续承接，暂无证据判断具体原因。"
+        },
+        {
+          "gameName": "Mafia City: War of Underworld",
+          "productId": "1235569398",
+          "iconKey": "ios:1235569398",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#59",
+          "analysis": "上期iOS #59后掉榜，Google仍在#48。Beers without Borders更新未在iPhone端形成连续留榜，但Android仍守住中后段。"
+        },
+        {
+          "gameName": "Rise of Castles: Fire and War",
+          "productId": "1411917616",
+          "iconKey": "ios:1411917616",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#60",
+          "analysis": "上期iOS #60后掉榜，Google未入榜；成熟4X从边界退出，今天没有可核验的新节点。"
+        },
+        {
+          "gameName": "The Battle Cats",
+          "productId": "850057092",
+          "iconKey": "ios:850057092",
+          "tone": "up",
+          "changeLabel": "+35 · #22",
+          "analysis": "iOS大涨35位至#22，为今日双榜最大升幅。9月14日15.6.0加入震动反馈、新True/Ultra Forms与关卡内容；版本时间相邻，但幅度仍需下一快照复核。"
+        },
+        {
+          "gameName": "Puzzles & Survival",
+          "productId": "1517980891",
+          "iconKey": "ios:1517980891",
+          "tone": "up",
+          "changeLabel": "+11 · #15",
+          "analysis": "iOS升11位至#15，Google也在#9且小涨1位。9月12日版本加入Azure Planet外观与圣地外观升级，是双端头部稳定中的可核验运营背景。"
+        },
+        {
+          "gameName": "Watcher of Realms - US",
+          "productId": "6741674823",
+          "iconKey": "ios:6741674823",
+          "tone": "up",
+          "changeLabel": "+9 · #37",
+          "analysis": "iOS升9位至#37，Google未进策略榜；离开榜尾但仍属单端波动，尚无公开节点支持长期判断。"
+        },
+        {
+          "gameName": "Warhammer 40,000: Tacticus ™",
+          "productId": "1599937506",
+          "iconKey": "ios:1599937506",
+          "tone": "up",
+          "changeLabel": "+9 · #46",
+          "analysis": "iOS升9位至#46，Google却跌5位至#40。两端名次接近但方向相反，今天没有共同活动依据。"
+        },
+        {
+          "gameName": "Warline: Sniper Strike",
+          "productId": "6742809194",
+          "iconKey": "ios:6742809194",
+          "tone": "up",
+          "changeLabel": "+7 · #47",
+          "analysis": "iOS升7位至#47，Google持平#31。Apple本店7月22日上架，继续按近90天新品计算；Eye of the Storm八服战仍在承接观察期。"
+        },
+        {
+          "gameName": "Age of Empires Mobile",
+          "productId": "6476261995",
+          "iconKey": "ios:6476261995",
+          "tone": "down",
+          "changeLabel": "−10 · #60",
+          "analysis": "iOS跌10位至#60，Google也跌14位至#55；两端同步触及掉榜区，是下一工作日最需要复核的共同风险。"
+        },
+        {
+          "gameName": "Top Heroes: Kingdom Saga",
+          "productId": "6450953550",
+          "iconKey": "ios:6450953550",
+          "tone": "down",
+          "changeLabel": "−10 · #59",
+          "analysis": "iOS跌10位至#59，Google也跌6位至#32；双端同向回落，但只有iPhone已逼近掉榜线。"
+        },
+        {
+          "gameName": "Star Wars™: Galaxy of Heroes",
+          "productId": "921022358",
+          "iconKey": "ios:921022358",
+          "tone": "down",
+          "changeLabel": "−9 · #23",
+          "analysis": "iOS跌9位至#23；9月15日版本仅披露后台优化与性能改进，没有证据把排名回落归因于版本。"
+        },
+        {
+          "gameName": "Game of Thrones: Dragonfire",
+          "productId": "1642607669",
+          "iconKey": "ios:1642607669",
+          "tone": "down",
+          "changeLabel": "−7 · #18",
+          "analysis": "iOS跌7位至#18，Google同产品#14且小涨1位；双端仍在前20，但方向分化，不构成共同转弱。"
+        }
+      ]
+    }
+  },
+  "marketNews": [
+    {
+      "category": "活动 / 双端回榜",
+      "date": "2026-09-18",
+      "title": "DC: Dark Legion上线Echoes of the Batcave主题活动",
+      "summary": "Apple官方2.2.25版本说明显示，蝙蝠洞操作界面改为复古弹珠机，并加入Drop Target Drills、Bat-Coins与活动商店。",
+      "impact": "产品今天首次进入Google #51并回到iOS #55；活动与双端进入时间相邻，但仍需连续快照确认承接。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/dc-dark-legion/id6479020757"
+    },
+    {
+      "category": "经营 / 跨州迁移",
+      "date": "2026-09-20",
+      "title": "Police Chief加入Interstate Reassignment与Oktoberfest",
+      "summary": "0.1.47开放州际重新分配，为部分州提供Reassignment Orders，并上线Oktoberfest和三名英雄专属武器。",
+      "impact": "iOS升7位至#25，而Google跌4位至#22；版本节点明确，但两端方向不同，需观察迁移玩法是否形成持续付费。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/police-chief/id6757350661"
+    },
+    {
+      "category": "塔防 / 版本",
+      "date": "2026-09-14",
+      "title": "The Battle Cats 15.6.0扩充形态、天赋与关卡",
+      "summary": "官方版本说明加入战斗震动反馈、新True/Ultra Forms、Talents、Legend Map难度、Rank奖励与CatCombos。",
+      "impact": "产品今天在iOS大涨35位至#22，是最强单端异动；仍需排除版本窗口的一次性峰值。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/the-battle-cats/id850057092"
+    },
+    {
+      "category": "SLG / 外观系统",
+      "date": "2026-09-12",
+      "title": "Puzzles & Survival开放圣地外观升级",
+      "summary": "4.0.240加入Azure Planet外观、圣地外观升级，以及Pet Gallery额外属性与激活奖励。",
+      "impact": "产品iOS升11位至#15、Google #9；双端都在头部，但不能由名次拆分外观系统的单独收入贡献。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/puzzles-survival/id1517980891"
+    },
+    {
+      "category": "4X / 自动攻城",
+      "date": "2026-09-17",
+      "title": "Top Lords加入Scheduled Auto-Siege",
+      "summary": "1.0.38增加预约自动攻城、战前阵容快速升级与批量祝贺功能。",
+      "impact": "Google升5位至#29，iOS回落3位至#27；两端仍在中段但方向分化。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/top-lords/id6767834940"
+    },
+    {
+      "category": "城建生存 / 宠物",
+      "date": "2026-09-17",
+      "title": "Tiles Survive推出完整Pet System",
+      "summary": "2.6.100加入宠物蛋、孵化养成、外观互动、全英雄属性加成与队伍支援。",
+      "impact": "今天Google #24、iOS #28但两端均回落；新品类系统尚未在当前快照体现共同上升。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/tiles-survive/id6738109752"
+    },
+    {
+      "category": "太空SLG / 赛季测试",
+      "date": "2026-09-16",
+      "title": "Foundation测试S2 The Usurper与Combat Lab",
+      "summary": "1.1.153在部分服务器测试S2，预告Shared Moonlight特别行动，并加入Combat Lab地面战斗活动。",
+      "impact": "Google升5位至#28、iOS小升至#33；双端同在中段，是可继续验证的版本承接信号。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/foundation-galactic-frontier/id6737595599"
+    },
+    {
+      "category": "新品 / 跨服战",
+      "date": "2026-09-16",
+      "title": "Warline 1.3.0推进Eye of the Storm八服战",
+      "summary": "版本加入Pulse Resist、Stormbreaker争夺、三件Signature Armaments、Insignia奖励与Conquest Trucks。",
+      "impact": "iOS升7位至#47、Google持平#31；本店7月22日上架，仍处近90天新品的版本验证期。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/warline-sniper-strike/id6742809194"
+    },
+    {
+      "category": "卡牌策略 / 新卡",
+      "date": "2026-09-14",
+      "title": "Clash Royale加入Minion Giant与新Hero",
+      "summary": "16.402.12的Back to Battle更新加入Minion Giant胜利条件、新Hero及赛季内容。",
+      "impact": "产品iOS #8、Google #13，双端头部稳定；更新可解释内容节奏，但不用于推算单卡收入。",
+      "source": "Apple App Store官方商品页",
+      "url": "https://apps.apple.com/us/app/clash-royale/id1053012308"
+    },
+    {
+      "category": "全球收入月榜",
+      "date": "2026-09-04",
+      "title": "Sensor Tower最新官方月榜仍为2026年8月",
+      "summary": "全球App Store与Google Play手游消费者支出估算约65.7亿美元；Whiteout Survival全球总榜#3、Kingshot #7，均较7月升1位。",
+      "impact": "两款命中核心策略口径；官方未披露单品收入同比，不能由榜位变化换算收入增幅。",
+      "source": "Sensor Tower官方",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026"
+    }
+  ],
+  "closing": [
+    {
+      "type": "判断",
+      "title": "周末后iOS中后段轮换仍强于Google",
+      "detail": "Google四进四出，56款共同产品中28款变动不超过2位，中位绝对变动2.5位；iOS五进五出，55款共同产品中22款不超过2位，中位绝对变动3位。两端前10均全部留存，但中后段换位明显。"
+    },
+    {
+      "type": "判断",
+      "title": "DC形成双端活动窗口信号，Limbus与GFL2转为Android单端改善",
+      "detail": "DC首次进入Google #51并回到iOS #55，紧邻9月18日Batcave活动；与此同时Limbus和GFL2分别升至Google #33与#16，却从iOS掉榜，说明上期双端共振没有延续。"
+    },
+    {
+      "type": "判断",
+      "title": "Age of Empires与Top Heroes出现共同回落",
+      "detail": "Age of Empires分别跌至Google #55、iOS #60，Top Heroes跌至Google #32、iOS #59；两组都呈双端同向，但目前只有一次周末后快照，不能直接定义长期衰退。近90天新品仍为Google 4款、iOS 2款。"
+    },
+    {
+      "type": "关注",
+      "title": "下一工作日：验证DC与Battle Cats的活动承接",
+      "detail": "DC需双端继续留榜并至少一端离开后五名；The Battle Cats需维持iOS前30。若快速回落，只归档为活动/版本窗口的一次性峰值。"
+    },
+    {
+      "type": "关注",
+      "title": "下一工作日：复核两组共同榜尾风险",
+      "detail": "重点看Age of Empires能否避免任一端掉榜、Top Heroes能否让iOS脱离后两名；同时观察Lords Mobile的一降一进是否收敛。"
+    },
+    {
+      "type": "关注",
+      "title": "未来2个有效快照：检验新品与中段版本信号",
+      "detail": "Warline需保持iOS TOP50和Google TOP35；Foundation需双端继续在前35；Top Force需守住Google前30。满足两次连续条件后再讨论版本承接，而非用单日名次下结论。"
+    }
+  ],
+  "globalStrategyRevenue": {
+    "schemaVersion": 2,
+    "reportId": "sensortower-worldwide-mobile-games-revenue-strategy-subset-2026-08",
+    "title": "Sensor Tower 全球收入榜 · 策略产品",
+    "period": "2026-08",
+    "periodLabel": "2026年8月",
+    "previousPeriod": "2026-07",
+    "publicationLabel": "2026年9月",
+    "estimateAsOf": "2026-09-04",
+    "checkedAt": "2026-09-07",
+    "source": "Sensor Tower",
+    "sourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
+    "previousPeriodSourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-july-2026",
+    "yearOverYearSourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2025",
+    "sourceEvidence": "Sensor Tower官方2026年8月全球手游收入TOP10图表，以及官方2026年7月、2025年8月报告",
+    "sourceTop10Archive": "data/sensortower-global-revenue-top10-202608.json",
+    "iconBundle": "assets/sensortower-strategy-icons-202608.json",
+    "downloadPath": "data/sensortower-global-strategy-revenue-202608.json",
+    "updatePolicy": "每个工作日仅检查Sensor Tower是否发布新一期官方全球收入月榜；发布后筛选其中核心策略产品并更新一次，未发布时不改月份或数值。",
+    "scope": {
+      "region": "全球",
+      "stores": "Apple App Store + Google Play",
+      "metric": "Sensor Tower估算的移动游戏消费者支出排名",
+      "displayPopulation": "Sensor Tower全球手游收入TOP10中的核心策略产品",
+      "strategyDefinition": "核心循环属于SLG、4X、城建生存、塔防或战术经营；不因商店多标签而纳入MOBA、体育、消除、派对、射击或RPG产品",
+      "sourceTop10Size": 10,
+      "strategyMatches": 2,
+      "isCompleteStrategyCategoryRanking": false,
+      "exclusions": "不含第三方Android商店",
+      "individualRevenueAmountsPublished": false,
+      "individualYoYPercentPublished": false
+    },
+    "marketSummary": {
+      "globalConsumerSpendingUsd": 6570000000,
+      "monthOverMonthPercent": -1.0,
+      "previousYearSameMonthConsumerSpendingUsd": 7150000000,
+      "yearOverYearPercentApprox": -8.1,
+      "yearOverYearCalculationNote": "以Sensor Tower公开的2026年8月65.7亿美元和2025年8月约71.5亿美元计算，因此只作为全市场约值，不代表单款游戏同比。",
+      "marketShares": [
+        {
+          "market": "美国",
+          "percent": 28.6
+        },
+        {
+          "market": "中国",
+          "qualifier": "仅iOS",
+          "percent": 16.7
+        },
+        {
+          "market": "日本",
+          "percent": 12.2
+        }
+      ]
+    },
+    "rankings": [
+      {
+        "rank": 3,
+        "gameName": "Whiteout Survival",
+        "publisher": "Century Games",
+        "strategyGenre": "4X生存策略",
+        "iconKey": "whiteout-survival",
+        "previousPeriodRank": 4,
+        "rankChange": 1,
+        "movement": "up",
+        "movementLabel": "较上月上升1位",
+        "yoyRevenuePercent": null,
+        "yoyRevenueLabel": "单品同比未公开"
+      },
+      {
+        "rank": 7,
+        "gameName": "Kingshot",
+        "publisher": "Century Games",
+        "strategyGenre": "塔防获量 + 城建4X",
+        "iconKey": "kingshot",
+        "previousPeriodRank": 8,
+        "rankChange": 1,
+        "movement": "up",
+        "movementLabel": "较上月上升1位",
+        "yoyRevenuePercent": null,
+        "yoyRevenueLabel": "单品同比未公开"
+      }
+    ],
+    "officialHighlights": [
+      "Whiteout Survival位列8月全球手游收入总榜第3，较7月第4名上升1位；Sensor Tower将Kingshot联动、Twin Star Adventure、State of Power和Winter Siege列为当月运营节点。",
+      "Kingshot位列全球手游收入总榜第7，较7月第8名上升1位；官方公开材料未披露对应的单品收入增幅或同比百分比。",
+      "本期全球收入TOP10仅有2款符合核心策略口径，不能据此宣称它们是完整的全球策略品类前两名。"
+    ],
+    "methodologyNote": "页面只展示Sensor Tower官方全球收入TOP10中的核心策略产品，并保留其全球总榜名次。逐款箭头和位数比较的是2026年7月至8月的榜位变化，不是收入同比。Sensor Tower公开材料未披露单款收入或单品同比百分比，因此不以排名变化换算收入增幅；页面所示约-8.1%仅为两期官方公开市场总额计算的全球手游市场同比。"
+  },
+  "status": {
+    "googlePlay": {
+      "top60": 60,
+      "newRelease90d": 4,
+      "surge90d": 0,
+      "baselineAvailable": false,
+      "baselineDate": "2026-06-23"
+    },
+    "ios": {
+      "top60": 60,
+      "newRelease90d": 2,
+      "surge90d": 0,
+      "baselineAvailable": false,
+      "baselineDate": "2026-06-23"
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play美国区策略畅销榜直连",
+      "url": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
+      "capturedAt": "2026-09-21T10:01:52+08:00"
+    },
+    {
+      "label": "Apple官方美国区iPhone策略畅销RSS",
+      "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
+      "updated": "2026-09-20T19:02:03-07:00",
+      "sourceDateBeijing": "2026-09-21"
+    },
+    {
+      "label": "Sensor Tower全球收入榜中的策略产品",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
+      "period": "2026-08",
+      "estimateAsOf": "2026-09-04"
+    }
+  ],
+  "downloads": {
+    "markdown": "reports/2026-09-21.md",
+    "json": "data/market-brief-20260921.json"
+  }
+}
