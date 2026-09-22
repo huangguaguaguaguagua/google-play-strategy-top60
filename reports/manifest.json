@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-22",
+      "title": "RoK双端上扬，Top Heroes与Overgeared拉动iOS；榜尾继续轮换",
+      "summary": "较9月21日最终有效快照，Google Play两进两出：Wild Rift和Aliens vs Zombies回榜，Kingdom Guard与MARVEL SNAP掉榜；最大上涨为Rise of Kingdoms +6至#14，The Grand Mafia、Warline和War and Order各跌4位。iOS两进两出：Last Fortress与Last Shelter回榜，Fire Emblem Heroes和DC: Dark Legion掉榜；Top Heroes +22、Overgeared与Rise of Kingdoms各+14，Watcher -17、Summoners War -13。近90天新品Google 4款、iOS 2款；两端缺少6月24日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-22.md",
+      "json": "data/market-brief-20260922.json"
+    },
     {
       "date": "2026-09-21",
       "title": "DC双端进入，Battle Cats跃升；Limbus与GFL2转为Android单端改善",
