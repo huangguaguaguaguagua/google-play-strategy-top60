@@ -33,6 +33,20 @@ def refresh_daily_rank_path(analysis, store_label, rank, change, status, release
     path = re.sub(r"(?:本次|当前|目前)[^。]{0,240}?(?:畅销榜|TOP)[^。]*。", "", path, count=1).strip()
     path = re.sub(r"本次iOS第\d+", f"当前iOS第{rank}", path)
     path = re.sub(r"本次Google Play第\d+", f"当前Google Play第{rank}", path)
+    # Historical profiles sometimes contain a second, hard-coded "current rank"
+    # clause after the sentence replaced above. Remove only explicit numeric
+    # current-rank phrases; keep non-numeric lifecycle wording such as
+    # "当前仍处首发验证" intact.
+    path = re.sub(
+        r"(?:本次首次进入)?(?:当前|目前)(?:位于)?(?:iOS|Google Play)?"
+        r"(?:美国(?:区)?策略畅销榜|日榜)?(?:第|#)\d+名?",
+        "",
+        path,
+    )
+    path = re.sub(r"，{2,}", "，", path)
+    path = re.sub(r"，；|；，", "；", path)
+    path = re.sub(r"；{2,}", "；", path)
+    path = path.lstrip("，；。 ")
     if "增长通常经历玩法验证" in path or "当前观察重点是上行斜率" in path:
         path = analysis["sections"].get("development", path)
     if change == "NEW":
