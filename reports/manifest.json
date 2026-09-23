@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-23",
+      "title": "Wild Rift与Kingdom Guard双端回榜，iOS两款跳升后昨日热点回吐",
+      "summary": "较9月22日最终有效快照，Google Play一进一出：Kingdom Guard回榜#60、Aliens vs Zombies掉榜；Wild Rift +8至#51，Last Fortress +4，Top Heroes、Lords Mobile等多款各跌3位。iOS四进四出：Wild Rift、Coop TD、DC与Kingdom Guard进入/回榜，Guns of Glory、Watcher、The Tower与Last Shelter掉榜；Age of Empires Mobile +24、Star Wars +23、Last Day on Earth +11，Overgeared -12、Top Heroes -10。近90天新品Google 3款、iOS 2款；两端缺少6月25日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-23.md",
+      "json": "data/market-brief-20260923.json"
+    },
     {
       "date": "2026-09-22",
       "title": "RoK双端上扬，Top Heroes与Overgeared拉动iOS；榜尾继续轮换",
