@@ -71,7 +71,7 @@ def asset_icons(manifest_path):
     return result
 
 
-def build_market_icons(products):
+def build_market_icons(products, write=True):
     local = {"googlePlay": asset_icons("assets/manifest.json"), "ios": asset_icons("assets/ios-manifest.json")}
     bundle = {}
     for item in products:
@@ -87,7 +87,8 @@ def build_market_icons(products):
         bundle[item["iconKey"]] = icon
     if len(bundle) != len(products):
         raise RuntimeError("Duplicate market-card product keys")
-    save(f"assets/market-icons-{STAMP}.json", bundle, compact=True)
+    if write:
+        save(f"assets/market-icons-{STAMP}.json", bundle, compact=True)
     return bundle
 
 
@@ -265,7 +266,7 @@ closing = [
 
 
 all_products = google_products + ios_products
-icons = build_market_icons(all_products)
+icons = build_market_icons(all_products, write=__name__ == "__main__")
 google_new = sum(g["comparison90d"]["status"] == "new" for g in datasets["googlePlay"]["now"])
 ios_new = sum(g["comparison90d"]["status"] == "new" for g in datasets["ios"]["now"])
 
@@ -378,17 +379,22 @@ def build_markdown(value):
     return "\n".join(lines)
 
 
-save("data/market-brief-20260923.json", brief)
-(ROOT / "reports/2026-09-23.md").write_text(build_markdown(brief), encoding="utf-8")
-manifest = load("reports/manifest.json")
-entry = {
-    "date": DATE,
-    "title": brief["title"],
-    "summary": brief["summary"],
-    "markdown": brief["downloads"]["markdown"],
-    "json": brief["downloads"]["json"],
-}
-manifest["updated"] = DATE
-manifest["reports"] = [entry] + [item for item in manifest["reports"] if item["date"] != DATE]
-save("reports/manifest.json", manifest)
-print(f"Wrote market brief with {len(all_products)} product cards, {len(icons)} local icons and {len(news)} news items")
+def main():
+    save("data/market-brief-20260923.json", brief)
+    (ROOT / "reports/2026-09-23.md").write_text(build_markdown(brief), encoding="utf-8")
+    manifest = load("reports/manifest.json")
+    entry = {
+        "date": DATE,
+        "title": brief["title"],
+        "summary": brief["summary"],
+        "markdown": brief["downloads"]["markdown"],
+        "json": brief["downloads"]["json"],
+    }
+    manifest["updated"] = DATE
+    manifest["reports"] = [entry] + [item for item in manifest["reports"] if item["date"] != DATE]
+    save("reports/manifest.json", manifest)
+    print(f"Wrote market brief with {len(all_products)} product cards, {len(icons)} local icons and {len(news)} news items")
+
+
+if __name__ == "__main__":
+    main()

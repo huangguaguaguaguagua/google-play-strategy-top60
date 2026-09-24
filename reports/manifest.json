@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-24",
+      "title": "Sea War双端同步改善，iOS五进五出延续高轮换",
+      "summary": "较9月23日最终有效快照，Google Play两进两出：Sea War与Vikings回榜，Kingdom Guard与Arknights掉榜；Wild Rift和Call of Dragons各升5位，Limbus Company跌11位。iOS五进五出：Honor of Kings、Kiss of War、Rise of Castles、Lucky Defense与Call of Dragons进入/回榜，Coop TD、Last Fortress、Star Trek、Kingdom Guard与Lords Mobile掉榜；Sea War +19至#29，The Battle Cats -13、Last Day on Earth与Top Heroes各-12。近90天新品Google 2款、iOS 2款；两端缺少6月26日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-24.md",
+      "json": "data/market-brief-20260924.json"
+    },
     {
       "date": "2026-09-23",
       "title": "Wild Rift与Kingdom Guard双端回榜，iOS两款跳升后昨日热点回吐",
