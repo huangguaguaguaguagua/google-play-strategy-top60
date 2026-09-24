@@ -13,6 +13,7 @@ from google_play_direct import fetch_top_grossing_strategy
 
 CAPTURE = GOOGLE_DATE = IOS_DATE = "2026-09-23"
 STAMP = "20260923"
+PREVIOUS_STAMP = "20260922"
 GOOGLE_BASELINE = IOS_BASELINE = "2026-06-25"
 GOOGLE_DATES = (
     "20260922", "20260921", "20260918", "20260917", "20260916", "20260915", "20260914",
@@ -60,7 +61,12 @@ def audit_google(rows):
 
 
 def build_google(rows, source):
-    current = records("data/games-20260922.json", "data/enrichment-20260922.json", "data/trends-20260922.json", "packageName")
+    current = records(
+        f"data/games-{PREVIOUS_STAMP}.json",
+        f"data/enrichment-{PREVIOUS_STAMP}.json",
+        f"data/trends-{PREVIOUS_STAMP}.json",
+        "packageName",
+    )
     historical = merged_records(history_specs("", GOOGLE_DATES), "packageName")
     old_rank = {key: value[0]["rank"] for key, value in current.items()}
     games, companies, analyses = [], {}, {}
@@ -93,7 +99,7 @@ def build_google(rows, source):
         companies[str(rank)] = company
         analyses[str(rank)] = analysis
 
-    enrichment = deepcopy(load("data/enrichment-20260922.json"))
+    enrichment = deepcopy(load(f"data/enrichment-{PREVIOUS_STAMP}.json"))
     enrichment["productCompaniesByRank"] = companies
     enrichment["comparisonPolicy"].update(
         baselineDate=GOOGLE_BASELINE,
@@ -131,7 +137,12 @@ def build_google(rows, source):
 
 
 def build_ios(rows, source_url, source_updated):
-    current = records("data/ios-games-20260922.json", "data/ios-enrichment-20260922.json", "data/ios-trends-20260922.json", "appId")
+    current = records(
+        f"data/ios-games-{PREVIOUS_STAMP}.json",
+        f"data/ios-enrichment-{PREVIOUS_STAMP}.json",
+        f"data/ios-trends-{PREVIOUS_STAMP}.json",
+        "appId",
+    )
     historical = merged_records(history_specs("ios-", IOS_DATES), "appId")
     old_rank = {key: value[0]["rank"] for key, value in current.items()}
     games, companies, analyses = [], {}, {}
@@ -161,7 +172,7 @@ def build_ios(rows, source_url, source_updated):
         companies[str(rank)] = company
         analyses[str(rank)] = analysis
 
-    enrichment = deepcopy(load("data/ios-enrichment-20260922.json"))
+    enrichment = deepcopy(load(f"data/ios-enrichment-{PREVIOUS_STAMP}.json"))
     enrichment["productCompaniesByRank"] = companies
     enrichment["comparisonPolicy"].update(
         baselineDate=IOS_BASELINE,
@@ -216,4 +227,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
