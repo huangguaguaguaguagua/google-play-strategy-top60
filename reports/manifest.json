@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-25",
+      "title": "Kingdom Rush 6首日进入iOS #26，Google稳盘而iOS四进四出",
+      "summary": "较9月24日最终有效快照，Google Play一进一出：Age of Spirits回榜#60，Ant Legion掉榜；Overgeared与Age of Empires各升5位，GFL2跌17位、Limbus跌11位。iOS四进四出：Kingdom Rush 6首次进入#26，Limbus、Galaxy Defense、Warpath回榜，Kiss of War、Hearthstone、Top Heroes、DC掉榜；Dragon Traveler与Summoners War各+14，Wild Rift -20。近90天新品Google 3款、iOS 3款；两端缺少6月27日精确基准，较老产品不判断90天飙升。",
+      "markdown": "reports/2026-09-25.md",
+      "json": "data/market-brief-20260925.json"
+    },
     {
       "date": "2026-09-24",
       "title": "Sea War双端同步改善，iOS五进五出延续高轮换",
