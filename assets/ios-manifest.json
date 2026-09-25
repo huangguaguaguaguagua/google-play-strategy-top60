@@ -1,6 +1,6 @@
 {
   "store": "ios",
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "files": [
     "ios-assets-01.json",
     "ios-assets-02.json",
@@ -24,6 +24,7 @@
     "ios-assets-20.json",
     "ios-assets-21.json",
     "ios-assets-22.json",
-    "ios-assets-23.json"
+    "ios-assets-23.json",
+    "ios-assets-24.json"
   ]
 }
