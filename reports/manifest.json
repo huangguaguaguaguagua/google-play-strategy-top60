@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-09-28",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-28",
+      "title": "Google三进三出、iOS八进八出，Sea War双端同步上升",
+      "summary": "较9月25日最终有效快照，Google Play三进三出：Kiss of War、Kingdom Rush 6、Warpath进入/回榜，Game of Thrones: Conquest、DC、Age of Spirits掉榜；Sea War +17，GFL2 -18、Last Fortress -15。iOS八进八出，Watcher回到#35、Sea of Conquest首次进入项目榜#60；Battle Cats +21，Kingdom Rush 6 -20、Dragon Traveler -21。Sea War两端同步上升，Infinity Kingdom两端同步回落；近90天新品两端各3款，较老产品因缺少6月30日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-09-28.md",
+      "json": "data/market-brief-20260928.json"
+    },
     {
       "date": "2026-09-25",
       "title": "Kingdom Rush 6首日进入iOS #26，Google稳盘而iOS四进四出",
