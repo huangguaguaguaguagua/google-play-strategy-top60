@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-29",
+      "title": "Draft Showdown与Game of Thrones双端回榜，iOS波动仍高于Google",
+      "summary": "较9月28日最终有效快照，Google Play两进两出：Draft Showdown、Game of Thrones: Conquest回榜，Last Fortress、Limbus Company掉榜；Lords Mobile +6，Wild Rift -9。iOS四进四出：Draft Showdown、Game of Thrones: Conquest、Rise of Castles、Kingdom Guard回榜，Summoners War、Galaxy Defense、Cell Survivor、Sea of Conquest掉榜；Watcher与Kiss各-16。Draft Showdown和Game of Thrones形成双端共同回归，但Google名次仍靠后；近90天新品两端各3款，较老产品因缺少7月1日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-09-29.md",
+      "json": "data/market-brief-20260929.json"
+    },
     {
       "date": "2026-09-28",
       "title": "Google三进三出、iOS八进八出，Sea War双端同步上升",
