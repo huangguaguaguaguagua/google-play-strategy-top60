@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-09-30",
+      "title": "Wild Rift双端改善，Plants on Fire首进iOS，iOS换榜继续高于Google",
+      "summary": "较9月29日最终有效快照，Google Play两进两出：Sea of Conquest、Galaxy Defense回榜，Vikings、Warpath掉榜；Wild Rift +9至#47，Last Shelter: Survival跌至#60。iOS五进五出：Wild Rift、The Tower、Last Shelter、Galaxy Defense回榜，Plants on Fire首次进入#39；另有5款掉榜，MARVEL SNAP +19、Magic Arena +9，Draft与Supremacy各-12。Google仍显著稳定于iOS；近90天新品两端各3款，较老产品因缺少7月2日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-09-30.md",
+      "json": "data/market-brief-20260930.json"
+    },
     {
       "date": "2026-09-29",
       "title": "Draft Showdown与Game of Thrones双端回榜，iOS波动仍高于Google",
