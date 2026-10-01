@@ -1,7 +1,14 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-01",
+      "title": "Google全量稳定，iOS六进六出，Summoners War与SD Gundam回到中前段",
+      "summary": "较9月30日最终有效快照，Google Play无进入或掉榜，60款全部留榜；Age of Origins -5至#25、Sea War -3至#37，58款变动不超过2位。iOS六进六出：SD Gundam #15、Fire Emblem #25、Summoners War #29回榜，War Machines首次进入项目榜#57，另有Dragon Traveler、Hearthstone回榜；Age of Empires、Star Trek、Last Shelter、Boom Beach、Kingdom Guard、Galaxy Defense掉榜。The Tower -16、Wild Rift与Draft各-13，Raid Rush +6。近90天新品两端各3款，较老产品因缺少7月3日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-10-01.md",
+      "json": "data/market-brief-20261001.json"
+    },
     {
       "date": "2026-09-30",
       "title": "Wild Rift双端改善，Plants on Fire首进iOS，iOS换榜继续高于Google",
