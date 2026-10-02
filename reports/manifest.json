@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-02",
+      "title": "Limbus双端回榜，Clash of Clans冲至iOS榜首，Google四进四出",
+      "summary": "较10月1日最终有效快照，Google Play四进四出：Limbus #53、The Ants #57、Ant Legion #59、Aliens vs Zombies #60进入/回榜，Kingdom Rush 6、GFL2、Sea of Conquest、Galaxy Defense掉榜；Police Chief +6至#18，Call of Dragons -8至#48。iOS三进三出：Limbus #32、Age of Empires #42、Star Trek #56回榜，The Tower、War Machines、Kiss of War掉榜；Clash of Clans +10登顶，Dragon Traveler +20、Mobile Legends +19，SD Gundam、Wild Rift、Sea War与Plants均-12。近90天新品为Google 2款、iOS 3款，较老产品因缺少7月4日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-10-02.md",
+      "json": "data/market-brief-20261002.json"
+    },
     {
       "date": "2026-10-01",
       "title": "Google全量稳定，iOS六进六出，Summoners War与SD Gundam回到中前段",
