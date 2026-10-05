@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-05",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-05",
+      "title": "Last Beacon首次入榜，Sea War双端承压，Sensor Tower 9月策略子集增至3款",
+      "summary": "较10月2日前一有效快照，Google Play四进四出：Last Beacon #51首次进入，MARVEL SNAP #53、Last Fortress #55、Sea of Conquest #59回榜，Kiss of War、Draft Showdown、Ant Legion、Aliens vs Zombies掉榜；The Grand Mafia +8至#30，King of Avalon与Stormshot均+7，Sea War -20至#56。iOS四进四出：Kingdom Guard #41、Guns of Glory #54、The Tower #59、Yu-Gi-Oh #60回榜，SD Gundam、Limbus、Game of Thrones: Conquest、Plants on Fire掉榜；Tacticus与Supremacy均+17，Fire Emblem -18。近90天新品为Google 2款、iOS 2款，较老产品因缺少7月7日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-10-05.md",
+      "json": "data/market-brief-20261005.json"
+    },
     {
       "date": "2026-10-02",
       "title": "Limbus双端回榜，Clash of Clans冲至iOS榜首，Google四进四出",
