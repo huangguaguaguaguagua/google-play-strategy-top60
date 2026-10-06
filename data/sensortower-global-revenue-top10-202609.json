@@ -6,7 +6,7 @@
   "periodLabel": "2026年9月",
   "publicationLabel": "2026年10月",
   "estimateAsOf": "2026-10-01",
-  "checkedAt": "2026-10-05",
+  "checkedAt": "2026-10-06",
   "source": "Sensor Tower",
   "sourceUrl": "https://develop.sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-september-2026",
   "sourceEvidence": "Sensor Tower官方文章及完整图表“2026-sep-top-10-mobile-games-rev”",
@@ -18,12 +18,12 @@
     "individualRevenueAmountsPublished": false
   },
   "marketSummary": {
-    "globalConsumerSpendingUsd": 6100000000,
-    "monthOverMonthPercent": -7.3,
+    "globalConsumerSpendingUsd": 6130000000,
+    "monthOverMonthPercent": -7.0,
     "marketShares": [
       {
         "market": "美国",
-        "percent": 28.8
+        "percent": 28.7
       },
       {
         "market": "中国",
@@ -71,11 +71,11 @@
     },
     {
       "rank": 5,
-      "gameName": "Royal Match",
-      "publisher": "Dream Games",
-      "previousPeriodRank": 4,
-      "movement": "down",
-      "movementLabel": "较上月下降1位"
+      "gameName": "MONOPOLY GO!",
+      "publisher": "Scopely",
+      "previousPeriodRank": 6,
+      "movement": "up",
+      "movementLabel": "较上月上升1位"
     },
     {
       "rank": 6,
@@ -111,11 +111,11 @@
     },
     {
       "rank": 10,
-      "gameName": "MONOPOLY GO!",
-      "publisher": "Scopely",
-      "previousPeriodRank": 6,
+      "gameName": "Royal Match",
+      "publisher": "Dream Games",
+      "previousPeriodRank": 4,
       "movement": "down",
-      "movementLabel": "较上月下降4位"
+      "movementLabel": "较上月下降6位"
     }
   ],
   "methodologyNote": "完整TOP10仅用于来源审计；公开模块与日报只展示其中符合核心策略定义的产品。"

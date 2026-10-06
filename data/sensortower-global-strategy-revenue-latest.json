@@ -7,7 +7,7 @@
   "previousPeriod": "2026-08",
   "publicationLabel": "2026年10月",
   "estimateAsOf": "2026-10-01",
-  "checkedAt": "2026-10-05",
+  "checkedAt": "2026-10-06",
   "source": "Sensor Tower",
   "sourceUrl": "https://develop.sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-september-2026",
   "previousPeriodSourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
@@ -31,15 +31,15 @@
     "individualYoYPercentPublished": false
   },
   "marketSummary": {
-    "globalConsumerSpendingUsd": 6100000000,
-    "monthOverMonthPercent": -7.3,
+    "globalConsumerSpendingUsd": 6130000000,
+    "monthOverMonthPercent": -7.0,
     "previousYearSameMonthConsumerSpendingUsd": 6600000000,
-    "yearOverYearPercentApprox": -7.6,
-    "yearOverYearCalculationNote": "以Sensor Tower公开的2026年9月61亿美元和2025年9月约66亿美元计算，因此只作为全市场约值，不代表单款游戏同比。",
+    "yearOverYearPercentApprox": -7.1,
+    "yearOverYearCalculationNote": "以Sensor Tower公开的2026年9月61.3亿美元和2025年9月约66亿美元计算，因此只作为全市场约值，不代表单款游戏同比。",
     "marketShares": [
       {
         "market": "美国",
-        "percent": 28.8
+        "percent": 28.7
       },
       {
         "market": "中国",
@@ -98,5 +98,5 @@
     "Last War: Survival上月未进入全球TOP10，本月进入总榜第7；Kingshot由第7降至第9。官方公开材料均未披露单品收入同比。",
     "本期全球收入TOP10仅有3款符合核心策略口径，不能据此把它们重新编号为完整全球策略品类前三名。"
   ],
-  "methodologyNote": "页面只展示Sensor Tower官方全球收入TOP10中的核心策略产品，并保留其全球总榜名次。逐款箭头和位数比较的是2026年8月至9月的榜位变化，不是收入同比。Sensor Tower公开材料未披露单款收入或单品同比百分比，因此不以排名变化换算收入增幅；页面所示约-7.6%仅为两期官方公开市场总额计算的全球手游市场同比。"
+  "methodologyNote": "页面只展示Sensor Tower官方全球收入TOP10中的核心策略产品，并保留其全球总榜名次。逐款箭头和位数比较的是2026年8月至9月的榜位变化，不是收入同比。Sensor Tower公开材料未披露单款收入或单品同比百分比，因此不以排名变化换算收入增幅；页面所示约-7.1%仅为两期官方公开市场总额计算的全球手游市场同比。"
 }

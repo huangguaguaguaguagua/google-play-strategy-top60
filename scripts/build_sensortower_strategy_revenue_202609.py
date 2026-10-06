@@ -33,7 +33,7 @@ source_top10 = {
     "periodLabel": "2026年9月",
     "publicationLabel": "2026年10月",
     "estimateAsOf": "2026-10-01",
-    "checkedAt": "2026-10-05",
+    "checkedAt": "2026-10-06",
     "source": "Sensor Tower",
     "sourceUrl": SOURCE_URL,
     "sourceEvidence": "Sensor Tower官方文章及完整图表“2026-sep-top-10-mobile-games-rev”",
@@ -45,10 +45,10 @@ source_top10 = {
         "individualRevenueAmountsPublished": False,
     },
     "marketSummary": {
-        "globalConsumerSpendingUsd": 6100000000,
-        "monthOverMonthPercent": -7.3,
+        "globalConsumerSpendingUsd": 6130000000,
+        "monthOverMonthPercent": -7.0,
         "marketShares": [
-            {"market": "美国", "percent": 28.8},
+            {"market": "美国", "percent": 28.7},
             {"market": "中国", "qualifier": "仅iOS", "percent": 15.7},
             {"market": "日本", "percent": 12.4},
         ],
@@ -58,12 +58,12 @@ source_top10 = {
         {"rank": 2, "gameName": "ROBLOX", "publisher": "Roblox Corporation", "previousPeriodRank": None, "movement": "new", "movementLabel": "上月未进全球TOP10"},
         {"rank": 3, "gameName": "Gossip Harbor", "publisher": "Microfun", "previousPeriodRank": 2, "movement": "down", "movementLabel": "较上月下降1位"},
         {"rank": 4, "gameName": "Candy Crush Saga", "publisher": "King", "previousPeriodRank": 5, "movement": "up", "movementLabel": "较上月上升1位"},
-        {"rank": 5, "gameName": "Royal Match", "publisher": "Dream Games", "previousPeriodRank": 4, "movement": "down", "movementLabel": "较上月下降1位"},
+        {"rank": 5, "gameName": "MONOPOLY GO!", "publisher": "Scopely", "previousPeriodRank": 6, "movement": "up", "movementLabel": "较上月上升1位"},
         {"rank": 6, "gameName": "Whiteout Survival", "publisher": "Century Games", "previousPeriodRank": 3, "movement": "down", "movementLabel": "较上月下降3位"},
         {"rank": 7, "gameName": "Last War: Survival", "publisher": "FirstFun", "previousPeriodRank": None, "movement": "new", "movementLabel": "上月未进全球TOP10"},
         {"rank": 8, "gameName": "Pokémon GO", "publisher": "Niantic", "previousPeriodRank": None, "movement": "new", "movementLabel": "上月未进全球TOP10"},
         {"rank": 9, "gameName": "Kingshot", "publisher": "Century Games", "previousPeriodRank": 7, "movement": "down", "movementLabel": "较上月下降2位"},
-        {"rank": 10, "gameName": "MONOPOLY GO!", "publisher": "Scopely", "previousPeriodRank": 6, "movement": "down", "movementLabel": "较上月下降4位"},
+        {"rank": 10, "gameName": "Royal Match", "publisher": "Dream Games", "previousPeriodRank": 4, "movement": "down", "movementLabel": "较上月下降6位"},
     ],
     "methodologyNote": "完整TOP10仅用于来源审计；公开模块与日报只展示其中符合核心策略定义的产品。",
 }
@@ -78,7 +78,7 @@ strategy_subset = {
     "previousPeriod": "2026-08",
     "publicationLabel": "2026年10月",
     "estimateAsOf": "2026-10-01",
-    "checkedAt": "2026-10-05",
+    "checkedAt": "2026-10-06",
     "source": "Sensor Tower",
     "sourceUrl": SOURCE_URL,
     "previousPeriodSourceUrl": PREVIOUS_URL,
@@ -102,13 +102,13 @@ strategy_subset = {
         "individualYoYPercentPublished": False,
     },
     "marketSummary": {
-        "globalConsumerSpendingUsd": 6100000000,
-        "monthOverMonthPercent": -7.3,
+        "globalConsumerSpendingUsd": 6130000000,
+        "monthOverMonthPercent": -7.0,
         "previousYearSameMonthConsumerSpendingUsd": 6600000000,
-        "yearOverYearPercentApprox": -7.6,
-        "yearOverYearCalculationNote": "以Sensor Tower公开的2026年9月61亿美元和2025年9月约66亿美元计算，因此只作为全市场约值，不代表单款游戏同比。",
+        "yearOverYearPercentApprox": -7.1,
+        "yearOverYearCalculationNote": "以Sensor Tower公开的2026年9月61.3亿美元和2025年9月约66亿美元计算，因此只作为全市场约值，不代表单款游戏同比。",
         "marketShares": [
-            {"market": "美国", "percent": 28.8},
+            {"market": "美国", "percent": 28.7},
             {"market": "中国", "qualifier": "仅iOS", "percent": 15.7},
             {"market": "日本", "percent": 12.4},
         ],
@@ -159,7 +159,7 @@ strategy_subset = {
         "Last War: Survival上月未进入全球TOP10，本月进入总榜第7；Kingshot由第7降至第9。官方公开材料均未披露单品收入同比。",
         "本期全球收入TOP10仅有3款符合核心策略口径，不能据此把它们重新编号为完整全球策略品类前三名。",
     ],
-    "methodologyNote": "页面只展示Sensor Tower官方全球收入TOP10中的核心策略产品，并保留其全球总榜名次。逐款箭头和位数比较的是2026年8月至9月的榜位变化，不是收入同比。Sensor Tower公开材料未披露单款收入或单品同比百分比，因此不以排名变化换算收入增幅；页面所示约-7.6%仅为两期官方公开市场总额计算的全球手游市场同比。",
+    "methodologyNote": "页面只展示Sensor Tower官方全球收入TOP10中的核心策略产品，并保留其全球总榜名次。逐款箭头和位数比较的是2026年8月至9月的榜位变化，不是收入同比。Sensor Tower公开材料未披露单款收入或单品同比百分比，因此不以排名变化换算收入增幅；页面所示约-7.1%仅为两期官方公开市场总额计算的全球手游市场同比。",
 }
 
 
@@ -173,6 +173,7 @@ september_icons = {
 
 
 save("data/sensortower-global-revenue-top10-202609.json", source_top10)
+save("data/sensortower-global-revenue-top10-latest.json", source_top10)
 save("data/sensortower-global-strategy-revenue-202609.json", strategy_subset)
 save("data/sensortower-global-strategy-revenue-latest.json", strategy_subset)
 save("assets/sensortower-strategy-icons-202609.json", september_icons)

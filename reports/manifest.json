@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-06",
+      "title": "Kingdom Guard双端改善，Sea War双端掉榜，iOS榜尾六进六出",
+      "summary": "较10月5日前一有效快照，Google Play四进四出：Forge of Empires #53、Kingdom Guard #57、GFL2 #59、Aliens vs Zombies #60回榜，Game of Thrones: Conquest、The Ants、Sea War、Last Shelter: Survival掉榜；The Grand Mafia +5至#25。iOS六进六出：Warpath #48、Game of Thrones #50、Kingdom Clash #51、Boom Beach #57、Last Shelter #58、Top Heroes #60回榜，Wild Rift、Hearthstone、Draft Showdown、Sea War、The Tower、Yu-Gi-Oh掉榜；Forge Master +15、Tacticus -14、The Battle Cats +11。近90天新品为Google 2款、iOS 2款，较老产品因缺少7月8日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-10-06.md",
+      "json": "data/market-brief-20261006.json"
+    },
     {
       "date": "2026-10-05",
       "title": "Last Beacon首次入榜，Sea War双端承压，Sensor Tower 9月策略子集增至3款",
