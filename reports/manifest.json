@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-07",
+      "title": "Game of Thrones双端改善，MARVEL SNAP跨端分化，iOS七进七出",
+      "summary": "较10月6日前一有效快照，Google Play两进两出：Game of Thrones: Conquest #55、Last Shelter: Survival #59回榜，MARVEL SNAP与Sea of Conquest掉榜；Wild Rift −8至#52。iOS七进七出：Yu-Gi-Oh #29、Sea War #41、Hearthstone #52、Galaxy Defense #55、Plants on Fire #56、Draft Showdown #58、Sea of Conquest #59回榜，Overgeared Hero、Warpath、Kingdom Clash、Star Trek、Boom Beach、Lords Mobile、Top Heroes掉榜；MARVEL SNAP +18、Kingdom Guard −17、Star Wars +15、Age of Empires −14。近90天新品为Google 2款、iOS 3款，较老产品因缺少7月9日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-10-07.md",
+      "json": "data/market-brief-20261007.json"
+    },
     {
       "date": "2026-10-06",
       "title": "Kingdom Guard双端改善，Sea War双端掉榜，iOS榜尾六进六出",
