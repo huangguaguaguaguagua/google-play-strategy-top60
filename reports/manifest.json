@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-08",
+      "title": "Game of Thrones连续双端改善，MARVEL SNAP回补，iOS四进四出",
+      "summary": "较10月7日前一有效快照，Google Play一进一出：MARVEL SNAP回榜#40，Age of Empires掉榜；Game of Thrones与GFL2各+9，Limbus与Forge各−10。iOS四进四出：Pokémon Champions #42、Rise of Castles #45、Kingdom Clash #50、Overgeared Hero #55回榜，Guns of Glory、Last Shelter: War Z、Plants on Fire、Last Day on Earth掉榜；Fire Emblem与Game of Thrones各+14，Top War −11。近90天新品为Google 2款、iOS 2款，较老产品因缺少7月10日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-10-08.md",
+      "json": "data/market-brief-20261008.json"
+    },
     {
       "date": "2026-10-07",
       "title": "Game of Thrones双端改善，MARVEL SNAP跨端分化，iOS七进七出",
