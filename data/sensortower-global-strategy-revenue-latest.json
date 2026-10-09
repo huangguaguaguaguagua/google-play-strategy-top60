@@ -17,6 +17,9 @@
   "iconBundle": "assets/sensortower-strategy-icons-202609.json",
   "downloadPath": "data/sensortower-global-strategy-revenue-202609.json",
   "updatePolicy": "每个工作日仅检查Sensor Tower是否发布新一期官方全球收入月榜；发布后筛选其中核心策略产品并更新一次，未发布时不改月份或数值。",
+  "strategyDefinition": "核心循环属于SLG、4X、城建生存、塔防或战术经营；不因商店多标签而纳入MOBA、体育、消除、派对、射击或RPG产品",
+  "sourceTop10Size": 10,
+  "strategyMatches": 3,
   "scope": {
     "region": "全球",
     "stores": "Apple App Store + Google Play",

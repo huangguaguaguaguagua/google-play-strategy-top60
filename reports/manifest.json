@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-09",
+      "title": "Google截线换防，iOS五进五出，Summoners与Pokémon反向波动",
+      "summary": "较10月8日前一有效快照，Google Play两进两出：Ant Legion回榜#59、Auto Drill首次进入项目榜#60，Limbus Company与Forge of Empires掉榜；Last Fortress −7至#57，GFL2 +6至#45。iOS五进五出：DC: Dark Legion #46、Plants on Fire #51、Last Shelter: War Z #54、Cell Survivor #55、Last Day on Earth #56回榜，Kingdom Clash、Sea of Conquest、Galaxy Defense、Kingdom Guard、Age of Empires掉榜；Summoners +21、Pokémon −18、Tacticus −17、Dragon Traveler +17。近90天新品为Google 2款、iOS 3款，较老产品因缺少7月11日精确基准不判断90天飙升。",
+      "markdown": "reports/2026-10-09.md",
+      "json": "data/market-brief-20261009.json"
+    },
     {
       "date": "2026-10-08",
       "title": "Game of Thrones连续双端改善，MARVEL SNAP回补，iOS四进四出",
