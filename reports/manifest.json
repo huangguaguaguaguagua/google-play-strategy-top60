@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-12",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-12",
+      "title": "Google截线三进三出，iOS双向放大，Tacticus双端共振",
+      "summary": "较10月9日前一有效快照，Google Play三进三出：Vikings #52、Sea of Conquest #56、Sea War #59回榜，Kingdom Guard、Last Fortress、Wild Rift掉榜；Auto Drill +9、Tacticus +6，Lords Mobile −11。iOS五进五出：Watcher #30、Lords Mobile #52、Bloons TD 6 #54、Star Trek #56、Aliens vs Zombies #59进入，Yu-Gi-Oh、DC、Last Shelter War Z、Rise of Castles、Pokémon Champions掉榜；Tacticus +26、Mobile Legends +18、PUBG +15、GoT Conquest −28。近90天新品为Google 2款、iOS 3款；两端缺少7月14日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-12.md",
+      "json": "data/market-brief-20261012.json"
+    },
     {
       "date": "2026-10-09",
       "title": "Google截线换防，iOS五进五出，Summoners与Pokémon反向波动",
