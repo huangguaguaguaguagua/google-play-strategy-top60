@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-13",
+      "title": "Google全榜留存，iOS六进六出，Top Heroes双端同至#44",
+      "summary": "较10月12日前一有效快照，Google Play无进入或掉榜，Top Heroes +4至#44，Aliens、Lords各+3，Clash Royale等四款各−3。iOS六进六出：Top Heroes #44、Kingdom Guard #45、Guns of Glory #55、Last Shelter #57、The Tower #59、Kingdom Clash #60进入，Bloons TD 6、Star Trek、Evo Defense、Draft Showdown、Aliens、Plants on Fire掉榜；Lands of Jail +9，Warline、Overgeared、Infinity Kingdom各+7，Tacticus与Summoners War各−9。近90天新品为Google 1款、iOS 2款；两端缺少7月15日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-13.md",
+      "json": "data/market-brief-20261013.json"
+    },
     {
       "date": "2026-10-12",
       "title": "Google截线三进三出，iOS双向放大，Tacticus双端共振",
