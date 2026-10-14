@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-14",
+      "title": "Age of Empires双端回榜，Hearthstone与The Tower跃升，iOS波动扩大",
+      "summary": "较10月13日前一有效快照，Google Play一进一出：Age of Empires Mobile回榜#54、Call of Dragons从#60掉榜；Overgeared与Lords Mobile各+5，MARVEL SNAP −10。iOS三进三出：Age of Empires #21、Evo Defense #49、Plants on Fire #60回榜，Kingdom Guard、Summoners War、Cell Survivor掉榜；The Tower +25、Hearthstone +22、Watcher of Realms −23。近90天新品为Google 1款、iOS 3款；两端缺少7月16日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-14.md",
+      "json": "data/market-brief-20261014.json"
+    },
     {
       "date": "2026-10-13",
       "title": "Google全榜留存，iOS六进六出，Top Heroes双端同至#44",
