@@ -11,13 +11,31 @@ from daily_update_20260820 import comparison, delta_label
 
 
 updater = prior.updater
-enforce_required_product_language = prior.enforce_required_product_language
+base_enforce_required_product_language = prior.enforce_required_product_language
 updater.CAPTURE = updater.GOOGLE_DATE = updater.IOS_DATE = "2026-10-15"
 updater.STAMP = "20261015"
 updater.PREVIOUS_STAMP = "20261014"
 updater.GOOGLE_BASELINE = updater.IOS_BASELINE = "2026-07-17"
 updater.GOOGLE_DATES = ("20261014",) + updater.GOOGLE_DATES
 updater.IOS_DATES = ("20261014",) + updater.IOS_DATES
+
+
+def enforce_required_product_language(game_name, analysis):
+    """Keep required narratives explicit while making daily rewrites idempotent."""
+    analysis = base_enforce_required_product_language(game_name, analysis)
+    if game_name != "Kingshot":
+        return analysis
+
+    def rewrite(value):
+        if isinstance(value, dict):
+            return {key: rewrite(item) for key, item in value.items()}
+        if isinstance(value, list):
+            return [rewrite(item) for item in value]
+        if isinstance(value, str):
+            return re.sub(r"(?:城镇经营、)+居民分工", "城镇经营、居民分工", value)
+        return value
+
+    return rewrite(analysis)
 
 
 def prepare_analysis(analysis):
