@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-15",
+      "title": "Arknights双端强势回榜，iOS五进五出并扩大波动",
+      "summary": "较10月14日前一有效快照，Google Play一进一出：Arknights回榜前15、Ant Legion从#57掉榜；Game of Thrones: Conquest −11，Age of Empires +7。iOS五进五出：Arknights、Summoners War、SimCity、Kiss of War与War Machines回榜，另有5款掉榜；Sea War +19、The Battle Cats −14、Last Day on Earth −10。近90天新品为Google 1款、iOS 2款；两端缺少7月17日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-15.md",
+      "json": "data/market-brief-20261015.json"
+    },
     {
       "date": "2026-10-14",
       "title": "Age of Empires双端回榜，Hearthstone与The Tower跃升，iOS波动扩大",
