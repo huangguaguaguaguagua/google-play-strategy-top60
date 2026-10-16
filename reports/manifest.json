@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-16",
+      "title": "Call of Dragons与Wild Rift双端回榜，iOS五进五出延续高波动",
+      "summary": "较10月15日前一有效快照，Google Play两进两出：Call of Dragons与Wild Rift回榜，GFL2与Vikings掉榜；Arknights、Age of Empires各+6。iOS五进五出：Limbus、Wild Rift、Last Shelter: War Z、Star Trek与Call of Dragons回榜，SimCity、Lords Mobile、Overgeared、Kiss of War和War Machines掉榜；Dragon Traveler +25，The Tower −16，Tacticus −10。近90天新品为Google 1款、iOS 2款；两端缺少7月18日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-16.md",
+      "json": "data/market-brief-20261016.json"
+    },
     {
       "date": "2026-10-15",
       "title": "Arknights双端强势回榜，iOS五进五出并扩大波动",
