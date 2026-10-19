@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-19",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-19",
+      "title": "Google主体稳定、iOS五进五出，Plants on Fire回到榜尾",
+      "summary": "较10月16日前一有效快照，Google Play一进一出：Limbus回榜、Sea of Conquest掉榜，Wild Rift +13、Stormshot −9。iOS五进五出：Watcher、Overgeared、SD Gundam、Plants on Fire与Bloons回榜，Limbus、Game of Thrones: Conquest、Evo Defense、Last Shelter: War Z与Call of Dragons退出；Mobile Legends +18、Fire Emblem +16，Arknights −21、Hearthstone −19。近90天新品为Google 1款、iOS 2款；两端缺少7月21日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-19.md",
+      "json": "data/market-brief-20261019.json"
+    },
     {
       "date": "2026-10-16",
       "title": "Call of Dragons与Wild Rift双端回榜，iOS五进五出延续高波动",
