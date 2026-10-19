@@ -16,6 +16,6 @@
 
 收入月榜在每个工作日检查Sensor Tower官方最新报告；只有官方发布新一期时才更新策略子集的版本化JSON、ICON包与latest文件
 
-公开页面：<https://huangguaguaguagua.github.io/google-play-strategy-top60/>
+公开页面：<https://huangguaguaguaguagua.github.io/google-play-strategy-top60/>
 
-日报归档清单：<https://huangguaguaguagua.github.io/google-play-strategy-top60/reports/manifest.json>
+日报归档清单：<https://huangguaguaguaguagua.github.io/google-play-strategy-top60/reports/manifest.json>
