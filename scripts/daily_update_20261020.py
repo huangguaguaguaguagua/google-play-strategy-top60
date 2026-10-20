@@ -272,6 +272,45 @@ def apply_verified_return_updates():
     )
 
 
+def refresh_current_rank_summaries():
+    """Keep compact, visible summaries aligned with today's two official lists."""
+
+    google = {
+        "com.YoStarEN.Arknights": "趋势：2020年全球上线后以职业克制、部署顺序与技能时机构成长线塔防核心；关键转折：Episode 17于10月14日开放，本期Google持平于#{rank}、iOS回落5位至#33，版本节点与榜位只作时间对照；主力素材：新主线世界观、限定干员、多职业编队、格子部署、敌人路线与技能爆发。",
+        "com.scopely.startrek": "趋势：2018年以正版Star Trek舰船、角色与联盟银河沙盒建立核心盘，成熟期靠剧集角色和连续活动回流；关键转折：Division 12于10月15日加入SNW Rose Harper、Haven Exchange与限时里程碑，本期Google持平于#{rank}，iOS则从前一快照#55掉出TOP60；主力素材：经典角色、舰船对决、剧情章节、联盟战争与活动通行证。",
+        "com.more.lastshelter.gp": "趋势：2026年6月上架后，用末日地下庇护所切面、营救幸存者和僵尸压力承接房间建设、英雄编队与联盟战争，目前仍处首发验证；关键转折：8月26日版本补入联盟玩法与Doomsday Transport，本期Google升2位至#{rank}，但没有证据把单日变化归因于该旧版本；主力素材：地下庇护所剖面、救援抉择、僵尸追击、房间扩建、英雄小队和废土探索。",
+        "com.fiveminlab.overgeared.hero.backpack.merge": "趋势：2026年以像素背包装备合并、肉鸽短局和自动战斗进入榜单；关键转折：10月13日加入Raven联动皮肤、万圣节传奇皮肤与装备工坊，本期Google升2位至#{rank}、iOS升16位至#41，时间相邻但不作确定归因；主力素材：像素英雄、背包摆位、装备合成、联动角色、万圣节皮肤与自动战斗。",
+        "com.lavalabs.autodrill": "趋势：2026年6月以自动钻探飞船、手动摇杆和逐块击穿行星上线，把即时破坏反馈承接到武器、技能融合、装备升级与无限区域；关键转折：10月2日版本仅披露错误修复和性能改善，本期Google回落1位至#{rank}，未发现可确认的重大玩法转折；主力素材：飞船切入方块行星、连锁爆炸、武器弹幕、技能三选一/融合、装备升级与区域推进。",
+        "com.farlightgames.samo.gp": "趋势：2023年以奇幻自由行军与联盟围猎Behemoth切入，成熟期由战宠、新巨兽和赛季竞合支撑；关键转折：第二赛季引入War Pets并压缩赛季间歇，本期Google回落1位至#{rank}，没有证据显示出现新的结构转折；主力素材：巨兽围猎、战宠捕捉、奇幻自由行军、英雄技能与联盟Boss。",
+        "aliens.zombies.invasion": "趋势：2024年以卡通外星人、丧尸潮和单机塔防上架，当前由路径控制、塔位布局与防御塔升级承接；关键转折：未发现可确认的重大转折/长期稳定运营，本期Google升2位至#{rank}，iOS回榜#51；主力素材：密集丧尸波次、不同射程塔位、升级分支与基地防线。",
+        "com.riotgames.league.wildrift": "趋势：2021年以英雄联盟IP和移动端5v5切入，成熟期由新英雄、赛季、皮肤和电竞节点支撑；关键转折：7.3b调整英雄、装备、符文与野区，并于10月15日开放限定兑换内容，本期Google回落1位至#{rank}、iOS回落4位至#58；主力素材：5v5团战、英雄技能、高光操作、版本平衡与赛事皮肤。",
+        "com.hnhs.endlesssea.gp": "趋势：2026年5月以海洋淹没后的灯塔庇护所、舰队探索和鲨鱼压力上线，随后加入联盟、海上要塞及世界首领；关键转折：当前2.5.5版本仅披露服务器性能与稳定性优化，本期Google回落1位至#{rank}，未发现可确认的重大结构转折；主力素材：孤岛灯塔、篝火与鲨鱼包围的生存压力，承接漂浮庇护所扩建、舰队、海怪/海盗和联盟海域争夺。",
+    }
+    ios = {
+        "1464872022": "趋势：2020年全球上线后以职业克制、部署顺序与技能时机构成长线塔防核心；关键转折：Episode 17于10月14日开放，本期iOS回落5位至#{rank}、Google持平于#8，版本节点与榜位只作时间对照；主力素材：新主线世界观、限定干员、多职业编队、格子部署、敌人路线与技能爆发。",
+        "6755585789": "趋势：2026年以像素背包装备合并、肉鸽短局和自动战斗进入榜单；关键转折：10月13日加入Raven联动皮肤、万圣节传奇皮肤与装备工坊，本期iOS升16位至#{rank}、Google升2位至#36，时间相邻但不作确定归因；主力素材：像素英雄、背包摆位、装备合成、联动角色、万圣节皮肤与自动战斗。",
+        "852912420": "趋势：2014年以符文构筑、属性克制和回合制魔灵收集形成全球长线盘；关键转折：SWC2026美洲杯结果与亚太杯排期于10月14日集中发布，本期iOS回落13位至#{rank}，赛事节点与单日变化只作时间对照；主力素材：赛事对局、Pick & Ban、稀有召唤、符文搭配、魔灵养成与跨服竞技。",
+        "625257520": "趋势：2014年以Warcraft卡牌对战切入，标准轮换、扩展包与酒馆战棋维持多模式长线运营；关键转折：37.0开启Reign of the Black Empire预发布、新竞技场赛季与Journal，本期iOS持平于#{rank}，未见单日榜位改善；主力素材：Old Gods、Assemble关键词、职业构筑、竞技场选牌、酒馆战棋与奖励轨。",
+        "6740232087": "趋势：2025年iOS上线，以飞碟吞噬、资源掉落和炮塔防守连接动作入口与丧尸塔防，本期回到iOS #{rank}；关键转折：10月6日1.22b重做装备系统，10月19日Boss Hunt与回榜时间相邻但因果待验证，10月26日Halloween Night尚待观察；主力素材：飞碟吞噬、炮塔建造升级、丧尸潮、装备合成与万圣节Boss。",
+        "850057092": "趋势：2014年靠极简横版出兵和荒诞猫咪美术形成长尾，十余年通过新形态、关卡和高频联动反复回流；关键转折：从单纯推线扩展出稀有猫养成与高难挑战，本期iOS回落7位至#{rank}；主力素材：怪猫进化、巨大敌人、低成本反差和联动角色。",
+        "1480616990": "趋势：2021年以英雄联盟IP和移动端5v5切入，成熟期由新英雄、赛季、皮肤和电竞节点支撑；关键转折：7.3b调整英雄、装备、符文与野区，并于10月15日开放限定兑换内容，本期iOS回落4位至#{rank}、Google回落1位至#48；主力素材：5v5团战、英雄技能、高光操作、版本平衡与赛事皮肤。",
+        "1575590830": "趋势：2021年从极简单塔守波起步，靠永久研究、卡牌和锦标赛社区逐步爬升；关键转折：v29加入全局预设、Mythic联赛、重做Vault与Harmony Tree，本期iOS回落8位至#{rank}，单日变化不直接归因于版本；主力素材：单塔清屏、指数成长、Boss波次、构筑预设、锦标赛与长期研究。",
+    }
+
+    for games_path, trends_path, key, updates in (
+        ("data/games-20261020.json", "data/trends-20261020.json", "packageName", google),
+        ("data/ios-games-20261020.json", "data/ios-trends-20261020.json", "appId", ios),
+    ):
+        games = updater.load(games_path)
+        trends = updater.load(trends_path)
+        by_id = {str(game[key]): game for game in games}
+        for product_id, summary in updates.items():
+            game = by_id[product_id]
+            trends[str(game["rank"])]["summary"] = summary.format(rank=game["rank"])
+        updater.save(trends_path, trends)
+
+
 if __name__ == "__main__":
     updater.main()
     apply_verified_return_updates()
+    refresh_current_rank_summaries()
