@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-20",
+      "title": "Google主体稳定，iOS四进四出；Foundation双端同步改善",
+      "summary": "较10月19日前一有效快照，Google Play一进一出：Age of Spirits回到#58、Limbus掉榜，59款共同产品中50款位移不超过2名；Foundation +6至#29。iOS四进四出：Kingdom Clash、Rise of Castles、Aliens vs Zombies与Guns of Glory回榜，Star Trek、SD Gundam、Plants on Fire与Bloons退出；Overgeared +16、Top Heroes +12，Summoners War −13、Fire Emblem −12。近90天新品为Google 2款、iOS 1款；两端缺少7月22日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-20.md",
+      "json": "data/market-brief-20261020.json"
+    },
     {
       "date": "2026-10-19",
       "title": "Google主体稳定、iOS五进五出，Plants on Fire回到榜尾",
