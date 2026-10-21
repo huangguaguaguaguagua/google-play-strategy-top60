@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20261021a";
+const CACHE_VERSION = "20261021b";
 const MARKET_BRIEF_PATH = "data/market-brief-20261021.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
 const GLOBAL_REVENUE_PATH = "data/sensortower-global-strategy-revenue-latest.json";
