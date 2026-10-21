@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-21",
+      "title": "Google榜面近乎静止，iOS八进八出；Hearthstone与Star Wars大幅上行",
+      "summary": "较10月20日前一有效快照，Google Play仅在#60发生Limbus回榜、Raid Rush掉榜，59款共同产品中56款位移不超过2名；King of Avalon +4。iOS八进八出，Hearthstone +38至#12、Star Wars +24至#7，Battle Cats +12、Sea War +11；Age of Empires、War and Order和Lands of Jail各−8。近90天新品为Google 2款、iOS 0款；两端缺少7月23日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-21.md",
+      "json": "data/market-brief-20261021.json"
+    },
     {
       "date": "2026-10-20",
       "title": "Google主体稳定，iOS四进四出；Foundation双端同步改善",
