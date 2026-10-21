@@ -131,7 +131,7 @@ ios_products = [
     card("ios", "The Battle Cats", "up", "iOS上升12位至#40。15.6.1主要为错误修复，15.6.0加入震动、新形态和关卡；距离当前已有两周，单日抬升仍待验证。"),
     card("ios", "Sea War", "up", "iOS上升11位至#45，Google当前#59。iOS最近版本只写界面和错误修复，缺少活动证据，先记录为单端改善。"),
     card("ios", "Age of Empires", "down", "iOS下跌8位至#37，Google当前#39，双端名次仍接近。10月8日版本只披露修复，当前更像中段波动而非可确认转折。"),
-    card("ios", "Lands of Jail", "down", "iOS下跌8位至#43，Google当前#24，跨端差距扩大。10月19日新英雄、护甲与Forticlad等级上限更新与下跌并存，不能以有版本推断增长。"),
+    card("ios", "Lands of Jail", "down", "iOS下跌8位至#43，Google当前#22，跨端差距扩大。10月19日新英雄、护甲与Forticlad等级上限更新与下跌并存，不能以有版本推断增长。"),
     card("ios", "Overgeared Hero", "down", "iOS下跌7位至#48，Google当前#35。Raven联动与万圣节皮肤仍在运营窗口，但榜位未同步改善，需观察活动后段。"),
 ]
 
