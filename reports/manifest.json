@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-22",
+      "title": "Google榜尾互换、iOS三进三出；Summoners War与Lords Mobile上行",
+      "summary": "较10月21日前一有效快照，Google Play由Raid Rush回榜#59、Limbus Company掉榜，59款共同产品中52款位移不超过2名；Arknights −6至#14。iOS三进三出，Fire Emblem Heroes、Last Day on Earth与Jurassic World Alive在#57—60回榜；Summoners War +15、Lords Mobile +12、Forge Master +9，Sea War与Age of Empires各−8。近90天新品为Google 2款、iOS 0款；两端缺少7月24日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-22.md",
+      "json": "data/market-brief-20261022.json"
+    },
     {
       "date": "2026-10-21",
       "title": "Google榜面近乎静止，iOS八进八出；Hearthstone与Star Wars大幅上行",
