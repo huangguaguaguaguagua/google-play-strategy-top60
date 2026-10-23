@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-23",
+      "title": "Google一进一出、iOS四进四出；两组核心产品跨端反向",
+      "summary": "较10月22日前一有效快照，Google Play由Sea of Conquest回榜#60、Raid Rush掉榜，59款共同产品中49款位移不超过2名；Arknights +6、Dragonfire −6。iOS四进四出，Infinity Kingdom +20、Dragonfire +13、Dragon Traveler +12，Hearthstone −11、Top Heroes −10。近90天新品为Google 2款、iOS 0款；两端缺少7月25日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-23.md",
+      "json": "data/market-brief-20261023.json"
+    },
     {
       "date": "2026-10-22",
       "title": "Google榜尾互换、iOS三进三出；Summoners War与Lords Mobile上行",
