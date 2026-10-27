@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-27",
+      "title": "Whiteout双端登顶；Google五进五出，iOS三进三出",
+      "summary": "较10月26日前一有效快照，Google Play五进五出，55款共同产品中37款位移不超过2名；Rise of Castles +17、Lands of Jail −11，Whiteout Survival升至#1。iOS三进三出，Boom Beach与Tacticus各+22、Hearthstone −17。Last Human首次进入项目Google榜#59并按本店上架日归类为近90天新品；两端缺少7月29日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-27.md",
+      "json": "data/market-brief-20261027.json"
+    },
     {
       "date": "2026-10-26",
       "title": "Google三进三出保持稳定，iOS八进八出；Age of Spirits首次双端留榜",
