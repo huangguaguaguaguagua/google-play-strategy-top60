@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-28",
+      "title": "双端头部稳定；Google一进一出，iOS七进七出",
+      "summary": "较10月27日前一有效快照，Google Play一进一出，59款共同产品中48款位移不超过2名；Game of Thrones: Conquest +16、Lands of Jail +5，Supremacy: World War 3压线回榜。iOS七进七出，Lands of Jail +9、Rise of Kingdoms与MARVEL SNAP各+7，Boom Beach −14、Tacticus −11。Google近90天新品3款、iOS 1款；两端缺少7月30日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-28.md",
+      "json": "data/market-brief-20261028.json"
+    },
     {
       "date": "2026-10-27",
       "title": "Whiteout双端登顶；Google五进五出，iOS三进三出",
