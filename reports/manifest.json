@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-29",
+      "title": "Whiteout Survival双端升至榜首；Google两进两出，iOS三进三出",
+      "summary": "较10月28日前一有效快照，Google Play两进两出，58款共同产品中52款位移不超过2名；Sea War与Raid Rush在#57/#59回榜，Duck Survival −6至#52。iOS三进三出，Summoners War +14、Forge Master +9，Plants on Fire −10；Avatar: Realms Collide首次项目收录于#60。Google近90天新品3款、iOS 2款；两端缺少7月31日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-29.md",
+      "json": "data/market-brief-20261029.json"
+    },
     {
       "date": "2026-10-28",
       "title": "双端头部稳定；Google一进一出，iOS七进七出",
