@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-10-30",
+      "title": "Google两进两出、iOS五进五出；Sea War双端上扬",
+      "summary": "较10月29日前一有效快照，Google Play两进两出，58款共同产品中46款位移不超过2名；Sea War +9、Duck Survival −7，West Game首次进入项目Google记录。iOS五进五出，Dragon Traveler +12、Arknights −14；Sea War双端同向上升，Arknights在Google持平、iOS回落。Google近90天新品2款、iOS 1款；两端缺少8月1日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-10-30.md",
+      "json": "data/market-brief-20261030.json"
+    },
     {
       "date": "2026-10-29",
       "title": "Whiteout Survival双端升至榜首；Google两进两出，iOS三进三出",
