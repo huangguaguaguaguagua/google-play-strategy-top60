@@ -1,7 +1,14 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-02",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-02",
+      "title": "Google一进一出、iOS八进八出；Sea War跨端极端分化",
+      "summary": "较10月30日前一有效快照，Google Play一进一出，59款共同产品中30款位移不超过2名；GFL2回榜#32，DC −12、Arknights与Top Heroes各−11。iOS八进八出，52款共同产品中23款位移不超过2名；Age of Empires +20、Sea War −32。Clash of Clans与Age of Spirits双端改善，Sea War和GFL2跨端反向。Google近90天新品2款、iOS 1款；两端缺少8月4日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-02.md",
+      "json": "data/market-brief-20261102.json"
+    },
     {
       "date": "2026-10-30",
       "title": "Google两进两出、iOS五进五出；Sea War双端上扬",
