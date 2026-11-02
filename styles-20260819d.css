@@ -230,7 +230,12 @@
 .report-archive__copy > span { color: var(--lime); font-size: 9px; font-weight: 850; letter-spacing: .14em; }
 .report-archive__copy strong { display: block; margin-top: 7px; font-size: 17px; }
 .report-archive__copy p { margin: 9px 0 0; color: #91a0b8; font-size: 10px; line-height: 1.65; }
-.report-list { min-width: 0; display: grid; gap: 8px; }
+.report-list { min-width: 0; max-height: 420px; padding-right: 7px; display: grid; gap: 8px; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; scrollbar-width: thin; scrollbar-color: rgba(184,255,45,.68) rgba(255,255,255,.08); }
+.report-list::-webkit-scrollbar { width: 8px; }
+.report-list::-webkit-scrollbar-track { border-radius: 999px; background: rgba(255,255,255,.08); }
+.report-list::-webkit-scrollbar-thumb { border: 2px solid #0b1120; border-radius: 999px; background: rgba(184,255,45,.68); }
+.report-list::-webkit-scrollbar-thumb:hover { background: var(--lime); }
+.report-list:focus-visible { outline: 2px solid var(--lime); outline-offset: 4px; }
 .report-item { padding: 13px 14px; display: grid; grid-template-columns: 90px minmax(0, 1fr) auto; gap: 14px; align-items: center; border: 1px solid rgba(255,255,255,.1); border-radius: 10px; background: rgba(255,255,255,.05); }
 .report-item time { color: var(--lime); font-size: 10px; font-weight: 800; }
 .report-item strong { display: block; font-size: 11px; }
@@ -258,6 +263,7 @@
   .market-dynamics, .market-closing { padding: 17px; }
   .market-platform-card__head { flex-direction: column; }
   .market-platform-card__head small { max-width: none; text-align: left; }
+  .report-list { max-height: 360px; }
   .report-item { grid-template-columns: 1fr; }
   .report-item__links { justify-content: flex-start; }
 }
