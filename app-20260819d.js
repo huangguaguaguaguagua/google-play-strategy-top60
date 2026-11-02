@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "20261102a";
+const CACHE_VERSION = "20261102c";
 const MARKET_BRIEF_PATH = "data/market-brief-20261102.json";
 const REPORTS_MANIFEST_PATH = "reports/manifest.json";
 const GLOBAL_REVENUE_PATH = "data/sensortower-global-strategy-revenue-latest.json";
@@ -302,7 +302,12 @@ async function loadMarketBrief() {
       fetchJson(MARKET_BRIEF_PATH, "市场日报"),
       fetchJson(REPORTS_MANIFEST_PATH, "日报归档"),
     ]);
-    const icons = brief.iconBundle ? await fetchJson(brief.iconBundle, "市场动态ICON") : {};
+    const iconOverridePaths = brief.iconOverrideBundles || (brief.iconOverrideBundle ? [brief.iconOverrideBundle] : []);
+    const [icons, ...iconOverrides] = await Promise.all([
+      brief.iconBundle ? fetchJson(brief.iconBundle, "市场动态ICON") : {},
+      ...iconOverridePaths.map((path) => fetchJson(path, "市场动态ICON覆盖包")),
+    ]);
+    Object.assign(icons, ...iconOverrides);
     elements.marketBriefLead.textContent = brief.title + "。" + brief.summary;
     elements.marketBriefDate.textContent = brief.date + " · 北京时间";
     elements.marketBriefDownload.href = safeLocalPath(brief.downloads?.markdown);

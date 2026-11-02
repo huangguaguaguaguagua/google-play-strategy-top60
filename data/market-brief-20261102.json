@@ -5,6 +5,17 @@
   "summary": "较10月30日前一有效快照，Google Play一进一出，59款共同产品中30款位移不超过2名；GFL2回榜#32，DC −12、Arknights与Top Heroes各−11。iOS八进八出，52款共同产品中23款位移不超过2名；Age of Empires +20、Sea War −32。Clash of Clans与Age of Spirits双端改善，Sea War和GFL2跨端反向。Google近90天新品2款、iOS 1款；两端缺少8月4日精确基准，不判断较老产品的90天飙升。",
   "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与对策略品类的影响综合排序；不是第三方阅读量或舆情指数。",
   "iconBundle": "assets/market-icons-20261102.json",
+  "iconOverrideBundles": [
+    "assets/market-icons-refresh-20261102-01.json",
+    "assets/market-icons-refresh-20261102-02.json",
+    "assets/market-icons-refresh-20261102-03.json",
+    "assets/market-icons-refresh-20261102-04.json",
+    "assets/market-icons-refresh-20261102-05.json",
+    "assets/market-icons-refresh-20261102-06.json",
+    "assets/market-icons-refresh-20261102-07.json",
+    "assets/market-icons-refresh-20261102-08.json",
+    "assets/market-icons-refresh-20261102-09.json"
+  ],
   "rankingSources": {
     "googlePlay": "data/games-20261102.json",
     "ios": "data/ios-games-20261102.json"
