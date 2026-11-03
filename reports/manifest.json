@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-03",
+      "title": "Google成员稳定、iOS四进四出；GOT Conquest跨端反向",
+      "summary": "较11月2日前一有效快照，Google Play无进出，Duck Survival +9、GOT Conquest −9，Clash Royale双端均+6。iOS四进四出，Draft Showdown回榜#31，GOT Conquest +19；其余进出集中于后十三名。Google近90天新品2款、iOS 1款；两端缺少8月5日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-03.md",
+      "json": "data/market-brief-20261103.json"
+    },
     {
       "date": "2026-11-02",
       "title": "Google一进一出、iOS八进八出；Sea War跨端极端分化",
