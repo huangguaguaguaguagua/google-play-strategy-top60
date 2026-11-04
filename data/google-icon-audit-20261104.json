@@ -1,0 +1,27 @@
+{
+  "store": "google",
+  "checkedAt": "2026-11-04T09:39:03+08:00",
+  "rankingFile": "data/games-20261104.json",
+  "manifestFile": "assets/manifest.json",
+  "thresholdMeanAbsoluteError": 8.0,
+  "checkedCount": 60,
+  "mismatchCount": 0,
+  "failureCount": 0,
+  "action": "full-audit-then-official-override",
+  "outputBundles": [
+    "assets/google-icons-refresh-20261104.json"
+  ],
+  "resolvedMismatches": [
+    {
+      "rank": 57,
+      "productId": "com.proximabeta.aoemobile",
+      "gameName": "Age of Empires Mobile",
+      "assetRank": 50,
+      "assetKey": "50_icon",
+      "officialUrl": "https://play-lh.googleusercontent.com/8zWhcX3KODFMQf19lOCbxrRys5aFr0hZIZXzJQmPGJKjFfBlZAZA21fXng81Qzb3LA6svwRexcfXMfD0sYTe",
+      "resolution": "Official Google Play icon saved in the dated local override bundle."
+    }
+  ],
+  "mismatches": [],
+  "failures": []
+}

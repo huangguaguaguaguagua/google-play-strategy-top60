@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-04",
+      "title": "Google三进三出、iOS五进五出；MARVEL SNAP跨端同升不同层",
+      "summary": "较11月3日前一有效快照，Google Play三进三出，变化集中在#54以后；Top Heroes +6、Arknights与Sea War各−6。iOS五进五出，MARVEL SNAP +29、Forge Master +18、Summoners War −16。Top Heroes双端改善，MARVEL SNAP虽双端同升但iOS已到#20、Google仅回榜#56。Google近90天新品2款、iOS 1款；两端缺少8月6日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-04.md",
+      "json": "data/market-brief-20261104.json"
+    },
     {
       "date": "2026-11-03",
       "title": "Google成员稳定、iOS四进四出；GOT Conquest跨端反向",
