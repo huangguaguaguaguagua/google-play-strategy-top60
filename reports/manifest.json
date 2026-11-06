@@ -1,7 +1,21 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-06",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-06",
+      "title": "Google一进一出、iOS五进五出；跨端反向信号增加",
+      "summary": "较11月5日前一有效快照，Google Play一进一出，West Game回榜#59、Sea War掉榜，GIRLS' FRONTLINE 2下跌21位至#46。iOS五进五出，Yu-Gi-Oh! Master Duel回榜#21，Fire Emblem、Last Shelter: War Z、Tacticus与Honor of Kings进入后十名附近；Age of Empires Mobile −16、MARVEL SNAP −12。Dragonfire与Infinity Kingdom均在iOS上升、Google下跌。Google近90天新品2款、iOS 1款；两端缺少8月8日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-06.md",
+      "json": "data/market-brief-20261106.json"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Google一进一出、iOS五进五出；Wild Rift双端进入策略分类榜",
+      "summary": "较11月4日前一有效快照，Google Play一进一出，Wild Rift首次进入项目榜#26，Arknights −13至#52；iOS五进五出，Wild Rift回榜#12，Path to Nowhere首次项目收录#52。Sea War在iOS掉榜且Google跌至#59，Kingdom Guard双端均位于#60。Google近90天新品2款、iOS 1款；两端缺少8月7日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-05.md",
+      "json": "data/market-brief-20261105.json"
+    },
     {
       "date": "2026-11-04",
       "title": "Google三进三出、iOS五进五出；MARVEL SNAP跨端同升不同层",
