@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-09",
+      "title": "Google三进三出、iOS六进六出；跨端反向换位增加",
+      "summary": "较11月6日前一有效快照，Google Play三进三出，Vikings、Draft Showdown与Supremacy回榜；The Grand Mafia +8、Dragonfire +10，Duck Survival −10。iOS六进六出，Mobile Legends升至#9，Tacticus +23至#35，Dragon Traveler −19至#52。Google近90天新品2款、iOS 2款；两端缺少8月11日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-09.md",
+      "json": "data/market-brief-20261109.json"
+    },
     {
       "date": "2026-11-06",
       "title": "Google一进一出、iOS五进五出；跨端反向信号增加",
