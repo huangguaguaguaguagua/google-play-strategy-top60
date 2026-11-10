@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-10",
+      "title": "Google两进两出、iOS四进四出；榜尾与跨端反向轮换延续",
+      "summary": "较11月9日前一有效快照，Google Play两进两出，Last Fortress与Sea of Conquest回榜；Tacticus +8，Clash Royale、Top War与Vikings均−5。iOS四进四出，Kingdom Guard +25至#33，Summoners War −13至#56；Game of Thrones: Conquest与Sea of Conquest在双端反向进出。Google近90天新品2款、iOS 1款；两端缺少8月12日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-10.md",
+      "json": "data/market-brief-20261110.json"
+    },
     {
       "date": "2026-11-09",
       "title": "Google三进三出、iOS六进六出；跨端反向换位增加",

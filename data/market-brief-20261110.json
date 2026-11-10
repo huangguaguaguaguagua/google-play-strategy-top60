@@ -1,0 +1,520 @@
+{
+  "date": "2026-11-10",
+  "timezone": "Asia/Shanghai",
+  "title": "Google两进两出、iOS四进四出；榜尾与跨端反向轮换延续",
+  "summary": "较11月9日前一有效快照，Google Play两进两出，Last Fortress与Sea of Conquest回榜；Tacticus +8，Clash Royale、Top War与Vikings均−5。iOS四进四出，Kingdom Guard +25至#33，Summoners War −13至#56；Game of Thrones: Conquest与Sea of Conquest在双端反向进出。Google近90天新品2款、iOS 1款；两端缺少8月12日精确基准，不判断较老产品的90天飙升。",
+  "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与品类影响综合排序；不是第三方阅读量或舆情指数。",
+  "iconBundle": "assets/market-icons-20261110-01.json",
+  "iconOverrideBundles": [
+    "assets/market-icons-20261110-02.json",
+    "assets/market-icons-20261110-03.json",
+    "assets/market-icons-20261110-04.json",
+    "assets/market-icons-20261110-05.json",
+    "assets/market-icons-20261110-06.json"
+  ],
+  "rankingSources": {
+    "googlePlay": "data/games-20261110.json",
+    "ios": "data/ios-games-20261110.json"
+  },
+  "previousRankingSources": {
+    "googlePlay": "data/games-20261109.json",
+    "ios": "data/ios-games-20261109.json"
+  },
+  "rankingDynamics": {
+    "googlePlay": {
+      "label": "Google Play · Android",
+      "sourceTime": "北京时间 2026-11-10T09:54:17+08:00 直连抓取",
+      "anchors": "榜单锚点：#1 Whiteout Survival · #25 Narco Empire · #60 Sea of Conquest: Pirate War",
+      "products": [
+        {
+          "gameName": "Last Fortress: Underground",
+          "productId": "com.more.lastfortress.gp",
+          "iconKey": "googlePlay:com.more.lastfortress.gp",
+          "tone": "entry",
+          "changeLabel": "进入/回榜 · #59",
+          "analysis": "回榜#59。当前仅以倒数第二名重返榜单，未发现足以确认持续拉升的单一官方节点。"
+        },
+        {
+          "gameName": "Sea of Conquest: Pirate War",
+          "productId": "com.seaofconquest.global",
+          "iconKey": "googlePlay:com.seaofconquest.global",
+          "tone": "entry",
+          "changeLabel": "进入/回榜 · #60",
+          "analysis": "回榜#60；iOS同产品本期从#59掉榜，属于跨端反向榜尾轮换。"
+        },
+        {
+          "gameName": "Game of Thrones: Conquest ™",
+          "productId": "com.wb.goog.got.conquest",
+          "iconKey": "googlePlay:com.wb.goog.got.conquest",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#58",
+          "analysis": "上期#58后掉榜，而iOS同产品回榜#58；两端出现同位反向进出。"
+        },
+        {
+          "gameName": "Draft Showdown",
+          "productId": "com.QuestLab.DraftWar",
+          "iconKey": "googlePlay:com.QuestLab.DraftWar",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#59",
+          "analysis": "上期回榜#59后再次掉榜；Season 3运行期内仍未形成连续留榜。"
+        },
+        {
+          "gameName": "Warhammer 40,000: Tacticus ™",
+          "productId": "com.snowprintstudios.tacticus",
+          "iconKey": "googlePlay:com.snowprintstudios.tacticus",
+          "tone": "up",
+          "changeLabel": "+8 · #49",
+          "analysis": "上升8位至#49，而iOS反向下跌10位至#45；跨端走势继续分化。"
+        },
+        {
+          "gameName": "Clash Royale",
+          "productId": "com.supercell.clashroyale",
+          "iconKey": "googlePlay:com.supercell.clashroyale",
+          "tone": "down",
+          "changeLabel": "−5 · #17",
+          "analysis": "下跌5位至#17，仍处中前段；单日变化不足以确认长期转弱。"
+        },
+        {
+          "gameName": "Top War: Battle Game",
+          "productId": "com.topwar.gp",
+          "iconKey": "googlePlay:com.topwar.gp",
+          "tone": "down",
+          "changeLabel": "−5 · #48",
+          "analysis": "下跌5位至#48，接近后十名；需观察下一有效快照是否继续靠近掉榜线。"
+        },
+        {
+          "gameName": "Vikings: War of Clans PvP",
+          "productId": "com.plarium.vikings",
+          "iconKey": "googlePlay:com.plarium.vikings",
+          "tone": "down",
+          "changeLabel": "−5 · #58",
+          "analysis": "前日回榜后下跌5位至#58，已进入榜尾风险区。"
+        }
+      ]
+    },
+    "ios": {
+      "label": "App Store · iPhone/iOS",
+      "sourceTime": "Apple RSS 北京时间 2026-11-10（源更新：2026-11-09T17:52:50-07:00）",
+      "anchors": "榜单锚点：#1 Pokémon GO · #25 X-Clash: Survival Challenge · #60 Galaxy Defense: Fortress TD",
+      "products": [
+        {
+          "gameName": "Honor of Kings",
+          "productId": "1619254071",
+          "iconKey": "ios:1619254071",
+          "tone": "entry",
+          "changeLabel": "进入/回榜 · #32",
+          "analysis": "Honor of Kings回榜#32。核心玩法为MOBA，保留官方策略分类榜位但不纳入核心策略收入子集。"
+        },
+        {
+          "gameName": "Sea War: Uboat Raid",
+          "productId": "6447612873",
+          "iconKey": "ios:6447612873",
+          "tone": "entry",
+          "changeLabel": "进入/回榜 · #57",
+          "analysis": "Sea War: Uboat Raid回榜#57；11月9日版本时间相邻，但当前仍是后四名待验证信号。"
+        },
+        {
+          "gameName": "Game of Thrones: Conquest ™",
+          "productId": "1035712810",
+          "iconKey": "ios:1035712810",
+          "tone": "entry",
+          "changeLabel": "进入/回榜 · #58",
+          "analysis": "Game of Thrones: Conquest回榜#58，而Google同产品掉榜；属于跨端反向榜尾轮换。"
+        },
+        {
+          "gameName": "Galaxy Defense: Fortress TD",
+          "productId": "6740189002",
+          "iconKey": "ios:6740189002",
+          "tone": "entry",
+          "changeLabel": "进入/回榜 · #60",
+          "analysis": "Galaxy Defense回榜#60。11月8日版本处于近期窗口，但当前只确认末位回补。"
+        },
+        {
+          "gameName": "DC: Dark Legion™",
+          "productId": "6479020757",
+          "iconKey": "ios:6479020757",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#49",
+          "analysis": "DC: Dark Legion上期#49后掉榜；当前仅确认iPhone端退出TOP60。"
+        },
+        {
+          "gameName": "Star Trek Fleet Command",
+          "productId": "1427744264",
+          "iconKey": "ios:1427744264",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#57",
+          "analysis": "Star Trek Fleet Command上期回榜#57后再次掉榜，榜尾席位尚不稳定。"
+        },
+        {
+          "gameName": "Sea of Conquest: Pirate War",
+          "productId": "6463715971",
+          "iconKey": "ios:6463715971",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#59",
+          "analysis": "Sea of Conquest上期#59后掉榜，而Google反向回榜#60。"
+        },
+        {
+          "gameName": "Plants on Fire",
+          "productId": "6776076449",
+          "iconKey": "ios:6776076449",
+          "tone": "exit",
+          "changeLabel": "掉榜 · 上期#60",
+          "analysis": "Plants on Fire上期#60后掉榜；11月6日版本未维持本期TOP60席位。"
+        },
+        {
+          "gameName": "Kingdom Guard:Tower Defense TD",
+          "productId": "1570095804",
+          "iconKey": "ios:1570095804",
+          "tone": "up",
+          "changeLabel": "+25 · #33",
+          "analysis": "上升25位至#33，为iOS最大上涨；Google同产品仍未回榜，先按单日待验证信号处理。"
+        },
+        {
+          "gameName": "Top Force: Commander",
+          "productId": "6761893238",
+          "iconKey": "ios:6761893238",
+          "tone": "up",
+          "changeLabel": "+9 · #16",
+          "analysis": "上升9位至#16，进入中前段；11月6日版本时间相邻，但不作确定归因。"
+        },
+        {
+          "gameName": "Age of Empires Mobile",
+          "productId": "6476261995",
+          "iconKey": "ios:6476261995",
+          "tone": "up",
+          "changeLabel": "+9 · #47",
+          "analysis": "上升9位至#47，仍处后十四名；Google同产品未入榜。"
+        },
+        {
+          "gameName": "Overgeared Hero: Merge RPG",
+          "productId": "6755585789",
+          "iconKey": "ios:6755585789",
+          "tone": "up",
+          "changeLabel": "+6 · #42",
+          "analysis": "Overgeared Hero上升6位至#42；Google同产品仍在榜，需继续观察双端是否同步。"
+        },
+        {
+          "gameName": "Aliens vs Zombies: Invasion",
+          "productId": "6740232087",
+          "iconKey": "ios:6740232087",
+          "tone": "up",
+          "changeLabel": "+6 · #49",
+          "analysis": "Aliens vs Zombies上升6位至#49，仍接近榜尾风险区。"
+        },
+        {
+          "gameName": "Yu-Gi-Oh! Master Duel",
+          "productId": "1554247785",
+          "iconKey": "ios:1554247785",
+          "tone": "down",
+          "changeLabel": "−10 · #44",
+          "analysis": "下跌10位至#44，连续两份有效快照回落；仍不足以替代更长周期判断。"
+        },
+        {
+          "gameName": "Warhammer 40,000: Tacticus ™",
+          "productId": "1599937506",
+          "iconKey": "ios:1599937506",
+          "tone": "down",
+          "changeLabel": "−10 · #45",
+          "analysis": "下跌10位至#45，而Google反向升至#49；前日大涨未延续。"
+        },
+        {
+          "gameName": "Fire Emblem Heroes",
+          "productId": "1181774280",
+          "iconKey": "ios:1181774280",
+          "tone": "down",
+          "changeLabel": "−12 · #53",
+          "analysis": "下跌12位至#53，已进入后八名；11月5日更新未维持前一日榜位。"
+        },
+        {
+          "gameName": "Summoners War",
+          "productId": "852912420",
+          "iconKey": "ios:852912420",
+          "tone": "down",
+          "changeLabel": "−13 · #56",
+          "analysis": "下跌13位至#56，为本期主要回落之一；11月7日版本时间相邻但不能直接归因。"
+        },
+        {
+          "gameName": "League of Legends: Wild Rift",
+          "productId": "1480616990",
+          "iconKey": "ios:1480616990",
+          "tone": "down",
+          "changeLabel": "−7 · #39",
+          "analysis": "下跌7位至#39；属于MOBA，保留官方分类榜位但不纳入核心策略收入子集。"
+        },
+        {
+          "gameName": "Dragon Traveler",
+          "productId": "6751086804",
+          "iconKey": "ios:6751086804",
+          "tone": "down",
+          "changeLabel": "−7 · #59",
+          "analysis": "继续下跌7位至#59，已接近掉榜；产品仍处上线早期验证。"
+        }
+      ]
+    }
+  },
+  "marketNews": [
+    {
+      "category": "全球市场 / 收入榜",
+      "date": "2026-11-03",
+      "title": "Sensor Tower最新完整全球收入榜仍为2026年10月",
+      "summary": "官方全球App Store与Google Play收入榜仍以10月为最新期，并明确排除第三方Android市场。",
+      "impact": "策略子集继续保留10月真实统计期；未发布新期，月榜文件不改。",
+      "source": "Sensor Tower官方",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-october-2026",
+      "rank": 1
+    },
+    {
+      "category": "MOBA / 回榜",
+      "date": "2026-11-10",
+      "title": "Honor of Kings回到iOS策略分类榜#32",
+      "summary": "Apple商品页明确其核心为5v5 MOBA，由腾讯天美开发、Level Infinite发行。",
+      "impact": "该产品计入官方商店榜异动，但继续排除在核心策略收入子集之外。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/honor-of-kings/id1619254071",
+      "rank": 2
+    },
+    {
+      "category": "海战SLG / 版本",
+      "date": "2026-11-09",
+      "title": "Sea War更新后回榜iOS #57",
+      "summary": "商品页显示11月9日更新；产品以潜艇、舰船、联盟和公会对抗为核心。",
+      "impact": "版本与回榜时间相邻，但当前名次仍靠近掉榜线。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/sea-war-uboat-raid/id6447612873",
+      "rank": 3
+    },
+    {
+      "category": "塔防 / 版本",
+      "date": "2026-11-08",
+      "title": "Galaxy Defense回榜iOS末位",
+      "summary": "商品页显示11月8日更新；玩法围绕炮塔组合、升级与外星入侵防守。",
+      "impact": "回榜#60只代表末位回补，下一有效快照是留位验证点。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/galaxy-defense-fortress-td/id6740189002",
+      "rank": 4
+    },
+    {
+      "category": "塔防4X / 榜位",
+      "date": "2026-11-03",
+      "title": "Kingdom Guard单日上升25位",
+      "summary": "商品页继续以合成兵种、守护龙蛋和联盟扩张为核心描述。",
+      "impact": "iOS升至#33但Google未回榜，属于需要跨端继续核验的单日信号。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/kingdom-guard-tower-defense-td/id1570095804",
+      "rank": 5
+    },
+    {
+      "category": "军事经营 / 版本",
+      "date": "2026-11-06",
+      "title": "Top Force: Commander进入iOS中前段",
+      "summary": "11月6日版本处于近期窗口；产品以基地经营、士兵武装与前线扩张为核心。",
+      "impact": "iOS上升9位至#16，需观察能否连续保持前二十。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/top-force-commander/id6761893238",
+      "rank": 6
+    },
+    {
+      "category": "战术RPG / 活动",
+      "date": "2026-11-08",
+      "title": "Tacticus活动窗口内跨端再次反向",
+      "summary": "Fabius Bile传奇活动于11月8日开启。",
+      "impact": "本期Google +8、iOS −10，说明同一活动不能直接解释两端榜位。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/warhammer-40-000-tacticus/id1599937506",
+      "rank": 7
+    },
+    {
+      "category": "SLG / IP长线",
+      "date": "2026-10-08",
+      "title": "Age of Empires Mobile回升至iOS #47",
+      "summary": "产品延续资源采集、军事建设、联盟与大地图帝国扩张。",
+      "impact": "单日+9仍位于后十四名，Google未入榜，跨端差距需要继续观察。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/age-of-empires-mobile/id6476261995",
+      "rank": 8
+    },
+    {
+      "category": "战棋RPG / 版本",
+      "date": "2026-11-05",
+      "title": "Fire Emblem Heroes回落至榜尾区",
+      "summary": "11月5日版本加入武器精炼及兑换目录更新。",
+      "impact": "本期下跌12位至#53，近期更新未维持前一日名次。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/fire-emblem-heroes/id1181774280",
+      "rank": 9
+    },
+    {
+      "category": "长线RPG / 版本",
+      "date": "2026-11-07",
+      "title": "Summoners War更新后单日下跌13位",
+      "summary": "商品页显示11月7日更新；产品仍以回合制编队、魔灵收集和公会战争为主。",
+      "impact": "本期降至#56，当前只记为榜尾风险信号。",
+      "source": "Apple App Store美国区",
+      "url": "https://apps.apple.com/us/app/summoners-war/id852912420",
+      "rank": 10
+    }
+  ],
+  "closing": [
+    {
+      "type": "判断",
+      "title": "榜尾轮换仍高于头部变化",
+      "detail": "Google 2进2出、iOS 4进4出，所有进出产品都位于#57—#60或来自前一日榜尾。"
+    },
+    {
+      "type": "判断",
+      "title": "跨端反向进一步增加",
+      "detail": "Game of Thrones: Conquest与Sea of Conquest在两端反向进出；Tacticus则Google +8、iOS −10。"
+    },
+    {
+      "type": "判断",
+      "title": "iOS中后段波动扩大",
+      "detail": "Kingdom Guard +25与Summoners War −13并存，单日异动集中在#33以后，暂不等同长期趋势。"
+    },
+    {
+      "type": "关注",
+      "title": "下一有效快照：核验六款回榜产品",
+      "detail": "重点观察Google两款和iOS四款回榜产品能否连续留榜，尤其是#57—#60。"
+    },
+    {
+      "type": "关注",
+      "title": "未来1—2个快照：观察Kingdom Guard与Tacticus",
+      "detail": "前者iOS单日+25、后者双端反向；只有连续同向变化才提高趋势可信度。"
+    },
+    {
+      "type": "关注",
+      "title": "继续区分官方分类与核心策略口径",
+      "detail": "Honor of Kings与Wild Rift可进入官方策略分类榜，但Sensor Tower核心策略子集继续排除MOBA。"
+    }
+  ],
+  "globalStrategyRevenue": {
+    "schemaVersion": 2,
+    "reportId": "sensortower-worldwide-mobile-games-revenue-strategy-subset-2026-10",
+    "title": "Sensor Tower 全球收入榜 · 策略产品",
+    "period": "2026-10",
+    "periodLabel": "2026年10月",
+    "previousPeriod": "2026-09",
+    "publicationLabel": "2026年11月",
+    "estimateAsOf": "2026-11-04",
+    "checkedAt": "2026-11-03",
+    "source": "Sensor Tower",
+    "sourceUrl": "https://develop.sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-october-2026",
+    "previousPeriodSourceUrl": "https://develop.sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-september-2026",
+    "yearOverYearSourceUrl": null,
+    "sourceEvidence": "Sensor Tower官方2026年10月完整全球手游收入TOP10图表及2026年9月官方榜图",
+    "sourceTop10Archive": "data/sensortower-global-revenue-top10-202610.json",
+    "iconBundle": "assets/sensortower-strategy-icons-202610.json",
+    "downloadPath": "data/sensortower-global-strategy-revenue-202610.json",
+    "updatePolicy": "每个工作日仅检查Sensor Tower是否发布新一期官方全球收入月榜；发布后筛选其中核心策略产品并更新一次，未发布时不改月份或数值。",
+    "strategyDefinition": "核心循环属于SLG、4X、城建生存、塔防或战术经营；不因商店多标签而纳入MOBA、体育、消除、派对、射击或RPG产品",
+    "sourceTop10Size": 10,
+    "strategyMatches": 2,
+    "scope": {
+      "region": "全球",
+      "stores": "Apple App Store + Google Play",
+      "metric": "Sensor Tower估算的移动游戏消费者支出排名",
+      "displayPopulation": "Sensor Tower全球手游收入TOP10中的核心策略产品",
+      "strategyDefinition": "核心循环属于SLG、4X、城建生存、塔防或战术经营；不因商店多标签而纳入MOBA、体育、消除、派对、射击或RPG产品",
+      "sourceTop10Size": 10,
+      "strategyMatches": 2,
+      "isCompleteStrategyCategoryRanking": false,
+      "exclusions": "不含第三方Android商店",
+      "individualRevenueAmountsPublished": false,
+      "individualYoYPercentPublished": false
+    },
+    "marketSummary": {
+      "globalConsumerSpendingUsd": 6260000000,
+      "monthOverMonthPercent": 1.7,
+      "previousYearSameMonthConsumerSpendingUsd": null,
+      "yearOverYearPercentApprox": null,
+      "yearOverYearCalculationNote": "未取得同口径的Sensor Tower 2025年10月官方四舍五入市场总额，因此不计算全市场同比约值。",
+      "marketShares": [
+        {
+          "market": "美国",
+          "percent": 28.8
+        },
+        {
+          "market": "中国",
+          "qualifier": "仅iOS",
+          "percent": 14.7
+        },
+        {
+          "market": "日本",
+          "percent": 12.5
+        }
+      ]
+    },
+    "rankings": [
+      {
+        "rank": 5,
+        "gameName": "Whiteout Survival",
+        "publisher": "Century Games",
+        "strategyGenre": "4X生存策略",
+        "iconKey": "whiteout-survival",
+        "previousPeriodRank": 6,
+        "rankChange": 1,
+        "movement": "up",
+        "movementLabel": "较上月上升1位",
+        "yoyRevenuePercent": null,
+        "yoyRevenueLabel": "单品同比未公开"
+      },
+      {
+        "rank": 9,
+        "gameName": "Kingshot",
+        "publisher": "Century Games",
+        "strategyGenre": "塔防获量 + 城建4X",
+        "iconKey": "kingshot",
+        "previousPeriodRank": 9,
+        "rankChange": 0,
+        "movement": "flat",
+        "movementLabel": "较上月持平",
+        "yoyRevenuePercent": null,
+        "yoyRevenueLabel": "单品同比未公开"
+      }
+    ],
+    "officialHighlights": [
+      "Whiteout Survival位列10月全球手游收入总榜第5，较9月第6名上升1位；这是全球总榜名次变化，不代表收入环比或同比。",
+      "Kingshot仍位列全球总榜第9；Last War: Survival从9月第7名退出全球TOP10。官方公开材料未披露这些产品的单品收入同比。",
+      "本期全球收入TOP10仅有2款符合核心策略口径，不能据此把它们重新编号为完整全球策略品类前两名。"
+    ],
+    "methodologyNote": "页面只展示Sensor Tower官方全球收入TOP10中的核心策略产品，并保留其全球总榜名次。逐款箭头和位数比较的是2026年9月至10月的榜位变化，不是收入同比。官方公开材料未披露单款收入或单品同比百分比，因此不以排名变化换算收入增幅；本期也不展示全市场同比约值。"
+  },
+  "status": {
+    "googlePlay": {
+      "top60": 60,
+      "newRelease90d": 2,
+      "surge90d": 0,
+      "baselineAvailable": false,
+      "baselineDate": "2026-08-12"
+    },
+    "ios": {
+      "top60": 60,
+      "newRelease90d": 1,
+      "surge90d": 0,
+      "baselineAvailable": false,
+      "baselineDate": "2026-08-12"
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play美国区策略畅销榜直连",
+      "url": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
+      "capturedAt": "2026-11-10T09:54:17+08:00"
+    },
+    {
+      "label": "Apple官方美国区iPhone策略畅销RSS",
+      "url": "https://itunes.apple.com/us/rss/topgrossingapplications/limit=200/genre=7017/json",
+      "updated": "2026-11-09T17:52:50-07:00",
+      "sourceDateBeijing": "2026-11-10"
+    },
+    {
+      "label": "Sensor Tower全球收入榜中的策略产品",
+      "url": "https://develop.sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-october-2026",
+      "period": "2026-10",
+      "estimateAsOf": "2026-11-04"
+    }
+  ],
+  "downloads": {
+    "markdown": "reports/2026-11-10.md",
+    "json": "data/market-brief-20261110.json"
+  }
+}
