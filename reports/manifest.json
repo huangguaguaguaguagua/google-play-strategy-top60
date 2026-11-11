@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-11",
+      "title": "Google一进一出、iOS四进四出；新品与跨端反向并存",
+      "summary": "较11月10日前一有效快照，Google Play一进一出，Kingdom Guard回榜#60、Last Fortress掉榜；MARVEL SNAP下跌10位至#53。iOS四进四出，Game of Thrones: Conquest +16、Kingdom Guard −13；Blue Archive回榜，近90天新品Last Beacon首次进入#60。Google近90天新品2款、iOS 2款；两端缺少8月13日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-11.md",
+      "json": "data/market-brief-20261111.json"
+    },
     {
       "date": "2026-11-10",
       "title": "Google两进两出、iOS四进四出；榜尾与跨端反向轮换延续",
