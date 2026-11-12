@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-12",
+      "title": "Google末位一进一出、iOS四进四出；中后段轮换继续",
+      "summary": "较11月11日前一有效快照，Google Play一进一出，Raid Rush进入#60、West Game掉榜；Mafia City +5，Wild Rift −8。iOS四进四出，Sea War回榜#36，Summoners War +8；The Tower −11、Honor of Kings −13。Google近90天新品2款、iOS 2款；两端缺少8月14日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-12.md",
+      "json": "data/market-brief-20261112.json"
+    },
     {
       "date": "2026-11-11",
       "title": "Google一进一出、iOS四进四出；新品与跨端反向并存",
