@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-17",
+      "title": "Google二进二出、iOS四进四出；Infinity Kingdom双端同步升至#30",
+      "summary": "较11月16日有效快照，Google Play二进二出，Arknights与GOT Conquest回榜，Infinity Kingdom +10；iOS四进四出，Infinity Kingdom +21、Top Force与Star Wars均+11，Summoners War −16。Google近90天新品1款、iOS 1款；两端缺少8月19日精确基准，不判断较老产品的90天飙升。",
+      "markdown": "reports/2026-11-17.md",
+      "json": "data/market-brief-20261117.json"
+    },
     {
       "date": "2026-11-16",
       "title": "Google五进五出、iOS九进九出；Transformers新品进入iOS前20",
