@@ -3,14 +3,17 @@
 
 from copy import deepcopy
 from datetime import datetime
+import json
+from pathlib import Path
 import re
+import subprocess
 import unicodedata
 from zoneinfo import ZoneInfo
 
 import daily_update_20261117 as prior
 from daily_update_20261028 import prepare_analysis
 from daily_update_20261026 import enforce_required_product_language
-from daily_update_20260820 import comparison, delta_label, lookup
+from daily_update_20260820 import comparison, data_uri, delta_label, lookup
 
 
 updater = prior.updater
@@ -283,6 +286,30 @@ def refresh_ios_metadata():
     updater.save(path, games)
 
 
+def reclassify_ios_after_lookup():
+    """Classification must use this fetch's Lookup date, never yesterday's metadata."""
+    games = updater.load("data/ios-games-20261118.json")
+    baseline_path = "data/history/ios/2026-08-20.json"
+    baseline = {str(g["appId"]): g["rank"] for g in updater.load(baseline_path)["rankings"]}
+    for game in games:
+        app_id = str(game["appId"])
+        comp = exact_comparison(baseline.get(app_id), game["rank"], updater.IOS_DATE,
+                                updater.IOS_BASELINE, game["releaseDateIso"], "Apple美国区iPhone策略畅销榜")
+        if comp["status"] == "new":
+            comp["evidence"] += f" 来源：https://itunes.apple.com/lookup?id={app_id}&country=us 。"
+            if app_id in baseline:
+                comp["releaseDateConflict"] = {
+                    "status": "source-metadata-conflict",
+                    "historicalRank": baseline[app_id],
+                    "historicalDate": updater.IOS_BASELINE,
+                    "historicalSnapshot": baseline_path,
+                    "note": "Apple当前releaseDate落入90天窗口，但同一appId在更早历史榜单已存在；仅按当前官方字段归类，不认定产品首次全球上线。",
+                }
+                comp["evidence"] += " Apple当前releaseDate与本项目更早在榜历史存在冲突，已保留审计，不能据此声称产品昨日首次上线。"
+        game["comparison90d"] = comp
+    updater.save("data/ios-games-20261118.json", games)
+
+
 def refresh_rank_paths():
     for gp,tp,store,basis in (("data/games-20261118.json","data/trends-20261118.json","Google Play","Google Play美国区商品页released日期"),
                               ("data/ios-games-20261118.json","data/ios-trends-20261118.json","iOS","Apple Lookup releaseDate")):
@@ -291,11 +318,22 @@ def refresh_rank_paths():
             ch=game["dailyChange"]
             movement = "较2026-11-17前一有效快照回榜" if ch=="NEW" else ("较2026-11-17前一有效快照持平" if ch=="=" else f"较2026-11-17前一有效快照{'上升' if ch.startswith('+') else '下降'}{ch[1:]}位")
             st=game["comparison90d"]
-            if st["status"]=="new": status=f"按{basis}{game['releaseDateIso']}计算，位于{st['baselineDate']}至{st['currentDate']}的90天窗口内，归类为近三个月新上榜。"
+            if st["status"]=="new":
+                status=f"按{basis}{game['releaseDateIso']}计算，位于{st['baselineDate']}至{st['currentDate']}的90天窗口内，归类为近三个月新上榜。"
+                if st.get("releaseDateConflict"):
+                    status += "该appId在更早历史榜单已存在，Apple当前上架字段与历史有冲突；新品标签仅反映当前官方字段，不代表产品首次全球上线。"
             elif st["status"]=="surge": status=f"精确90天基准名次为#{st['baselineRank']}，至当前提升{st['delta']}位，归类为近三个月飙升。"
             elif st["baselineRank"] is not None: status=f"精确90天基准名次为#{st['baselineRank']}，baselineRank-currentRank={st['delta']}，未超过5位，按常规在榜展示。"
             else: status=f"上架早于90天窗口；精确{st['baselineDate']}同口径TOP60基准中未在榜，不满足飙升条件，按常规在榜展示。"
             trends[str(game["rank"])]["sections"]["rankPath"] = f"本次位于{store}美国策略畅销榜第{game['rank']}名（{movement}）。{status}"
+            if st.get("releaseDateConflict"):
+                for audit_key in ("sourceAudit", "lifecycleAudit"):
+                    audit = trends[str(game["rank"])][audit_key]
+                    audit["confidence"] = "中"
+                    audit["evidenceNote"] = "Apple Lookup当前releaseDate=2026-11-17，但同appId在2026-08-20历史榜已有记录；保留官方当前字段与历史冲突，不将其写成产品首次全球上线。"
+                    source = {"label": "Apple Lookup美国区当前上架字段", "url": f"https://itunes.apple.com/lookup?id={game['appId']}&country=us", "type": "primary"}
+                    if source not in audit.get("sources", []):
+                        audit.setdefault("sources", []).append(source)
         updater.save(tp,trends)
 
 
@@ -326,8 +364,81 @@ def normalize_summaries():
         updater.save(tp,trends)
 
 
+def apply_reviewed_editorial():
+    """Keep this date's product-specific review in the generator, not only its output."""
+    reviewed = {
+        "google": {
+            "com.gtarcade.ioe.global": "趋势：2021年以卡通文明、英灵和龙养成承接联盟4X；关键转折：本期Google上升3位至#27、iOS下跌1位至#31，跨端方向不同，3.0.1联盟与护送改版不能单独解释本次位移；主力素材：跨文明英灵、巨龙、卡通城建、元素编队与联盟攻城。",
+            "com.YoStarEN.Arknights": "趋势：2020年以干员收集、格子塔防和章节叙事建立长线核心盘，成熟期由主线、限时活动与干员轮换支撑；关键转折：官方复刻活动仍在窗口，本期Google上升16位至#29、iOS下跌1位至#32，跨端方向不同，不能据单期认定活动效果；主力素材：干员编队、格子部署、技能爆发、活动地图与异常环境。",
+            "com.yottagames.mafiawar": "趋势：2017年上线后以Level 1 Crook到Boss的夸张逆袭短剧建立品牌记忆，成熟期再接豪车、伴侣、地盘与联盟赛季；关键转折：本期Google下跌7位至#43，仍位于后十五名且未发现同步重大节点，只作单日回落信号；主力素材：等级逆袭、黑帮权力、豪车美女、剧情选择与城市地盘。",
+        },
+        "ios": {
+            "6746636289": "趋势：2025年以锻造合成、装备成长和放置战斗建立轻量循环；关键转折：本期iOS上升10位至#25、Google下跌1位至#45，跨端方向明显分化，未发现可确认的同步重大内容节点；主力素材：锻造台、装备合成、数值成长、自动战斗与离线收益。",
+        },
+    }
+    # Preserve all the separately reviewed summaries from the already published
+    # same-day snapshot. Only ranking sentences for products that changed since
+    # that snapshot are refreshed above, so a rerun cannot resurrect yesterday's
+    # interpretations (for example "回榜" or "双端回落").
+    for gp, tp, store, id_key in (
+        ("data/games-20261118.json", "data/trends-20261118.json", "google", "packageName"),
+        ("data/ios-games-20261118.json", "data/ios-trends-20261118.json", "ios", "appId"),
+    ):
+        games, trends = updater.load(gp), updater.load(tp)
+        try:
+            old_games = json.loads(subprocess.check_output(["git", "show", "b860528:" + gp], cwd=Path(__file__).resolve().parents[1]))
+            old_trends = json.loads(subprocess.check_output(["git", "show", "b860528:" + tp], cwd=Path(__file__).resolve().parents[1]))
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            old_games, old_trends = [], {}
+        old_by_id = {str(x[id_key]): x for x in old_games}
+        for game in games:
+            product_id = str(game[id_key]); old = old_by_id.get(product_id)
+            trend = trends[str(game["rank"])]
+            if old:
+                trend["summary"] = old_trends[str(old["rank"])]["summary"]
+            if product_id in reviewed[store]:
+                trend["summary"] = reviewed[store][product_id]
+            audit = trend.get("sourceAudit", {})
+            if old or product_id in reviewed[store]:
+                audit["reviewedAt"] = "2026-11-18"
+                audit["evidenceNote"] = "同日重跑保留逐产品编辑复核；当前名次和跨端方向以本店及另一商店独立快照复核，未把单日位移写成长期趋势。"
+        updater.save(tp, trends)
+    normalize_summaries()
+    for gp, tp, store, id_key in (
+        ("data/games-20261118.json", "data/trends-20261118.json", "google", "packageName"),
+        ("data/ios-games-20261118.json", "data/ios-trends-20261118.json", "ios", "appId"),
+    ):
+        games, trends = updater.load(gp), updater.load(tp)
+        for game in games:
+            summary = reviewed[store].get(str(game[id_key]))
+            if summary:
+                trends[str(game["rank"])]["summary"] = summary
+        updater.save(tp, trends)
+
+
+def ensure_ios_local_screenshots():
+    manifest = updater.load("assets/ios-manifest.json")
+    assets = {}
+    for filename in manifest["files"]:
+        assets.update(updater.load("assets/" + filename))
+    additions = {}
+    for game in updater.load("data/ios-games-20261118.json"):
+        key = f"{game['assetRank']:02d}_store"
+        if not game.get("storeImageData") and key not in assets:
+            additions[key] = data_uri(game["screenshotUrl"], (720, 960))
+    if additions:
+        filename = "ios-screenshots-repair-20261118.json"
+        updater.save("assets/" + filename, additions)
+        if filename not in manifest["files"]:
+            manifest["files"].append(filename)
+        updater.save("assets/ios-manifest.json", manifest)
+
+
 if __name__ == "__main__":
     updater.main()
     refresh_ios_metadata()
+    reclassify_ios_after_lookup()
     refresh_rank_paths()
     normalize_summaries()
+    apply_reviewed_editorial()
+    ensure_ios_local_screenshots()

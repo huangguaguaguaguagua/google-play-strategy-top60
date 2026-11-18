@@ -436,32 +436,32 @@
       "source": "https://www.lilith.com/en"
     },
     "24": {
-      "en": "Camel Games / Beijing Kemu Software",
-      "cn": "北京壳木软件（Camel Games；神州泰岳旗下）",
-      "confidence": "已确认",
-      "basis": "Camel Games 官网与公司资料均将 Age of Origins 列为壳木产品。",
-      "source": "https://www.camelgame.cn/"
-    },
-    "25": {
-      "en": "YOOZOO Games",
-      "cn": "游族网络（YOOZOO）",
-      "confidence": "已确认",
-      "basis": "新加坡商店主体统一到游族网络产品体系。",
-      "source": "https://www.yoozoo.com/about"
-    },
-    "26": {
       "en": "SparkHaven HK Limited (brand: SparkHaven)",
       "cn": "SparkHaven HK Limited（中文暂译：星火港；香港法律主体）",
       "confidence": "主体已确认；母公司未披露",
       "basis": "Google Play 与隐私政策均指向 SparkHaven HK Limited；按产品名、条款和公开公司资料复核，暂未发现可核验的更高母公司或中国马甲。",
       "source": "https://www.sparkhavengames.com/privacy/"
     },
-    "27": {
+    "25": {
+      "en": "Camel Games / Beijing Kemu Software",
+      "cn": "北京壳木软件（Camel Games；神州泰岳旗下）",
+      "confidence": "已确认",
+      "basis": "Camel Games 官网与公司资料均将 Age of Origins 列为壳木产品。",
+      "source": "https://www.camelgame.cn/"
+    },
+    "26": {
       "en": "EWORLD / IYA Games",
       "cn": "益世界（IYA Games；新加坡发行主体）",
       "confidence": "已确认",
       "basis": "多家中国出海行业媒体将 Lands of Jail 明确归为益世界产品。",
       "source": "https://www.baijing.cn/article/52847"
+    },
+    "27": {
+      "en": "YOOZOO Games",
+      "cn": "游族网络（YOOZOO）",
+      "confidence": "已确认",
+      "basis": "新加坡商店主体统一到游族网络产品体系。",
+      "source": "https://www.yoozoo.com/about"
     },
     "28": {
       "en": "Yotta Games / Phantix",
@@ -513,18 +513,18 @@
       "source": "https://careers.wbd.com/global/en/warner-bros-games-boston"
     },
     "35": {
-      "en": "RiverGame / Beijing RiverGame Technology",
-      "cn": "北京江娱互动（RiverGame）",
-      "confidence": "已确认",
-      "basis": "Top Heroes 为 RiverGame/江娱互动产品。",
-      "source": "https://www.rivergame.net/zh/about.html"
-    },
-    "36": {
       "en": "Camel Games / Beijing Kemu Software",
       "cn": "北京壳木软件（Camel Games；神州泰岳旗下）",
       "confidence": "已确认",
       "basis": "War and Order 为壳木官方产品。",
       "source": "https://www.camelgames.com/game/war_and_order"
+    },
+    "36": {
+      "en": "RiverGame / Beijing RiverGame Technology",
+      "cn": "北京江娱互动（RiverGame）",
+      "confidence": "已确认",
+      "basis": "Top Heroes 为 RiverGame/江娱互动产品。",
+      "source": "https://www.rivergame.net/zh/about.html"
     },
     "37": {
       "en": "IM30 / Beijing Longchuang Yuetong",

@@ -5,7 +5,7 @@
     {
       "date": "2026-11-18",
       "title": "Google一进一出、iOS三进三出；精确90天基准首次生效",
-      "summary": "较11月17日有效快照，Google Play一进一出，Supremacy回榜、MARVEL SNAP掉榜，Arknights +16；iOS三进三出，Blue Archive、Kingdom Guard与Evo Defense回榜，Watcher −18至#60。精确8月20日基准可用后，Google与iOS各识别7款近90天飙升，iOS另有1款近90天新品。",
+      "summary": "较11月17日有效快照，Google Play一进一出，Supremacy回榜、MARVEL SNAP掉榜，Arknights +16；iOS三进三出，Blue Archive、Kingdom Guard与Evo Defense回榜，Watcher −18至#60。精确8月20日基准可用，两端各7款飙升；iOS按当前Lookup有2款90天新品，其中Tiles Survive!上架字段与更早在榜历史冲突，已保留审计。",
       "markdown": "reports/2026-11-18.md",
       "json": "data/market-brief-20261118.json"
     },

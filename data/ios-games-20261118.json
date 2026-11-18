@@ -724,7 +724,7 @@
       "status": "new",
       "classificationBasis": "releaseDate",
       "releaseDate": "2026-11-11",
-      "evidence": "产品于2026-11-11上架，位于2026-08-20至2026-11-18的90天窗口内，且当前进入TOP60。"
+      "evidence": "产品于2026-11-11上架，位于2026-08-20至2026-11-18的90天窗口内，且当前进入TOP60。 来源：https://itunes.apple.com/lookup?id=6772922295&country=us 。"
     }
   },
   {
@@ -1080,12 +1080,21 @@
     "assetRank": 25,
     "comparison90d": {
       "baselineDate": "2026-08-20",
-      "baselineRank": 24,
+      "baselineRank": null,
       "currentDate": "2026-11-18",
       "currentRank": 33,
-      "delta": -9,
-      "status": "normal",
-      "evidence": "精确Apple美国区iPhone策略畅销榜同口径基准名次为#24，当前#33，baselineRank-currentRank=-9。"
+      "delta": null,
+      "status": "new",
+      "classificationBasis": "releaseDate",
+      "releaseDate": "2026-11-17",
+      "evidence": "产品于2026-11-17上架，位于2026-08-20至2026-11-18的90天窗口内，且当前进入TOP60。 来源：https://itunes.apple.com/lookup?id=6738109752&country=us 。 Apple当前releaseDate与本项目更早在榜历史存在冲突，已保留审计，不能据此声称产品昨日首次上线。",
+      "releaseDateConflict": {
+        "status": "source-metadata-conflict",
+        "historicalRank": 24,
+        "historicalDate": "2026-08-20",
+        "historicalSnapshot": "data/history/ios/2026-08-20.json",
+        "note": "Apple当前releaseDate落入90天窗口，但同一appId在更早历史榜单已存在；仅按当前官方字段归类，不认定产品首次全球上线。"
+      }
     },
     "store": "ios",
     "rankIconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/90/6f/17/906f1733-a544-3ced-dc27-690d15194339/FPX_AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"

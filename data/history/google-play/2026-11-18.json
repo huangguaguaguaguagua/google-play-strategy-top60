@@ -4,7 +4,7 @@
   "category": "Games > Strategy > Top Grossing",
   "date": "2026-11-18",
   "dataDate": "2026-11-18",
-  "sourceCapturedAt": "2026-11-18T09:38:58+08:00",
+  "sourceCapturedAt": "2026-11-18T10:16:17+08:00",
   "sourceUrl": "https://play.google.com/store/apps/category/GAME_STRATEGY?hl=en_US&gl=US",
   "sourceEndpoint": "https://play.google.com/_/PlayStoreUi/data/batchexecute?rpcids=vyAe2&source-path=%2Fstore%2Fapps%2Fcategory%2FGAME_STRATEGY&hl=en_US&gl=US&rt=c",
   "sourceMethod": "Google Play PlayStoreUi / vyAe2 / topgrossing / GAME_STRATEGY / US",
@@ -15,7 +15,7 @@
     "sourceLastUpdated": "November 17, 2026",
     "rowCount": 60,
     "overlapCount": 59,
-    "sameRankCount": 27,
+    "sameRankCount": 26,
     "maxAbsRankDifference": 16,
     "note": "仅用于交叉检查，不覆盖Google Play直连排名、日期或产品字段。"
   },
@@ -160,27 +160,27 @@
     },
     {
       "rank": 24,
-      "packageName": "com.camelgames.aoz",
-      "gameName": "Age of Origins",
-      "sourceUrl": "https://play.google.com/store/apps/details?id=com.camelgames.aoz&hl=en_US&gl=US"
-    },
-    {
-      "rank": 25,
-      "packageName": "com.gtarcade.ioe.global",
-      "gameName": "Infinity Kingdom",
-      "sourceUrl": "https://play.google.com/store/apps/details?id=com.gtarcade.ioe.global&hl=en_US&gl=US"
-    },
-    {
-      "rank": 26,
       "packageName": "com.spark.sp.gp",
       "gameName": "Salvage Empire",
       "sourceUrl": "https://play.google.com/store/apps/details?id=com.spark.sp.gp&hl=en_US&gl=US"
     },
     {
-      "rank": 27,
+      "rank": 25,
+      "packageName": "com.camelgames.aoz",
+      "gameName": "Age of Origins",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.camelgames.aoz&hl=en_US&gl=US"
+    },
+    {
+      "rank": 26,
       "packageName": "com.justgame.jails",
       "gameName": "Lands of Jail",
       "sourceUrl": "https://play.google.com/store/apps/details?id=com.justgame.jails&hl=en_US&gl=US"
+    },
+    {
+      "rank": 27,
+      "packageName": "com.gtarcade.ioe.global",
+      "gameName": "Infinity Kingdom",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.gtarcade.ioe.global&hl=en_US&gl=US"
     },
     {
       "rank": 28,
@@ -226,15 +226,15 @@
     },
     {
       "rank": 35,
-      "packageName": "com.greenmushroom.boomblitz.gp",
-      "gameName": "Top Heroes: Kingdom Saga",
-      "sourceUrl": "https://play.google.com/store/apps/details?id=com.greenmushroom.boomblitz.gp&hl=en_US&gl=US"
-    },
-    {
-      "rank": 36,
       "packageName": "com.camelgames.superking",
       "gameName": "War and Order",
       "sourceUrl": "https://play.google.com/store/apps/details?id=com.camelgames.superking&hl=en_US&gl=US"
+    },
+    {
+      "rank": 36,
+      "packageName": "com.greenmushroom.boomblitz.gp",
+      "gameName": "Top Heroes: Kingdom Saga",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.greenmushroom.boomblitz.gp&hl=en_US&gl=US"
     },
     {
       "rank": 37,

@@ -54,7 +54,7 @@ google_products = [
     card("googlePlay", "com.nvsgames.snap", "exit", "前一快照#59后掉榜。卡组构筑与漫威角色收集未守住Google末位；iOS同产品今日反而上升至#48，跨端走势分化。"),
     card("googlePlay", "com.YoStarEN.Arknights", "up", "单日上升16位至#29，为Google最大涨幅。官方复刻活动持续至11月19日，时间相邻但不据此断言单一因果。"),
     card("googlePlay", "com.yottagames.mafiawar", "down", "单日下跌7位至#43，为Google最大跌幅。成熟黑帮城建与联盟战争仍在榜中后段，暂按单日回吐处理。"),
-    card("googlePlay", "com.gtarcade.ioe.global", "up", "继昨日双端上行后再升5位至#25。3.0.1联盟商店、联盟奖励与护送事件改版形成可核验节点，但持续性仍需后续快照。"),
+    card("googlePlay", "com.gtarcade.ioe.global", "up", "继昨日改善后，Google较11月17日再升3位至#27；iOS则下跌1位至#31。3.0.1联盟与护送改版形成可核验节点，但当天跨端方向不同，持续性仍需后续快照。"),
     card("googlePlay", "com.topwar.gp", "up", "单日上升4位至#44。合成升级与联盟战争产品改善至中后段，暂无足够一手证据确认具体活动原因。"),
 ]
 
@@ -74,13 +74,15 @@ ios_products = [
 
 all_cards = google_products + ios_products
 for start in range(0, len(all_cards), 5):
-    bundle = {}
+    bundle_path = f"assets/market-icons-{STAMP}-{start // 5 + 1:02d}.json"
+    bundle = load(bundle_path) if (ROOT / bundle_path).exists() else {}
     for item in all_cards[start:start + 5]:
         store = "googlePlay" if item["iconKey"].startswith("googlePlay:") else "ios"
         data = datasets[store]
         row = next(x for x in data["now"] + data["prior"] if str(x[data["id"]]) == item["productId"])
-        bundle[item["iconKey"]] = data_uri(row.get("iconUrl") or row.get("rankIconUrl"), (160, 160))
-    save(f"assets/market-icons-{STAMP}-{start // 5 + 1:02d}.json", bundle, compact=True)
+        if not str(bundle.get(item["iconKey"], "")).startswith("data:image/"):
+            bundle[item["iconKey"]] = data_uri(row.get("iconUrl") or row.get("rankIconUrl"), (160, 160))
+    save(bundle_path, bundle, compact=True)
 
 
 news = [
@@ -89,7 +91,7 @@ news = [
     {"category":"塔防 / 复刻活动","date":"2026-11-05","title":"Arknights复刻活动持续至11月19日","summary":"官方公告显示The Masses' Travels复刻阶段开放至11月19日，并将在结束后加入常驻Score。","impact":"产品今日Google +16至#29、iOS仍在#31附近；连续双端中段位置值得继续验证。","source":"Arknights官方","url":"https://arknights.global/news/5045"},
     {"category":"IP新品 / 全球上线","date":"2026-11-12","title":"Transformers: Eternal War完成全球上线","summary":"官方商店页以汽车人/霸天虎联合、角色小队与放置战斗为主，并于11月12日上线。","impact":"iOS仍位于#22且按releaseDate归类为近90天新品；观察首发IP热度后的留榜能力。","source":"Google Play官方商品页","url":"https://play.google.com/store/apps/details?id=com.wanda.transformers.gg.am&hl=en_US&gl=US"},
     {"category":"现代战争 / 回榜","date":"2026-11-18","title":"Supremacy: World War 3进入Google #58","summary":"官方资料将产品描述为跨数日或数周的实时全球战争，包含经济、研究、军队与外交管理。","impact":"此次只进入末三位，先判断为榜尾待验证信号，不推断获量原因。","source":"Conflict of Nations官方","url":"https://cm.conflictnations.com/"},
-    {"category":"联盟4X / 连续上涨","date":"2026-11-18","title":"Infinity Kingdom连续第二天双端改善","summary":"3.0.1版本加入联盟商店、联盟奖励与护送/拦截事件；今日Google再升至#25，iOS维持#30。","impact":"双端连续性强于单日峰值，但仍不能把榜位变化等同版本收入增长。","source":"Infinity Kingdom官方","url":"https://infinitykingdom.gtarcade.com/en/news"},
+    {"category":"联盟4X / 版本观察","date":"2026-11-18","title":"Infinity Kingdom联盟改版窗口出现跨端分化","summary":"3.0.1版本加入联盟商店、联盟奖励与护送/拦截事件；今日Google上升3位至#27，iOS下跌1位至#31。","impact":"Google延续昨日上行，但iOS未同步；不能把版本窗口或单日名次变化等同收入增长。","source":"Infinity Kingdom官方","url":"https://infinitykingdom.gtarcade.com/en/news"},
     {"category":"IP长线运营","date":"2026-11-03","title":"Game of Thrones: Conquest继续Highgarden Harvest Festival","summary":"官方11月预告公布新装备、英雄与龙装；产品今日Google守在#60、iOS升至#40。","impact":"双端都在榜但Google仍是末位，活动承接呈现明显平台差异。","source":"Game of Thrones: Conquest官方","url":"https://www.gotconquest.com/news/2026/11/03/november-preview-highgarden-harvest-festival-6/"},
     {"category":"IP联动 / 素材更新","date":"2026-11-18","title":"Doomsday: Last Survivors商品ICON更新为Dune Part 3","summary":"Google美国区商品页当前名称与ICON均突出Dune Part 3联动，本次已同步本地静态ICON。","impact":"产品位于Google #55；联动素材可核验，但榜尾位置仍需观察。","source":"Google Play官方商品页","url":"https://play.google.com/store/apps/details?id=com.igg.android.doomsdaylastsurvivors&hl=en_US&gl=US"},
     {"category":"塔防RPG / 下跌","date":"2026-11-18","title":"Watcher of Realms单日跌18位至iOS #60","summary":"商品页仍以英雄收集、阵营编成与技能时机驱动的防守战斗为核心。","impact":"落到末位构成明确榜尾风险；是否掉榜需下一有效快照确认。","source":"Apple App Store美国区","url":"https://apps.apple.com/us/app/id6741674823"},
@@ -99,11 +101,11 @@ for index, item in enumerate(news, 1):
     item["rank"] = index
 
 closing = [
-    {"type":"判断","title":"Google席位稳定、但中段上行更集中","detail":"Google仅1进1出，Arknights +16、Infinity Kingdom +5；主要变化不是大规模榜尾换血，而是活动与版本窗口下的中段改善。"},
+    {"type":"判断","title":"Google席位稳定、但中段上行更集中","detail":"Google仅1进1出，Arknights +16、Infinity Kingdom +3；两款分别处于复刻与联盟改版窗口，但iOS并未同向上涨，不能将活动与榜位相邻视为确定因果。"},
     {"type":"判断","title":"iOS榜尾轮换继续快于Google","detail":"iOS 3进3出，并出现Watcher −18、Age of Empires −12；后十名的单日波动仍显著高于Google。"},
-    {"type":"判断","title":"精确90天基准首次可用，飙升状态不再pending","detail":"两端均有2026-08-20完整同口径快照：Google 7款、iOS 7款满足提升超过5位；iOS另有Transformers一款近90天新品。"},
-    {"type":"关注","title":"下一快照：核验七款进入/掉榜产品","detail":"重点观察Supremacy能否离开Google末三位，Blue Archive与Kingdom Guard能否连续留榜，以及Watcher是否从iOS #60掉出。"},
-    {"type":"关注","title":"未来1—2个快照：验证Arknights与Infinity Kingdom连续性","detail":"若Arknights在复刻结束后仍守住前30、Infinity Kingdom两端继续保持前30，才升级为更稳定的运营信号。"},
+    {"type":"判断","title":"精确90天基准可用，但Apple上架字段仍需交叉审计","detail":"两端各有7款较2026-08-20精确基准提升超过5位；iOS按当前Lookup有2款90天新品：Transformers与Tiles Survive!。后者当前releaseDate为11月17日，却在8月历史已存在，只反映官方字段分类，不能称为昨日首次全球上线。"},
+    {"type":"关注","title":"下一快照：核验八款进入/掉榜产品","detail":"重点观察Supremacy能否离开Google末三位，Blue Archive与Kingdom Guard能否连续留榜，以及Watcher是否从iOS #60掉出。"},
+    {"type":"关注","title":"未来1—2个快照：验证Arknights与Infinity Kingdom连续性","detail":"观察Arknights复刻结束后能否守住Google前30，以及Infinity Kingdom能否维持Google前30并让iOS重新进入前30；达到条件后再升级为更稳定的运营信号。"},
     {"type":"关注","title":"本周内：观察Transformers首发承接","detail":"以iOS #22和近90天新品状态为基准；若IP首发窗口后仍维持前30，才说明角色收集与放置循环具有初步承接。"},
 ]
 
@@ -124,7 +126,7 @@ def count_status(store, status):
 brief = {
     "date": DATE, "timezone": "Asia/Shanghai",
     "title": "Google一进一出、iOS三进三出；精确90天基准首次生效",
-    "summary": "较11月17日有效快照，Google Play一进一出，Supremacy回榜、MARVEL SNAP掉榜，Arknights +16；iOS三进三出，Blue Archive、Kingdom Guard与Evo Defense回榜，Watcher −18至#60。精确8月20日基准可用后，Google与iOS各识别7款近90天飙升，iOS另有1款近90天新品。",
+    "summary": "较11月17日有效快照，Google Play一进一出，Supremacy回榜、MARVEL SNAP掉榜，Arknights +16；iOS三进三出，Blue Archive、Kingdom Guard与Evo Defense回榜，Watcher −18至#60。精确8月20日基准可用，两端各7款飙升；iOS按当前Lookup有2款90天新品，其中Tiles Survive!上架字段与更早在榜历史冲突，已保留审计。",
     "newsMethod": "编辑热度：按时效、厂商/IP体量、双榜关联度与品类影响综合排序；不是第三方阅读量或舆情指数。",
     "iconBundle": f"assets/market-icons-{STAMP}-01.json",
     "iconOverrideBundles": [f"assets/market-icons-{STAMP}-{i:02d}.json" for i in range(2, (len(all_cards) + 4) // 5 + 1)],
