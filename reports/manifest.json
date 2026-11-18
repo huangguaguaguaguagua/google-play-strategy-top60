@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-18",
+      "title": "Google一进一出、iOS三进三出；精确90天基准首次生效",
+      "summary": "较11月17日有效快照，Google Play一进一出，Supremacy回榜、MARVEL SNAP掉榜，Arknights +16；iOS三进三出，Blue Archive、Kingdom Guard与Evo Defense回榜，Watcher −18至#60。精确8月20日基准可用后，Google与iOS各识别7款近90天飙升，iOS另有1款近90天新品。",
+      "markdown": "reports/2026-11-18.md",
+      "json": "data/market-brief-20261118.json"
+    },
     {
       "date": "2026-11-17",
       "title": "Google二进二出、iOS四进四出；Infinity Kingdom双端同步升至#30",
