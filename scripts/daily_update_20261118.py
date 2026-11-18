@@ -300,7 +300,7 @@ def refresh_rank_paths():
 
 
 def normalize_summaries():
-    aliases={"mobile legends bang bang us":"mobile legends bang bang.us","kingdom guard tower defense td":"kingdom guard tower defense","rise of castles fire and war":"rise of castles ice and fire"}
+    aliases={"mobile legends bang bang us":"mobile legends bang bang.us","kingdom guard tower defense td":"kingdom guard tower defense","rise of castles fire and war":"rise of castles ice and fire","forge master idle rpg":"forge master"}
     def key(name):
         s=unicodedata.normalize("NFKD",str(name)).encode("ascii","ignore").decode().lower(); s=re.sub(r"[^a-z0-9.]+"," ",s).strip(); return aliases.get(s,s)
     gg=updater.load("data/games-20261118.json"); ii=updater.load("data/ios-games-20261118.json")
@@ -311,9 +311,17 @@ def normalize_summaries():
             s=trends[str(g["rank"])]["summary"]; ch=g["dailyChange"]
             own_phrase=f"本期{own}回榜#{g['rank']}" if ch=="NEW" else (f"本期{own}持平于#{g['rank']}" if ch=="=" else f"本期{own}{'上升' if ch.startswith('+') else '下跌'}{ch[1:]}位至#{g['rank']}")
             s=re.sub(rf"本期(?:首次进入项目)?{own}(?:榜)?(?:回榜|回到|持平于|位于|上升|下跌|升|跌)?\s*#?\d+(?:位至#\d+)?",own_phrase,s)
+            s=re.sub(rf"本期[^，；。]*?{own}[^，；。]*?#\d+",own_phrase,s)
             counterpart=maps[other].get(key(g["gameName"])); other_phrase=f"{other}位于#{counterpart['rank']}" if counterpart else f"{other}未入榜"
             s=re.sub(rf"{other}(?:(?:同产品|当前|同期|反向)?(?:上升|下跌)\d+位至|(?:同产品|当前|同期|反向)?(?:升|跌)至|(?:同产品|当前|同期|反向)?(?:回榜|位于|仍高居|仍在|榜)?\s*)#\d+",other_phrase,s)
+            # Keep the broader fallback inside one punctuation-delimited clause. This
+            # catches editorial modifiers such as “同步下跌7位至#43” without touching
+            # the product-specific lifecycle text around the ranking sentence.
+            s=re.sub(rf"{other}[^，；。]*?#\d+",other_phrase,s)
             s=re.sub(rf"{other}(?:策略榜)?未入榜",other_phrase,s)
+            if counterpart and counterpart["rank"] != g["rank"]:
+                s=s.replace("出现同名次的双端改善", "双端均改善但名次不同")
+                s=s.replace("双端均改善但名次不同但仍待连续验证", "双端均改善、名次不同，仍待连续验证")
             trends[str(g["rank"])]["summary"]=s
         updater.save(tp,trends)
 
