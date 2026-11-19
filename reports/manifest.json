@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-19",
+      "title": "Google零进出、iOS四进四出；Kingshot登顶iOS",
+      "summary": "较11月18日有效快照，Google Play席位完全稳定、最大位移仅2位；iOS四进四出，Kingshot升至#1，Summoners War +18，Arknights、Fire Emblem Heroes与MARVEL SNAP各−8。两端精确8月20日基准均可用；Google 7款、iOS 10款为近90天飙升，iOS另有2款按当前Apple releaseDate归类为新品。",
+      "markdown": "reports/2026-11-19.md",
+      "json": "data/market-brief-20261119.json"
+    },
     {
       "date": "2026-11-18",
       "title": "Google一进一出、iOS三进三出；精确90天基准首次生效",
