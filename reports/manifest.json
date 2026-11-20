@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-20",
+      "title": "双端同步换位；GIRLS' FRONTLINE 2双榜回归",
+      "summary": "较11月19日有效快照，Google Play 2进2出，Kingshot升至#1，Limbus Company −25；iOS四进四出，Dragon Traveler +12，Arknights与Fire Emblem Heroes各−10。GIRLS' FRONTLINE 2在Google #29、iOS #30同步回榜。两端精确8月20日基准均可用；Google 8款、iOS 8款为近90天飙升，iOS另有2款按当前Apple releaseDate归类为新品。",
+      "markdown": "reports/2026-11-20.md",
+      "json": "data/market-brief-20261120.json"
+    },
     {
       "date": "2026-11-19",
       "title": "Google零进出、iOS四进四出；Kingshot登顶iOS",
