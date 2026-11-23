@@ -1,0 +1,612 @@
+{
+  "date": "2026-11-23",
+  "store": "ios",
+  "method": "Current official icon versus local data-URI asset: accept 256-bit difference-hash distance<=18 or normalized RGB RMSE<=12",
+  "rowCount": 60,
+  "matched": 60,
+  "review": 0,
+  "networkErrors": 0,
+  "missingLocal": 0,
+  "results": [
+    {
+      "rank": 1,
+      "gameName": "Pokémon GO",
+      "id": "1094591345",
+      "assetKey": "01_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 4.113,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/7b/eb/d67beb51-9b15-fa10-ee24-7d600eaab720/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 2,
+      "gameName": "Total Battle: War Strategy",
+      "id": "1274132545",
+      "assetKey": "08_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 8.442,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/85/78/948578b8-f66d-dd55-adf2-f8874274b704/crowd_multipliers_v6-0-0-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 3,
+      "gameName": "Kingshot",
+      "id": "6739554056",
+      "assetKey": "03_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 11.402,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a5/64/dc/a564dcf6-cac2-946b-0032-fb9dc7ab9432/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 4,
+      "gameName": "Whiteout Survival",
+      "id": "6443575749",
+      "assetKey": "02_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 5.155,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e6/9e/98/e69e9840-fa2b-7b53-c7f9-75a75021de26/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 5,
+      "gameName": "Last Z: Survival Shooter",
+      "id": "6503272652",
+      "assetKey": "05_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 6.834,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/12/5f/28125fc4-970c-8cc1-ba4c-15760b2296b3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 6,
+      "gameName": "Last War:Survival",
+      "id": "6448786147",
+      "assetKey": "04_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 8.517,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cc/21/bc/cc21bc6b-f1f4-e280-4ab8-0589461bf19d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 7,
+      "gameName": "Evony",
+      "id": "1098157959",
+      "assetKey": "09_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 5.144,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/bc/cb/74bccb53-4395-d5ef-936e-68a6bea1e500/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 8,
+      "gameName": "PUBG MOBILE",
+      "id": "1330123889",
+      "assetKey": "12_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 3.958,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0c/1a/dc/0c1adcc0-b63f-6bdb-3cba-d74161aad06a/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 9,
+      "gameName": "Clash of Clans",
+      "id": "529479190",
+      "assetKey": "06_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 6.04,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/a1/b9/01a1b9e9-7dd8-8978-8379-0f08843ae829/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 10,
+      "gameName": "Chess.com - Play and Learn",
+      "id": "329218549",
+      "assetKey": "18_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 3.232,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/69/ef/3369efe4-8177-00ef-e545-96ff6218b808/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 11,
+      "gameName": "Lordrush",
+      "id": "6759788962",
+      "assetKey": "38_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 5.2,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/28/03/6d/28036dbd-e45a-0504-8b7d-ecc256213083/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 12,
+      "gameName": "Dark War:Survival",
+      "id": "6670441558",
+      "assetKey": "07_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 5.046,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f0/a3/81/f0a3815d-a7bd-37e5-1319-f847f80bd5fc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 13,
+      "gameName": "Star Wars™: Galaxy of Heroes",
+      "id": "921022358",
+      "assetKey": "23_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 5.79,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/10/c7/db/10c7dbcf-eaea-f965-c9c3-7d0894e72ab1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 14,
+      "gameName": "Age of Origins:Tower Defense",
+      "id": "1376515087",
+      "assetKey": "13_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 3.552,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/63/97/cc/6397cc0d-0292-820e-6295-9bfee8b9207d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 15,
+      "gameName": "Top Lords",
+      "id": "6767834940",
+      "assetKey": "72_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 5.447,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/70/59/2d705931-adf0-678a-ac43-ecaa878ee1c4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 16,
+      "gameName": "Clash Royale",
+      "id": "1053012308",
+      "assetKey": "14_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 7.973,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/9e/a7/829ea73c-c333-1953-f5fb-c16ea2ed80e3/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 17,
+      "gameName": "Puzzles & Survival",
+      "id": "1517980891",
+      "assetKey": "17_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 6.472,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/24/5e/bd245e4e-b9c6-014c-dc10-de86ab61c260/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 18,
+      "gameName": "Last Asylum: Plague",
+      "id": "6756989323",
+      "assetKey": "15_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 5.047,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9f/0f/16/9f0f16f1-a67a-7462-33e5-82f0b7ca9268/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 19,
+      "gameName": "Z Route: Redemption",
+      "id": "6762268182",
+      "assetKey": "19_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 6.594,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/b1/b6/b8b1b6f7-d287-0ce0-a0e5-ddfa64323bc1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 20,
+      "gameName": "Top Force: Commander",
+      "id": "6761893238",
+      "assetKey": "56_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 5.314,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/cd/a6/dbcda688-44b2-a006-f463-08d2a2fb97aa/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 21,
+      "gameName": "Transformers: Eternal War",
+      "id": "6772922295",
+      "assetKey": "109_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 6.687,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ff/a8/cd/ffa8cdf9-749a-4a8f-6fda-09385713290f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 22,
+      "gameName": "Castle Busters",
+      "id": "6746328263",
+      "assetKey": "21_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 7.157,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/6c/6e/516c6eef-6364-31d9-bc19-14711026ab43/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 23,
+      "gameName": "Mobile Legends: Bang Bang.US",
+      "id": "6741568655",
+      "assetKey": "32_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 6.892,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/2c/17/112c17b5-3220-e5c5-85a5-437ee5a14b6c/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 24,
+      "gameName": "Magic: The Gathering Arena",
+      "id": "1496227521",
+      "assetKey": "11_icon",
+      "status": "match",
+      "distance": 7,
+      "normalizedRmse": 3.375,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/93/46/a6/9346a6a9-de5a-06ae-7776-ec7ed4cc86d9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 25,
+      "gameName": "Game of Thrones: Dragonfire",
+      "id": "1642607669",
+      "assetKey": "10_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 5.455,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/8c/ee/988cee35-1a8c-a58c-865e-3327768ba823/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "rank": 26,
+      "gameName": "Infinity Kingdom",
+      "id": "1487451427",
+      "assetKey": "20_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 7.398,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/8d/d0/988dd076-655e-69b7-1527-977d010272b9/GameIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "rank": 27,
+      "gameName": "Police Chief",
+      "id": "6757350661",
+      "assetKey": "35_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 6.375,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/78/04/76/7804760a-1593-97f3-e24d-a850cc2b4b55/AppIcon-0-0-1x_U007emarketing-0-5-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 28,
+      "gameName": "Rise of Kingdoms",
+      "id": "1354260888",
+      "assetKey": "22_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 5.851,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/c9/aa/7ec9aa18-39eb-17cf-e4e6-bde9f4b5988a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 29,
+      "gameName": "Mob Control",
+      "id": "1562817072",
+      "assetKey": "36_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 7.656,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f5/c1/6b/f5c16bad-fb7c-9087-a981-7fc2c8a50604/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 30,
+      "gameName": "X-Clash: Survival Challenge",
+      "id": "6744812012",
+      "assetKey": "16_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 7.057,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b5/9e/7b/b59e7b6a-7fd4-1e18-b765-6d564a2411d9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 31,
+      "gameName": "Foundation: Galactic Frontier",
+      "id": "6737595599",
+      "assetKey": "30_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 5.14,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/2a/00/f22a00ea-1bf9-6519-bc0b-72cef3573cc7/FPX_AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 32,
+      "gameName": "Forge Master – Idle RPG",
+      "id": "6746636289",
+      "assetKey": "26_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 1.345,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/0d/ed/1b0dede0-e011-acc2-88fa-933e21173928/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 33,
+      "gameName": "Tiles Survive!",
+      "id": "6738109752",
+      "assetKey": "25_icon",
+      "status": "match",
+      "distance": 7,
+      "normalizedRmse": 7.824,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/70/f2/4f70f2a6-e851-e8b8-9048-fa58a308be95/FPX_AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 34,
+      "gameName": "Puzzles & Chaos: Frozen Castle",
+      "id": "6446389130",
+      "assetKey": "24_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 5.767,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e2/bd/5a/e2bd5a82-47df-4f6f-0578-3ef3fdab2862/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 35,
+      "gameName": "Supremacy: World War 3",
+      "id": "1510997559",
+      "assetKey": "49_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 4.159,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/b1/d3/a9b1d319-69da-00be-d1ca-b5d89cf62a24/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 36,
+      "gameName": "War and Order",
+      "id": "1071744151",
+      "assetKey": "31_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 6.05,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/61/0c/bd610c73-4775-402b-44ca-7951aaf17c3c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 37,
+      "gameName": "The Battle Cats",
+      "id": "850057092",
+      "assetKey": "46_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 4.091,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/f6/41/84f6414a-e06b-722f-6415-bf1cf4529667/AppIcon-en-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "rank": 38,
+      "gameName": "League of Legends: Wild Rift",
+      "id": "1480616990",
+      "assetKey": "82_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 4.884,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/10/e5/4c10e5d1-2fbb-48f2-0851-49d5c0b30ee9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 39,
+      "gameName": "RAID: Shadow Legends",
+      "id": "1371565796",
+      "assetKey": "41_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 7.911,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/d7/a3/a8d7a373-d072-d95c-cb23-f97ba7894f18/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "rank": 40,
+      "gameName": "Warline: Sniper Squad",
+      "id": "6742809194",
+      "assetKey": "68_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 4.769,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/da/be/e6dabe74-dc92-76c8-e9ba-a5e6e161b5b2/AppIcon-Global-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 41,
+      "gameName": "Warhammer 40,000: Tacticus ™",
+      "id": "1599937506",
+      "assetKey": "45_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 6.381,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/90/8a/1b/908a1bad-605f-0ccd-def6-97dddaccc8ed/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 42,
+      "gameName": "Lands of Jail",
+      "id": "6738469826",
+      "assetKey": "27_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 6.172,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/49/f8/03/49f803b5-0ea2-887b-d0d5-6613e1fbdc54/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 43,
+      "gameName": "Game of Thrones: Conquest ™",
+      "id": "1035712810",
+      "assetKey": "33_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 4.508,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/eb/6c/feeb6cbf-b5a2-a582-df1f-1be25239237d/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "rank": 44,
+      "gameName": "Raid Rush: Tower Defense TD",
+      "id": "1662335371",
+      "assetKey": "29_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 12.004,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4e/12/21/4e122126-e326-c66b-e7ed-1fe243e533eb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 45,
+      "gameName": "Summoners War",
+      "id": "852912420",
+      "assetKey": "48_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 5.496,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f5/16/d1/f516d1db-2551-9844-6322-19d6a018a885/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 46,
+      "gameName": "Fire Emblem Heroes",
+      "id": "1181774280",
+      "assetKey": "47_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 5.694,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/db/1c/96db1c94-c09f-e15b-0ebb-c7f269a6beb6/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 47,
+      "gameName": "Overgeared Hero: Merge RPG",
+      "id": "6755585789",
+      "assetKey": "66_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 9.555,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/72/ba/1772ba0d-cb9a-bb7e-d864-ce37b2d7cabc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 48,
+      "gameName": "Honor of Kings",
+      "id": "1619254071",
+      "assetKey": "94_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 5.503,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/a1/4f/baa14fb9-493b-d323-99f3-82b9f5ac75c0/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "rank": 49,
+      "gameName": "Age of Empires Mobile",
+      "id": "6476261995",
+      "assetKey": "42_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 7.703,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a5/6a/cd/a56acd02-2019-022c-d01b-1318dcf5d695/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "rank": 50,
+      "gameName": "Sea War: Uboat Raid",
+      "id": "6447612873",
+      "assetKey": "28_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 5.568,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b1/fb/cc/b1fbcca0-01b0-5d02-92f4-f79056ef14eb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 51,
+      "gameName": "Last Day on Earth: Survival",
+      "id": "1241932094",
+      "assetKey": "53_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 3.052,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/04/7a/da047ad8-e40b-a27b-f565-a34f5c1db821/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 52,
+      "gameName": "Top War: Battle Game",
+      "id": "1479198816",
+      "assetKey": "39_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 8.771,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/17/30/63/17306387-0f5a-8e18-9c3b-39fd0ca989b1/AppIcon-gl-1-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 53,
+      "gameName": "Star Trek Fleet Command",
+      "id": "1427744264",
+      "assetKey": "67_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 5.162,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/59/e2/ff59e2e6-d0d2-4e33-5059-6515bcbd2059/AppIcon-0-0-1x_U007emarketing-0-8-0-512MB-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 54,
+      "gameName": "Aliens vs Zombies: Invasion",
+      "id": "6740232087",
+      "assetKey": "101_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 5.239,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/76/cd/5176cd0a-cdb4-98d4-8c3d-331257e15925/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 55,
+      "gameName": "Lucky Defense!",
+      "id": "6482291732",
+      "assetKey": "95_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 4.949,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f7/6b/1b/f76b1b20-c9ab-235b-fa34-dc7af493dfbe/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 56,
+      "gameName": "Dragon Traveler",
+      "id": "6751086804",
+      "assetKey": "63_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 4.419,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/46/2d/3e462d99-87f6-3adf-a7e0-fcddf0e5cf38/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 57,
+      "gameName": "Last Shelter: War Z",
+      "id": "6760406772",
+      "assetKey": "93_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 3.91,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/33/e5/47/33e5470c-7162-c240-da8a-79e4a38bbea9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 58,
+      "gameName": "Last Shelter: Survival",
+      "id": "1342290011",
+      "assetKey": "80_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 5.514,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c7/83/d6/c783d629-258f-6252-d6c5-2eb25b44e2d2/AppIcon_run-0-1x_U007epad-0-11-0-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "rank": 59,
+      "gameName": "Warpath: Ace Shooter",
+      "id": "1529067679",
+      "assetKey": "75_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 3.912,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ba/ab/ab/baababfc-1521-ace1-4674-480ed29b9c9f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "rank": 60,
+      "gameName": "GIRLS' FRONTLINE 2: EXILIUM",
+      "id": "6502505286",
+      "assetKey": "81_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 4.804,
+      "officialUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/e9/42/e2e942a6-474b-de24-3e8c-87e6f9d10525/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg"
+    }
+  ]
+}
