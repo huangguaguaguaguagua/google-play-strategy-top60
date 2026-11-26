@@ -1,0 +1,612 @@
+{
+  "date": "2026-11-26",
+  "store": "googlePlay",
+  "method": "Current official icon versus local data-URI asset: accept 256-bit difference-hash distance<=18 or normalized RGB RMSE<=12",
+  "rowCount": 60,
+  "matched": 60,
+  "review": 0,
+  "networkErrors": 0,
+  "missingLocal": 0,
+  "results": [
+    {
+      "rank": 1,
+      "gameName": "Kingshot",
+      "id": "com.run.tower.defense",
+      "assetKey": "01_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 13.381,
+      "officialUrl": "https://play-lh.googleusercontent.com/cs59HOM5uSmSzgnmMyFpqYw9sMtQkYxMUTRZ1TSCZK6t6T-cjluQW_9krAcgeEozBYQWKl2DmUTeETdYtKhq"
+    },
+    {
+      "rank": 2,
+      "gameName": "Whiteout Survival",
+      "id": "com.gof.global",
+      "assetKey": "02_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 11.726,
+      "officialUrl": "https://play-lh.googleusercontent.com/tNMaMiJ4wTQy_TeZSWHdSlP5qH0PGig9g9sDJu2QFvCHdnrbo2u17pX55W4i6KITo56v_ZyICkqLgA2svH9ycQ"
+    },
+    {
+      "rank": 3,
+      "gameName": "Total Battle: War Strategy",
+      "id": "com.totalbattle",
+      "assetKey": "06_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 7.59,
+      "officialUrl": "https://play-lh.googleusercontent.com/8stjVfGQtgSFq8Qv9kexyIyAmYwwzI7lq2GkTyqVv4hbXCc91A3N55RwqiuvAexi6dqV3vQSL7adjIntCRHUEA"
+    },
+    {
+      "rank": 4,
+      "gameName": "Last War:Survival Game",
+      "id": "com.fun.lastwar.gp",
+      "assetKey": "03_icon",
+      "status": "match",
+      "distance": 8,
+      "normalizedRmse": 17.548,
+      "officialUrl": "https://play-lh.googleusercontent.com/pugw09Lkr4dsuVQWRFVp82xe9YXD1ST5wPJRS-aj2Msr5oq297sR0KESQUHLgwR-e5IyHwnqTe_f00FAokXlGMc"
+    },
+    {
+      "rank": 5,
+      "gameName": "Last Z: Survival Shooter",
+      "id": "com.readygo.barrel.gp",
+      "assetKey": "04_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 14.344,
+      "officialUrl": "https://play-lh.googleusercontent.com/q6Mjymkm2z_8p3BVZq4jKpZbZIEVxVaCAZsaaBXSMjf9kexdpkYktJl46JBFfQp1RWh2n10BCbaP42CZWNwgmA"
+    },
+    {
+      "rank": 6,
+      "gameName": "Evony: The King's Return",
+      "id": "com.topgamesinc.evony",
+      "assetKey": "05_icon",
+      "status": "match",
+      "distance": 7,
+      "normalizedRmse": 12.447,
+      "officialUrl": "https://play-lh.googleusercontent.com/O_2KnfGM5WwoQrZVXoyHJEv-NyyZf3Nv6zYe3uQCtAFHzx8v4PT4Sb9oaSRoJDQ9Z8RDAYfHZh-_23TkBRSGRQ"
+    },
+    {
+      "rank": 7,
+      "gameName": "Last Asylum: Plague",
+      "id": "com.phs.global",
+      "assetKey": "07_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 14.719,
+      "officialUrl": "https://play-lh.googleusercontent.com/HOFXbIOJIZGru5_UM5hdGDmP7HIgxGJEx4dQAbPClmAtrNw3tVL9fY5NNHfa7VgIMFU-Sr3-s5FQGfaYJYhP"
+    },
+    {
+      "rank": 8,
+      "gameName": "Clash of Clans",
+      "id": "com.supercell.clashofclans",
+      "assetKey": "08_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 6.693,
+      "officialUrl": "https://play-lh.googleusercontent.com/sFmWfYbYp_2ea7VRMTnwd3gjIBrPGXHj_d_ab1_k1q1p2OMk4riGMF1vqxdhONOtTYOt_BVpk7a4AYcKU68LNGQ"
+    },
+    {
+      "rank": 9,
+      "gameName": "Lordrush",
+      "id": "com.s01.global",
+      "assetKey": "57_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 11.406,
+      "officialUrl": "https://play-lh.googleusercontent.com/4_JTVfSvadb3P01izF2fL47w183NO4oqje4gtwZIKf05-iCu9SI7ldG8vYfGZFpbN_-wXMWVexolzqqZqzJKWg"
+    },
+    {
+      "rank": 10,
+      "gameName": "Dark War Survival",
+      "id": "com.readygo.dark.gp",
+      "assetKey": "09_icon",
+      "status": "match",
+      "distance": 8,
+      "normalizedRmse": 12.006,
+      "officialUrl": "https://play-lh.googleusercontent.com/gaanbGpciRZh801jTahoaImwr96KtBp2Uuez12ww9sIxFQhqieIZgTjB_dGzhCaR1ccM9Eku11FxhOWgoxifwdc"
+    },
+    {
+      "rank": 11,
+      "gameName": "Z Route: Redemption",
+      "id": "com.zroute.global",
+      "assetKey": "61_icon",
+      "status": "match",
+      "distance": 7,
+      "normalizedRmse": 19.849,
+      "officialUrl": "https://play-lh.googleusercontent.com/M8SRl5xNMoiBXvNadN9U5Mt2UryAtDwd-OZxXhT0UxUYQfGeD6aSR7VmM3Z7fZl4N3Zwba-51Zx5Q5ZLbkJ1gFc"
+    },
+    {
+      "rank": 12,
+      "gameName": "Puzzles & Survival",
+      "id": "com.global.ztmslg",
+      "assetKey": "10_icon",
+      "status": "match",
+      "distance": 10,
+      "normalizedRmse": 13.659,
+      "officialUrl": "https://play-lh.googleusercontent.com/ummlqp5oiU1hRPrz9pt-XYFhbMIITY_b-viFnnMu-RgtdH--uFrcFoEEGrXpRrOTVf94f8GCDQwEK-VBln18"
+    },
+    {
+      "rank": 13,
+      "gameName": "Puzzles & Chaos: Frozen Castle",
+      "id": "com.global.pnck",
+      "assetKey": "11_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 14.062,
+      "officialUrl": "https://play-lh.googleusercontent.com/FuuH9hfYKAc-lNwR2yEJDJdAd6jrDsTyJVUqYAmlvgM1s2aPqXTSqMVER__nk-ghL-aWWMkQnpNHDT0_P05lzg"
+    },
+    {
+      "rank": 14,
+      "gameName": "Top Lords",
+      "id": "com.gamespark.topking.gp",
+      "assetKey": "70_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 5.883,
+      "officialUrl": "https://play-lh.googleusercontent.com/F9Nk01jBia2OZFGndBuTP-rJ-ThbicTHpxJj3iZIk-M1-V8qFhVuVQWYAG_zCuggkiRXHrfqyU5XwZPhAJyAfA"
+    },
+    {
+      "rank": 15,
+      "gameName": "Top Force",
+      "id": "com.project.idle.cd",
+      "assetKey": "48_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 10.421,
+      "officialUrl": "https://play-lh.googleusercontent.com/dIGYOhW1mwhxLLCti6-O-VQAL_5oz7yzyLkP5WJH80i6j3HWcaIOfTnJ-FaQC1tQ7DC2pR5BphwkZJ9tFQe_ag"
+    },
+    {
+      "rank": 16,
+      "gameName": "Police Chief",
+      "id": "com.slg.policewar",
+      "assetKey": "20_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 14.105,
+      "officialUrl": "https://play-lh.googleusercontent.com/w33GZBYhYKwUwUzkNcIcw-EruqdrCciVN5UhCmyn1Z8BDGLDyKeqBrU8IXVKz6P1R5tX1NT6H2sX75YADW4Lug"
+    },
+    {
+      "rank": 17,
+      "gameName": "GIRLS' FRONTLINE 2: EXILIUM",
+      "id": "com.Sunborn.SnqxExilium.Glo",
+      "assetKey": "69_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 5.203,
+      "officialUrl": "https://play-lh.googleusercontent.com/EtVlraYOqzmz_cbyKf_9NYMb0CrHNZOVQz3bRQ2EiYJomGRQLf5tZwYRpQpZBcc1YFXaJo03ig6TfkOYTgZi"
+    },
+    {
+      "rank": 18,
+      "gameName": "Rise of Kingdoms: Lost Crusade",
+      "id": "com.lilithgame.roc.gp",
+      "assetKey": "12_icon",
+      "status": "match",
+      "distance": 8,
+      "normalizedRmse": 14.048,
+      "officialUrl": "https://play-lh.googleusercontent.com/HD0DeTH3uY8-4xKW54eH4yViYQtdLMtGKv_EYdAnH75a2-SdRLKZVZOJgxS1BfAug4eqVsVgDs3eoL3YfMU9lg"
+    },
+    {
+      "rank": 19,
+      "gameName": "Infinity Kingdom",
+      "id": "com.gtarcade.ioe.global",
+      "assetKey": "16_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 13.217,
+      "officialUrl": "https://play-lh.googleusercontent.com/3yhUPeJQ0kCPkO1BMv-27sfbAQhNhthOHUeFtZ-DQMTnHH2QkXb9KQEwg8C2ePzy2EjorfsxOmsaUBSQM3M7"
+    },
+    {
+      "rank": 20,
+      "gameName": "Warline: Sniper Squad",
+      "id": "com.farlightgames.warline.gp.global",
+      "assetKey": "41_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 4.757,
+      "officialUrl": "https://play-lh.googleusercontent.com/XJM2uz8yxBb6BLJ-1qk2KNzPjWfNQdLPyWPSJDycuSwSyFiIangg7skGDM_sIrEmQVueqmWJQb63NFIwUEmAhA"
+    },
+    {
+      "rank": 21,
+      "gameName": "Star Trek Fleet Command",
+      "id": "com.scopely.startrek",
+      "assetKey": "30_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 11.046,
+      "officialUrl": "https://play-lh.googleusercontent.com/VJKnucpvNSmuoh0g-6ZOUIYjU7axhLr1HIALvrjkyxlbaLOrCkDCd5HLbpF7J-J-Ycm1r540uRdqDKykWgAZRQ"
+    },
+    {
+      "rank": 22,
+      "gameName": "The Grand Mafia",
+      "id": "com.yottagames.gameofmafia",
+      "assetKey": "22_icon",
+      "status": "match",
+      "distance": 7,
+      "normalizedRmse": 10.02,
+      "officialUrl": "https://play-lh.googleusercontent.com/bP2YijJqvRcJoYwnF3983v4wgLNWZ4BbjOXlPKl2oyxbTDJDHa3TB54-qN6kbZ869oyI7Vd21-MqyTTQ5eJD"
+    },
+    {
+      "rank": 23,
+      "gameName": "Tiles Survive!",
+      "id": "com.funplus.ts.global",
+      "assetKey": "25_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 14.419,
+      "officialUrl": "https://play-lh.googleusercontent.com/s0BYl3XzwvKGfma3ZftsmchXs7rCsyDKHJ7LTB6E3kY_WRorvEKg4cRawg0r2Ac0ZIbZ90VcEkI3UsUvdHlt4fg"
+    },
+    {
+      "rank": 24,
+      "gameName": "Palmon: Survival",
+      "id": "com.funfizz.palmon.gp",
+      "assetKey": "13_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 11.505,
+      "officialUrl": "https://play-lh.googleusercontent.com/bqAAlCFs18uqxTsCk67OF77Wl16CeVmfvqsnxmM6g8W11X8nOpRSqhjKqT2XQSROupQusPaCgRKySGbogmffiw"
+    },
+    {
+      "rank": 25,
+      "gameName": "Salvage Empire",
+      "id": "com.spark.sp.gp",
+      "assetKey": "40_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 9.651,
+      "officialUrl": "https://play-lh.googleusercontent.com/jHAS_HNO-9l8kyEhT0WvtmAcrPWHSq0i5zQ4Y4OochrtjqvamIyH7wnS5VYQ68ItlGSmNNO_qLSGbFF5N3FzHw"
+    },
+    {
+      "rank": 26,
+      "gameName": "Lands of Jail",
+      "id": "com.justgame.jails",
+      "assetKey": "24_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 6.844,
+      "officialUrl": "https://play-lh.googleusercontent.com/S2EWxlldW6kR-B5DIF6o4M0-EV-6JPYn-34nISeHfgFdRWPmtVr5qdMszIRphLVRhmVyuzsyx-OKblhBD8EcqA"
+    },
+    {
+      "rank": 27,
+      "gameName": "Clash Royale",
+      "id": "com.supercell.clashroyale",
+      "assetKey": "15_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 14.363,
+      "officialUrl": "https://play-lh.googleusercontent.com/z0rspJKftanEI7MA4WOdypbaaHfeKy4UjoawRGKf4Ys3v6LrrcleZWOfms7XK-J33Oqyfm3DlFd4Z_eKWafVFg"
+    },
+    {
+      "rank": 28,
+      "gameName": "Age of Origins",
+      "id": "com.camelgames.aoz",
+      "assetKey": "19_icon",
+      "status": "match",
+      "distance": 9,
+      "normalizedRmse": 7.502,
+      "officialUrl": "https://play-lh.googleusercontent.com/qKFGzPTPE9rUuTM1ZkjJY30GuQSvSSp2wVJUiOqJ2nzuIeitVeRC7o7Lskb1hi1Aj9pq4n4lcFZjJQuWdzmY7g"
+    },
+    {
+      "rank": 29,
+      "gameName": "Last Shelter: War Z",
+      "id": "com.more.lastshelter.gp",
+      "assetKey": "71_icon",
+      "status": "match",
+      "distance": 13,
+      "normalizedRmse": 25.123,
+      "officialUrl": "https://play-lh.googleusercontent.com/bCUKlHtllYdlK5A9FT3nIo_LxoapkzO2jeyEwrRnZZNvD1stuB-6JATy86hORqWR6qqfS-5FtzXh4ERasBf_sQ"
+    },
+    {
+      "rank": 30,
+      "gameName": "Foundation: Galactic Frontier",
+      "id": "com.games.foundation",
+      "assetKey": "29_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 10.967,
+      "officialUrl": "https://play-lh.googleusercontent.com/dmBqQ2vxCp2soM-8ez4DNs1JFKIcYvlkCLOdRPu4k8clLdJNcsUaVHnmsmDFMl5WMNsSiupUfb55oqo6YJzTnA"
+    },
+    {
+      "rank": 31,
+      "gameName": "Guns of Glory: Lost Island",
+      "id": "com.diandian.gog",
+      "assetKey": "36_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 7.465,
+      "officialUrl": "https://play-lh.googleusercontent.com/0l9JIvpITwLiO0rhq_DIR8MnCt5M7FBiNjCzyvsrta2w9DAPzXpp39D3TSi2-K2Xm3qhnne5IwghPJNVLqI0Ew"
+    },
+    {
+      "rank": 32,
+      "gameName": "War and Order",
+      "id": "com.camelgames.superking",
+      "assetKey": "27_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 15.296,
+      "officialUrl": "https://play-lh.googleusercontent.com/MXSinmUQlhaV8xJIl0O99LVPkNU-YvIMGtbRW-2QQhIm-Dkk-NuDso_FbApzmrp_bRVyvLGbxNzEp-ZD0ghf"
+    },
+    {
+      "rank": 33,
+      "gameName": "Top Girl",
+      "id": "com.a3.topgirl.gplay",
+      "assetKey": "23_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 12.835,
+      "officialUrl": "https://play-lh.googleusercontent.com/t5VUqlwI4zUU2Fxrn0SLnHsaXijYhijH_SO6J2H6MavPxrfTpHBou03Stm5_RHNz30k8_q8amJo-hGb6duj25mY"
+    },
+    {
+      "rank": 34,
+      "gameName": "Rise of Castles: Ice and Fire",
+      "id": "com.im30.ROE.gp",
+      "assetKey": "18_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 16.195,
+      "officialUrl": "https://play-lh.googleusercontent.com/VnuNntrmS7rBVEP2DrwSQAO9BFlaYZf9MwJ72p2jX5la8esW7IHoVuoVH9Qg5kzwLOCsKkg71GIzh7iQgG7hXQ"
+    },
+    {
+      "rank": 35,
+      "gameName": "Lords Mobile: Kingdom Wars",
+      "id": "com.igg.android.lordsmobile",
+      "assetKey": "28_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 7.235,
+      "officialUrl": "https://play-lh.googleusercontent.com/9gTDGNC_Ly7dWNWcfZtnBKdIY8a9REzuWMCC89ycYugXGvWgAPDo4GgnyitrX2LpMqE-1yb_2CDFugre9QVKfg"
+    },
+    {
+      "rank": 36,
+      "gameName": "League of Legends: Wild Rift",
+      "id": "com.riotgames.league.wildrift",
+      "assetKey": "17_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 11.067,
+      "officialUrl": "https://play-lh.googleusercontent.com/7-kbcpgrCOE1mleJ9g0d61sJeoqKcQRIj4iFvJ8DjPlRIfocOWfOQsXzKWw2I5oHySVdbjR2fvzfCCz1FYQ-RQ"
+    },
+    {
+      "rank": 37,
+      "gameName": "Game of Thrones: Dragonfire",
+      "id": "com.wb.goog.hotd.socialstrategy",
+      "assetKey": "14_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 6.066,
+      "officialUrl": "https://play-lh.googleusercontent.com/YmTu4iycrNRFYvoyhgacyX9MQioa3trcIi0glpqRtSZ-G6ErEvu3k5BXLigkxBzjBBx13lnyWLeHRnlO_onaDA"
+    },
+    {
+      "rank": 38,
+      "gameName": "Top Heroes: Kingdom Saga",
+      "id": "com.greenmushroom.boomblitz.gp",
+      "assetKey": "39_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 8.066,
+      "officialUrl": "https://play-lh.googleusercontent.com/hzgzep-uxHj_BmXtEsCg-STSs7QF6WfXegQ5ATExUHyY9TYdd4LB2vFFV9s2d_hc8k7jKT3XVvd6Dyw8cfSyJNc"
+    },
+    {
+      "rank": 39,
+      "gameName": "Warhammer 40,000: Tacticus ™",
+      "id": "com.snowprintstudios.tacticus",
+      "assetKey": "21_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 6.933,
+      "officialUrl": "https://play-lh.googleusercontent.com/3L8zmnKZqzuN5jyj-MJwEKunIG5gL92wSohiAX9asJdzmxeoqM3plWYAQhqlLDMdkPbB1auJUg7G-KNYpKCr4Q"
+    },
+    {
+      "rank": 40,
+      "gameName": "Titan Rush",
+      "id": "com.ratinghope.gplay",
+      "assetKey": "45_icon",
+      "status": "match",
+      "distance": 7,
+      "normalizedRmse": 12.653,
+      "officialUrl": "https://play-lh.googleusercontent.com/sxhliWIHQkxvxkVnR1YJa-Bls74C3av7VXIAcZKGnbbO12vLFpw1bINH8VeCZ2yw8uwL5ApP1cQ16g7FMJWYnQ"
+    },
+    {
+      "rank": 41,
+      "gameName": "Mafia City",
+      "id": "com.yottagames.mafiawar",
+      "assetKey": "46_icon",
+      "status": "match",
+      "distance": 10,
+      "normalizedRmse": 31.298,
+      "officialUrl": "https://play-lh.googleusercontent.com/MdwhvgDhMoGlp9MjvzPYDSKidt55EPXZLeCSBQ6ffijck4n6pD-yPOfQVOMwfXd4GQCu9I2ewQGOyCAM_E0"
+    },
+    {
+      "rank": 42,
+      "gameName": "Last Beacon: Survival",
+      "id": "com.hnhs.endlesssea.gp",
+      "assetKey": "82_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 9.695,
+      "officialUrl": "https://play-lh.googleusercontent.com/YJJDKKU9ye0UEN27Rh7jLPc3JDjY_bQXk6jLyJt7Dx-HKkOLF1zfiN8qTnYuKc-QfL9VgitCeGvsRz6sL9EpxA"
+    },
+    {
+      "rank": 43,
+      "gameName": "Frost & Flame: King of Avalon",
+      "id": "com.funplus.kingofavalon",
+      "assetKey": "37_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 5.466,
+      "officialUrl": "https://play-lh.googleusercontent.com/9b4GNFZAxv1wHDtsYkSE3wh6rkJuYRSo8xlelWeZmsfjApVWYjEq2UCVHLkB8RhbPHjEu4DsNy1oT6ukLoa1AA"
+    },
+    {
+      "rank": 44,
+      "gameName": "Overgeared Hero: Merge RPG",
+      "id": "com.fiveminlab.overgeared.hero.backpack.merge",
+      "assetKey": "38_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 12.102,
+      "officialUrl": "https://play-lh.googleusercontent.com/NFP1DhDRfMkHRTkX9qaY56Ym1HHxbd7zfvpHOiiYAMG1glI348waM3h5tHpCARtTA3q_ZevjcNw36NQd4ieJ6A"
+    },
+    {
+      "rank": 45,
+      "gameName": "Stormshot: Isle of Adventure",
+      "id": "com.sivona.stormshot.e",
+      "assetKey": "34_icon",
+      "status": "match",
+      "distance": 13,
+      "normalizedRmse": 10.963,
+      "officialUrl": "https://play-lh.googleusercontent.com/p3ooyvsRUzLrv6482L0a3lcVFeNGnFX0F7vUQNP6-44Bo2cSZV2t8uFMeFl46S8dnt_xEof9Clmv_OyPDcd6YQ"
+    },
+    {
+      "rank": 46,
+      "gameName": "Auto Drill: Galaxy",
+      "id": "com.lavalabs.autodrill",
+      "assetKey": "83_icon",
+      "status": "match",
+      "distance": 15,
+      "normalizedRmse": 2.597,
+      "officialUrl": "https://play-lh.googleusercontent.com/OTOTGldUVOZzyrUF7aj-wo5KzqXGSesVQXEow61-X4qUZM-LA6k8ZIkHuTJbYJaE8H2hUj9Pgh3F7cgmULzv7A"
+    },
+    {
+      "rank": 47,
+      "gameName": "Top War: Battle Game",
+      "id": "com.topwar.gp",
+      "assetKey": "35_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 18.171,
+      "officialUrl": "https://play-lh.googleusercontent.com/O1T8ZCMWoxaiUl04_hDzgZ0eDHcbQuwQIkKpGHtDkmZcf8FaYDXSY4laK3mVfTbMl9jTGoTHYoVIpwB3VnJh"
+    },
+    {
+      "rank": 48,
+      "gameName": "State of Survival: Zombie War",
+      "id": "com.kingsgroup.sos",
+      "assetKey": "32_icon",
+      "status": "match",
+      "distance": 7,
+      "normalizedRmse": 15.633,
+      "officialUrl": "https://play-lh.googleusercontent.com/v4gBYHQkkjokISNaGIogV1PyR6vFJr-dFvoybqbtW5g4Zwk9l2mRHOL0rSwbigyVIIFe3FDuiqtESq4SJAeMNg"
+    },
+    {
+      "rank": 49,
+      "gameName": "Game of Thrones: Conquest ™",
+      "id": "com.wb.goog.got.conquest",
+      "assetKey": "53_icon",
+      "status": "match",
+      "distance": 5,
+      "normalizedRmse": 9.369,
+      "officialUrl": "https://play-lh.googleusercontent.com/OT7jiyavgr2LCw9NdIG4gBY2IEHfbSUrY2ofqvUNcRMBTKIcxxxvpQW-nXxMuCvpEYH8otONieWl180_sojWrQ"
+    },
+    {
+      "rank": 50,
+      "gameName": "Forge Master",
+      "id": "com.hariwn.legendofcivilizations",
+      "assetKey": "31_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 7.576,
+      "officialUrl": "https://play-lh.googleusercontent.com/WGcdbzoUWweXOg3knrsZFyDCqODfblSjIsyDdsEnYot1DBdq4_p38QYN5z-vgS6LyphN5C8HPfSKQyEa6LGAUAk"
+    },
+    {
+      "rank": 51,
+      "gameName": "Arknights",
+      "id": "com.YoStarEN.Arknights",
+      "assetKey": "78_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 22.851,
+      "officialUrl": "https://play-lh.googleusercontent.com/pBNlu-ZHQlVdfXhzI7TGIjqt_00sAeYFFK6AqTygfF3rwQfoPIkfIz-zROY31POTDKtxqcMDMPaDLJVlwCdc"
+    },
+    {
+      "rank": 52,
+      "gameName": "Warpath: Ace Shooter",
+      "id": "com.wondergames.warpath.gp",
+      "assetKey": "65_icon",
+      "status": "match",
+      "distance": 10,
+      "normalizedRmse": 25.329,
+      "officialUrl": "https://play-lh.googleusercontent.com/My7F9Z9hQHlFia-b0z3bDtjovlYQ6ZXp96zOy9_sVrwdLJCtTie-zxxbwjciouinMHlzgpkJwVV8JTgr1d38GQ"
+    },
+    {
+      "rank": 53,
+      "gameName": "Last Human: Final Stand",
+      "id": "com.avenue.zombie.gp",
+      "assetKey": "84_icon",
+      "status": "match",
+      "distance": 4,
+      "normalizedRmse": 23.692,
+      "officialUrl": "https://play-lh.googleusercontent.com/6ioSpKK1U0GcD7gYceYRj4CvU_cYpXVcr48t0glzaSkVurM04wOPCLeqbfnVEJJbAV8Hnzh-JmLiIueOCtdXdno"
+    },
+    {
+      "rank": 54,
+      "gameName": "Doomsday: LS x Dune: Part 3",
+      "id": "com.igg.android.doomsdaylastsurvivors",
+      "assetKey": "33_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 5.311,
+      "officialUrl": "https://play-lh.googleusercontent.com/gtnn5M2eaI25t7tMjLAnlg1Vyhf9YPRj0huJooMTLDWqJq_V5QmZ7YNiiTClrCjzexUMxkwFkl2F8tV9mMuhjg"
+    },
+    {
+      "rank": 55,
+      "gameName": "Age of Empires Mobile",
+      "id": "com.proximabeta.aoemobile",
+      "assetKey": "50_icon",
+      "status": "match",
+      "distance": 6,
+      "normalizedRmse": 8.92,
+      "officialUrl": "https://play-lh.googleusercontent.com/FsrJ4G5spS_npOfZQK6Y-lggN4mxUVpSgqZt15v3Cb4MHukPsQes4e75ruMrIbldET-J4tHJqTmjdSmOl3ldQQ"
+    },
+    {
+      "rank": 56,
+      "gameName": "Call of Dragons",
+      "id": "com.farlightgames.samo.gp",
+      "assetKey": "43_icon",
+      "status": "match",
+      "distance": 2,
+      "normalizedRmse": 5.31,
+      "officialUrl": "https://play-lh.googleusercontent.com/nPgmduRLKjdRVe28i8xJbjQZlkit-nbvER5aznuOSl8p222b95SWkPXKStBTOjVLYOnUi2fHcUHG5kSVxA_1"
+    },
+    {
+      "rank": 57,
+      "gameName": "Aliens vs Zombies: Invasion TD",
+      "id": "aliens.zombies.invasion",
+      "assetKey": "76_icon",
+      "status": "match",
+      "distance": 7,
+      "normalizedRmse": 11.805,
+      "officialUrl": "https://play-lh.googleusercontent.com/w9k4mZ1COKKOGhi_d-RBo37l5vjd_ZxSejgpnz0yQfEzpa-4842dmfpdWYIzIUiVjjozfoHwCvHE-hmkl-Gt1Q"
+    },
+    {
+      "rank": 58,
+      "gameName": "Vikings: War of Clans PvP",
+      "id": "com.plarium.vikings",
+      "assetKey": "47_icon",
+      "status": "match",
+      "distance": 0,
+      "normalizedRmse": 5.748,
+      "officialUrl": "https://play-lh.googleusercontent.com/3Wj7Up7_p4G-cIYDLctdgysrLaUaXEtZjAm1zFGPdIEiDqV6Q7jyvE37Xjzq_GZCEb3ilLzSYZGEKGFYl6EBoQ"
+    },
+    {
+      "rank": 59,
+      "gameName": "Age of Spirits",
+      "id": "leyi.ageofspirits",
+      "assetKey": "75_icon",
+      "status": "match",
+      "distance": 1,
+      "normalizedRmse": 7.69,
+      "officialUrl": "https://play-lh.googleusercontent.com/6QTNQbg4PAQ5ug6RYiD0hOi-mUVyF5mgi9wwY2qGg24dpmTZHqDij5o2bjAVG3PSxT3rGmsAxbptHi3Ii-LX-w"
+    },
+    {
+      "rank": 60,
+      "gameName": "Duck Survival",
+      "id": "com.mrtgd2us.google",
+      "assetKey": "26_icon",
+      "status": "match",
+      "distance": 3,
+      "normalizedRmse": 14.4,
+      "officialUrl": "https://play-lh.googleusercontent.com/oJwkS9ZVrHGeAjm1dfdzJQLfzAV5mUlWdHuVWdSGy8WFNAc1YdqxKESFaw0lJL149oXG3rJ4Rqix_7LjhTn6PVg"
+    }
+  ]
+}
