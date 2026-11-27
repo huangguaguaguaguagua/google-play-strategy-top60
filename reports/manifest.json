@@ -1,7 +1,14 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "timezone": "Asia/Shanghai",
   "reports": [
+    {
+      "date": "2026-11-27",
+      "title": "Limbus双端同步进入，iOS榜面高波动",
+      "summary": "较11月26日前一有效快照，Google Play 2进2出，GIRLS' FRONTLINE 2下降17位；iOS 5进5出，Game of Thrones: Conquest上升28位，Plants on Fire下降12位。Google有1款、iOS有2款近90天新品；因8月29日精确基准缺失，老产品内部保持pending并按常规展示。",
+      "markdown": "reports/2026-11-27.md",
+      "json": "data/market-brief-20261127.json"
+    },
     {
       "date": "2026-11-26",
       "title": "Google榜面趋稳，iOS后半段继续高换位",
